@@ -1,0 +1,121 @@
+[
+  {
+    "id": "ev_founding_petah-tikva",
+    "english_title": "Petah_Tikva#History",
+    "display_title_override": "Petah Tikva was founded in 1878",
+    "start": "1878",
+    "end": "1878",
+    "context_id": "context_aliyah",
+    "bg_image_url": "https://en.wikipedia.org/wiki/Petah_Tikva#/map/0",
+    "TODO": "CHECK DATES"
+  },
+  {
+    "id": "ev_russian_pogroms_wave1",
+    "english_title": "Pogroms_in_the_Russian_Empire#1881–1882",
+    "display_title_override": "Russian Empire Pogroms (First Wave)",
+    "start": "1881-04-27",
+    "end": "1884",
+    "context_id": "context_russian_pogroms",
+    "bg_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Jewish_pogrom_in_Kiev_(1881).jpg",
+    "TODO": "CHECK DATES start 1/15.March, end?"
+  },
+  {
+    "id": "ev_1948_war",
+    "english_title": "1948_Arab–Israeli_War",
+    "display_title_override": "The first Arab–Israeli War (1948)",
+    "start": "1948-05-15",
+    "end": "1949-03-10",
+    "bg_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Tel_Aviv-Yafo_(997008136796005171).jpg"
+  },
+  {
+    "id": "ev_first_aliyah",
+    "english_title": "First_Aliyah",
+    "display_title_override": "First Aliyah",
+    "start": "1881",
+    "end": "1903",
+    "context_id": "context_aliyah",
+    "perp_ids": ["group_hovevei_zion"],
+    "bg_image_url": "",
+    "sort_anchors": {
+      "after": "ev_russian_pogroms_wave1"
+    }
+  },
+  {
+    "id": "ev_second_aliyah",
+    "english_title": "Second_Aliyah",
+    "display_title_override": "Second Aliyah",
+    "start": "1904",
+    "end": "1914",
+    "context_id": "context_aliyah",
+    "bg_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Pale-of-settlement-1884.jpg",
+    "bg_image_src": "https://en.wikipedia.org/wiki/File:Pale-of-settlement-1884.jpg",
+    "bg_image_caption": "Pale of Settlement map, showing the percentage of the Jewish population in 1884",
+    "bg_image_license": "General public domain, PD-US-expired"
+  },
+  {
+    "id": "ev_third_aliyah",
+    "english_title": "Third_Aliyah",
+    "display_title_override": "Third Aliyah (1919–1923)",
+    "start": "1919",
+    "end": "1923",
+    "context_id": "context_aliyah",
+    "bg_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hachshara.JPG"
+  },
+  {
+    "id": "ev_fourth_aliyah",
+    "english_title": "Fourth_Aliyah",
+    "display_title_override": "Fourth Aliyah (1924–1929)",
+    "start": "1924",
+    "end": "1929",
+    "context_id": "context_aliyah",
+    "bg_image_url": ""
+  },
+  {
+    "id": "ev_fifth_aliyah",
+    "english_title": "Fifth_Aliyah",
+    "display_title_override": "Fifth Aliyah (1929–1939)",
+    "start": "1929",
+    "end": "1939",
+    "context_id": "context_aliyah",
+    "bg_image_url": ""
+  },
+  {
+    "id": "ev_aliyah_bet",
+    "english_title": "Aliyah_Bet",
+    "display_title_override": "Aliyah Bet: Illegal immigration (1933–1948)",
+    "start": "1933",
+    "end": "1948",
+    "context_id": "context_aliyah",
+    "bg_image_url": ""
+  },
+  {
+    "id": "ev_nakba_phase1",
+    "english_title": "1947–1948_civil_war_in_Mandatory_Palestine",
+    "display_title_override": "Nakba Phase 1: Civil War Era",
+    "start": "1947-11-30",
+    "end": "1948-05-14",
+    "context_id": "context_nakba",
+    "perp_ids": ["group_haganah", "group_irgun"],
+    "bg_image_url": ""
+  },
+  {
+    "id": "ev_nakba_phase2",
+    "english_title": "1948_Arab–Israeli_War",
+    "display_title_override": "Nakba Phase 2: State Expulsions",
+    "start": "1948-05-15",
+    "end": "1949-01-07",
+    "context_id": "context_nakba",
+    "perp_ids": ["group_idf"],
+    "bg_image_url": "testimage.jpg"
+  },
+  {
+    "id": "ev_nakba_2_campaign",
+    "english_title": "Gaza_humanitarian_crisis_(2023–present)",
+    "display_title_override": "Nakba II: Modern Displacement Campaign",
+    "start": "2023-10-07",
+    "end": "2026-08-03",
+    "context_id": "context_nakba_2",
+    "perp_ids": ["group_israeli_govt", "group_idf"],
+    "bg_image_url": ""
+  }
+]

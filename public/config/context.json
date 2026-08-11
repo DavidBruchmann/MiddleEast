@@ -1,0 +1,26 @@
+[
+  {
+    "id": "context_russian_pogroms",
+    "english_title": "Pogroms_in_the_Russian_Empire",
+    "side": "Israeli",
+    "category": "Systemic Persecution"
+  },
+  {
+    "id": "context_aliyah",
+    "english_title": "Aliyah",
+    "side": "Israeli",
+    "category": "Historical Movement"
+  },
+  {
+    "id": "context_nakba",
+    "english_title": "Nakba",
+    "side": "Palestinian",
+    "category": "Historical Era"
+  },
+  {
+    "id": "context_nakba_2",
+    "english_title": "Gaza_Strip_genocide",
+    "side": "Palestinian",
+    "category": "Modern Conflict Era"
+  }
+]

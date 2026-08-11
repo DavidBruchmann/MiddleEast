@@ -1,0 +1,109 @@
+[
+  {
+    "id": "person_yehuda_alkalai",
+    "type": "person",
+    "name": "Yehuda Alkalai",
+    "side": "Israeli",
+    "birth_date": "1798-01-01",
+    "death_date": "1878-10-01",
+    "wikidata_id": "Q1347852",
+    "historical_significance": "Proto-Zionist rabbi who published 'Minchat Yehuda' in 1843-44, advocating for the physical return of Jews to Palestine before the messianic age.",
+    "keywords": ["alkalai", "yehuda alkalai", "יהודה אלקלעי", "יהודה חי אלקלעי", "القلاعي"]
+  },
+  {
+    "id": "person_zvi_hirsch_kalischer",
+    "type": "person",
+    "name": "Zvi Hirsch Kalischer",
+    "side": "Israeli",
+    "birth_date": "1795-03-24",
+    "death_date": "1874-10-16",
+    "wikidata_id": "Q231268",
+    "historical_significance": "Orthodox rabbi who approached the Rothschilds in 1843 to buy land in Palestine, pioneering religious Zionism and agricultural settlement theories.",
+    "keywords": ["kalischer", "zvi hirsch kalischer", "צבי הירש קלישר", "קלישר"]
+  },
+  {
+    "id": "person_moses_hess",
+    "type": "person",
+    "name": "Moses Hess",
+    "side": "Israeli",
+    "birth_date": "1812-06-21",
+    "death_date": "1875-04-06",
+    "wikidata_id": "Q165502",
+    "historical_significance": "Philosopher who published 'Rome and Jerusalem' (1862), predicting that anti-Semitism would prevent Jewish integration in Europe and advocating for a socialist state in Palestine.",
+    "keywords": ["moses hess", "moritz hess", "משה הס", "مשה הס", "موسى هס"]
+  },
+  {
+    "id": "person_leon_pinsker",
+    "type": "person",
+    "name": "Leon Pinsker",
+    "side": "Israeli",
+    "birth_date": "1821-12-25",
+    "death_date": "1891-12-21",
+    "wikidata_id": "Q435310",
+    "historical_significance": "Physician and leader of the Hovevei Zion (Lovers of Zion) movement; author of 'Auto-Emancipation' (1882) urging Jews to secure their own land.",
+    "keywords": ["pinsker", "leon pinsker", "פינסקר", "יהודה לייב פינסקר", "ليון פינסקר"]
+  },
+  {
+    "id": "person_theodor_herzl",
+    "type": "person",
+    "name": "Theodor Herzl",
+    "side": "Israeli",
+    "birth_date": "1860-05-02",
+    "death_date": "1904-07-03",
+    "wikidata_id": "Q44003",
+    "historical_significance": "Father of modern political Zionism; formed the Zionist Organization and convened the First Zionist Congress in Basel in 1897.",
+    "keywords": ["herzl", "theodor herzl", "הרצל", "בנימין זאב הרצל", "הירצל", "ثيודור هرتזל", "هرتזל"]
+  },
+  {
+    "id": "person_eliezer_ben_yehuda",
+    "type": "person",
+    "name": "Eliezer Ben-Yehuda",
+    "side": "Israeli",
+    "birth_date": "1858-01-07",
+    "death_date": "1922-12-16",
+    "wikidata_id": "Q181262",
+    "historical_significance": "The driving force behind the modern revival of the Hebrew language, transforming it into a spoken national tongue to unify early immigrants.",
+    "keywords": ["ben-yehuda", "ben yehuda", "אליעזר בן-יהודה", "בן יהודה", "أليעזיר בן-יהודה", "إليعזר בן יהודה"]
+  },
+  {
+    "id": "person_chaim_weizmann",
+    "type": "person",
+    "name": "Chaim Weizmann",
+    "side": "Israeli",
+    "birth_date": "1874-11-27",
+    "death_date": "1952-11-09",
+    "wikidata_id": "Q184368",
+    "historical_significance": "Chemist and Zionist diplomat whose lobbying directly secured the British Balfour Declaration in 1917; later became the first President of Israel.",
+    "keywords": ["weizmann", "chaim weizmann", "חיים ויצמן", "ויצמן", "حايم وايزמן", "وايزמן"]
+  },
+  {
+    "id": "person_begin",
+    "english_title": "Menachem_Begin",
+    "side": "Israeli",
+    "keywords": ["begin", "menachem begin", "بيجن", "בגין"],
+    "affiliations": [
+      { "group_id": "group_irgun", "role": "Commander", "start": "1943", "end": "1948" }
+    ]
+  },
+  {
+    "id": "person_ben_gurion",
+    "type": "person",
+    "name": "David Ben-Gurion",
+    "side": "Israeli",
+    "keywords": ["ben-gurion", "بن غوريون", "בן-גוריון"],
+    "affiliations": [
+      {
+        "group_id": "group_haganah",
+        "role": "Chairman of Executive / De Facto Leader",
+        "start": "1935-01-01",
+        "end": "1948-05-28"
+      },
+      {
+        "group_id": "group_israeli_govt",
+        "role": "Prime Minister & Minister of Defense",
+        "start": "1948-05-17",
+        "end": "1963-06-26"
+      }
+    ]
+  }
+]

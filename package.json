@@ -1,0 +1,28 @@
+{
+  "name": "middle-east-historic-timeline",
+  "version": "1.0.0",
+  "description": "Automated multi-language extraction pipeline for historic volatile events",
+  "main": "parse.js",
+  "scripts": {
+    "build": "npm run download && npm run prepare && npm run parse",
+    "download": "node download.js",
+    "parse": "node parse.js",
+    "prepare": "node prepare.js",
+    "start": "http-server public -p 8080"
+  },
+  "keywords": [
+    "history",
+    "timeline",
+    "wikipedia",
+    "gantt",
+    "static-site"
+  ],
+  "author": "David Bruchmann",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.2.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

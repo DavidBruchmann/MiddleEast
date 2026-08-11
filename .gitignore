@@ -1,0 +1,17 @@
+# Dependency tracking folders
+node_modules/
+npm-debug.log*
+
+# LOCAL RAW CACHE (Do not commit to GitHub)
+wikipedia_cache/
+.WIP/
+public/generated/
+!public/generated/.gitkeep
+
+# Local database experiments if you run them later
+*.db
+*.sqlite
+
+# Operating system trash files
+.DS_Store
+Thumbs.db

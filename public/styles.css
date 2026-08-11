@@ -1,0 +1,164 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f8f9fa;
+    color: #212529;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 24px;
+    color: #1a1d20;
+    margin-bottom: 5px;
+}
+.meta-desc {
+    color: #6c757d;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.control-panel {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+select {
+    padding: 8px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+    min-width: 200px;
+}
+#timeline {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+/* Custom styles for Vis.js Timeline bars */
+.vis-item {
+    background-color: #e7f1ff;
+    border-color: #9ec5fe;
+    color: #0a58ca;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.vis-item.vis-selected {
+    background-color: #0d6efd !important;
+    border-color: #0d6efd !important;
+    color: white !important;
+}
+/* Info Drawer Popup Panel styles */
+.details-drawer {
+    margin-top: 25px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: none;
+}
+.badge-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+.wiki-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #495057;
+    background: #e9ecef;
+    border: 1px solid #dee2e6;
+    transition: all 0.2s;
+}
+.wiki-badge:hover {
+    background: #adb5bd;
+    color: white;
+    transform: translateY(-1px);
+}
+.wiki-badge .size {
+    font-weight: 400;
+    opacity: 0.7;
+}
+.tag {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    background: #ffe6e6;
+    color: #cc0000;
+    text-transform: uppercase;
+}
+.lane-label {
+    font-weight: bold;
+    font-size: 13px;
+    display: block;
+    padding: 4px;
+}
+.lane-label.israeli {
+    color: #0a58ca;
+    border-left: 3px solid #0a58ca;
+    padding-left: 8px;
+}
+.lane-label.palestinian {
+    color: #cc0000;
+    border-left: 3px solid #cc0000;
+    padding-left: 8px;
+}
+/* Position the hidden tooltip panel card securely relative to your row layout */
+div.custom-v-tooltip-wrapper div.custom-v-tooltip-pane {
+    display: none !important;
+    position: absolute !important;
+    bottom: 105%; /* Sits cleanly above the hovered row block element */
+    left: 15px;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    pointer-events: none; /* Stops the popup frame boundaries from hijacking mouse clicks */
+}
+
+/* Ensure overlapping overflowing texts do not block cursor clicks */
+.vis-item {
+    overflow: visible !important;
+}
+.vis-item.vis-range .vis-item-overflow {
+    overflow: visible !important;
+}
+div.custom-v-tooltip-wrapper {
+    position: relative !important;
+}
+/* Toggle visibility instantly on mouse hover */
+div.custom-v-tooltip-wrapper:hover div.custom-v-tooltip-pane {
+    display: block !important;
+}
+/* Force text to remain visible even when the timeline range bar narrows */
+.vis-item .vis-item-content,
+.vis-item-overflow {
+    overflow: visible !important;
+    white-wrap: nowrap !important;
+    padding-left: 8px;
+    padding-right: 8px;
+}

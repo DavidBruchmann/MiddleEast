@@ -1,0 +1,33 @@
+{
+  "ev_1948_arab–israeli_war": {
+    "override_title": "1948 Arab–Israeli War",
+    "override_start": "1948-05-15",
+    "override_end": "1949-03-10"
+  },
+  "ev_balfour_declaration": {
+    "override_title": "Balfour Declaration",
+    "override_start": "1917-11-02",
+    "override_end": null
+  },
+  "ev_fatah": {
+    "override_title": "Founding of Fatah",
+    "override_start": "1959-10-10",
+    "override_end": null
+  },
+  "ev_haganah": {
+    "override_title": "Haganah Activity Era",
+    "override_start": "1920-06-15",
+    "override_end": "1948-05-28"
+  },
+  "ev_irgun": {
+    "override_title": "Irgun Activity Era",
+    "override_start": "1931-04-10",
+    "override_end": "1948-09-20"
+  },
+  "ev_nakba": {
+    "override_title": "The Nakba",
+    "override_start": "1947-12-31",
+    "override_end": "2026-08-03",
+    "perp_ids": ["haganah", "irgun", "idf"]
+  }
+}
