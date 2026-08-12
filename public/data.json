@@ -1,0 +1,1025 @@
+{
+  "events": [
+    {
+      "id": "ev_avraham_stern",
+      "wikidata_id": "Q461846",
+      "title": "Avraham Stern",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "أبراهام_شتيرن",
+          "lang": "ar",
+          "strlength": 1916
+        },
+        {
+          "slug": "Avraham_Stern",
+          "lang": "de",
+          "strlength": 12216
+        },
+        {
+          "slug": "Avraham_Stern",
+          "lang": "en",
+          "strlength": 18589
+        },
+        {
+          "slug": "Abraham_Stern",
+          "lang": "es",
+          "strlength": 6320
+        },
+        {
+          "slug": "Avraham_Stern",
+          "lang": "fr",
+          "strlength": 5747
+        },
+        {
+          "slug": "אברהם_שטרן_(יאיר)",
+          "lang": "he",
+          "strlength": 23055
+        }
+      ]
+    },
+    {
+      "id": "ev_amin_al-husseini",
+      "wikidata_id": "Q164745",
+      "title": "Amin al-Husseini",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "أمين_الحسيني",
+          "lang": "ar",
+          "strlength": 132736
+        },
+        {
+          "slug": "Mohammed_Amin_al-Husseini",
+          "lang": "de",
+          "strlength": 95230
+        },
+        {
+          "slug": "Amin_al-Husseini",
+          "lang": "en",
+          "strlength": 178346
+        },
+        {
+          "slug": "Mohammed_Amin_al-Husseini",
+          "lang": "fr",
+          "strlength": 65207
+        },
+        {
+          "slug": "Amin_al-Husayni",
+          "lang": "id",
+          "strlength": 8352
+        }
+      ]
+    },
+    {
+      "id": "ev_irgun",
+      "wikidata_id": "Q207913",
+      "title": "Irgun",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "إرجون_(منظمة_عسكرية)",
+          "lang": "ar",
+          "strlength": 7402
+        },
+        {
+          "slug": "Irgun_Zwai_Leumi",
+          "lang": "de",
+          "strlength": 20995
+        },
+        {
+          "slug": "Irgun",
+          "lang": "en",
+          "strlength": 102826
+        },
+        {
+          "slug": "Irgún",
+          "lang": "es",
+          "strlength": 85701
+        },
+        {
+          "slug": "Irgoun",
+          "lang": "fr",
+          "strlength": 89687
+        },
+        {
+          "slug": "ארגון_צבאי_לאומי",
+          "lang": "he",
+          "strlength": 79388
+        },
+        {
+          "slug": "Irgun",
+          "lang": "id",
+          "strlength": 821
+        }
+      ]
+    },
+    {
+      "id": "ev_eliezer_ben-yehuda",
+      "wikidata_id": "Q181728",
+      "title": "Eliezer Ben-Yehuda",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "إليعيزر_بن_يهودا",
+          "lang": "ar",
+          "strlength": 4396
+        },
+        {
+          "slug": "Eliezer_Ben-Jehuda",
+          "lang": "de",
+          "strlength": 13696
+        },
+        {
+          "slug": "Eliezer_Ben-Yehuda",
+          "lang": "en",
+          "strlength": 14028
+        },
+        {
+          "slug": "Eliezer_Ben_Yehuda",
+          "lang": "es",
+          "strlength": 8051
+        },
+        {
+          "slug": "Éliézer_Ben-Yehoudah",
+          "lang": "fr",
+          "strlength": 28627
+        },
+        {
+          "slug": "אליעזר_בן-יהודה",
+          "lang": "he",
+          "strlength": 29661
+        },
+        {
+          "slug": "Eliezer_Ben-Yehuda",
+          "lang": "id",
+          "strlength": 4458
+        }
+      ]
+    },
+    {
+      "id": "ev_1948_arab–israeli_war",
+      "wikidata_id": "Q49092",
+      "title": "1948 Arab–Israeli War",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "الحرب_العربية_الإسرائيلية_1948",
+          "lang": "ar",
+          "strlength": 166584
+        },
+        {
+          "slug": "1948_Arab–Israeli_War",
+          "lang": "en",
+          "strlength": 204210
+        },
+        {
+          "slug": "Guerra_árabe-israelí_de_1948",
+          "lang": "es",
+          "strlength": 38997
+        },
+        {
+          "slug": "Guerre_israélo-arabe_de_1948-1949",
+          "lang": "fr",
+          "strlength": 115340
+        },
+        {
+          "slug": "Perang_Arab–Israel_1948",
+          "lang": "id",
+          "strlength": 111231
+        }
+      ]
+    },
+    {
+      "id": "ev_zvi_hirsch_kalischer",
+      "wikidata_id": "Q244522",
+      "title": "Zvi Hirsch Kalischer",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "تسفي_هيرش_كاليشر",
+          "lang": "ar",
+          "strlength": 1109
+        },
+        {
+          "slug": "Zwi_Hirsch_Kalischer",
+          "lang": "de",
+          "strlength": 3515
+        },
+        {
+          "slug": "Zvi_Hirsch_Kalischer",
+          "lang": "en",
+          "strlength": 8410
+        },
+        {
+          "slug": "Zvi_Hirsch_Kalischer",
+          "lang": "es",
+          "strlength": 1871
+        },
+        {
+          "slug": "Tzvi_Hirsh_Kalisher",
+          "lang": "fr",
+          "strlength": 2169
+        },
+        {
+          "slug": "צבי_הירש_קלישר",
+          "lang": "he",
+          "strlength": 11485
+        },
+        {
+          "slug": "Zvi_Hirsch_Kalischer",
+          "lang": "id",
+          "strlength": 992
+        }
+      ]
+    },
+    {
+      "id": "ev_theodor_herzl",
+      "wikidata_id": "Q44003",
+      "title": "Theodor Herzl",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "تيودور_هرتزل",
+          "lang": "ar",
+          "strlength": 16634
+        },
+        {
+          "slug": "Theodor_Herzl",
+          "lang": "de",
+          "strlength": 38212
+        },
+        {
+          "slug": "Theodor_Herzl",
+          "lang": "en",
+          "strlength": 74238
+        },
+        {
+          "slug": "Theodor_Herzl",
+          "lang": "es",
+          "strlength": 18440
+        },
+        {
+          "slug": "Theodor_Herzl",
+          "lang": "fr",
+          "strlength": 41622
+        },
+        {
+          "slug": "בנימין_זאב_הרצל",
+          "lang": "he",
+          "strlength": 167132
+        },
+        {
+          "slug": "Theodor_Herzl",
+          "lang": "id",
+          "strlength": 7327
+        }
+      ]
+    },
+    {
+      "id": "ev_fatah",
+      "wikidata_id": "Q178888",
+      "title": "Fatah",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "حركة_فتح",
+          "lang": "ar",
+          "strlength": 12817
+        },
+        {
+          "slug": "Fatah",
+          "lang": "de",
+          "strlength": 22867
+        },
+        {
+          "slug": "Fatah",
+          "lang": "en",
+          "strlength": 41211
+        },
+        {
+          "slug": "Fatah",
+          "lang": "es",
+          "strlength": 12413
+        },
+        {
+          "slug": "Fatah",
+          "lang": "fr",
+          "strlength": 15822
+        },
+        {
+          "slug": "פת\"ח",
+          "lang": "he",
+          "strlength": 20069
+        },
+        {
+          "slug": "Fatah",
+          "lang": "id",
+          "strlength": 2655
+        }
+      ]
+    },
+    {
+      "id": "ev_lehi_(militant_group)",
+      "wikidata_id": "Q293332",
+      "title": "Lehi (militant group)",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "شتيرن",
+          "lang": "ar",
+          "strlength": 4243
+        },
+        {
+          "slug": "Lechi",
+          "lang": "de",
+          "strlength": 12646
+        },
+        {
+          "slug": "Lehi_(militant_group)",
+          "lang": "en",
+          "strlength": 62529
+        },
+        {
+          "slug": "Leji",
+          "lang": "es",
+          "strlength": 24743
+        },
+        {
+          "slug": "Lehi",
+          "lang": "fr",
+          "strlength": 69161
+        },
+        {
+          "slug": "לוחמי_חרות_ישראל",
+          "lang": "he",
+          "strlength": 31633
+        },
+        {
+          "slug": "Lehi_(kelompok)",
+          "lang": "id",
+          "strlength": 7467
+        }
+      ]
+    },
+    {
+      "id": "ev_zionism",
+      "wikidata_id": "Q42388",
+      "title": "Zionism",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "صهيونية",
+          "lang": "ar",
+          "strlength": 62513
+        },
+        {
+          "slug": "Zionismus",
+          "lang": "de",
+          "strlength": 91223
+        },
+        {
+          "slug": "Zionism",
+          "lang": "en",
+          "strlength": 304754
+        },
+        {
+          "slug": "Sionismo",
+          "lang": "es",
+          "strlength": 54624
+        },
+        {
+          "slug": "Sionisme",
+          "lang": "fr",
+          "strlength": 65315
+        },
+        {
+          "slug": "ציונות",
+          "lang": "he",
+          "strlength": 56121
+        },
+        {
+          "slug": "Zionisme",
+          "lang": "id",
+          "strlength": 16241
+        }
+      ]
+    },
+    {
+      "id": "ev_aliyah",
+      "wikidata_id": "Q597260",
+      "title": "Aliyah",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "عليا_(مصطلح)",
+          "lang": "ar",
+          "strlength": 10142
+        },
+        {
+          "slug": "Alija",
+          "lang": "de",
+          "strlength": 27947
+        },
+        {
+          "slug": "Aliyah",
+          "lang": "en",
+          "strlength": 109680
+        },
+        {
+          "slug": "Aliá",
+          "lang": "es",
+          "strlength": 8117
+        },
+        {
+          "slug": "Alya",
+          "lang": "fr",
+          "strlength": 23108
+        },
+        {
+          "slug": "עלייה_לארץ_ישראל",
+          "lang": "he",
+          "strlength": 24704
+        },
+        {
+          "slug": "Aliyah",
+          "lang": "id",
+          "strlength": 19039
+        }
+      ]
+    },
+    {
+      "id": "ev_leon_pinsker",
+      "wikidata_id": "Q962710",
+      "title": "Leon Pinsker",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "ليون_بينسكر",
+          "lang": "ar",
+          "strlength": 3165
+        },
+        {
+          "slug": "Leo_Pinsker",
+          "lang": "de",
+          "strlength": 6295
+        },
+        {
+          "slug": "Leon_Pinsker",
+          "lang": "en",
+          "strlength": 7433
+        },
+        {
+          "slug": "León_Pinsker",
+          "lang": "es",
+          "strlength": 2793
+        },
+        {
+          "slug": "Léon_Pinsker",
+          "lang": "fr",
+          "strlength": 2038
+        },
+        {
+          "slug": "יהודה_לייב_פינסקר",
+          "lang": "he",
+          "strlength": 23066
+        },
+        {
+          "slug": "Leon_Pinsker",
+          "lang": "id",
+          "strlength": 921
+        }
+      ]
+    },
+    {
+      "id": "ev_moses_hess",
+      "wikidata_id": "Q213565",
+      "title": "Moses Hess",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "موزس_هس",
+          "lang": "ar",
+          "strlength": 1739
+        },
+        {
+          "slug": "Moses_Hess",
+          "lang": "de",
+          "strlength": 22002
+        },
+        {
+          "slug": "Moses_Hess",
+          "lang": "en",
+          "strlength": 32585
+        },
+        {
+          "slug": "Moses_Hess",
+          "lang": "es",
+          "strlength": 2394
+        },
+        {
+          "slug": "Moses_Hess",
+          "lang": "fr",
+          "strlength": 11709
+        },
+        {
+          "slug": "משה_הס",
+          "lang": "he",
+          "strlength": 8498
+        },
+        {
+          "slug": "Moses_Hess",
+          "lang": "id",
+          "strlength": 2204
+        }
+      ]
+    },
+    {
+      "id": "ev_haganah",
+      "wikidata_id": "Q252054",
+      "title": "Haganah",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "هاغاناه",
+          "lang": "ar",
+          "strlength": 4940
+        },
+        {
+          "slug": "Hagana",
+          "lang": "de",
+          "strlength": 29541
+        },
+        {
+          "slug": "Haganah",
+          "lang": "en",
+          "strlength": 29956
+        },
+        {
+          "slug": "Haganá",
+          "lang": "es",
+          "strlength": 25965
+        },
+        {
+          "slug": "Haganah",
+          "lang": "fr",
+          "strlength": 23788
+        },
+        {
+          "slug": "ההגנה",
+          "lang": "he",
+          "strlength": 69939
+        },
+        {
+          "slug": "Haganah",
+          "lang": "id",
+          "strlength": 6832
+        }
+      ]
+    },
+    {
+      "id": "ev_balfour_declaration",
+      "wikidata_id": "Q187152",
+      "title": "Balfour Declaration",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "وعد_بلفور",
+          "lang": "ar",
+          "strlength": 151981
+        },
+        {
+          "slug": "Balfour-Deklaration",
+          "lang": "de",
+          "strlength": 19133
+        },
+        {
+          "slug": "Balfour_Declaration",
+          "lang": "en",
+          "strlength": 201854
+        },
+        {
+          "slug": "Declaración_Balfour",
+          "lang": "es",
+          "strlength": 161386
+        },
+        {
+          "slug": "Déclaration_Balfour_de_1917",
+          "lang": "fr",
+          "strlength": 24957
+        },
+        {
+          "slug": "הצהרת_בלפור",
+          "lang": "he",
+          "strlength": 28800
+        },
+        {
+          "slug": "Deklarasi_Balfour",
+          "lang": "id",
+          "strlength": 215571
+        }
+      ]
+    },
+    {
+      "id": "ev_old_yishuv",
+      "wikidata_id": "Q2845775",
+      "title": "Old Yishuv",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "يشوب_قديم",
+          "lang": "ar",
+          "strlength": 3867
+        },
+        {
+          "slug": "Old_Yishuv",
+          "lang": "en",
+          "strlength": 29181
+        },
+        {
+          "slug": "Vieux_Yichouv",
+          "lang": "fr",
+          "strlength": 13890
+        },
+        {
+          "slug": "היישוב_הישן",
+          "lang": "he",
+          "strlength": 67821
+        },
+        {
+          "slug": "Yishuv_lama",
+          "lang": "id",
+          "strlength": 4677
+        }
+      ]
+    },
+    {
+      "id": "ev_yishuv",
+      "wikidata_id": "Q1356549",
+      "title": "Yishuv",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "يشوف",
+          "lang": "ar",
+          "strlength": 18666
+        },
+        {
+          "slug": "Jischuv",
+          "lang": "de",
+          "strlength": 11667
+        },
+        {
+          "slug": "Yishuv",
+          "lang": "en",
+          "strlength": 42742
+        },
+        {
+          "slug": "Yishuv",
+          "lang": "es",
+          "strlength": 2519
+        },
+        {
+          "slug": "Yichouv",
+          "lang": "fr",
+          "strlength": 3913
+        },
+        {
+          "slug": "היישוב",
+          "lang": "he",
+          "strlength": 22706
+        }
+      ]
+    },
+    {
+      "id": "ev_yehuda_alkalai",
+      "wikidata_id": "Q651247",
+      "title": "Yehuda Alkalai",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "يهوذا_الكالاي",
+          "lang": "ar",
+          "strlength": 1330
+        },
+        {
+          "slug": "Judah_Alkalai",
+          "lang": "de",
+          "strlength": 2184
+        },
+        {
+          "slug": "Yehuda_Hay_Alkalai",
+          "lang": "es",
+          "strlength": 3030
+        },
+        {
+          "slug": "Yehouda_Hay_Alkalay",
+          "lang": "fr",
+          "strlength": 1832
+        },
+        {
+          "slug": "Judah_Alkalai",
+          "lang": "id",
+          "strlength": 1106
+        }
+      ]
+    },
+    {
+      "id": "ev_chaim_weizmann",
+      "wikidata_id": "Q172183",
+      "title": "Chaim Weizmann",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Chaim_Weizmann",
+          "lang": "de",
+          "strlength": 19059
+        },
+        {
+          "slug": "Chaim_Weizmann",
+          "lang": "en",
+          "strlength": 62808
+        },
+        {
+          "slug": "Jaim_Weizmann",
+          "lang": "es",
+          "strlength": 13324
+        },
+        {
+          "slug": "Chaim_Weizmann",
+          "lang": "id",
+          "strlength": 5494
+        }
+      ]
+    },
+    {
+      "id": "ev_françois_georges-picot",
+      "wikidata_id": null,
+      "title": "François Georges-Picot",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "François_Georges-Picot",
+          "lang": "de",
+          "strlength": 2136
+        },
+        {
+          "slug": "François_Georges-Picot",
+          "lang": "en",
+          "strlength": 3784
+        }
+      ]
+    },
+    {
+      "id": "ev_mark_sykes",
+      "wikidata_id": null,
+      "title": "Mark Sykes",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Mark_Sykes",
+          "lang": "de",
+          "strlength": 8510
+        },
+        {
+          "slug": "Mark_Sykes",
+          "lang": "en",
+          "strlength": 29587
+        }
+      ]
+    },
+    {
+      "id": "ev_menachem_begin",
+      "wikidata_id": "Q130873",
+      "title": "Menachem Begin",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Menachem_Begin",
+          "lang": "de",
+          "strlength": 27909
+        },
+        {
+          "slug": "Menachem_Begin",
+          "lang": "en",
+          "strlength": 83801
+        }
+      ]
+    },
+    {
+      "id": "ev_neville_chamberlain",
+      "wikidata_id": null,
+      "title": "Neville Chamberlain",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Neville_Chamberlain",
+          "lang": "de",
+          "strlength": 23868
+        },
+        {
+          "slug": "Neville_Chamberlain",
+          "lang": "en",
+          "strlength": 107063
+        }
+      ]
+    },
+    {
+      "id": "ev_peel_commission",
+      "wikidata_id": "Q655894",
+      "title": "Peel Commission",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Peel-Kommission",
+          "lang": "de",
+          "strlength": 25202
+        },
+        {
+          "slug": "Peel_Commission",
+          "lang": "en",
+          "strlength": 29861
+        },
+        {
+          "slug": "Comisión_Peel",
+          "lang": "es",
+          "strlength": 23742
+        },
+        {
+          "slug": "Commission_Peel",
+          "lang": "fr",
+          "strlength": 2129
+        }
+      ]
+    },
+    {
+      "id": "ev_regierung_des_vereinigten_königreichs",
+      "wikidata_id": null,
+      "title": "Regierung des Vereinigten Königreichs",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Regierung_des_Vereinigten_Königreichs",
+          "lang": "de",
+          "strlength": 8512
+        }
+      ]
+    },
+    {
+      "id": "ev_st.-james-konferenz",
+      "wikidata_id": null,
+      "title": "St.-James-Konferenz",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "St.-James-Konferenz",
+          "lang": "de",
+          "strlength": 11746
+        }
+      ]
+    },
+    {
+      "id": "ev_sykes-picot-abkommen",
+      "wikidata_id": null,
+      "title": "Sykes-Picot-Abkommen",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Sykes-Picot-Abkommen",
+          "lang": "de",
+          "strlength": 11572
+        }
+      ]
+    },
+    {
+      "id": "ev_un-teilungsplan_für_palästina",
+      "wikidata_id": null,
+      "title": "UN-Teilungsplan für Palästina",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "UN-Teilungsplan_für_Palästina",
+          "lang": "de",
+          "strlength": 120418
+        }
+      ]
+    },
+    {
+      "id": "ev_weißbuch_von_1939",
+      "wikidata_id": null,
+      "title": "Weißbuch von 1939",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Weißbuch_von_1939",
+          "lang": "de",
+          "strlength": 6445
+        }
+      ]
+    },
+    {
+      "id": "ev_sykes–picot_agreement",
+      "wikidata_id": null,
+      "title": "Sykes–Picot Agreement",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Sykes–Picot_Agreement",
+          "lang": "en",
+          "strlength": 74605
+        }
+      ]
+    },
+    {
+      "id": "ev_united_nations_partition_plan_for_palestine",
+      "wikidata_id": null,
+      "title": "United Nations Partition Plan for Palestine",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "United_Nations_Partition_Plan_for_Palestine",
+          "lang": "en",
+          "strlength": 99683
+        }
+      ]
+    },
+    {
+      "id": "ev_white_paper_of_1939",
+      "wikidata_id": null,
+      "title": "White Paper of 1939",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "White_Paper_of_1939",
+          "lang": "en",
+          "strlength": 33479
+        }
+      ]
+    }
+  ],
+  "perpetrators": []
+}

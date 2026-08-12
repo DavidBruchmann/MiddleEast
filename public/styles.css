@@ -1,82 +1,186 @@
+/*
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #f8f9fa;
+    background: #f4f6f9;
     color: #212529;
     margin: 0;
     padding: 20px;
-}
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-h1 {
-    font-size: 24px;
-    color: #1a1d20;
-    margin-bottom: 5px;
-}
-.meta-desc {
-    color: #6c757d;
-    margin-bottom: 25px;
-    font-size: 14px;
-}
-.control-panel {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-label {
-    font-weight: 600;
-    font-size: 14px;
-}
-select {
-    padding: 8px 12px;
-    border: 1px solid #ced4da;
-    border-radius: 4px;
-    font-size: 14px;
-    background: white;
-    cursor: pointer;
-    min-width: 200px;
-}
-#timeline {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     overflow: hidden;
 }
-/* Custom styles for Vis.js Timeline bars */
+#bgImageLayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    pointer-events: none;
+    display: none;
+}
+#bgOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    pointer-events: none;
+}
+.global-lang-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 25px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    z-index: 10;
+}
+.lang-switch-btn {
+    background: white;
+    border: 1px solid #ced4da;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #495057;
+    transition: all 0.2s;
+}
+.lang-switch-btn:hover,
+.lang-switch-btn.active-lang {
+    background: #4e73df;
+    color: white;
+    border-color: #4e73df;
+}
+.layout-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: calc(100vh - 40px);
+}
+.timeline-wrapper {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 15px;
+    min-height: 250px;
+}
+#timelineContainer {
+    border: 1px solid #e3e6f0;
+    border-radius: 6px;
+    overflow: hidden;
+    background: white;
+}
 .vis-item {
-    background-color: #e7f1ff;
-    border-color: #9ec5fe;
-    color: #0a58ca;
-    font-size: 13px;
+    background-color: #eaecf4;
+    border-color: #dddfeb;
+    font-size: 12px;
     font-weight: 500;
     border-radius: 4px;
+    padding: 4px 8px;
     cursor: pointer;
 }
 .vis-item.vis-selected {
-    background-color: #0d6efd !important;
-    border-color: #0d6efd !important;
+    background-color: #4e73df !important;
+    border-color: #4e73df !important;
     color: white !important;
 }
-/* Info Drawer Popup Panel styles */
-.details-drawer {
-    margin-top: 25px;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    display: none;
+.vis-item .vis-item-content {
+    overflow: visible !important;
+    white-space: nowrap !important;
 }
-.badge-container {
+.vis-item.vis-range, .vis-item.vis-point {
+    overflow: visible !important;
+}
+.bottom-split {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+    flex-grow: 1;
+    min-height: 0;
+}
+.inspector-panel {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    padding: 40px;
     display: flex;
-    gap: 10px;
-    margin-top: 15px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    overflow-y: auto;
+}
+.inspector-content-box {
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+}
+.inspector-content-box[dir="ltr"] {
+    text-align: left;
+}
+.inspector-content-box[dir="rtl"] {
+    text-align: right;
+}
+.list-sidebar {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sidebar-header {
+    padding: 15px;
+    background: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+}
+.search-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d3e2;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.list-scroll-area {
+    padding: 15px 0;
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.event-list-card {
+    background: #f8f9fc;
+    padding: 10px 14px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.event-list-card:hover {
+    background: #f1f3f9;
+    transform: translateX(2px);
+}
+.event-list-card .date {
+    font-weight: bold;
+    font-size: 11px;
+    color: #4e73df;
+}
+.event-list-card h4 {
+    margin: 2px 0 0 0;
+    font-size: 14px;
+    color: #2e59d9;
 }
 .wiki-badge {
     display: inline-flex;
@@ -90,75 +194,88 @@ select {
     color: #495057;
     background: #e9ecef;
     border: 1px solid #dee2e6;
-    transition: all 0.2s;
+    margin-right: 8px;
+    margin-top: 12px;
 }
 .wiki-badge:hover {
     background: #adb5bd;
     color: white;
-    transform: translateY(-1px);
 }
-.wiki-badge .size {
-    font-weight: 400;
-    opacity: 0.7;
-}
-.tag {
-    font-size: 11px;
-    padding: 3px 8px;
-    border-radius: 4px;
-    font-weight: bold;
-    background: #ffe6e6;
-    color: #cc0000;
-    text-transform: uppercase;
-}
-.lane-label {
-    font-weight: bold;
-    font-size: 13px;
-    display: block;
-    padding: 4px;
-}
-.lane-label.israeli {
-    color: #0a58ca;
-    border-left: 3px solid #0a58ca;
-    padding-left: 8px;
-}
-.lane-label.palestinian {
-    color: #cc0000;
-    border-left: 3px solid #cc0000;
-    padding-left: 8px;
-}
-/* Position the hidden tooltip panel card securely relative to your row layout */
-div.custom-v-tooltip-wrapper div.custom-v-tooltip-pane {
-    display: none !important;
-    position: absolute !important;
-    bottom: 105%; /* Sits cleanly above the hovered row block element */
-    left: 15px;
-    background: white;
-    border: 1px solid #dee2e6;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    z-index: 1000;
-    pointer-events: none; /* Stops the popup frame boundaries from hijacking mouse clicks */
+*/
+/* ==========================================================================
+   WCAG High-Contrast Theme Root Matrix Variables (AAA Level Contrast)
+   ========================================================================== */
+:root, [data-theme="light"] {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fa;
+    --border-color: #212529; /* Explicit dark border boundaries */
+    --text-main: #111111;
+    --text-muted: #495057;
+    --accent-blue: #0044cc;   /* High-contrast WCAG royal blue */
+    --vis-item-bg: #f0f4ff;
 }
 
-/* Ensure overlapping overflowing texts do not block cursor clicks */
-.vis-item {
-    overflow: visible !important;
+[data-theme="dark"] {
+    --bg-primary: #121212;
+    --bg-secondary: #1e1e1e;
+    --border-color: #e9ecef;
+    --text-main: #ffffff;
+    --text-muted: #ced4da;
+    --accent-blue: #66b2ff;   /* High-contrast accessible light blue */
+    --vis-item-bg: #2d3748;
 }
-.vis-item.vis-range .vis-item-overflow {
-    overflow: visible !important;
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg-secondary); color: var(--text-main); margin: 0; padding: 20px; overflow: hidden;
 }
-div.custom-v-tooltip-wrapper {
-    position: relative !important;
+
+.layout-grid { display: flex; flex-direction: column; gap: 20px; max-width: 1600px; margin: 0 auto; height: calc(100vh - 40px); position: relative; }
+
+/* Upper Right Fixed Controls Station */
+.upper-controls-deck {
+    position: absolute; top: 0; right: 0; height: 30px; display: flex; gap: 15px; align-items: center; z-index: 10;
 }
-/* Toggle visibility instantly on mouse hover */
-div.custom-v-tooltip-wrapper:hover div.custom-v-tooltip-pane {
-    display: block !important;
+.theme-switch-btn, .lang-switch-btn {
+    background: var(--bg-primary); border: 2px solid var(--border-color); padding: 4px 10px;
+    border-radius: 4px; font-size: 12px; font-weight: bold; cursor: pointer; color: var(--text-main);
 }
-/* Force text to remain visible even when the timeline range bar narrows */
-.vis-item .vis-item-content,
-.vis-item-overflow {
-    overflow: visible !important;
-    white-wrap: nowrap !important;
-    padding-left: 8px;
-    padding-right: 8px;
+.lang-switch-btn.active-lang { background: var(--accent-blue); color: #fff; border-color: var(--accent-blue); }
+
+/* Timeline Wrapper Area */
+.timeline-wrapper { background: var(--bg-primary); border: 2px solid var(--border-color); border-radius: 8px; padding: 15px; min-height: 250px; }
+#timelineContainer { border: 1px solid var(--border-color); background: var(--bg-primary); }
+
+/* Vis.js Canvas Element Overrides (High-Contrast Text Rules) */
+.vis-item { background-color: var(--vis-item-bg) !important; border: 2px solid var(--border-color) !important; color: var(--text-main) !important; font-weight: 700 !important; }
+.vis-item.vis-selected { border-color: var(--accent-blue) !important; background-color: var(--accent-blue) !important; color: #ffffff !important; }
+.vis-item .vis-item-content { overflow: visible !important; white-space: nowrap !important; }
+.vis-time-axis .vis-text { color: var(--text-main) !important; font-weight: bold !important; }
+
+/* Bottom Split Layout Frame */
+.bottom-split { display: grid; grid-template-columns: 1fr 400px; gap: 20px; flex-grow: 1; min-height: 0; }
+
+/* 6) Center-Mounted Rect Inspector Panel Layout */
+.inspector-panel { background: var(--bg-primary); border: 2px solid var(--border-color); border-radius: 8px; padding: 30px; display: flex; flex-direction: column; overflow-y: auto; }
+.inspector-content-box { max-width: 650px; width: 100%; margin: 0 auto; display: flex; flex-direction: column; }
+.inspector-content-box[dir="ltr"] { text-align: left; }
+.inspector-content-box[dir="rtl"] { text-align: right; }
+
+/* 2) Center-Mounted Image Frame sitting ABOVE descriptions text panels */
+.inspector-hero-img {
+    width: 100%; max-height: 220px; object-fit: cover; border-radius: 6px; border: 2px solid var(--border-color);
+    margin-bottom: 20px; display: none; opacity: 0; transition: opacity 0.4s ease-in-out;
 }
+
+/* Sidebar List elements presentation layout styles */
+.list-sidebar { background: var(--bg-primary); border: 2px solid var(--border-color); border-radius: 8px; display: flex; flex-direction: column; overflow: hidden; }
+.sidebar-header { padding: 15px; background: var(--bg-secondary); border-bottom: 2px solid var(--border-color); }
+.search-box { width: 100%; padding: 10px; background: var(--bg-primary); color: var(--text-main); border: 2px solid var(--border-color); border-radius: 4px; font-size: 14px; font-weight: bold; }
+.list-scroll-area { padding: 15px; overflow-y: auto; flex-grow: 1; display: flex; flex-direction: column; gap: 10px; }
+
+.event-list-card { background: var(--bg-secondary); border: 2px solid var(--border-color); border-left-width: 6px; border-left-color: var(--accent-blue); padding: 10px 14px; border-radius: 4px; cursor: pointer; }
+.event-list-card:hover { opacity: 0.85; }
+.event-list-card .date { font-weight: 900; font-size: 12px; color: var(--accent-blue); }
+.event-list-card h4 { margin: 2px 0 0 0; font-size: 14px; color: var(--text-main); }
+
+.wiki-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: bold; text-decoration: none; color: var(--text-main); background: var(--bg-secondary); border: 2px solid var(--border-color); margin-right: 8px; margin-top: 12px; }

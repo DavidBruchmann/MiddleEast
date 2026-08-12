@@ -49,11 +49,13 @@ const TARGET_ARTICLES = [
 const BASE_CACHE_DIR = path.join(__dirname, 'wikipedia_cache');
 const REGISTRY_FILE = path.join(BASE_CACHE_DIR, 'cache_registry.json');
 const TARGET_LANGS =  [
-    'ar',
     'en',
     'de',
-    'he'
-
+    'fr',
+    'es',
+    'ar',
+    'he',
+    'id'
 ];
 const USER_AGENT = 'HistoricTimelineResearchProject/1.0 (contact: your-email@example.com)';
 const OUTPUT_FILE = path.join(__dirname, 'public', 'data.json');

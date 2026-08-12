@@ -3,119 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historical Conflict Ledger</title>
-
-    <!-- Pinned Stable Vis.js Timeline Assets -->
+    <title>Israel in the Middle East</title>
     <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f4f6f9; color: #212529; margin: 0; padding: 20px; overflow: hidden; }
-
-        /* 3) Dynamic Full-Size Background Image Layer with Fade Effects */
-        #bgImageLayer {
-            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-            background-size: cover; background-position: center; background-repeat: no-repeat;
-            z-index: -2; opacity: 0; transition: opacity 0.8s ease-in-out; pointer-events: none;
-        }
-        #bgOverlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            /* background: rgba(244, 246, 249, 0.85); */
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        .layout-grid { display: flex; flex-direction: column; gap: 20px; max-width: 1600px; margin: 0 auto; height: calc(100vh - 40px); }
-
-        /* Top Row: Interactive Timeline Track */
-        .timeline-wrapper { background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 15px; min-height: 250px; }
-        #timelineContainer { border: 1px solid #e3e6f0; border-radius: 6px; overflow: hidden; background: white; }
-
-        /* 1) Vis.js Items Setup & Configuration to Stack Horizontally under Scale Axis */
-        .vis-item { background-color: #eaecf4; border-color: #dddfeb; font-size: 12px; font-weight: 500; border-radius: 4px; padding: 4px 8px; cursor: pointer; }
-        .vis-item.vis-selected { background-color: #4e73df !important; border-color: #4e73df !important; color: white !important; }
-
-        /* 2) FIXED: Text Clipping Overrides force text to stay visible when timeline blocks shrink */
-        .vis-item .vis-item-content {
-            overflow: visible !important;
-            white-space: nowrap !important;
-        }
-        .vis-item.vis-range, .vis-item.vis-point {
-            overflow: visible !important;
-        }
-
-        /* Bottom Grid Section: Left Column Detail Card vs Right Column List */
-        .bottom-split { display: grid; grid-template-columns: 1fr 400px; gap: 20px; flex-grow: 1; min-height: 0; }
-
-        /* 6) FIXED: Center-Mounted Deep Detail Description Rect Panel */
-        .inspector-panel {
-            background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            padding: 40px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
-            position: relative; overflow-y: auto;
-        }
-        .inspector-content-box { max-width: 650px; width: 100%; margin: 0 auto; }
-
-        /* Language Direction Bi-directional overrides for Center Panel */
-        .inspector-content-box[dir="ltr"] { text-align: left; }
-        .inspector-content-box[dir="rtl"] { text-align: right; }
-
-        /* Right Column List Panel Container */
-        .list-sidebar {
-            /* background: white; */
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-            display: flex;
-            flex-direction: column;
-            overflow: hidden;
-        }
-        .sidebar-header { padding: 15px; background: #f8f9fc; border-bottom: 1px solid #e3e6f0; }
-        .search-box { width: 100%; padding: 10px; border: 1px solid #d1d3e2; border-radius: 4px; box-sizing: border-box; font-size: 14px; }
-        .list-scroll-area {
-            padding: 15px 0;
-            overflow-y: auto;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-        }
-
-        /* Compact List Card Layout Components */
-        .event-list-card {
-            background: rgba(248,249,252,0.3); /*#f8f9fc;*/
-            /* border-left: 4px solid #4e73df; */
-            padding: 10px 14px;
-            border-radius: 0 6px 6px 0;
-            cursor: pointer;
-            transition: all 0.2s;
-            /*
-            border: 1px solid #e3e6f0;
-            border-left-width: 4px;
-            */
-        }
-        .event-list-card:hover {
-            background: #f1f3f9;
-            transform: translateX(2px);
-        }
-        .event-list-card .date {
-            background: rgba(248,249,252,1); /*#f8f9fc;*/
-            font-weight: bold;
-            font-size: 11px;
-            color: #4e73df;
-        }
-        .event-list-card h4 {
-            background: rgba(248,249,252,1); /*#f8f9fc;*/
-            margin: 2px 0 0 0;
-            font-size: 14px;
-            color: #2e59d9;
-        }
-
-        .wiki-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; text-decoration: none; color: #495057; background: #e9ecef; border: 1px solid #dee2e6; margin-right: 8px; margin-top: 12px; }
-        .wiki-badge:hover { background: #adb5bd; color: white; }
-    </style>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -125,10 +16,20 @@
 
 <div class="layout-grid">
 
+    <div class="global-lang-bar" id="globalLangBar">
+        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('ar')">AR 🇵🇸</button>
+        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('de')">DE 🇩🇪</button>
+        <button class="lang-switch-btn active-lang" onclick="changeGlobalInterfaceLanguage('en')">EN 🇬🇧</button>
+        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('es')">ES 🇪🇸</button>
+        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('fr')">FR 🇫🇷</button>
+        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('he')">HE 🇮🇱</button>
+        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('id')">ID 🇮🇩</button>
+    </div>
+
     <!-- TOP PILLAR: Reconciled Visual Timeline Viewport Grid -->
     <div class="timeline-wrapper">
         <div style="margin-bottom:10px; display:flex; gap:10px; align-items:center;">
-            <strong style="font-size:16px;">Historical Conflict Ledger</strong>
+            <strong style="font-size:16px;">Israel in the Middle East</strong>
             <span style="font-size:12px; color:#6e707e;">(↔ Pan layout horizontally; select entries to view translation matrices)</span>
             <span style="margin-left: auto;">
                 <button onclick="if(timelineInstance) timelineInstance.zoomIn(0.4)" style="padding:4px 10px; cursor:pointer;">🔍 In</button>
@@ -166,6 +67,8 @@
 
     let globalEventsRegistry = [];
     let timelineInstance = null;
+    let selectedActiveLanguageCode = 'en';
+    let activeSelectedEventId = null;
 
     // Load compiled static records asynchronously
     fetch('generated/events.json')
@@ -345,6 +248,20 @@
             };
             container.appendChild(card);
         });
+    }
+
+    /*** Global Language Switching Controller*/
+    function changeGlobalInterfaceLanguage(langCode) {
+        selectedActiveLanguageCode = langCode;
+        // Update button visual states dynamically
+        document.querySelectorAll('.lang-switch-btn').forEach(
+            btn => btn.classList.remove('active-lang')
+        );
+        event.target.classList.add('active-lang');
+        // Refresh detail card pane instantly using the newly targeted language parameters mapping
+        if (activeSelectedEventId) {
+            displayDeepDetailsView(activeSelectedEventId);
+        }
     }
 
     function filterSidebarList() {
