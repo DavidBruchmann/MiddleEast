@@ -247,6 +247,12 @@ body {
     position: relative;
 }
 
+a, a:visited {
+    background: var(--bg-primary);
+    color: var(--text-main);
+    display: inline-block;
+}
+
 /* Upper Right Fixed Controls Station */
 .upper-controls-deck {
     position: absolute;
