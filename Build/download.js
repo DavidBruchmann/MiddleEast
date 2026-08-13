@@ -10,6 +10,7 @@ const TARGET_ARTICLES = [
     "Aliyah",
     "Avraham_Stern",
     "Balfour_Declaration",
+    "Nakba",
     // "Cyrus_the_Great",
     "Fatah",
     "Haganah",
@@ -58,7 +59,7 @@ const TARGET_LANGS =  [
     'id'
 ];
 const USER_AGENT = 'HistoricTimelineResearchProject/1.0 (contact: your-email@example.com)';
-const OUTPUT_FILE = path.join(__dirname, 'public', 'data.json');
+const OUTPUT_FILE = path.join(__dirname, '../public', 'data.json');
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const eventMap = new Map();
@@ -165,7 +166,11 @@ function makeRequest(url) {
         https.get(url, { headers: { 'User-Agent': USER_AGENT } }, (res) => {
             let data = '';
             res.on('data', (chunk) => { data += chunk; });
-            res.on('end', () => resolve({ ok: res.statusCode === 200, status: res.statusCode, body: data }));
+            res.on('end', () => resolve({
+                ok: res.statusCode === 200,
+                status: res.statusCode,
+                body: data
+            }));
         }).on('error', (err) => reject(err));
     });
 }
@@ -219,7 +224,7 @@ async function fetchUniversalTopicMetadata(englishTitle) {
             }
         });
 
-        //return { wikidataId: wikidataQNumber, mappings };        // Return both parameters alongside the true page ID
+        // Return parameters alongside the true page ID
         return {
             pageId: targetStringKey,
             wikidataId: wikidataQNumber,
@@ -294,21 +299,79 @@ async function fetchWikidataId(englishTitle) {
     }
 }
 
-async function downloadArticleHtml(lang, slug) {
+function getFilePath(lang, slug, suffix) {
     const targetFolder = path.join(BASE_CACHE_DIR, lang);
     if (!fs.existsSync(targetFolder)) fs.mkdirSync(targetFolder, { recursive: true });
 
-    const destinationPath = path.join(targetFolder, `${slug}.html`);
-    //if (fs.existsSync(destinationPath)) return; // Don't re-download if file exists
+    const destinationPath = path.join(targetFolder, `${slug}.${suffix}`);
+    return destinationPath;
+}
+
+async function downloadArticleHtml(lang, slug, force = false) {
+    const targetFolder = path.join(BASE_CACHE_DIR, lang);
+    if (!fs.existsSync(targetFolder)) {
+      fs.mkdirSync(targetFolder, { recursive: true });
+    }
+
+    const destinationPath = getFilePath(lang, slug, `html`);
+    // Don't re-download if file exists
+    if (fs.existsSync(destinationPath) && !force) return;
 
     const restUrl = `https://${lang}.wikipedia.org/api/rest_v1/page/html/${encodeURIComponent(slug)}`;
     try {
         const response = await makeRequest(restUrl);
         //console.log(response);
         if (response.ok) {
-            fs.writeFileSync(destinationPath, response.body, 'utf-8');
-            console.log(`  ✓ [${lang.toUpperCase()}] Cached: ${slug}`);
+            const articleHtml = response.body;
+            fs.writeFileSync(destinationPath, articleHtml, 'utf-8');
+            console.log(`  ✓ [${lang.toUpperCase()}] HTML Cached: ${slug}`);
+            return articleHtml;
         }
+    } catch (err) {
+        console.error(`  ✕ Download failed for ${slug}: ${err.message}`);
+    }
+}
+
+async function downloadArticleText(lang, slug) {
+    const targetFolder = path.join(BASE_CACHE_DIR, lang);
+    if (!fs.existsSync(targetFolder)) {
+      fs.mkdirSync(targetFolder, { recursive: true });
+    }
+    
+    //const destinationPath = path.join(targetFolder, `${slug}.txt`);
+    const destinationPath = getFilePath(lang, slug, `txt`);
+
+    // api.php?action=query&prop=extracts&exchars=175&titles=Therion
+    const urlObj = new URL(`https://${lang}.wikipedia.org/w/api.php`);
+
+    // 2. Set API query parameters using safe native key/value dictionary sets
+    urlObj.searchParams.set('action', 'query');
+    urlObj.searchParams.set('prop', 'extracts');
+    urlObj.searchParams.set('explaintext', '1');
+    urlObj.searchParams.set('exsentences', '10');
+    urlObj.searchParams.set('exsectionformat', 'plain');
+    urlObj.searchParams.set('titles', `${encodeURIComponent(slug)}`);
+    urlObj.searchParams.set('format', 'json');
+    urlObj.searchParams.set('redirects', '1');
+
+    try {
+        const response = await makeRequest(urlObj.toString());
+        if (!response.ok) {
+            console.log('Error during download.');
+            return null;
+        }
+// console.log(response);
+        const data = JSON.parse(response.body);
+        const pages = data?.query?.pages || {};
+        const pageId = Object.keys(pages)[0];
+        if (!pageId || pageId === "-1") {
+            return null;
+        }
+//console.log(pages[pageId]);
+        const articleText = pages[pageId]?.extract || null;
+        fs.writeFileSync(destinationPath, articleText, 'utf-8');
+        console.log(`  ✓ [${lang.toUpperCase()}] TEXT Cached: ${slug}`);
+        return articleText;
     } catch (err) {
         console.error(`  ✕ Download failed for ${slug}: ${err.message}`);
     }
@@ -350,7 +413,8 @@ async function startPipeline() {
 
 //console.log(currentSlug);
             if (currentSlug) {
-                await downloadArticleHtml(lang, currentSlug);
+                const html = await downloadArticleHtml(lang, currentSlug);
+                const text = await downloadArticleText(lang, currentSlug);
                 await delay(300);
             }
         }
@@ -366,3 +430,4 @@ async function startPipeline() {
 
 startPipeline();
 parseCacheToUnifiedStructure();
+// downloadArticleText('fr', 'Fatah');

@@ -2,9 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
 
-const CONFIG_DIR = path.join(__dirname, 'public', 'config');
+const CONFIG_DIR = path.join(__dirname, '../public', 'config');
 const CACHE_DIR = path.join(__dirname, 'wikipedia_cache');
-const GENERATED_DIR = path.join(__dirname, 'public', 'generated');
+const GENERATED_DIR = path.join(__dirname, '../public', 'generated');
 
 const eventMap = new Map();
 
@@ -39,23 +39,33 @@ function parseAndGenerateDataFiles() {
 
         const langs = ['en', 'de', 'ar', 'he', 'id', 'es', 'fr'];
         langs.forEach(lang => {
-            const filePath = path.join(CACHE_DIR, lang, `${e.english_title}.html`);
+            let filePath = path.join(CACHE_DIR, lang, `${e.english_title}.html`);
             if (!fs.existsSync(filePath)) return;
 
             const html = fs.readFileSync(filePath, 'utf-8');
-            const $ = cheerio.load(html);
+            console.log (filePath, html.substring(0, 200));
+            let text = '';
+            let $ = cheerio.load(html);
 
             // Extract the first valid paragraph for THIS specific language folder pass
             const p = $('p').filter((i, el) => $(el).text().trim().length > 40).first().text().trim();
             if (p) {
                 eventNode.descriptions[lang] = p.substring(0, 450).replace(/\[\d+\]/g, '') + "...";
+                //console.log (filePath, p);
+            } else {
+                filePath = path.join(CACHE_DIR, lang, `${e.english_title}.txt`);
+                text = fs.readFileSync(filePath, 'utf-8');
+                console.log (filePath, text);
+                if (text) {
+                    eventNode.descriptions[lang] = text;
+                }
             }
 
             $('script, style, .mw-empty-elt, .navbox, .infobox, footer').remove();
             eventNode.source.push({
                 slug: e.english_title,
                 lang: lang,
-                strlength: $.text().replace(/\s+/g, ' ').length
+                strlength: (text ? text : $.text().replace(/\s+/g, ' ').length)
             });
         });
 

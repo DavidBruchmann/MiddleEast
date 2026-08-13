@@ -51,12 +51,12 @@
         {
           "slug": "أمين_الحسيني",
           "lang": "ar",
-          "strlength": 132736
+          "strlength": 132737
         },
         {
           "slug": "Mohammed_Amin_al-Husseini",
           "lang": "de",
-          "strlength": 95230
+          "strlength": 95231
         },
         {
           "slug": "Amin_al-Husseini",
@@ -64,9 +64,19 @@
           "strlength": 178346
         },
         {
+          "slug": "Amin_al-Husayni",
+          "lang": "es",
+          "strlength": 149473
+        },
+        {
           "slug": "Mohammed_Amin_al-Husseini",
           "lang": "fr",
           "strlength": 65207
+        },
+        {
+          "slug": "אמין_אל-חוסייני",
+          "lang": "he",
+          "strlength": 142530
         },
         {
           "slug": "Amin_al-Husayni",
@@ -86,7 +96,7 @@
         {
           "slug": "إرجون_(منظمة_عسكرية)",
           "lang": "ar",
-          "strlength": 7402
+          "strlength": 7404
         },
         {
           "slug": "Irgun_Zwai_Leumi",
@@ -111,7 +121,7 @@
         {
           "slug": "ארגון_צבאי_לאומי",
           "lang": "he",
-          "strlength": 79388
+          "strlength": 79387
         },
         {
           "slug": "Irgun",
@@ -166,6 +176,51 @@
       ]
     },
     {
+      "id": "ev_sykes–picot_agreement",
+      "wikidata_id": "Q211674",
+      "title": "Sykes–Picot Agreement",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "اتفاقية_سايكس_بيكو",
+          "lang": "ar",
+          "strlength": 58928
+        },
+        {
+          "slug": "Sykes-Picot-Abkommen",
+          "lang": "de",
+          "strlength": 11572
+        },
+        {
+          "slug": "Sykes–Picot_Agreement",
+          "lang": "en",
+          "strlength": 74609
+        },
+        {
+          "slug": "Acuerdo_Sykes-Picot",
+          "lang": "es",
+          "strlength": 21453
+        },
+        {
+          "slug": "Accords_Sykes-Picot",
+          "lang": "fr",
+          "strlength": 18681
+        },
+        {
+          "slug": "הסכם_סייקס–פיקו",
+          "lang": "he",
+          "strlength": 50972
+        },
+        {
+          "slug": "Perjanjian_Sykes–Picot",
+          "lang": "id",
+          "strlength": 1831
+        }
+      ]
+    },
+    {
       "id": "ev_1948_arab–israeli_war",
       "wikidata_id": "Q49092",
       "title": "1948 Arab–Israeli War",
@@ -176,7 +231,7 @@
         {
           "slug": "الحرب_العربية_الإسرائيلية_1948",
           "lang": "ar",
-          "strlength": 166584
+          "strlength": 166581
         },
         {
           "slug": "1948_Arab–Israeli_War",
@@ -197,6 +252,96 @@
           "slug": "Perang_Arab–Israel_1948",
           "lang": "id",
           "strlength": 111231
+        }
+      ]
+    },
+    {
+      "id": "ev_white_paper_of_1939",
+      "wikidata_id": "Q1501775",
+      "title": "White Paper of 1939",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "الكتاب_الأبيض_(1939)",
+          "lang": "ar",
+          "strlength": 19953
+        },
+        {
+          "slug": "Weißbuch_von_1939",
+          "lang": "de",
+          "strlength": 6445
+        },
+        {
+          "slug": "White_Paper_of_1939",
+          "lang": "en",
+          "strlength": 33479
+        },
+        {
+          "slug": "Libro_Blanco_de_1939",
+          "lang": "es",
+          "strlength": 9673
+        },
+        {
+          "slug": "Livre_blanc_de_1939",
+          "lang": "fr",
+          "strlength": 32305
+        },
+        {
+          "slug": "הספר_הלבן_(1939)",
+          "lang": "he",
+          "strlength": 8345
+        },
+        {
+          "slug": "Buku_Putih_1939",
+          "lang": "id",
+          "strlength": 5042
+        }
+      ]
+    },
+    {
+      "id": "ev_nakba",
+      "wikidata_id": "Q3266633",
+      "title": "Nakba",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "النكبة",
+          "lang": "ar",
+          "strlength": 115541
+        },
+        {
+          "slug": "Nakba",
+          "lang": "de",
+          "strlength": 154300
+        },
+        {
+          "slug": "Nakba",
+          "lang": "en",
+          "strlength": 313866
+        },
+        {
+          "slug": "Nakba",
+          "lang": "es",
+          "strlength": 84956
+        },
+        {
+          "slug": "Nakba",
+          "lang": "fr",
+          "strlength": 13719
+        },
+        {
+          "slug": "הנכבה",
+          "lang": "he",
+          "strlength": 31962
+        },
+        {
+          "slug": "Nakba",
+          "lang": "id",
+          "strlength": 23264
         }
       ]
     },
@@ -246,6 +391,41 @@
       ]
     },
     {
+      "id": "ev_partitioning_of_the_ottoman_empire",
+      "wikidata_id": "Q1145246",
+      "title": "Partitioning of the Ottoman Empire",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "تقسيم_الدولة_العثمانية",
+          "lang": "ar",
+          "strlength": 20425
+        },
+        {
+          "slug": "Partición_del_Imperio_otomano",
+          "lang": "es",
+          "strlength": 11984
+        },
+        {
+          "slug": "Partition_de_l'Empire_ottoman",
+          "lang": "fr",
+          "strlength": 26894
+        },
+        {
+          "slug": "חלוקת_האימפריה_העות'מאנית",
+          "lang": "he",
+          "strlength": 18356
+        },
+        {
+          "slug": "Pemisahan_Kekaisaran_Utsmaniyah",
+          "lang": "id",
+          "strlength": 1982
+        }
+      ]
+    },
+    {
       "id": "ev_theodor_herzl",
       "wikidata_id": "Q44003",
       "title": "Theodor Herzl",
@@ -291,6 +471,51 @@
       ]
     },
     {
+      "id": "ev_chaim_weizmann",
+      "wikidata_id": "Q172183",
+      "title": "Chaim Weizmann",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "حاييم_وايزمان",
+          "lang": "ar",
+          "strlength": 2311
+        },
+        {
+          "slug": "Chaim_Weizmann",
+          "lang": "de",
+          "strlength": 19057
+        },
+        {
+          "slug": "Chaim_Weizmann",
+          "lang": "en",
+          "strlength": 62808
+        },
+        {
+          "slug": "Jaim_Weizmann",
+          "lang": "es",
+          "strlength": 13324
+        },
+        {
+          "slug": "Chaim_Weizmann",
+          "lang": "fr",
+          "strlength": 13287
+        },
+        {
+          "slug": "חיים_ויצמן",
+          "lang": "he",
+          "strlength": 64012
+        },
+        {
+          "slug": "Chaim_Weizmann",
+          "lang": "id",
+          "strlength": 5494
+        }
+      ]
+    },
+    {
       "id": "ev_fatah",
       "wikidata_id": "Q178888",
       "title": "Fatah",
@@ -321,7 +546,7 @@
         {
           "slug": "Fatah",
           "lang": "fr",
-          "strlength": 15822
+          "strlength": 15821
         },
         {
           "slug": "פת\"ח",
@@ -332,6 +557,71 @@
           "slug": "Fatah",
           "lang": "id",
           "strlength": 2655
+        }
+      ]
+    },
+    {
+      "id": "ev_national_defence_party_(palestine)",
+      "wikidata_id": "Q3366314",
+      "title": "National Defence Party (Palestine)",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "حزب_الدفاع_الوطني",
+          "lang": "ar",
+          "strlength": 1555
+        },
+        {
+          "slug": "Parti_de_la_défense_nationale",
+          "lang": "fr",
+          "strlength": 1420
+        },
+        {
+          "slug": "מפלגת_ההגנה_הלאומית",
+          "lang": "he",
+          "strlength": 3103
+        }
+      ]
+    },
+    {
+      "id": "ev_british_government",
+      "wikidata_id": "Q6063",
+      "title": "British government",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "حكومة_المملكة_المتحدة",
+          "lang": "ar",
+          "strlength": 14654
+        },
+        {
+          "slug": "Regierung_des_Vereinigten_Königreichs",
+          "lang": "de",
+          "strlength": 8512
+        },
+        {
+          "slug": "Gobierno_del_Reino_Unido",
+          "lang": "es",
+          "strlength": 3515
+        },
+        {
+          "slug": "Gouvernement_du_Royaume-Uni",
+          "lang": "fr",
+          "strlength": 10827
+        },
+        {
+          "slug": "ממשלת_בריטניה",
+          "lang": "he",
+          "strlength": 7037
+        },
+        {
+          "slug": "Pemerintah_Britania_Raya",
+          "lang": "id",
+          "strlength": 3707
         }
       ]
     },
@@ -391,12 +681,12 @@
         {
           "slug": "صهيونية",
           "lang": "ar",
-          "strlength": 62513
+          "strlength": 62512
         },
         {
           "slug": "Zionismus",
           "lang": "de",
-          "strlength": 91223
+          "strlength": 91225
         },
         {
           "slug": "Zionism",
@@ -461,12 +751,147 @@
         {
           "slug": "עלייה_לארץ_ישראל",
           "lang": "he",
-          "strlength": 24704
+          "strlength": 24703
         },
         {
           "slug": "Aliyah",
           "lang": "id",
           "strlength": 19039
+        }
+      ]
+    },
+    {
+      "id": "ev_françois_georges-picot",
+      "wikidata_id": "Q1384702",
+      "title": "François Georges-Picot",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "فرانسوا_جورج_بيكو",
+          "lang": "ar",
+          "strlength": 999
+        },
+        {
+          "slug": "François_Georges-Picot",
+          "lang": "de",
+          "strlength": 2136
+        },
+        {
+          "slug": "François_Georges-Picot",
+          "lang": "en",
+          "strlength": 3784
+        },
+        {
+          "slug": "François_Georges-Picot",
+          "lang": "es",
+          "strlength": 2402
+        },
+        {
+          "slug": "François_Georges-Picot",
+          "lang": "fr",
+          "strlength": 12350
+        },
+        {
+          "slug": "שארל_פרנסואה_ז'ורז'-פיקו",
+          "lang": "he",
+          "strlength": 1334
+        },
+        {
+          "slug": "François_Georges-Picot",
+          "lang": "id",
+          "strlength": 762
+        }
+      ]
+    },
+    {
+      "id": "ev_united_nations_partition_plan_for_palestine",
+      "wikidata_id": "Q846795",
+      "title": "United Nations Partition Plan for Palestine",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "قرار_تقسيم_فلسطين",
+          "lang": "ar",
+          "strlength": 15928
+        },
+        {
+          "slug": "UN-Teilungsplan_für_Palästina",
+          "lang": "de",
+          "strlength": 120418
+        },
+        {
+          "slug": "United_Nations_Partition_Plan_for_Palestine",
+          "lang": "en",
+          "strlength": 99683
+        },
+        {
+          "slug": "Plan_de_las_Naciones_Unidas_para_la_partición_de_Palestina",
+          "lang": "es",
+          "strlength": 22473
+        },
+        {
+          "slug": "Plan_de_partage_de_la_Palestine",
+          "lang": "fr",
+          "strlength": 36979
+        },
+        {
+          "slug": "תוכנית_החלוקה",
+          "lang": "he",
+          "strlength": 22407
+        },
+        {
+          "slug": "Rencana_Pembagian_Perserikatan_Bangsa-Bangsa_untuk_Palestina",
+          "lang": "id",
+          "strlength": 4016
+        }
+      ]
+    },
+    {
+      "id": "ev_peel_commission",
+      "wikidata_id": "Q655894",
+      "title": "Peel Commission",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "لجنة_بيل",
+          "lang": "ar",
+          "strlength": 11111
+        },
+        {
+          "slug": "Peel-Kommission",
+          "lang": "de",
+          "strlength": 25202
+        },
+        {
+          "slug": "Peel_Commission",
+          "lang": "en",
+          "strlength": 29861
+        },
+        {
+          "slug": "Comisión_Peel",
+          "lang": "es",
+          "strlength": 23742
+        },
+        {
+          "slug": "Commission_Peel",
+          "lang": "fr",
+          "strlength": 2129
+        },
+        {
+          "slug": "ועדת_פיל",
+          "lang": "he",
+          "strlength": 26712
+        },
+        {
+          "slug": "Komisi_Peel",
+          "lang": "id",
+          "strlength": 3827
         }
       ]
     },
@@ -516,6 +941,126 @@
       ]
     },
     {
+      "id": "ev_london_conference_(1939)",
+      "wikidata_id": "Q6670266",
+      "title": "London Conference (1939)",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "مؤتمر_لندن_(1939)",
+          "lang": "ar",
+          "strlength": 19058
+        },
+        {
+          "slug": "St.-James-Konferenz",
+          "lang": "de",
+          "strlength": 11746
+        },
+        {
+          "slug": "Conferencia_de_Londres_de_1939",
+          "lang": "es",
+          "strlength": 22225
+        },
+        {
+          "slug": "ועידת_השולחן_העגול",
+          "lang": "he",
+          "strlength": 10729
+        }
+      ]
+    },
+    {
+      "id": "ev_mark_sykes",
+      "wikidata_id": "Q332612",
+      "title": "Mark Sykes",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "مارك_سايكس",
+          "lang": "ar",
+          "strlength": 2438
+        },
+        {
+          "slug": "Mark_Sykes",
+          "lang": "de",
+          "strlength": 8510
+        },
+        {
+          "slug": "Mark_Sykes",
+          "lang": "en",
+          "strlength": 29587
+        },
+        {
+          "slug": "Mark_Sykes",
+          "lang": "es",
+          "strlength": 7405
+        },
+        {
+          "slug": "Mark_Sykes",
+          "lang": "fr",
+          "strlength": 3690
+        },
+        {
+          "slug": "מארק_סייקס",
+          "lang": "he",
+          "strlength": 3365
+        },
+        {
+          "slug": "Mark_Sykes",
+          "lang": "id",
+          "strlength": 6507
+        }
+      ]
+    },
+    {
+      "id": "ev_menachem_begin",
+      "wikidata_id": "Q130873",
+      "title": "Menachem Begin",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "مناحم_بيجن",
+          "lang": "ar",
+          "strlength": 6795
+        },
+        {
+          "slug": "Menachem_Begin",
+          "lang": "de",
+          "strlength": 27909
+        },
+        {
+          "slug": "Menachem_Begin",
+          "lang": "en",
+          "strlength": 83801
+        },
+        {
+          "slug": "Menájem_Beguín",
+          "lang": "es",
+          "strlength": 9006
+        },
+        {
+          "slug": "Menahem_Begin",
+          "lang": "fr",
+          "strlength": 24396
+        },
+        {
+          "slug": "מנחם_בגין",
+          "lang": "he",
+          "strlength": 145327
+        },
+        {
+          "slug": "Menachem_Begin",
+          "lang": "id",
+          "strlength": 5319
+        }
+      ]
+    },
+    {
       "id": "ev_moses_hess",
       "wikidata_id": "Q213565",
       "title": "Moses Hess",
@@ -557,6 +1102,51 @@
           "slug": "Moses_Hess",
           "lang": "id",
           "strlength": 2204
+        }
+      ]
+    },
+    {
+      "id": "ev_neville_chamberlain",
+      "wikidata_id": "Q10664",
+      "title": "Neville Chamberlain",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "نيفيل_تشامبرلين",
+          "lang": "ar",
+          "strlength": 14710
+        },
+        {
+          "slug": "Neville_Chamberlain",
+          "lang": "de",
+          "strlength": 23868
+        },
+        {
+          "slug": "Neville_Chamberlain",
+          "lang": "en",
+          "strlength": 107063
+        },
+        {
+          "slug": "Neville_Chamberlain",
+          "lang": "es",
+          "strlength": 105829
+        },
+        {
+          "slug": "Neville_Chamberlain",
+          "lang": "fr",
+          "strlength": 83987
+        },
+        {
+          "slug": "נוויל_צ'מברלין",
+          "lang": "he",
+          "strlength": 45965
+        },
+        {
+          "slug": "Arthur_Neville_Chamberlain",
+          "lang": "id",
+          "strlength": 1361
         }
       ]
     },
@@ -631,7 +1221,7 @@
         {
           "slug": "Declaración_Balfour",
           "lang": "es",
-          "strlength": 161386
+          "strlength": 161387
         },
         {
           "slug": "Déclaration_Balfour_de_1917",
@@ -641,7 +1231,7 @@
         {
           "slug": "הצהרת_בלפור",
           "lang": "he",
-          "strlength": 28800
+          "strlength": 28799
         },
         {
           "slug": "Deklarasi_Balfour",
@@ -676,7 +1266,7 @@
         {
           "slug": "היישוב_הישן",
           "lang": "he",
-          "strlength": 67821
+          "strlength": 67823
         },
         {
           "slug": "Yishuv_lama",
@@ -696,7 +1286,7 @@
         {
           "slug": "يشوف",
           "lang": "ar",
-          "strlength": 18666
+          "strlength": 18668
         },
         {
           "slug": "Jischuv",
@@ -721,7 +1311,7 @@
         {
           "slug": "היישוב",
           "lang": "he",
-          "strlength": 22706
+          "strlength": 22707
         }
       ]
     },
@@ -754,269 +1344,14 @@
           "strlength": 1832
         },
         {
+          "slug": "יהודה_אלקלעי",
+          "lang": "he",
+          "strlength": 7750
+        },
+        {
           "slug": "Judah_Alkalai",
           "lang": "id",
           "strlength": 1106
-        }
-      ]
-    },
-    {
-      "id": "ev_chaim_weizmann",
-      "wikidata_id": "Q172183",
-      "title": "Chaim Weizmann",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Chaim_Weizmann",
-          "lang": "de",
-          "strlength": 19059
-        },
-        {
-          "slug": "Chaim_Weizmann",
-          "lang": "en",
-          "strlength": 62808
-        },
-        {
-          "slug": "Jaim_Weizmann",
-          "lang": "es",
-          "strlength": 13324
-        },
-        {
-          "slug": "Chaim_Weizmann",
-          "lang": "id",
-          "strlength": 5494
-        }
-      ]
-    },
-    {
-      "id": "ev_françois_georges-picot",
-      "wikidata_id": null,
-      "title": "François Georges-Picot",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "François_Georges-Picot",
-          "lang": "de",
-          "strlength": 2136
-        },
-        {
-          "slug": "François_Georges-Picot",
-          "lang": "en",
-          "strlength": 3784
-        }
-      ]
-    },
-    {
-      "id": "ev_mark_sykes",
-      "wikidata_id": null,
-      "title": "Mark Sykes",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Mark_Sykes",
-          "lang": "de",
-          "strlength": 8510
-        },
-        {
-          "slug": "Mark_Sykes",
-          "lang": "en",
-          "strlength": 29587
-        }
-      ]
-    },
-    {
-      "id": "ev_menachem_begin",
-      "wikidata_id": "Q130873",
-      "title": "Menachem Begin",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Menachem_Begin",
-          "lang": "de",
-          "strlength": 27909
-        },
-        {
-          "slug": "Menachem_Begin",
-          "lang": "en",
-          "strlength": 83801
-        }
-      ]
-    },
-    {
-      "id": "ev_neville_chamberlain",
-      "wikidata_id": null,
-      "title": "Neville Chamberlain",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Neville_Chamberlain",
-          "lang": "de",
-          "strlength": 23868
-        },
-        {
-          "slug": "Neville_Chamberlain",
-          "lang": "en",
-          "strlength": 107063
-        }
-      ]
-    },
-    {
-      "id": "ev_peel_commission",
-      "wikidata_id": "Q655894",
-      "title": "Peel Commission",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Peel-Kommission",
-          "lang": "de",
-          "strlength": 25202
-        },
-        {
-          "slug": "Peel_Commission",
-          "lang": "en",
-          "strlength": 29861
-        },
-        {
-          "slug": "Comisión_Peel",
-          "lang": "es",
-          "strlength": 23742
-        },
-        {
-          "slug": "Commission_Peel",
-          "lang": "fr",
-          "strlength": 2129
-        }
-      ]
-    },
-    {
-      "id": "ev_regierung_des_vereinigten_königreichs",
-      "wikidata_id": null,
-      "title": "Regierung des Vereinigten Königreichs",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Regierung_des_Vereinigten_Königreichs",
-          "lang": "de",
-          "strlength": 8512
-        }
-      ]
-    },
-    {
-      "id": "ev_st.-james-konferenz",
-      "wikidata_id": null,
-      "title": "St.-James-Konferenz",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "St.-James-Konferenz",
-          "lang": "de",
-          "strlength": 11746
-        }
-      ]
-    },
-    {
-      "id": "ev_sykes-picot-abkommen",
-      "wikidata_id": null,
-      "title": "Sykes-Picot-Abkommen",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Sykes-Picot-Abkommen",
-          "lang": "de",
-          "strlength": 11572
-        }
-      ]
-    },
-    {
-      "id": "ev_un-teilungsplan_für_palästina",
-      "wikidata_id": null,
-      "title": "UN-Teilungsplan für Palästina",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "UN-Teilungsplan_für_Palästina",
-          "lang": "de",
-          "strlength": 120418
-        }
-      ]
-    },
-    {
-      "id": "ev_weißbuch_von_1939",
-      "wikidata_id": null,
-      "title": "Weißbuch von 1939",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Weißbuch_von_1939",
-          "lang": "de",
-          "strlength": 6445
-        }
-      ]
-    },
-    {
-      "id": "ev_sykes–picot_agreement",
-      "wikidata_id": null,
-      "title": "Sykes–Picot Agreement",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Sykes–Picot_Agreement",
-          "lang": "en",
-          "strlength": 74605
-        }
-      ]
-    },
-    {
-      "id": "ev_united_nations_partition_plan_for_palestine",
-      "wikidata_id": null,
-      "title": "United Nations Partition Plan for Palestine",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "United_Nations_Partition_Plan_for_Palestine",
-          "lang": "en",
-          "strlength": 99683
-        }
-      ]
-    },
-    {
-      "id": "ev_white_paper_of_1939",
-      "wikidata_id": null,
-      "title": "White Paper of 1939",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "White_Paper_of_1939",
-          "lang": "en",
-          "strlength": 33479
         }
       ]
     }

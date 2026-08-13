@@ -1,59 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr" class="no-js">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Israel in the Middle East</title>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
     <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
-    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href="assets/CSS/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
-<!-- Full-Screen Background -->
-<div id="bgImageLayer"></div>
-<div id="bgOverlay"></div>
-
 <div class="layout-grid">
-
-    <div class="global-lang-bar" id="globalLangBar">
-        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('ar')">AR 🇵🇸</button>
-        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('de')">DE 🇩🇪</button>
-        <button class="lang-switch-btn active-lang" onclick="changeGlobalInterfaceLanguage('en')">EN 🇬🇧</button>
-        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('es')">ES 🇪🇸</button>
-        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('fr')">FR 🇫🇷</button>
-        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('he')">HE 🇮🇱</button>
-        <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('id')">ID 🇮🇩</button>
+    <!-- Dynamic Top Corner Unified Theme & Language Controllers Deck -->
+    <div class="upper-controls-deck">
+        <button class="theme-switch-btn" onclick="toggleInterfaceColorThemeMode()">🌗 Theme</button>
+        <div style="display:flex; gap:0px;">
+            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('ar')">AR 🇵🇸 🇸🇦</button>
+            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('de')">DE 🇩🇪</button>
+            <button class="lang-switch-btn active-lang" onclick="changeGlobalInterfaceLanguage('en')">EN 🇬🇧 🇺🇸</button>
+            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('de')">ES 🇪🇸</button>
+            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('de')">FR 🇫🇷</button>
+            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('he')">HE 🇮🇱</button>
+            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('id')">ID 🇮🇩</button>
+        </div>
     </div>
 
-    <!-- TOP PILLAR: Reconciled Visual Timeline Viewport Grid -->
-    <div class="timeline-wrapper">
+    <!-- Timeline Wrapper Grid -->
+    <div class="timeline-outer-wrapper">
         <div style="margin-bottom:10px; display:flex; gap:10px; align-items:center;">
             <strong style="font-size:16px;">Israel in the Middle East</strong>
-            <span style="font-size:12px; color:#6e707e;">(↔ Pan layout horizontally; select entries to view translation matrices)</span>
-            <span style="margin-left: auto;">
-                <button onclick="if(timelineInstance) timelineInstance.zoomIn(0.4)" style="padding:4px 10px; cursor:pointer;">🔍 In</button>
-                <button onclick="if(timelineInstance) timelineInstance.zoomOut(0.4)" style="padding:4px 10px; cursor:pointer;">🔍 Out</button>
+            <span style="margin-left: auto; padding-right: 480px;">
+                <strong style="font-size:16px;">Zoom:</strong>
+                <button onclick="if(timelineInstance) timelineInstance.zoomIn(0.4)" class="timeline-zoom-btn">🔍 In</button>
+                <button onclick="if(timelineInstance) timelineInstance.zoomOut(0.4)" class="timeline-zoom-btn">🔍 Out</button>
             </span>
         </div>
         <div id="timelineContainer"></div>
     </div>
 
-    <!-- BOTTOM SPLIT SECTION: Centered Panel View vs Concise Searchable Sidebar List -->
+    <!-- Bottom Split Panel -->
     <div class="bottom-split">
-
-        <!-- 6) LEFT COLUMN: Centered Event Narrative Inspector Card Rect -->
         <div class="inspector-panel" id="inspectorPanel">
             <div class="inspector-content-box" id="inspectorContent" dir="ltr">
-                <h2 id="drawerTitle" style="margin-top:0; font-size:24px; color:#2e59d9; margin-bottom:12px;">Select an Event</h2>
-                <p style="font-size:15px; line-height:1.6; color:#495057; margin:0;" id="drawerDesc">
-                    Click a visual timeline entry node bar or select a milestone item card from the sidebar register list to unpack multi-language documentation assets.
+                <!-- 2) Hero Image mounted strictly ABOVE descriptions headers -->
+                <img id="drawerHeroImg" class="inspector-hero-img" alt="Historical Document Frame">
+
+                <h2 id="drawerTitle" style="margin-top:0; font-size:22px; color:var(--accent-blue); margin-bottom:8px;">Select an Event</h2>
+                <p style="font-size:15px; line-height:1.6; margin:0;" id="drawerDesc">
+                    Click an item node box in the top track or select a card from the list to unpack multi-language documentation details.
                 </p>
-                <div id="drawerLinks" style="margin-top:10px;"></div>
+                <div id="drawerLinks"></div>
             </div>
         </div>
 
-        <!-- RIGHT COLUMN: Compact Sidebar List Navigation Panel -->
         <div class="list-sidebar">
             <div class="sidebar-header">
                 <input type="text" id="sidebarSearch" class="search-box" oninput="filterSidebarList()" placeholder="Quick filter list rows...">
@@ -62,43 +62,22 @@
         </div>
     </div>
 </div>
-
 <script>
-
     let globalEventsRegistry = [];
     let timelineInstance = null;
     let selectedActiveLanguageCode = 'en';
     let activeSelectedEventId = null;
 
-    // Load compiled static records asynchronously
     fetch('generated/events.json')
         .then(res => res.json())
         .then(events => {
             globalEventsRegistry = events;
             renderSidebarList(globalEventsRegistry);
             renderTimelineCanvasView(globalEventsRegistry);
+            initSystemThemeConfiguration(); // Set system dark/light default parameters
         })
         .catch(err => console.error("Error loading compiled assets:", err));
 
-    /**
-     * Component Constant: Generates beautiful HTML hover popups natively interpreted by Vis.js
-     */
-    /*
-    function createRichHtmlTooltipNode(event) {
-        const container = document.createElement('div');
-        container.style = "padding:10px; max-width:280px; font-family:sans-serif; font-size:12px; line-height:1.4;";
-
-        container.innerHTML = `
-            <strong style="font-size:13px; display:block; margin-bottom:4px; color:#2e59d9;">${event.title}</strong>
-            <span style="color:#858796; display:block; margin-bottom:6px;">📅 Start: ${event.start}</span>
-            <p style="margin:0; text-align:justify; color:#5a5c69;">${event.description || 'No summary text extracted yet.'}</p>
-        `;
-        return container;
-    }
-    */
-
-    /**
-     * Vis.js Main Mapping Engine
     function renderTimelineCanvasView(eventsToRender) {
         const container = document.getElementById('timelineContainer');
         if (timelineInstance) {
@@ -107,407 +86,98 @@
         }
         container.innerHTML = '';
 
-        const items = eventsToRender.map(e => ({
-            id: e.id,
-            content: e.title,
-            start: e.start,
-            end: e.end || null,
-            type: e.end ? 'range' : 'point',
-            // title: createRichHtmlTooltipNode(e), // Passes DOM Node to make native popups work flawlessly
-            // group: currentAxisOrientation === "horizontal" ? (e.perp_ids[0] || 'unassigned') : null
-        }));
-
-        // Build horizontal lanes dynamically if in swimlane mode
-        // let groupsDataset = null;
-        // if (currentAxisOrientation === "horizontal") {
-        //     groupsDataset = new vis.DataSet(globalGroupsRegistry.map(g => ({ id: g.id, content: g.display_title_override || g.english_title })));
-        //     groupsDataset.add({ id: 'unassigned', content: '<em>General Events</em>' });
-        // }
-
-        const options = {
-            stack: true,
-            margin: {
-                item: 10,
-                axis: 10
-            },
-            showCurrentTime: false,
-            zoomable: false, // Locks out clunky scroll wheel overrides; use manual buttons instead
-            // CRITICAL UPGRADE: Dynamic orientation assignment fixes vertical timelines and adds year flags natively!
-            // orientation: currentAxisOrientation === "vertical" ? { axis: 'left', item: 'top' } : { axis: 'bottom' },
-            // Positions time scale axis strictly at the top of the canvas above items
-            orientation: {
-                axis: 'top',
-                item: 'bottom'
-            },
-            tooltip: {
-                followMouse: true,
-                overflowMethod: 'cap'
-            },
-            start: '1917-01-01',
-            end: '1960-01-01'
-        };
-
-        timelineInstance = new vis.Timeline(container, items, options);
-
-        //timelineInstance = currentAxisOrientation === "horizontal"
-        //    ? new vis.Timeline(container, items, groupsDataset, options)
-        //    : new vis.Timeline(container, items, options);
-
-
-        timelineInstance.on('select', (props) => {
-            if (props.items.length > 0) {
-                displayDeepDetailsView(props.items[0]);
-            }
-        });
-    }
-     */
-
-    /**
-     * Vis.js Mapping Core Engine
-     */
-    function renderTimelineCanvasView(eventsToRender) {
-        const container = document.getElementById('timelineContainer');
-        if (timelineInstance) { timelineInstance.destroy(); timelineInstance = null; }
-        container.innerHTML = '';
-
-        // Map events with dynamic on-the-fly runtime padding variables
         const items = eventsToRender.map(e => {
             const rawStart = String(e.start).trim();
             const rawEnd = e.end ? String(e.end).trim() : "";
-
-            // Dynamic on-the-fly calendar calculations
             let visStart = rawStart;
             if (rawStart.length === 4) {
-                visStart = `${rawStart}-01-01`; // Dynamic runtime injection
+                visStart = `${rawStart}-01-01`;
             }
+            let visEnd = e.end ? (rawEnd.length === 4 ? `${rawEnd}-12-31` : rawEnd) : null;
 
-            let visEnd = null;
-            if (rawEnd) {
-                visEnd = rawEnd.length === 4 ? `${rawEnd}-12-31` : rawEnd;
-            }
-
-            return {
-                id: e.id,
-                content: e.title,
-                start: visStart,  // ◄ Passed exclusively to the Vis.js tracking lane pixels
-                end: visEnd,      // ◄ Passed exclusively to the Vis.js tracking lane pixels
-                type: e.end ? 'range' : 'point'
-            };
+            return { id: e.id, content: e.title, start: visStart, end: visEnd, type: e.end ? 'range' : 'point' };
         });
 
         const options = {
-            stack: true,
-            margin: { item: 10, axis: 10 },
-            showCurrentTime: false,
-            zoomable: false,
-            orientation: { axis: 'top', item: 'bottom' },
-            start: '1917-01-01', end: '1960-01-01'
+            stack: true, margin: { item: 10, axis: 10 }, showCurrentTime: false, zoomable: false,
+            orientation: { axis: 'top', item: 'bottom' }, start: '1917-01-01', end: '1960-01-01'
         };
-
         timelineInstance = new vis.Timeline(container, items, options);
-
-        timelineInstance.on('select', (props) => {
-            if (props.items.length > 0) displayDeepDetailsView(props.items[0]);
-        });
+        timelineInstance.on('select', (props) => { if (props.items.length > 0) { activeSelectedEventId = props.items; displayDeepDetailsView(activeSelectedEventId); } });
     }
 
-
-    /**
-     * Right Pillar: Renders the explicit text list layout
-     */
     function renderSidebarList(events) {
-        const container = document.getElementById('listScrollArea');
-        container.innerHTML = '';
-
+        const container = document.getElementById('listScrollArea'); container.innerHTML = '';
         events.forEach(e => {
-            const card = document.createElement('div');
-            const compactDateLabel = e.display_date_text ? e.display_date_text : e.start.substring(0, 4);
-
-            card.className = 'event-list-card';
-            card.innerHTML = `
-                <span class="date">${compactDateLabel}</span>
-                <h4>${e.title}</h4>
-            `;
-            /*
-            card.innerHTML = `
-                <span class="date">${e.start}</span>
-                <h4>${e.title}</h4>
-            `;
-            card.innerHTML += `
-                <p>${e.description || 'No description summary available.'}</p>
-            `;
-            */
-
-            // CLICK TO SCROLL INTERACTION FUNCTION
-            card.onclick = () => {
-                displayDeepDetailsView(e.id);
-                if (timelineInstance) {
-                    timelineInstance.setSelection(e.id, { focus: true });
-                    timelineInstance.moveTo(e.start); // Scrolls the canvas item into center view instantly
-                }
-            };
+            const card = document.createElement('div'); card.className = 'event-list-card';
+            card.innerHTML = `<span class="date">${e.start.substring(0,4)}</span><h4>${e.title}</h4>`;
+            card.onclick = () => { activeSelectedEventId = e.id; displayDeepDetailsView(e.id); if (timelineInstance) { timelineInstance.setSelection(e.id, { focus: true }); timelineInstance.moveTo(`${e.start.substring(0,4)}-01-01`); } };
             container.appendChild(card);
         });
     }
 
-    /*** Global Language Switching Controller*/
+    function filterSidebarList() {
+        const query = document.getElementById('sidebarSearch').value.toLowerCase();
+        renderSidebarList(globalEventsRegistry.filter(e => e.title.toLowerCase().includes(query)));
+    }
+
     function changeGlobalInterfaceLanguage(langCode) {
         selectedActiveLanguageCode = langCode;
-        // Update button visual states dynamically
-        document.querySelectorAll('.lang-switch-btn').forEach(
-            btn => btn.classList.remove('active-lang')
-        );
+        document.querySelectorAll('.lang-switch-btn').forEach(btn => btn.classList.remove('active-lang'));
         event.target.classList.add('active-lang');
-        // Refresh detail card pane instantly using the newly targeted language parameters mapping
-        if (activeSelectedEventId) {
-            displayDeepDetailsView(activeSelectedEventId);
-        }
+        if (activeSelectedEventId) displayDeepDetailsView(activeSelectedEventId);
     }
 
-    function filterSidebarList() {
-        const query = document.getElementById('sidebarSearch').value.toLowerCase();
-        const filtered = globalEventsRegistry.filter(e =>
-            e.title.toLowerCase().includes(query) // ||
-            //(e.description && e.description.toLowerCase().includes(query))
-        );
-        renderSidebarList(filtered);
+    // 3) Light / Dark / System Default Theme Toggle Engine
+    function initSystemThemeConfiguration() {
+        const cachedTheme = localStorage.getItem('user-selected-theme');
+        if (cachedTheme) { document.documentElement.setAttribute('data-theme', cachedTheme); return; }
+        const preferredSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        document.documentElement.setAttribute('data-theme', preferredSystemDark ? 'dark' : 'light');
+    }
+    function toggleInterfaceColorThemeMode() {
+        const activeTheme = document.documentElement.getAttribute('data-theme');
+        const nextTheme = activeTheme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', nextTheme);
+        localStorage.setItem('user-selected-theme', nextTheme);
     }
 
-    /**
-     * Centralized Selection Inspector View Panel Manager
     function displayDeepDetailsView(eventId) {
-        const matched = globalEventsRegistry.find(e => e.id === eventId);
-        if (!matched) return;
-
+        const matched = globalEventsRegistry.find(e => e.id === eventId); if (!matched) return;
         const contentBox = document.getElementById('inspectorContent');
 
-        // BI-DIRECTIONAL LOGIC PASS:
-        //    Evaluates text data direction context parameters
-        // If event contains Arabic or Hebrew title keywords, flip alignment right-to-left
-        const containsRtlText = /[\u0600-\u06FF\u0590-\u05FF]/.test(matched.title);
-        contentBox.setAttribute('dir', containsRtlText ? 'rtl' : 'ltr');
+        const isRtlLang = ['ar', 'he'].includes(selectedActiveLanguageCode);
+        contentBox.setAttribute('dir', isRtlLang ? 'rtl' : 'ltr');
 
-        // FIXED: Use the human-readable fuzzy label text (e.g. "1881") instead of padded ISO string dates
-        const dateLabelText = matched.display_date_text ? matched.display_date_text : matched.start;
-        const endLabelText = matched.end ? (matched.end.length === 10 && matched.end.endsWith('-12-31') ? matched.end.substring(0,4) : matched.end) : '';
-        const timeframeDisplay = endLabelText ? `${dateLabelText} to ${endLabelText}` : dateLabelText;
+        const startYear = matched.start.substring(0, 4);
+        const endYear = matched.end ? matched.end.substring(0, 4) : '';
+        const timeframeDisplay = endYear ? `${startYear} to ${endYear}` : startYear;
 
-        document.getElementById('drawerTitle').innerHTML = `${matched.title} <br><span style="font-size:13px; color:#858796; font-weight:normal;">📅 Bounded Period: ${timeframeDisplay}</span>`;
-        document.getElementById('drawerDesc').textContent = matched.description || 'No descriptive summary processed.';
+        // FIXED: Extract description from the correct language sub-key safely, falling back to EN if missing
+        const hasTranslation = matched.descriptions && matched.descriptions[selectedActiveLanguageCode];
+        const localizedDesc = hasTranslation ? matched.descriptions[selectedActiveLanguageCode] : (matched.descriptions['en'] || 'Summary pending compilation pass.');
+        const fallbackWarning = hasTranslation ? '' : ' <span style="font-size:11px; color:#cc0000; font-style:italic;">(Displaying EN baseline)</span>';
 
-        // document.getElementById('drawerTitle').textContent = matched.title;
-        // document.getElementById('drawerDesc').textContent = matched.description || 'No descriptive summary processed.';
+        document.getElementById('drawerTitle').innerHTML = `${matched.title}${fallbackWarning} <br><span style="font-size:13px; color:var(--text-muted); font-weight:normal;">📅 Bounded Period: ${timeframeDisplay}</span>`;
+        document.getElementById('drawerDesc').textContent = localizedDesc;
 
-        const linksBox = document.getElementById('drawerLinks');
-        linksBox.innerHTML = '';
-        matched.source.forEach(src => {
-            const url = `https://${src.lang}.wikipedia.org/wiki/${src.slug}`;
-            const a = document.createElement('a');
-            a.href = url;
-            a.target = '_blank';
-            a.className = 'wiki-badge';
-            //a.innerHTML = `<strong>${src.lang.toUpperCase()} Record</strong> (${(src.strlength/1000).toFixed(0)}k characters) ↗`;
-            a.innerHTML = `<strong>${src.lang.toUpperCase()} Variant</strong> (${(src.strlength/1000).toFixed(0)}k chars) ↗`;
-            // a.innerHTML = `<strong>${src.lang.toUpperCase()} Variant</strong> <span class="size">(${(src.strlength/1000).toFixed(1)}k chars)</span> ↗`;
-            linksBox.appendChild(a);
-        });
-
-        // 3) OPTIONAL BACKGROUND IMAGE HANDLING DECK WITH TRANSLATION FADE-IN/OUT EFFECT
-        const bgLayer = document.getElementById('bgImageLayer');
+        // 2) Image Panel Transitions sitting ABOVE headers
+        const heroImg = document.getElementById('drawerHeroImg');
         if (matched.bg_image_url) {
-        console.log(matched);
-            // Triggers smooth fade out of existing canvas image
-            bgLayer.style.opacity = '0';
-            setTimeout(() => {
-                bgLayer.style.backgroundImage = `url('${matched.bg_image_url}')`;
-                // Triggers smooth fade-in transformation transition
-                bgLayer.style.opacity = '1';
-            }, 250);
+            heroImg.style.opacity = '0'; heroImg.style.display = 'block';
+            setTimeout(() => { heroImg.src = matched.bg_image_url; heroImg.style.opacity = '1'; }, 100);
         } else {
-            // Grads back to baseline default if no explicit photo exists
-            bgLayer.style.opacity = '0';
+            heroImg.style.display = 'none'; heroImg.style.opacity = '0';
         }
 
-        // document.getElementById('detailsDrawer').style.display = 'block';
-    }
-     */
-    function displayDeepDetailsView(eventId) {
-        const matched = globalEventsRegistry.find(e => e.id === eventId);
-        if (!matched) return;
-
-        const contentBox = document.getElementById('inspectorContent');
-        const containsRtlText = /[\u0600-\u06FF\u0590-\u05FF]/.test(matched.title);
-        contentBox.setAttribute('dir', containsRtlText ? 'rtl' : 'ltr');
-
-        // Clean, direct string assignments with zero risk of padding leakage
-        const timeframeDisplay = matched.end ? `${matched.start} to ${matched.end}` : matched.start;
-
-        document.getElementById('drawerTitle').innerHTML = `
-            ${matched.title} <br>
-            <span style="font-size:13px; color:#858796; font-weight:normal;">📅 Bounded Period: ${timeframeDisplay}</span>
-        `;
-        document.getElementById('drawerDesc').textContent = matched.description || 'No descriptive summary processed.';
-
-        const linksBox = document.getElementById('drawerLinks');
-        linksBox.innerHTML = '';
+        const linksBox = document.getElementById('drawerLinks'); linksBox.innerHTML = '';
         matched.source.forEach(src => {
             const url = `https://${src.lang}.wikipedia.org/wiki/${src.slug}`;
-            const a = document.createElement('a');
-            a.href = url; a.target = '_blank'; a.className = 'wiki-badge';
-            a.innerHTML = `<strong>${src.lang.toUpperCase()} Record</strong> (${(src.strlength/1000).toFixed(0)}k chars) ↗`;
+            const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.className = 'wiki-badge';
+            a.innerHTML = `<strong>${src.lang.toUpperCase()}</strong> (${(src.strlength/1000).toFixed(0)}k) ↗`;
             linksBox.appendChild(a);
         });
-
-        // Background Image Animation transitions
-        const bgLayer = document.getElementById('bgImageLayer');
-        if (matched.bg_image_url) {
-            bgLayer.style.opacity = '0';
-            setTimeout(() => {
-                bgLayer.style.backgroundImage = `url('${matched.bg_image_url}')`;
-                bgLayer.style.opacity = '1';
-            }, 200);
-        } else {
-            bgLayer.style.opacity = '0';
-        }
     }
-
-
-
-
-    /*
-    let globalEventsRegistry = [];
-    let globalGroupsRegistry = [];
-    let timelineInstance = null;
-    let currentAxisOrientation = "horizontal"; // Switches between 'horizontal' and 'vertical' modes
-
-    // Ingest four generated assets asynchronously on system boot loop
-    Promise.all([
-        fetch('generated/groups.json').then(res => res.json()),
-        fetch('generated/events.json').then(res => res.json()),
-    ])
-    .then(([events, groups]) => {
-        globalEventsRegistry = events;
-        globalGroupsRegistry = groups;
-
-        renderSidebarList(globalEventsRegistry);
-        renderTimelineCanvasView(globalEventsRegistry);
-    })
-    .catch(err => console.error("Asset fetch block crashed:", err));
-    */
-
-    /**
-     * Vis.js Main Mapping Engine
-     */
-    /*
-    function renderTimelineCanvasView(eventsToRender) {
-        const container = document.getElementById('timelineContainer');
-        if (timelineInstance) { timelineInstance.destroy(); timelineInstance = null; }
-        container.innerHTML = '';
-
-        const items = eventsToRender.map(e => ({
-            id: e.id,
-            content: e.title,
-            start: e.start,
-            end: e.end || null,
-            type: e.end ? 'range' : 'point',
-            title: createRichHtmlTooltipNode(e), // Passes DOM Node to make native popups work flawlessly
-            group: currentAxisOrientation === "horizontal" ? (e.perp_ids[0] || 'unassigned') : null
-        }));
-
-        // Build horizontal lanes dynamically if in swimlane mode
-        let groupsDataset = null;
-        if (currentAxisOrientation === "horizontal") {
-            groupsDataset = new vis.DataSet(globalGroupsRegistry.map(g => ({ id: g.id, content: g.display_title_override || g.english_title })));
-            groupsDataset.add({ id: 'unassigned', content: '<em>General Events</em>' });
-        }
-
-        const options = {
-            stack: true,
-            margin: { item: 12, axis: 12 },
-            showCurrentTime: false,
-            // CRITICAL UPGRADE: Dynamic orientation assignment fixes vertical timelines and adds year flags natively!
-            orientation: currentAxisOrientation === "vertical" ? { axis: 'left', item: 'top' } : { axis: 'bottom' },
-            tooltip: { followMouse: true, overflowMethod: 'cap' },
-            start: '1917-01-01', end: '1960-01-01'
-        };
-
-        timelineInstance = currentAxisOrientation === "horizontal"
-            ? new vis.Timeline(container, items, groupsDataset, options)
-            : new vis.Timeline(container, items, options);
-
-        timelineInstance.on('select', (props) => {
-            if (props.items.length > 0) displayDeepDetailsView(props.items[0]);
-        });
-    }
-    */
-
-    /**
-     * Right Pillar: Renders the explicit text list layout
-     */
-    /*
-    function renderSidebarList(events) {
-        const container = document.getElementById('listScrollArea');
-        container.innerHTML = '';
-
-        events.forEach(e => {
-            const card = document.createElement('div');
-            card.className = 'event-list-card';
-            card.innerHTML = `
-                <span class="date">${e.start}</span>
-                <h4>${e.title}</h4>
-                <p>${e.description || 'No description summary available.'}</p>
-            `;
-
-            // CLICK TO SCROLL INTERACTION FUNCTION
-            card.onclick = () => {
-                displayDeepDetailsView(e.id);
-                if (timelineInstance) {
-                    timelineInstance.setSelection(e.id, { focus: true });
-                    timelineInstance.moveTo(e.start); // Scrolls the canvas item into center view instantly
-                }
-            };
-            container.appendChild(card);
-        });
-    }
-
-    function filterSidebarList() {
-        const query = document.getElementById('sidebarSearch').value.toLowerCase();
-        const filtered = globalEventsRegistry.filter(e =>
-            e.title.toLowerCase().includes(query) ||
-            (e.description && e.description.toLowerCase().includes(query))
-        );
-        renderSidebarList(filtered);
-    }
-
-    function switchTimelineAxisMode(targetMode) {
-        currentAxisOrientation = targetMode;
-        renderTimelineCanvasView(globalEventsRegistry);
-
-    }
-    */
-
-    /*** Bottom Pillar Inspector View Panel*/
-    /*
-    function displayDeepDetailsView(eventId) {
-        const matched = globalEventsRegistry.find(e => e.id === eventId);
-        if (!matched) return;
-
-        document.getElementById('drawerTitle').textContent = matched.title;
-        document.getElementById('drawerDesc').textContent = matched.description || 'No summary registered.';
-        const linksBox = document.getElementById('drawerLinks');linksBox.innerHTML = '';
-        matched.source.forEach(src => {
-            const url = `https://${src.lang}.wikipedia.org/wiki/${src.slug}`;
-            const a = document.createElement('a');
-            a.href = url;
-            a.target = '_blank';
-            a.className = 'wiki-badge';
-            a.innerHTML = `<strong>${src.lang.toUpperCase()} Record</strong> (${(src.strlength/1000).toFixed(0)}k characters) ↗`;
-            // a.innerHTML = `<strong>${src.lang.toUpperCase()} Variant</strong> <span class="size">(${(src.strlength/1000).toFixed(1)}k chars)</span> ↗`;
-            linksBox.appendChild(a);
-        });
-        document.getElementById('detailsDrawer').style.display = 'block';
-    }
-    */
-    </script>
+</script>
 </body>
 </html>

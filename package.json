@@ -5,9 +5,9 @@
   "main": "parse.js",
   "scripts": {
     "build": "npm run download && npm run prepare && npm run parse",
-    "download": "node download.js",
-    "parse": "node parse.js",
-    "prepare": "node prepare.js",
+    "download": "node Build/download.js",
+    "parse": "node Build/parse.js",
+    "prepare": "node Build/prepare.js",
     "start": "http-server public -p 8080"
   },
   "keywords": [

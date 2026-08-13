@@ -227,33 +227,145 @@ body {
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: var(--bg-secondary); color: var(--text-main); margin: 0; padding: 20px; overflow: hidden;
+    background: var(--bg-secondary);
+    color: var(--text-main);
+    overflow: hidden;
+    margin: 0;
+    /*
+    padding: 20px;
+    */
 }
 
-.layout-grid { display: flex; flex-direction: column; gap: 20px; max-width: 1600px; margin: 0 auto; height: calc(100vh - 40px); position: relative; }
+.layout-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1600px;
+    min-width: 640px;
+    margin: 0 auto;
+    height: calc(100vh - 40px);
+    position: relative;
+}
 
 /* Upper Right Fixed Controls Station */
 .upper-controls-deck {
-    position: absolute; top: 0; right: 0; height: 30px; display: flex; gap: 15px; align-items: center; z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    z-index: 10;
 }
-.theme-switch-btn, .lang-switch-btn {
-    background: var(--bg-primary); border: 2px solid var(--border-color); padding: 4px 10px;
-    border-radius: 4px; font-size: 12px; font-weight: bold; cursor: pointer; color: var(--text-main);
+.theme-switch-btn {
+    position: absolute;
+    top: 0;
+    background: var(--bg-primary);
+    color: var(--text-main);
+    /*right: 50%;*/
+    left: -120px;
+    height: 28px;
+    align-items: center;
+    z-index: 10;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
 }
-.lang-switch-btn.active-lang { background: var(--accent-blue); color: #fff; border-color: var(--accent-blue); }
+.lang-switch-btn {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-width: 1px 0;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-main);
+}
+.lang-switch-btn {
+    border-top-width: 0;
+    border-left-width: 1px;
+}
+.lang-switch-btn:last-child {
+    border-rigth-width: 0px;
+}
+.lang-switch-btn.active-lang {
+    background: var(--accent-blue);
+    color: #fff;
+    border-color: var(--accent-blue);
+}
 
 /* Timeline Wrapper Area */
-.timeline-wrapper { background: var(--bg-primary); border: 2px solid var(--border-color); border-radius: 8px; padding: 15px; min-height: 250px; }
-#timelineContainer { border: 1px solid var(--border-color); background: var(--bg-primary); }
+.timeline-outer-wrapper {
+    background: var(--bg-primary);
+    border-radius: 8px;
+    min-height: 250px;
+    margin-top: 40px;
+    position: relative: top: 50px;
+    /*
+    border: 2px solid var(--border-color);
+    padding: 15px;
+    */
+}
+#timelineContainer {
+    /* border: 1px solid var(--border-color); */
+    border-width: 1px 0;
+    background: var(--bg-primary);
+    margin-left: -1px;
+    padding-top: 0;
+}
 
+.timeline-outer-wrapper > div {
+    padding-top: 10px;
+}
+.timeline-outer-wrapper > div > strong {
+    display: inline-block;
+    padding-left: 1rem;
+}
+.timeline-outer-wrapper > div > strong + span {
+    display: inline-block;
+    padding-right: 1rem !important;
+}
+.timeline-outer-wrapper > div > strong + span > strong {
+    font-weight: 400 !important;
+}
+button.timeline-zoom-btn {
+    background: var(--bg-primary);
+    color: var(--text-main);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
 /* Vis.js Canvas Element Overrides (High-Contrast Text Rules) */
-.vis-item { background-color: var(--vis-item-bg) !important; border: 2px solid var(--border-color) !important; color: var(--text-main) !important; font-weight: 700 !important; }
-.vis-item.vis-selected { border-color: var(--accent-blue) !important; background-color: var(--accent-blue) !important; color: #ffffff !important; }
-.vis-item .vis-item-content { overflow: visible !important; white-space: nowrap !important; }
-.vis-time-axis .vis-text { color: var(--text-main) !important; font-weight: bold !important; }
+.vis-item {
+    background-color: var(--vis-item-bg) !important;
+    border: 1px solid var(--border-color) !important;
+    color: var(--text-main) !important;
+    font-weight: 400 !important;
+}
+.vis-item.vis-selected {
+    border-color: var(--accent-blue) !important;
+    background-color: var(--accent-blue) !important;
+    color: #ffffff !important;
+}
+.vis-item .vis-item-content {
+    overflow: visible !important;
+    white-space: nowrap !important;
+}
+.vis-time-axis {
+}
+.vis-time-axis .vis-text {
+    color: var(--text-main) !important;
+    font-weight: bold !important;
+}
 
 /* Bottom Split Layout Frame */
-.bottom-split { display: grid; grid-template-columns: 1fr 400px; gap: 20px; flex-grow: 1; min-height: 0; }
+.bottom-split {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    gap: 20px;
+    flex-grow: 1;
+    min-height: 0;
+}
 
 /* 6) Center-Mounted Rect Inspector Panel Layout */
 .inspector-panel { background: var(--bg-primary); border: 2px solid var(--border-color); border-radius: 8px; padding: 30px; display: flex; flex-direction: column; overflow-y: auto; }
@@ -270,8 +382,24 @@ body {
 /* Sidebar List elements presentation layout styles */
 .list-sidebar { background: var(--bg-primary); border: 2px solid var(--border-color); border-radius: 8px; display: flex; flex-direction: column; overflow: hidden; }
 .sidebar-header { padding: 15px; background: var(--bg-secondary); border-bottom: 2px solid var(--border-color); }
-.search-box { width: 100%; padding: 10px; background: var(--bg-primary); color: var(--text-main); border: 2px solid var(--border-color); border-radius: 4px; font-size: 14px; font-weight: bold; }
-.list-scroll-area { padding: 15px; overflow-y: auto; flex-grow: 1; display: flex; flex-direction: column; gap: 10px; }
+.search-box {
+    width: 100%;
+    padding: 10px;
+    background: var(--bg-primary);
+    color: var(--text-main);
+    border: 2px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.list-scroll-area {
+    padding: 15px 0.5rem;
+    overflow-y: auto;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .event-list-card { background: var(--bg-secondary); border: 2px solid var(--border-color); border-left-width: 6px; border-left-color: var(--accent-blue); padding: 10px 14px; border-radius: 4px; cursor: pointer; }
 .event-list-card:hover { opacity: 0.85; }

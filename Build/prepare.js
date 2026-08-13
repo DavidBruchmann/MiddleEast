@@ -3,7 +3,7 @@ const path = require('path');
 const cheerio = require('cheerio');
 
 // Define strict path pointers mapping directly to the public directory architecture
-const CONFIG_DIR = path.join(__dirname, 'public', 'config');
+const CONFIG_DIR = path.join(__dirname, '../public', 'config');
 const CACHE_DIR = path.join(__dirname, 'wikipedia_cache');
 
 function runPreparationEngine() {
