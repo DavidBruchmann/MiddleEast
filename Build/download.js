@@ -5,47 +5,110 @@ const https = require('https');
 
 // Define the root target topics (English names) and the specific languages to download
 // Just add the exact English title slug below
-const TARGET_ARTICLES = [
+
+const EVENT_ARTICLES = [
+    "Partitioning_of_the_Ottoman_Empire",
+    "London_Conference_(1939)",
     "1948_Arab–Israeli_War",
     "Aliyah",
-    "Avraham_Stern",
-    "Balfour_Declaration",
+    "First_Aliyah",
+    "Second_Aliyah",
+    "Third_Aliyah",
+    "Fourth_Aliyah",
+    "Fifth_Aliyah",
+    "Aliyah_Bet",
     "Nakba",
-    // "Cyrus_the_Great",
-    "Fatah",
-    "Haganah",
-    "Irgun",
-    // "Jewish_diaspora",
-    "Lehi_(militant_group)",
-    "Old_Yishuv",
-    "Yishuv",
-    "Yishuv#New_Yishuv",
-    "Zionism",
+    "Ongoing_Nakba",
     "Zionist_movement",
-    // Pro Israel
-    "Yehuda_Alkalai",
+    "Deir_Yassin_massacre", // Lehi, Irgun
+    "King_David_Hotel_bombing",
+    "Walter_Guinness,_1st_Baron_Moyne#Assassination",
+];
+const FRAMEWORK_ARTICLES = [
+    "Balfour_Declaration",
+    "White_Paper_of_1939",
+    "United_Nations_Partition_Plan_for_Palestine",
+    "Sykes–Picot_Agreement",
+];
+const PEOPLE_ARTICLES = [
+/*
+    // --- Pro Israel ---
+    "David_Ben-Gurion", // Prime minister of Israel from 1948 to 1953, 1955 to 1963
+    "Moshe_Sharett", // Prime minister of Israel from 1954 to 1955
+    "Levi_Eshkol", // Prime minister of Israel from 1963 to 1969
+    "Yigal Allon", // Prime minister of Israel 1969
+    "Golda_Meir", // Prime minister of Israel from 1969 to 1974
+    "Yitzhak_Rabin", // Prime minister of Israel from 1974 to 1977
+    "Menachem_Begin", // Prime minister of Israel from 1977 to 1983
+    "Yitzhak_Shamir", // Prime minister of Israel from 1983 to 1984, 1986 to 1992
+    "Shimon_Peres", // Prime minister of Israel from 1984 to 1986, 1995 to 1996
+    "Yitzhak_Rabin", // Prime minister of Israel from 1992 to 1995
+    "Benjamin_Netanyahu", // Prime minister of Israel from 1996 to 1999, 2009 to 2021, 2022 to now
+    "Ehud_Barak", // Prime minister of Israel from 1999 to 2001
+    "Ariel_Sharon", // Prime minister of Israel from 2001 to 2006
+    "Ehud_Olmert", // Prime minister of Israel from 2006 to 2009
+    "Naftali_Bennett", // Prime minister of Israel from 2021 to 2022
+    "Yair_Lapid", // Prime minister of Israel 2022
+
+
+    "Avraham_Stern", // founder of Lehi_(militant_group)
+    "Eliyahu_Bet-Zuri", // Lehi
+    "Eliyahu_Hakim", //Lehi
     "Zvi_Hirsch_Kalischer",
-    "Moses_Hess",
+    "Moses_Hess", // foundational thinker of modern Zionism 1862: book "Rome and Jerusalem: The Last National Question"
     "Leon_Pinsker",
+    "Mark_Sykes",
+    "François_Georges-Picot",
     "Theodor_Herzl",
     "Eliezer_Ben-Yehuda",
     "Chaim_Weizmann",
-    // Anti Israel
     "Amin_al-Husseini",
+    // --- Pro Palestine ---
 
-    "White_Paper_of_1939",
-    "London_Conference_(1939)",
+    // --- Britains ---
+    "Neville_Chamberlain", // Prime Minister of the United Kingdom from May 1937 to May 1940 and Leader of the Conservative Party from May 1937 to October 1940
+    "Walter_Guinness,_1st_Baron_Moyne", // British minister of state in the Middle East until November 1944, when he was assassinated by the Zionist terrorist group Lehi in Cairo
+*/
+
+    "Ezer_Weizman", // President of Israel from 1993 to 2000
+    "Judah_Alkalai" // Yehuda_Alkalai"
+];
+const GROUP_ARTICLES = [
+    // --- Pro Israel ---
+    // old Jews in Palestinian Area
+    "Yishuv",
+    "Old_Yishuv",
+    "Yishuv#New_Yishuv",
+    // Terror Groups
+    "Haganah",
+    "Irgun",
+    "Lehi_(militant_group)",  // founded by Avraham_Stern
+    // Israeli political parties
+    "Herut", // right-wing party
+    "Likud", // right-wing party
+
+    // --- Pro Palestine ---
+    "Fatah",
+    "National_Defence_Party_(Palestine)",
+
+    // Misc.
     "Peel_Commission",
     "British_government",
-    "Neville_Chamberlain",
-    "United_Nations_Partition_Plan_for_Palestine",
-    "National_Defence_Party_(Palestine)",
-    "Sykes–Picot_Agreement",
-    "Mark_Sykes",
-    "François_Georges-Picot",
-    "Partitioning_of_the_Ottoman_Empire",
-    "Menachem_Begin",
 ];
+const IDEALOGICAL_ARTICLES = [
+    "Zionism",
+];
+
+const TARGET_ARTICLES = {
+  'events': PEOPLE_ARTICLES //EVENT_ARTICLES,
+};
+/*
+[
+    // "Cyrus_the_Great",
+    // "Jewish_diaspora",
+
+];
+*/
 
 const BASE_CACHE_DIR = path.join(__dirname, 'wikipedia_cache');
 const REGISTRY_FILE = path.join(BASE_CACHE_DIR, 'cache_registry.json');
@@ -384,7 +447,7 @@ async function startPipeline() {
 
     let registry = {};
 
-    for (const englishArticle of TARGET_ARTICLES) {
+    for (const englishArticle of TARGET_ARTICLES.events) {
       if (englishArticle.length) {
         const cleanEnglishSlug = englishArticle.replace(/ /g, '_');
         console.log(`Processing Topic: "${cleanEnglishSlug}"`);

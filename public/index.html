@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Israel in the Middle East</title>
-    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <script>
+        var cl = document.querySelector('html').classList;
+        cl.remove('no-js');
+        cl.add('has-js');
+    </script>
     <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
     <link href="assets/CSS/styles.css" rel="stylesheet" type="text/css" />
@@ -13,26 +17,29 @@
 
 <div class="layout-grid">
     <!-- Dynamic Top Corner Unified Theme & Language Controllers Deck -->
-    <div class="upper-controls-deck">
-        <div style="position:relative;top:-3px;">
+    <header class="upper-controls-deck">
+        <div class="contribute">
+            <a href="https://ko-fi.com/davidbruchmann/" target="_blank"><span>Contribute on github&nbsp;&nbsp;</span>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="octicon octicon-mark-github" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:top; margin-top:3px;"><style></style><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </a>
         </div>
-         <a href="https://ko-fi.com/davidbruchmann/" target="_blank">Contribute on github:</a>
-            <a href="https://ko-fi.com/davidbruchmann/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="octicon octicon-mark-github" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:text-top"><style></style><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
-        </a>
-        <a href="https://ko-fi.com/davidbruchmann/" target="_blank">
-            <img width="200" src="assets/images/support_me_on_kofi_dark-ae82f4af76f8f47305452b88ed83526e.png" alt="Support this project">
-        </a>
-        <button class="theme-switch-btn" onclick="toggleInterfaceColorThemeMode()">🌗 Theme</button>
+        <div class="support">
+            <a href="https://ko-fi.com/davidbruchmann/" target="_blank">
+                <img height="30" src="assets/images/support_me_on_kofi_dark-ae82f4af76f8f47305452b88ed83526e.png" alt="Support this project">
+            </a>
+        </div>
+        <button class="theme-switch-btn">🌗 Theme</button>
         <div style="display:flex; gap:0px;">
-            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('ar')">AR 🇵🇸 🇸🇦</button>
-            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('de')">DE 🇩🇪</button>
-            <button class="lang-switch-btn active-lang" onclick="changeGlobalInterfaceLanguage('en')">EN 🇬🇧 🇺🇸</button>
-            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('de')">ES 🇪🇸</button>
-            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('de')">FR 🇫🇷</button>
-            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('he')">HE 🇮🇱</button>
-            <button class="lang-switch-btn" onclick="changeGlobalInterfaceLanguage('id')">ID 🇮🇩</button>
+            <button class="lang-switch-btn" id="lang-ar">AR <span>🇵🇸</span></button>
+            <button class="lang-switch-btn" id="lang-de">DE <span>🇩🇪</span></button>
+            <button class="lang-switch-btn active-lang" id="lang-en">EN <span>🇬🇧</span></button>
+            <button class="lang-switch-btn" id="lang-es">ES <span>🇪🇸</span></button>
+            <button class="lang-switch-btn" id="lang-fr">FR <span>🇫🇷</span></button>
+            <button class="lang-switch-btn" id="lang-he">HE <span>🇮🇱</span></button>
+            <button class="lang-switch-btn" id="lang-id">ID <span>🇮🇩</span></button>
         </div>
-    </div>
+    </header>
+    <main>
 
     <!-- Timeline Wrapper Grid -->
     <div class="timeline-outer-wrapper">
@@ -40,8 +47,8 @@
             <strong style="font-size:16px;">Israel in the Middle East</strong>
             <span style="margin-left: auto; padding-right: 480px;">
                 <strong style="font-size:16px;">Zoom:</strong>
-                <button onclick="if(timelineInstance) timelineInstance.zoomIn(0.4)" class="timeline-zoom-btn">🔍 In</button>
-                <button onclick="if(timelineInstance) timelineInstance.zoomOut(0.4)" class="timeline-zoom-btn">🔍 Out</button>
+                <button class="timeline-zoom-btn" id="zoom-in">🔍 In</button>
+                <button class="timeline-zoom-btn" id="zoom-out">🔍 Out</button>
             </span>
         </div>
         <div id="timelineContainer"></div>
@@ -70,6 +77,9 @@
         </div>
     </div>
 </div>
+</main>
+<footer><p>© 2026 David Bruchmann</p>
+</footer>
 <script>
     let globalEventsRegistry = [];
     let timelineInstance = null;
@@ -99,47 +109,82 @@
             const rawEnd = e.end ? String(e.end).trim() : "";
             let visStart = rawStart;
             if (rawStart.length === 4) {
+                // TODO
                 visStart = `${rawStart}-01-01`;
             }
             let visEnd = e.end ? (rawEnd.length === 4 ? `${rawEnd}-12-31` : rawEnd) : null;
-
-            return { id: e.id, content: e.title, start: visStart, end: visEnd, type: e.end ? 'range' : 'point' };
+            return {
+                id: e.id,
+                content: e.title,
+                start: visStart,
+                end: visEnd,
+                type: e.end ? 'range' : 'point'
+            };
         });
 
         const options = {
-            stack: true, margin: { item: 10, axis: 10 }, showCurrentTime: false, zoomable: false,
-            orientation: { axis: 'top', item: 'bottom' }, start: '1917-01-01', end: '1960-01-01'
+            stack: true,
+            margin: {
+                item: 10,
+                axis: 10
+            },
+            showCurrentTime: false,
+            zoomable: false,
+            orientation: {
+                axis: 'top',
+                item: 'bottom'
+            },
+            start: '1917-01-01',
+            end: '1960-01-01'
         };
         timelineInstance = new vis.Timeline(container, items, options);
-        timelineInstance.on('select', (props) => { if (props.items.length > 0) { activeSelectedEventId = props.items; displayDeepDetailsView(activeSelectedEventId); } });
+        timelineInstance.on('select', (props) => {
+            if (props.items.length > 0) {
+                activeSelectedEventId = props.items;
+                displayDeepDetailsView(activeSelectedEventId);
+            }
+        });
     }
-
     function renderSidebarList(events) {
-        const container = document.getElementById('listScrollArea'); container.innerHTML = '';
+        const container = document.getElementById('listScrollArea');
+        container.innerHTML = '';
         events.forEach(e => {
-            const card = document.createElement('div'); card.className = 'event-list-card';
+            const card = document.createElement('div');
+            card.className = 'event-list-card';
             card.innerHTML = `<span class="date">${e.start.substring(0,4)}</span><h4>${e.title}</h4>`;
-            card.onclick = () => { activeSelectedEventId = e.id; displayDeepDetailsView(e.id); if (timelineInstance) { timelineInstance.setSelection(e.id, { focus: true }); timelineInstance.moveTo(`${e.start.substring(0,4)}-01-01`); } };
+            card.onclick = () => {
+                activeSelectedEventId = e.id;
+                displayDeepDetailsView(e.id);
+                if (timelineInstance) {
+                    timelineInstance.setSelection(e.id, { focus: true });
+                    timelineInstance.moveTo(`${e.start.substring(0,4)}-01-01`);
+                }
+            };
             container.appendChild(card);
         });
     }
-
     function filterSidebarList() {
         const query = document.getElementById('sidebarSearch').value.toLowerCase();
         renderSidebarList(globalEventsRegistry.filter(e => e.title.toLowerCase().includes(query)));
     }
-
     function changeGlobalInterfaceLanguage(langCode) {
-        selectedActiveLanguageCode = langCode;
-        document.querySelectorAll('.lang-switch-btn').forEach(btn => btn.classList.remove('active-lang'));
-        event.target.classList.add('active-lang');
-        if (activeSelectedEventId) displayDeepDetailsView(activeSelectedEventId);
+        if (langCode) {
+            document.querySelectorAll('.lang-switch-btn').forEach(btn => {
+                btn.classList.remove('active-lang');
+                if (btn.id == 'lang-' + langCode) {
+                    btn.classList.add('active-lang');
+                }
+            });
+            displayDeepDetailsView(langCode);
+        }
+        console.log(langCode);
     }
-
-    // 3) Light / Dark / System Default Theme Toggle Engine
     function initSystemThemeConfiguration() {
         const cachedTheme = localStorage.getItem('user-selected-theme');
-        if (cachedTheme) { document.documentElement.setAttribute('data-theme', cachedTheme); return; }
+        if (cachedTheme) {
+            document.documentElement.setAttribute('data-theme', cachedTheme);
+            return;
+        }
         const preferredSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
         document.documentElement.setAttribute('data-theme', preferredSystemDark ? 'dark' : 'light');
     }
@@ -149,9 +194,9 @@
         document.documentElement.setAttribute('data-theme', nextTheme);
         localStorage.setItem('user-selected-theme', nextTheme);
     }
-
     function displayDeepDetailsView(eventId) {
-        const matched = globalEventsRegistry.find(e => e.id === eventId); if (!matched) return;
+        const matched = globalEventsRegistry.find(e => e.id === eventId);
+        if (!matched) return;
         const contentBox = document.getElementById('inspectorContent');
 
         const isRtlLang = ['ar', 'he'].includes(selectedActiveLanguageCode);
@@ -172,20 +217,36 @@
         // 2) Image Panel Transitions sitting ABOVE headers
         const heroImg = document.getElementById('drawerHeroImg');
         if (matched.bg_image_url) {
-            heroImg.style.opacity = '0'; heroImg.style.display = 'block';
-            setTimeout(() => { heroImg.src = matched.bg_image_url; heroImg.style.opacity = '1'; }, 100);
+            heroImg.style.opacity = '0';
+            heroImg.style.display = 'block';
+            setTimeout(() => {
+                heroImg.src = matched.bg_image_url;
+                heroImg.style.opacity = '1';
+            }, 100);
         } else {
             heroImg.style.display = 'none'; heroImg.style.opacity = '0';
         }
 
-        const linksBox = document.getElementById('drawerLinks'); linksBox.innerHTML = '';
+        const linksBox = document.getElementById('drawerLinks');
+        linksBox.innerHTML = '';
         matched.source.forEach(src => {
             const url = `https://${src.lang}.wikipedia.org/wiki/${src.slug}`;
-            const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.className = 'wiki-badge';
+            const a = document.createElement('a');
+            a.href = url;
+            a.target = '_blank';
+            a.className = 'wiki-badge';
             a.innerHTML = `<strong>${src.lang.toUpperCase()}</strong> (${(src.strlength/1000).toFixed(0)}k) ↗`;
             linksBox.appendChild(a);
         });
     }
+
+    document.querySelectorAll('.lang-switch-btn').forEach(btn => { btn.onclick = () => {
+        const lang = btn.id.split('-')[1];
+        changeGlobalInterfaceLanguage(lang);
+    }});
+    document.querySelector('.theme-switch-btn').onclick = () => toggleInterfaceColorThemeMode();
+    document.querySelector('#zoom-in').onclick = () => {if(timelineInstance) timelineInstance.zoomIn(0.4)};
+    document.querySelector('#zoom-out').onclick = () => {if(timelineInstance) timelineInstance.zoomOut(0.4)};
 </script>
 </body>
 </html>

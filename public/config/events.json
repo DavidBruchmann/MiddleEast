@@ -16,7 +16,11 @@
     "start": "1881-04-27",
     "end": "1884",
     "context_id": "context_russian_pogroms",
-    "bg_image_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Jewish_pogrom_in_Kiev_(1881).jpg",
+    "bg_image": {
+      "url": "media/Jewish_pogrom_in_Kiev_(1881).jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Jewish_pogrom_in_Kiev_(1881).jpg",
+      "page": "https://en.wikipedia.org/wiki/File:Jewish_pogrom_in_Kiev_(1881).jpg"
+    },
     "TODO": "CHECK DATES start 1/15.March, end?"
   },
   {
@@ -25,7 +29,11 @@
     "display_title_override": "The first Arab–Israeli War (1948)",
     "start": "1948-05-15",
     "end": "1949-03-10",
-    "bg_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Tel_Aviv-Yafo_(997008136796005171).jpg"
+    "bg_image": {
+      "url": "media/Tel_Aviv-Yafo_(997008136796005171).jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Tel_Aviv-Yafo_(997008136796005171).jpg",
+      "page": "https://en.wikipedia.org/wiki/File:Tel_Aviv-Yafo_(997008136796005171).jpg"
+    }
   },
   {
     "id": "ev_first_aliyah",

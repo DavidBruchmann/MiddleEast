@@ -60,12 +60,33 @@ function scanTextForImplicitEntities(sourceNode, lang, persons, groups) {
 
     // Scan for hidden persons mentioned inside this event/context text dump
     persons.forEach(p => {
-        const isMentioned = p.keywords.some(kw => bodyTextLower.includes(kw.toLowerCase()));
+        const isMentioned = p.keywords.some(kw => {
+            return bodyTextLower.includes(kw.toLowerCase())
+        });
         if (isMentioned) {
             // Log the relationship discovery gracefully
             console.log(`  💡 DISCOVERY: Found Person "${p.english_title}" active inside Topic: "${sourceNode.english_title}"`);
         }
     });
+}
+
+function getMonthByName(name) {
+    let month = '';
+    switch (name) {
+        case 'January':   month = '01'; break;
+        case 'February':  month = '02'; break;
+        case 'March':     month = '03'; break;
+        case 'April':     month = '04'; break;
+        case 'May':       month = '05'; break;
+        case 'June':      month = '06'; break;
+        case 'July':      month = '07'; break;
+        case 'August':    month = '08'; break;
+        case 'September': month = '09'; break;
+        case 'October':   month = '10'; break;
+        case 'November':  month = '11'; break;
+        case 'December':  month = '12'; break;
+    }
+    return month;
 }
 
 /**
@@ -74,6 +95,7 @@ function scanTextForImplicitEntities(sourceNode, lang, persons, groups) {
 function extractAndValidateVitalDates(person) {
     const filePath = path.join(CACHE_DIR, 'en', `${person.english_title}.html`);
     if (!fs.existsSync(filePath)) {
+        console.log(filePath);
         console.warn(`  ⚠️  WARNING: Local text cache missing for Person: "${person.english_title}"`);
         return;
     }
@@ -82,21 +104,39 @@ function extractAndValidateVitalDates(person) {
     const $ = cheerio.load(htmlContent);
 
     // Search for Wikipedia's standard ISO birthday metadata tags
-    let birthDate = $('.bday').first().attr('datetime') || $('.bday').first().text().trim();
-    let deathDate = $('.dday').first().attr('datetime') || null;
+    let birthDate = '';
+    let deathDate = '';
 
-    // Fallback: search infobox table rows if the standard microformat classes are missing
+    const jsonBirthDateMatch = htmlContent.match(/\"birth_date\"\:{\"wt\":\"((\d{2}) (January|February|March|May|June|July|August|September|October|November|December) ((17|18|19|20)\d{2}))\"}/);
+    if (jsonBirthDateMatch) {
+        birthDate = jsonBirthDateMatch[4] + '-' + getMonthByName(jsonBirthDateMatch[3]) + '-' + jsonBirthDateMatch[2];
+    }
+    // console.log(birthDate);
+
+    const jsonDeathDateMatch = htmlContent.match(/\"birth_date\"\:{\"wt\":\"((\d{2}) (January|February|March|May|June|July|August|September|October|November|December) ((17|18|19|20)\d{2}))\"}/);
+    if (jsonDeathDateMatch) {
+        deathDate = jsonDeathDateMatch[4] + '-' + getMonthByName(jsonDeathDateMatch[3]) + '-' + jsonDeathDateMatch[2];
+    }
+    // console.log(deathDate);
+
     if (!birthDate) {
+        birthDate = $('.bday').first().attr('datetime') || $('.bday').first().text().trim();
+    }
+    if (!deathDate) {
+        deathDate = $('.dday').first().attr('datetime') || null;
+    }
+    // Fallback: search infobox table rows if the standard microformat classes are missing
+    if (!birthDate || !deathDate) {
         $('.infobox tr').each((i, el) => {
             const th = $(el).find('th').text().toLowerCase();
             const td = $(el).find('td').text().trim();
-            if (th.includes('born')) {
+            if (!birthDate && th.includes('born')) {
                 // Use a basic regex to grab a 4-digit year string out of the text block as a fallback
-                const yearMatch = td.match(/\b(18|19|20)\d{2}\b/);
+                const yearMatch = td.match(/\b(17|18|19|20)\d{2}\b/);
                 if (yearMatch) birthDate = `${yearMatch[0]}-01-01`;
             }
-            if (th.includes('died')) {
-                const yearMatch = td.match(/\b(18|19|20)\d{2}\b/);
+            if (!deathDate && th.includes('died')) {
+                const yearMatch = td.match(/\b(17|18|19|20)\d{2}\b/);
                 if (yearMatch) deathDate = `${yearMatch[0]}-01-01`;
             }
         });
