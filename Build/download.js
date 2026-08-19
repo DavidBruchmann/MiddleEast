@@ -485,7 +485,7 @@ async function downloadArticleText(lang, slug) {
     if (!fs.existsSync(targetFolder)) {
       fs.mkdirSync(targetFolder, { recursive: true });
     }
-    
+
     //const destinationPath = path.join(targetFolder, `${slug}.txt`);
     const destinationPath = getFilePath(lang, slug, `txt`);
 
@@ -533,41 +533,45 @@ async function startPipeline() {
     let registry = {};
 
     //  for (const englishArticle of TARGET_ARTICLES) {
-    Object.keys(TARGET_ARTICLES).forEach(async (key, englishArticle) => {
-      if (englishArticle.length) {
-        const cleanEnglishSlug = englishArticle.replace(/ /g, '_');
-        console.log(`Processing Topic: "${cleanEnglishSlug}"`);
-//console.log(cleanEnglishSlug + '_1');
+    for (const category of Object.keys(TARGET_ARTICLES)) {
+        const articleListArray = TARGET_ARTICLES[category];
+        for (const englishArticle of articleListArray) {
 
-        // Execute split requests back-to-back safely
-        const translations = await fetchLangLinks(cleanEnglishSlug);
-        await delay(150);
-        const qNumber = await fetchWikidataId(cleanEnglishSlug);
-        if (Object.keys(translations).length === 0) {
-            console.log(`  ✕ Skipping topic: mapping empty.`);
-            return;
-        }
-//console.log(cleanEnglishSlug + '_2');
+            if (englishArticle.length) {
+              const cleanEnglishSlug = englishArticle.replace(/ /g, '_');
+              console.log(`Processing Topic: "${cleanEnglishSlug}"`);
+      //console.log(cleanEnglishSlug + '_1');
 
-        // Populate our internal structural tracking map memory cleanly
-        registry[cleanEnglishSlug] = {
-            wikidata_id: qNumber, //result.wikidataId, // Store standard root key e.g., "Q170241"
-            translations: translations //result.mappings
-        };
-//console.log(registry,cleanEnglishSlug);
-        for (const lang of TARGET_LANGS) {
-            const currentSlug = translations[lang]; //result.mappings[lang];
+              // Execute split requests back-to-back safely
+              const translations = await fetchLangLinks(cleanEnglishSlug);
+              await delay(150);
+              const qNumber = await fetchWikidataId(cleanEnglishSlug);
+              if (Object.keys(translations).length === 0) {
+                  console.log(`  ✕ Skipping topic: mapping empty.`);
+                  return;
+              }
+      //console.log(cleanEnglishSlug + '_2');
 
-//console.log(currentSlug);
-            if (currentSlug) {
-                const html = await downloadArticleHtml(lang, currentSlug);
-                const text = await downloadArticleText(lang, currentSlug);
-                await delay(300);
+              // Populate our internal structural tracking map memory cleanly
+              registry[cleanEnglishSlug] = {
+                  wikidata_id: qNumber, //result.wikidataId, // Store standard root key e.g., "Q170241"
+                  translations: translations //result.mappings
+              };
+      //console.log(registry,cleanEnglishSlug);
+              for (const lang of TARGET_LANGS) {
+                  const currentSlug = translations[lang]; //result.mappings[lang];
+
+      //console.log(currentSlug);
+                  if (currentSlug) {
+                      const html = await downloadArticleHtml(lang, currentSlug);
+                      const text = await downloadArticleText(lang, currentSlug);
+                      await delay(300);
+                  }
+              }
+              console.log(`  ✓ Topic successfully mapped: ` + cleanEnglishSlug);
             }
         }
-        console.log(`  ✓ Topic successfully mapped: ` + cleanEnglishSlug);
-      }
-    });
+    }
 
     // Write file cleanly onto disk drive space
     fs.writeFileSync(REGISTRY_FILE, JSON.stringify(registry, null, 2));
