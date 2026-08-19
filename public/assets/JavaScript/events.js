@@ -141,9 +141,24 @@ function renderSidebarList(events) {
         card.innerHTML = `<span class="date">${displayYear}</span><h4 style="margin:2px 0 0 0; font-size:14px;">${localizedCardTitle}</h4>`;
 
         card.onclick = () => {
+            console.log(card);
+            const allCards = document.querySelectorAll('.compact-list-card');
+            allCards.forEach(function(item) {
+                item.classList.remove('active')
+            })
+            /*
+            for (let n; n<allCards.length; n++) {
+                // console.log(n);
+                allCards[n].classList.remove("active");
+            }
+            */
+            card.classList.add('active');
             activeSelectedEventId = e.id;
             displayDeepDetailsView(e.id);
-            if (timelineInstance) { timelineInstance.setSelection(e.id, { focus: true }); timelineInstance.moveTo(`${displayYear}-01-01`); }
+            if (timelineInstance) {
+                timelineInstance.setSelection(e.id, { focus: true });
+                timelineInstance.moveTo(`${displayYear}-01-01`);
+            }
         };
         container.appendChild(card);
     });
@@ -186,7 +201,7 @@ function applyThemeStyles(theme) {
 
 function displayDeepDetailsView(rawSelectionId) {
     if (!rawSelectionId) return;
-    
+
     const cleanEventId = Array.isArray(rawSelectionId) ? rawSelectionId[0] : rawSelectionId;
     const matched = masterDataset.events.find(e => e.id === cleanEventId);
     if (!matched) {
@@ -205,7 +220,7 @@ function displayDeepDetailsView(rawSelectionId) {
     const hasText = matched.descriptions && matched.descriptions[lang];
     const textSummaryOutput = hasText ? matched.descriptions[lang] : (matched.descriptions['en'] || 'Text summary unavailable.');
     const warning = hasText ? '' : ' (Displaying EN baseline)';
-    
+
     const activeTitleDisplay = (matched.titles && matched.titles[lang]) || matched.title;
 
     document.getElementById('drawerTitle').innerHTML = `${activeTitleDisplay}${warning} <br><span style="font-size:13px; font-weight:normal; color:var(--text-muted);">📅 Timeline Period: ${startYear}</span>`;
@@ -228,7 +243,7 @@ function displayDeepDetailsView(rawSelectionId) {
             // Otherwise, leave the URL pointing straight to the main root article page
             const anchorHashSuffix = matched.anchor_target ? `#${encodeURIComponent(matched.anchor_target)}` : '';
             const url = `https://${src.lang}.wikipedia.org/wiki/${src.slug}${anchorHashSuffix}`;
-            
+
             const a = document.createElement('a');
             a.href = url;
             a.target = '_blank';

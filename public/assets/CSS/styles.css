@@ -268,7 +268,7 @@ button.timeline-zoom-btn {
     font-weight: bold;
 }
 .list-scroll-area {
-    padding: 15px 0.5rem;
+    padding: 0.5rem 0;
     overflow-y: scroll;
     overflow-x: hidden;
     flex-grow: 1;
@@ -316,4 +316,11 @@ button.timeline-zoom-btn {
 }
 footer {
     min-height: 2rem;
+}
+.compact-list-card {
+    padding: 0.5rem 1rem;
+}
+.compact-list-card.active {
+    background: #aaa;
+    color: #000;
 }
