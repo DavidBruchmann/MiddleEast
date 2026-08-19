@@ -871,9 +871,9 @@
       ]
     },
     {
-      "id": "ev_yehuda_alkalai",
+      "id": "ev_judah_alkalai",
       "wikidata_id": "Q651247",
-      "title": "Yehuda Alkalai",
+      "title": "Judah Alkalai",
       "start": "1948-05-15",
       "end": null,
       "perp_ids": [],
@@ -887,6 +887,11 @@
           "slug": "Judah_Alkalai",
           "lang": "de",
           "strlength": 2184
+        },
+        {
+          "slug": "Judah_Alkalai",
+          "lang": "en",
+          "strlength": 8885
         },
         {
           "slug": "Yehuda_Hay_Alkalai",

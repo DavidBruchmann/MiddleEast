@@ -1,0 +1,29 @@
+{
+  "headline": {
+    "en": "Historical Conflict Ledger",
+    "de": "Historisches Konfliktregister",
+    "ar": "سجل الصراعات التاريخية",
+    "he": "פנקס הסכסוכים ההיסטורי",
+    "id": "Buku Besar Konflik Sejarah",
+    "fr": "Registre des Conflits Historiques",
+    "es": "Registro de Conflictos Históricos"
+  },
+  "subheading": {
+    "en": "Side-by-side verification interface. Select entries to reveal language source trees.",
+    "de": "Schnittstelle zur parallelen Überprüfung. Einträge auswählen, um Sprachquellen anzuzeigen.",
+    "ar": "واجهة التحقق جنباً إلى جنب. حدد الإدخالات للكشف عن أشجار مصادر اللغة.",
+    "he": "ממשק אימות זה לצד זה. בחר רשומות כדי לחשוף עצי מקור שפה.",
+    "id": "Antarmuka verifikasi berdampingan. Pilih entri untuk menampilkan pohon sumber bahasa.",
+    "fr": "Interface de vérification côte à côte. Sélectionnez des entrées para afficher les sources.",
+    "es": "Interfaz de verificación lado a lado. Seleccione entradas para revelar las fuentes de idioma."
+  },
+  "filter_label": {
+    "en": "Quick filter list rows:",
+    "de": "Listeneinträge schnell filtern:",
+    "ar": "تصفية سريعة لصفوف القائمة:",
+    "he": "סינון מהיר של שורות הרשימה:",
+    "id": "Filter cepat baris daftar:",
+    "fr": "Filtrer rapidement les lignes:",
+    "es": "Filtrar rápidamente las filas de la lista:"
+  }
+}

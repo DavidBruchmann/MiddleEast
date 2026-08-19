@@ -5,9 +5,9 @@
     "name": "Judah (Yehuda) Alkalai",
     "english_title": "Judah_Alkalai",
     "side": "Israeli",
-    "birth_date": "1798-01-01",
+    "birth_date": "1798",
     "death_date": "1878-10-01",
-    "wikidata_id": "Q1347852",
+    "wikidata_id": "Q651247",
     "historical_significance": "Proto-Zionist rabbi who published 'Minchat Yehuda' in 1843-44, advocating for the physical return of Jews to Palestine before the messianic age.",
     "keywords": ["alkalai", "yehuda alkalai", "judah alkalai", "יהודה אלקלעי", "יהודה חי אלקלעי", "القلاعي"]
   },
@@ -17,12 +17,16 @@
     "name": "David Ben-Gurion",
     "english_title": "David_Ben-Gurion",
     "side": "Israeli",
+    "birth_date": "1886-10-16",
+    "death_date": "1973-12-01",
+    "wikidata_id": "Q37610",
+    "historical_significance": "",
     "keywords": ["ben-gurion", "بن غوريون", "בן-גוריון"],
     "affiliations": [
       {
         "group_id": "group_haganah",
         "role": "Chairman of Executive / De Facto Leader",
-        "start": "1935-01-01",
+        "start": "1935",
         "end": "1948-05-28"
       },
       {
@@ -49,6 +53,10 @@
     "id": "person_begin",
     "english_title": "Menachem_Begin",
     "side": "Israeli",
+    "birth_date": "1913-08-16",
+    "death_date": "1992-03-09",
+    "wikidata_id": "Q130873",
+    "historical_significance": "",
     "keywords": ["begin", "menachem begin", "بيجن", "בגין"],
     "affiliations": [
       { "group_id": "group_irgun", "role": "Commander", "start": "1943", "end": "1948" }
@@ -122,6 +130,8 @@
     "side": "Israeli",
     "birth_date": "1924-06-15",
     "death_date": "2005-04-24",
+    "wikidata_id": "Q128911",
+    "historical_significance": "",
     "keywords": ["weizman", "ezer weizman", "עֵזֶר וַיְצְמָן", "ויצמן", "حايم وايزמן", "وايزמן"]
   }
 ]

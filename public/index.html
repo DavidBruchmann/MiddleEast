@@ -9,14 +9,12 @@
         cl.remove('no-js');
         cl.add('has-js');
     </script>
-    <link href="https://unpkg.com/vis-timeline@latest/styles/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="https://unpkg.com/vis-timeline@latest/standalone/umd/vis-timeline-graph2d.min.js"></script>
+    <link href="assets/CSS/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="assets/JavaScript/vis-timeline-graph2d.min.js"></script>
     <link href="assets/CSS/styles.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-
 <div class="layout-grid">
-    <!-- Dynamic Top Corner Unified Theme & Language Controllers Deck -->
     <header class="upper-controls-deck">
         <div class="contribute">
             <a href="https://ko-fi.com/davidbruchmann/" target="_blank"><span>Contribute on github&nbsp;&nbsp;</span>
@@ -28,39 +26,38 @@
                 <img height="30" src="assets/images/support_me_on_kofi_dark-ae82f4af76f8f47305452b88ed83526e.png" alt="Support this project">
             </a>
         </div>
-        <button class="theme-switch-btn">🌗 Theme</button>
-        <div style="display:flex; gap:0px;">
-            <button class="lang-switch-btn" id="lang-ar">AR <span>🇵🇸</span></button>
-            <button class="lang-switch-btn" id="lang-de">DE <span>🇩🇪</span></button>
-            <button class="lang-switch-btn active-lang" id="lang-en">EN <span>🇬🇧</span></button>
-            <button class="lang-switch-btn" id="lang-es">ES <span>🇪🇸</span></button>
-            <button class="lang-switch-btn" id="lang-fr">FR <span>🇫🇷</span></button>
-            <button class="lang-switch-btn" id="lang-he">HE <span>🇮🇱</span></button>
-            <button class="lang-switch-btn" id="lang-id">ID <span>🇮🇩</span></button>
-        </div>
+        <select id="themeSelector" class="dropdown-control" onchange="applyUserThemeChoiceSelection()">
+            <option value="system">🌗 System Theme</option>
+            <option value="light">☀️ Light High-Contrast</option>
+            <option value="dark">🌙 Dark High-Contrast</option>
+        </select>
+        <select id="langSelector" class="dropdown-control" onchange="changeGlobalInterfaceLanguage()">
+            <option value="en" dir="ltr">English 🇬🇧</option>
+            <option value="de" dir="ltr">Deutsch 🇩🇪</option>
+            <option value="ar" dir="rtl">العربية 🇵🇸</option>
+            <option value="he" dir="rtl">עברית 🇮🇱</option>
+            <option value="id" dir="ltr">Bahasa Indonesia 🇮🇩</option>
+            <option value="fr" dir="ltr">Français 🇫🇷</option>
+            <option value="es" dir="ltr">Español 🇪🇸</option>
+        </select>
     </header>
     <main>
-
-    <!-- Timeline Wrapper Grid -->
     <div class="timeline-outer-wrapper">
         <div style="margin-bottom:10px; display:flex; gap:10px; align-items:center;">
-            <strong style="font-size:16px;">Israel in the Middle East</strong>
+            <h1 id="uiMainHeadline" style="font-size:16px;">Israel in the Middle East</h1>
             <span style="margin-left: auto; padding-right: 480px;">
                 <strong style="font-size:16px;">Zoom:</strong>
                 <button class="timeline-zoom-btn" id="zoom-in">🔍 In</button>
                 <button class="timeline-zoom-btn" id="zoom-out">🔍 Out</button>
             </span>
         </div>
+        <div id="uiSubheading" style="font-size:12px; margin-bottom:2px; opacity:0.85;">Loading interface translations...</div>
         <div id="timelineContainer"></div>
     </div>
-
-    <!-- Bottom Split Panel -->
     <div class="bottom-split">
         <div class="inspector-panel" id="inspectorPanel">
             <div class="inspector-content-box" id="inspectorContent" dir="ltr">
-                <!-- 2) Hero Image mounted strictly ABOVE descriptions headers -->
                 <img id="drawerHeroImg" class="inspector-hero-img" alt="Historical Document Frame">
-
                 <h2 id="drawerTitle" style="margin-top:0; font-size:22px; color:var(--accent-blue); margin-bottom:8px;">Select an Event</h2>
                 <p style="font-size:15px; line-height:1.6; margin:0;" id="drawerDesc">
                     Click an item node box in the top track or select a card from the list to unpack multi-language documentation details.
@@ -68,7 +65,6 @@
                 <div id="drawerLinks"></div>
             </div>
         </div>
-
         <div class="list-sidebar">
             <div class="sidebar-header">
                 <input type="text" id="sidebarSearch" class="search-box" oninput="filterSidebarList()" placeholder="Quick filter list rows...">
@@ -78,175 +74,7 @@
     </div>
 </div>
 </main>
-<footer><p>© 2026 David Bruchmann</p>
-</footer>
-<script>
-    let globalEventsRegistry = [];
-    let timelineInstance = null;
-    let selectedActiveLanguageCode = 'en';
-    let activeSelectedEventId = null;
-
-    fetch('generated/events.json')
-        .then(res => res.json())
-        .then(events => {
-            globalEventsRegistry = events;
-            renderSidebarList(globalEventsRegistry);
-            renderTimelineCanvasView(globalEventsRegistry);
-            initSystemThemeConfiguration(); // Set system dark/light default parameters
-        })
-        .catch(err => console.error("Error loading compiled assets:", err));
-
-    function renderTimelineCanvasView(eventsToRender) {
-        const container = document.getElementById('timelineContainer');
-        if (timelineInstance) {
-            timelineInstance.destroy();
-            timelineInstance = null;
-        }
-        container.innerHTML = '';
-
-        const items = eventsToRender.map(e => {
-            const rawStart = String(e.start).trim();
-            const rawEnd = e.end ? String(e.end).trim() : "";
-            let visStart = rawStart;
-            if (rawStart.length === 4) {
-                // TODO
-                visStart = `${rawStart}-01-01`;
-            }
-            let visEnd = e.end ? (rawEnd.length === 4 ? `${rawEnd}-12-31` : rawEnd) : null;
-            return {
-                id: e.id,
-                content: e.title,
-                start: visStart,
-                end: visEnd,
-                type: e.end ? 'range' : 'point'
-            };
-        });
-
-        const options = {
-            stack: true,
-            margin: {
-                item: 10,
-                axis: 10
-            },
-            showCurrentTime: false,
-            zoomable: false,
-            orientation: {
-                axis: 'top',
-                item: 'bottom'
-            },
-            start: '1917-01-01',
-            end: '1960-01-01'
-        };
-        timelineInstance = new vis.Timeline(container, items, options);
-        timelineInstance.on('select', (props) => {
-            if (props.items.length > 0) {
-                activeSelectedEventId = props.items;
-                displayDeepDetailsView(activeSelectedEventId);
-            }
-        });
-    }
-    function renderSidebarList(events) {
-        const container = document.getElementById('listScrollArea');
-        container.innerHTML = '';
-        events.forEach(e => {
-            const card = document.createElement('div');
-            card.className = 'event-list-card';
-            card.innerHTML = `<span class="date">${e.start.substring(0,4)}</span><h4>${e.title}</h4>`;
-            card.onclick = () => {
-                activeSelectedEventId = e.id;
-                displayDeepDetailsView(e.id);
-                if (timelineInstance) {
-                    timelineInstance.setSelection(e.id, { focus: true });
-                    timelineInstance.moveTo(`${e.start.substring(0,4)}-01-01`);
-                }
-            };
-            container.appendChild(card);
-        });
-    }
-    function filterSidebarList() {
-        const query = document.getElementById('sidebarSearch').value.toLowerCase();
-        renderSidebarList(globalEventsRegistry.filter(e => e.title.toLowerCase().includes(query)));
-    }
-    function changeGlobalInterfaceLanguage(langCode) {
-        if (langCode) {
-            document.querySelectorAll('.lang-switch-btn').forEach(btn => {
-                btn.classList.remove('active-lang');
-                if (btn.id == 'lang-' + langCode) {
-                    btn.classList.add('active-lang');
-                }
-            });
-            displayDeepDetailsView(langCode);
-        }
-        console.log(langCode);
-    }
-    function initSystemThemeConfiguration() {
-        const cachedTheme = localStorage.getItem('user-selected-theme');
-        if (cachedTheme) {
-            document.documentElement.setAttribute('data-theme', cachedTheme);
-            return;
-        }
-        const preferredSystemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        document.documentElement.setAttribute('data-theme', preferredSystemDark ? 'dark' : 'light');
-    }
-    function toggleInterfaceColorThemeMode() {
-        const activeTheme = document.documentElement.getAttribute('data-theme');
-        const nextTheme = activeTheme === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', nextTheme);
-        localStorage.setItem('user-selected-theme', nextTheme);
-    }
-    function displayDeepDetailsView(eventId) {
-        const matched = globalEventsRegistry.find(e => e.id === eventId);
-        if (!matched) return;
-        const contentBox = document.getElementById('inspectorContent');
-
-        const isRtlLang = ['ar', 'he'].includes(selectedActiveLanguageCode);
-        contentBox.setAttribute('dir', isRtlLang ? 'rtl' : 'ltr');
-
-        const startYear = matched.start.substring(0, 4);
-        const endYear = matched.end ? matched.end.substring(0, 4) : '';
-        const timeframeDisplay = endYear ? `${startYear} to ${endYear}` : startYear;
-
-        // FIXED: Extract description from the correct language sub-key safely, falling back to EN if missing
-        const hasTranslation = matched.descriptions && matched.descriptions[selectedActiveLanguageCode];
-        const localizedDesc = hasTranslation ? matched.descriptions[selectedActiveLanguageCode] : (matched.descriptions['en'] || 'Summary pending compilation pass.');
-        const fallbackWarning = hasTranslation ? '' : ' <span style="font-size:11px; color:#cc0000; font-style:italic;">(Displaying EN baseline)</span>';
-
-        document.getElementById('drawerTitle').innerHTML = `${matched.title}${fallbackWarning} <br><span style="font-size:13px; color:var(--text-muted); font-weight:normal;">📅 Bounded Period: ${timeframeDisplay}</span>`;
-        document.getElementById('drawerDesc').textContent = localizedDesc;
-
-        // 2) Image Panel Transitions sitting ABOVE headers
-        const heroImg = document.getElementById('drawerHeroImg');
-        if (matched.bg_image_url) {
-            heroImg.style.opacity = '0';
-            heroImg.style.display = 'block';
-            setTimeout(() => {
-                heroImg.src = matched.bg_image_url;
-                heroImg.style.opacity = '1';
-            }, 100);
-        } else {
-            heroImg.style.display = 'none'; heroImg.style.opacity = '0';
-        }
-
-        const linksBox = document.getElementById('drawerLinks');
-        linksBox.innerHTML = '';
-        matched.source.forEach(src => {
-            const url = `https://${src.lang}.wikipedia.org/wiki/${src.slug}`;
-            const a = document.createElement('a');
-            a.href = url;
-            a.target = '_blank';
-            a.className = 'wiki-badge';
-            a.innerHTML = `<strong>${src.lang.toUpperCase()}</strong> (${(src.strlength/1000).toFixed(0)}k) ↗`;
-            linksBox.appendChild(a);
-        });
-    }
-
-    document.querySelectorAll('.lang-switch-btn').forEach(btn => { btn.onclick = () => {
-        const lang = btn.id.split('-')[1];
-        changeGlobalInterfaceLanguage(lang);
-    }});
-    document.querySelector('.theme-switch-btn').onclick = () => toggleInterfaceColorThemeMode();
-    document.querySelector('#zoom-in').onclick = () => {if(timelineInstance) timelineInstance.zoomIn(0.4)};
-    document.querySelector('#zoom-out').onclick = () => {if(timelineInstance) timelineInstance.zoomOut(0.4)};
-</script>
+<footer><p>© 2026 David Bruchmann</p></footer>
+<script src="assets/JavaScript/events.js"></script>
 </body>
 </html>

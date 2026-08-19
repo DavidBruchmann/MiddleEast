@@ -7,6 +7,9 @@ const https = require('https');
 // Just add the exact English title slug below
 
 const EVENT_ARTICLES = [
+    "Petah_Tikva",
+    "Pogroms_in_the_Russian_Empire",
+    "Judah_Alkalai",
     "Partitioning_of_the_Ottoman_Empire",
     "London_Conference_(1939)",
     "1948_Arab–Israeli_War",
@@ -31,7 +34,7 @@ const FRAMEWORK_ARTICLES = [
     "Sykes–Picot_Agreement",
 ];
 const PEOPLE_ARTICLES = [
-/*
+
     // --- Pro Israel ---
     "David_Ben-Gurion", // Prime minister of Israel from 1948 to 1953, 1955 to 1963
     "Moshe_Sharett", // Prime minister of Israel from 1954 to 1955
@@ -68,7 +71,7 @@ const PEOPLE_ARTICLES = [
     // --- Britains ---
     "Neville_Chamberlain", // Prime Minister of the United Kingdom from May 1937 to May 1940 and Leader of the Conservative Party from May 1937 to October 1940
     "Walter_Guinness,_1st_Baron_Moyne", // British minister of state in the Middle East until November 1944, when he was assassinated by the Zionist terrorist group Lehi in Cairo
-*/
+
 
     "Ezer_Weizman", // President of Israel from 1993 to 2000
     "Judah_Alkalai" // Yehuda_Alkalai"
@@ -100,7 +103,7 @@ const IDEALOGICAL_ARTICLES = [
 ];
 
 const TARGET_ARTICLES = {
-  'events': PEOPLE_ARTICLES //EVENT_ARTICLES,
+  'events': EVENT_ARTICLES,
 };
 /*
 [
@@ -122,11 +125,17 @@ const TARGET_LANGS =  [
     'id'
 ];
 const USER_AGENT = 'HistoricTimelineResearchProject/1.0 (contact: your-email@example.com)';
-const OUTPUT_FILE = path.join(__dirname, '../public', 'data.json');
+const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'data.json');
 
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const eventMap = new Map();
 
+// Helper utility to safely convert text month string characters into zero-padded numeric indices
+function getMonthByName(monthNameString) {
+    const monthsMatrixMap = { january: "01", february: "02", march: "03", april: "04", may: "05", june: "06", july: "07", august: "08", september: "09", october: "10", november: "11", december: "12" };
+    const cleanLowerKey = String(monthNameString || "").trim().toLowerCase();
+    return monthsMatrixMap[cleanLowerKey] || null; // ~~Fallback cleanly to January 1st if unmatched~~
+}
 function parseCacheToUnifiedStructure() {
     if (!fs.existsSync(BASE_CACHE_DIR)) {
         console.error("✕ Cache directory missing.");
@@ -180,10 +189,42 @@ function parseCacheToUnifiedStructure() {
                 }
             }
 
-            let birthDate = $('span.bday');
-// console.log(birthDate.text());
-            if (birthDate && birthDate.text()) {
-// console.log(localizedTitle, birthDate.text());
+            // 1. Initialize your data pointer tracking states explicitly as text strings
+            let birthDateTextOutput = null;
+
+            const jsonBirthDateMatch = htmlContent.match(/\"birth_date\"\:\{\"wt\"\:\"((\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) ((17|18|19|20)\d{2}))\"}/);
+            if (jsonBirthDateMatch) {
+                const rawExtractedYearString  = jsonBirthDateMatch[5].trim(); // Group 5: The 4-digit Year (e.g. 1798)
+                const rawExtractedMonthString = jsonBirthDateMatch[3].trim(); // Group 3: The Text Month (e.g. October)
+                const rawExtractedDayString   = jsonBirthDateMatch[2].trim(); // Group 2: The Numeric Day (e.g. 27)
+
+                // Compile baseline year node anchor
+                birthDateTextOutput = rawExtractedYearString;
+
+                if (rawExtractedMonthString) {
+                    const calculatedMonthIndex = getMonthByName(rawExtractedMonthString);
+                    birthDateTextOutput += '-' + calculatedMonthIndex;
+
+                    if (rawExtractedDayString) {
+                        // FIXED: Pad single digit day variables with a leading zero to lock strict ISO formats
+                        const cleanPaddedDayValue = rawExtractedDayString.padStart(2, '0');
+                        birthDateTextOutput += '-' + cleanPaddedDayValue; // FIXED: Appends the day index variable, NOT a month function!
+                    }
+                }
+            }
+            if (!birthDateTextOutput) {
+                // Look for standard frontend elements inside the DOM header
+                const cheeiroBdayTagElement = $('span.bday').first().attr('datetime');
+                birthDateTextOutput = cheeiroBdayTagElement.trim();
+                if (!birthDateTextOutput) {
+                    console.warn(`  ⚠️  Validation warning: Missing or unparseable birthdate data fields structural context.`);
+                }
+            }
+            // if (birthDateTextOutput) console.log(`  ✓ Successfully processed birthdate profile parameter: ${birthDateTextOutput}`);
+
+// console.log(birthDateTextOutput);
+            if (birthDateTextOutput) {
+// console.log(localizedTitle, birthDateTextOutput);
             } else {
             // 3. INITIALIZE OR APPEND TO UNIFIED DATABASES
                 if (!eventMap.has(eventId)) {
@@ -256,7 +297,9 @@ async function fetchUniversalTopicMetadata(englishTitle) {
     try {
         const response = await makeRequest(urlObj.toString());
         //const url = `https://${src.lang}.wikipedia.org/wiki/${src.slug}`;
-        if (!response.ok) console.error(`  ✕ ERROR: URL not reached: ${urlObj.toString()} not reached`); //return null;
+        if (!response.ok) {
+          console.error(`  ✕ ERROR: URL not reached: ${urlObj.toString()} not reached`); //return null;
+        }
 
         const data = JSON.parse(response.body);
         const pages = data?.query?.pages || {};

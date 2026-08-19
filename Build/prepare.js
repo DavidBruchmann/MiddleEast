@@ -3,7 +3,7 @@ const path = require('path');
 const cheerio = require('cheerio');
 
 // Define strict path pointers mapping directly to the public directory architecture
-const CONFIG_DIR = path.join(__dirname, '../public', 'config');
+const CONFIG_DIR = path.join(__dirname, '..', 'public', 'config');
 const CACHE_DIR = path.join(__dirname, 'wikipedia_cache');
 
 function runPreparationEngine() {
@@ -70,23 +70,45 @@ function scanTextForImplicitEntities(sourceNode, lang, persons, groups) {
     });
 }
 
-function getMonthByName(name) {
-    let month = '';
-    switch (name) {
-        case 'January':   month = '01'; break;
-        case 'February':  month = '02'; break;
-        case 'March':     month = '03'; break;
-        case 'April':     month = '04'; break;
-        case 'May':       month = '05'; break;
-        case 'June':      month = '06'; break;
-        case 'July':      month = '07'; break;
-        case 'August':    month = '08'; break;
-        case 'September': month = '09'; break;
-        case 'October':   month = '10'; break;
-        case 'November':  month = '11'; break;
-        case 'December':  month = '12'; break;
+function getMonthByName(monthNameString) {
+    const monthsMatrixMap = { january: "01", february: "02", march: "03", april: "04", may: "05", june: "06", july: "07", august: "08", september: "09", october: "10", november: "11", december: "12" };
+    const cleanLowerKey = String(monthNameString || "").trim().toLowerCase();
+    return monthsMatrixMap[cleanLowerKey] || null; // ~~Fallback cleanly to January 1st if unmatched~~
+}
+function findAndParseDate(dateType = 'birth', htmlContent) {
+    let parsedDate = null;
+    // const jsonBirthDateMatch = htmlContent.match(/\"birth_date\"\:\{\"wt\"\:\"((\d{1,2})\s?(January|February|March|April|May|June|July|August|September|October|November|December)?\s?((17|18|19|20)\d{2})?)\"}/);
+    const jsonBirthDateMatch = htmlContent.match(/\"birth_date\"\:\{\"wt\"\:\"((?:(\d{1,2})\s+)?(?:(January|February|March|April|May|June|July|August|September|October|November|December)\s+)?((?:17|18|19|20)\d{2}))\"}/i);
+    const jsonDeathDateMatch = htmlContent.match(/\"death_date\"\:\{\"wt\"\:\"((?:(\d{1,2})\s+)?(?:(January|February|March|April|May|June|July|August|September|October|November|December)\s+)?((?:17|18|19|20)\d{2}))\"}/i);
+    jsonDateMatch = dateType == 'birth' ? jsonBirthDateMatch : jsonDeathDateMatch;
+    if (jsonDateMatch) {
+    // jsonDateMatch[8] = null;
+    console.log(jsonDateMatch);
+        const rawExtractedYearString  = jsonDateMatch[4] ? jsonDateMatch[4].trim() : null; // Group 4: The 4-digit Year (e.g. 1798)
+        const rawExtractedMonthString = jsonDateMatch[3] ? jsonDateMatch[3].trim() : null; // Group 3: The Text Month (e.g. October)
+        const rawExtractedDayString   = jsonDateMatch[2] ? jsonDateMatch[2].trim() : null; // Group 2: The Numeric Day (e.g. 27)
+        parsedDate = rawExtractedYearString;
+        if (rawExtractedMonthString) {
+            const calculatedMonthIndex = getMonthByName(rawExtractedMonthString);
+            parsedDate += '-' + calculatedMonthIndex;
+            if (rawExtractedDayString) {
+                // FIXED: Pad single digit day variables with a leading zero to lock strict ISO formats
+                const cleanPaddedDayValue = rawExtractedDayString.padStart(2, '0');
+                parsedDate += '-' + cleanPaddedDayValue; // FIXED: Appends the day index variable, NOT a month function!
+            }
+        }
     }
-    return month;
+    if (!parsedDate) {
+        const $ = cheerio.load(htmlContent);
+        const elm = dateType == 'birth' ? 'span.bday' : 'span.dday';
+        let cheeiroTagElement = $(elm).first().attr('datetime');
+        parsedDate = cheeiroTagElement?.trim();
+        if (!parsedDate) {
+            // console.warn(`  ⚠️  Validation warning: Missing or unparseable ${dateType}date data fields structural context.`);
+        }
+    }
+    // if (parsedDate) console.log(`  ✓ Successfully processed ${dateType}date profile parameter: ${parsedDate}`);
+    return parsedDate;
 }
 
 /**
@@ -104,27 +126,8 @@ function extractAndValidateVitalDates(person) {
     const $ = cheerio.load(htmlContent);
 
     // Search for Wikipedia's standard ISO birthday metadata tags
-    let birthDate = '';
-    let deathDate = '';
-
-    const jsonBirthDateMatch = htmlContent.match(/\"birth_date\"\:{\"wt\":\"((\d{2}) (January|February|March|May|June|July|August|September|October|November|December) ((17|18|19|20)\d{2}))\"}/);
-    if (jsonBirthDateMatch) {
-        birthDate = jsonBirthDateMatch[4] + '-' + getMonthByName(jsonBirthDateMatch[3]) + '-' + jsonBirthDateMatch[2];
-    }
-    // console.log(birthDate);
-
-    const jsonDeathDateMatch = htmlContent.match(/\"birth_date\"\:{\"wt\":\"((\d{2}) (January|February|March|May|June|July|August|September|October|November|December) ((17|18|19|20)\d{2}))\"}/);
-    if (jsonDeathDateMatch) {
-        deathDate = jsonDeathDateMatch[4] + '-' + getMonthByName(jsonDeathDateMatch[3]) + '-' + jsonDeathDateMatch[2];
-    }
-    // console.log(deathDate);
-
-    if (!birthDate) {
-        birthDate = $('.bday').first().attr('datetime') || $('.bday').first().text().trim();
-    }
-    if (!deathDate) {
-        deathDate = $('.dday').first().attr('datetime') || null;
-    }
+    let birthDate = findAndParseDate('birth', htmlContent);
+    let deathDate = findAndParseDate('death', htmlContent);
     // Fallback: search infobox table rows if the standard microformat classes are missing
     if (!birthDate || !deathDate) {
         $('.infobox tr').each((i, el) => {
@@ -133,11 +136,11 @@ function extractAndValidateVitalDates(person) {
             if (!birthDate && th.includes('born')) {
                 // Use a basic regex to grab a 4-digit year string out of the text block as a fallback
                 const yearMatch = td.match(/\b(17|18|19|20)\d{2}\b/);
-                if (yearMatch) birthDate = `${yearMatch[0]}-01-01`;
+                if (yearMatch) birthDate = `${yearMatch[0]}`;
             }
             if (!deathDate && th.includes('died')) {
                 const yearMatch = td.match(/\b(17|18|19|20)\d{2}\b/);
-                if (yearMatch) deathDate = `${yearMatch[0]}-01-01`;
+                if (yearMatch) deathDate = `${yearMatch[0]}`;
             }
         });
     }
@@ -148,6 +151,12 @@ function extractAndValidateVitalDates(person) {
     } else {
         person.extracted_birth = birthDate;
         if (deathDate) person.extracted_death = deathDate;
+    }
+    // LOGGING AND WARNING PASS
+    if (!deathDate) {
+        console.warn(`  ❌ MISSING DATA: Could not extract valid Death Date for figure: "${person.english_title}"`);
+    } else {
+        person.extracted_death = deathDate;
     }
 }
 

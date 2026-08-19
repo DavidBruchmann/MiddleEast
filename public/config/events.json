@@ -1,21 +1,37 @@
 [
   {
+    "id": "ev_alkalai_minchat_yehuda_1843",
+    "english_title": "Judah_Alkalai",
+    "display_title_override": "Publication of 'Minchat Yehuda'",
+    "start": "1843",
+    "end": "1843",
+    "context_id": "context_aliyah",
+    "perp_ids": ["person_yehuda_alkalai"],
+    "bg_image_url": "",
+    "sort_anchors": {
+      "before": "ev_petahtikva"
+    }
+  },
+  {
     "id": "ev_founding_petah-tikva",
-    "english_title": "Petah_Tikva#History",
+    "english_title": "Petah_Tikva",
+    "anchor_target": "History",
     "display_title_override": "Petah Tikva was founded in 1878",
     "start": "1878",
     "end": "1878",
     "context_id": "context_aliyah",
-    "bg_image_url": "https://en.wikipedia.org/wiki/Petah_Tikva#/map/0",
+    "bg_image_url": "media/Israel_outline_center_ta.png",
     "TODO": "CHECK DATES"
   },
   {
     "id": "ev_russian_pogroms_wave1",
-    "english_title": "Pogroms_in_the_Russian_Empire#1881–1882",
+    "english_title": "Pogroms_in_the_Russian_Empire",
+    "anchor_target": "1881–1882",
     "display_title_override": "Russian Empire Pogroms (First Wave)",
     "start": "1881-04-27",
     "end": "1884",
     "context_id": "context_russian_pogroms",
+    "bg_image_url": "media/Jewish_pogrom_in_Kiev_(1881).jpg",
     "bg_image": {
       "url": "media/Jewish_pogrom_in_Kiev_(1881).jpg",
       "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Jewish_pogrom_in_Kiev_(1881).jpg",
@@ -43,7 +59,7 @@
     "end": "1903",
     "context_id": "context_aliyah",
     "perp_ids": ["group_hovevei_zion"],
-    "bg_image_url": "",
+    "bg_image_url": "media/Be'er_Tuvia_(before_1899).jpg",
     "sort_anchors": {
       "after": "ev_russian_pogroms_wave1"
     }
@@ -55,10 +71,12 @@
     "start": "1904",
     "end": "1914",
     "context_id": "context_aliyah",
-    "bg_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/26/Pale-of-settlement-1884.jpg",
-    "bg_image_src": "https://en.wikipedia.org/wiki/File:Pale-of-settlement-1884.jpg",
-    "bg_image_caption": "Pale of Settlement map, showing the percentage of the Jewish population in 1884",
-    "bg_image_license": "General public domain, PD-US-expired"
+    "bg_image_url": "media/Pale-of-settlement-1884.jpg",
+    "bg_image": {
+      "url": "media/Pale-of-settlement-1884.jpg",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Pale-of-settlement-1884.jpg",
+      "page": "https://en.wikipedia.org/wiki/File:Pale-of-settlement-1884.jpg"
+    }
   },
   {
     "id": "ev_third_aliyah",
@@ -67,7 +85,12 @@
     "start": "1919",
     "end": "1923",
     "context_id": "context_aliyah",
-    "bg_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hachshara.JPG"
+    "bg_image_url": "media/Hachshara.JPG",
+    "bg_image": {
+      "url": "media/Hachshara.JPG",
+      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hachshara.JPG",
+      "page": "https://en.wikipedia.org/wiki/File:Hachshara.JPG"
+    }
   },
   {
     "id": "ev_fourth_aliyah",
@@ -76,7 +99,7 @@
     "start": "1924",
     "end": "1929",
     "context_id": "context_aliyah",
-    "bg_image_url": ""
+    "bg_image_url": "media/PikiWiki_Israel_20841_The_Palmach.jpg"
   },
   {
     "id": "ev_fifth_aliyah",
@@ -85,7 +108,7 @@
     "start": "1929",
     "end": "1939",
     "context_id": "context_aliyah",
-    "bg_image_url": ""
+    "bg_image_url": "media/IMMIGRANTS_FROM_GERMANY_BEFORE_DEBARKATION_AT_THE_JAFFA_PORT._עולים_מגרמניה_על_סיפון_אונייה_העושה_את_דרכה_לנמל_יפו.D420-151.jpg"
   },
   {
     "id": "ev_aliyah_bet",
@@ -105,16 +128,6 @@
     "context_id": "context_nakba",
     "perp_ids": ["group_haganah", "group_irgun"],
     "bg_image_url": ""
-  },
-  {
-    "id": "ev_nakba_phase2",
-    "english_title": "1948_Arab–Israeli_War",
-    "display_title_override": "Nakba Phase 2: State Expulsions",
-    "start": "1948-05-15",
-    "end": "1949-01-07",
-    "context_id": "context_nakba",
-    "perp_ids": ["group_idf"],
-    "bg_image_url": "testimage.jpg"
   },
   {
     "id": "ev_nakba_2_campaign",
