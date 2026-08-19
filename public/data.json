@@ -301,6 +301,21 @@
       ]
     },
     {
+      "id": "ev_تفجير_فندق_الملك_داود",
+      "wikidata_id": null,
+      "title": "تفجير فندق الملك داود",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "تفجير_فندق_الملك_داود",
+          "lang": "ar",
+          "strlength": 17593
+        }
+      ]
+    },
+    {
       "id": "ev_تقسيم_الدولة_العثمانية",
       "wikidata_id": null,
       "title": "تقسيم الدولة العثمانية",
@@ -571,9 +586,9 @@
       ]
     },
     {
-      "id": "ev_ezer_weizman",
-      "wikidata_id": "Q128911",
-      "title": "Ezer Weizman",
+      "id": "ev_عيزر_وايزمن",
+      "wikidata_id": null,
+      "title": "عيزر وايزمن",
       "start": "1948-05-15",
       "end": null,
       "perp_ids": [],
@@ -582,36 +597,6 @@
           "slug": "عيزر_وايزمن",
           "lang": "ar",
           "strlength": 4180
-        },
-        {
-          "slug": "Ezer_Weizmann",
-          "lang": "de",
-          "strlength": 13542
-        },
-        {
-          "slug": "Ezer_Weizman",
-          "lang": "en",
-          "strlength": 11558
-        },
-        {
-          "slug": "Ezer_Weizman",
-          "lang": "es",
-          "strlength": 7567
-        },
-        {
-          "slug": "Ezer_Weizman",
-          "lang": "fr",
-          "strlength": 6354
-        },
-        {
-          "slug": "עזר_ויצמן",
-          "lang": "he",
-          "strlength": 21584
-        },
-        {
-          "slug": "Ezer_Weizman",
-          "lang": "id",
-          "strlength": 1444
         }
       ]
     },
@@ -717,6 +702,21 @@
           "slug": "مارك_سايكس",
           "lang": "ar",
           "strlength": 2438
+        }
+      ]
+    },
+    {
+      "id": "ev_مذبحة_دير_ياسين",
+      "wikidata_id": null,
+      "title": "مذبحة دير ياسين",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "مذبحة_دير_ياسين",
+          "lang": "ar",
+          "strlength": 69634
         }
       ]
     },
@@ -871,9 +871,9 @@
       ]
     },
     {
-      "id": "ev_judah_alkalai",
-      "wikidata_id": "Q651247",
-      "title": "Judah Alkalai",
+      "id": "ev_يهوذا_الكالاي",
+      "wikidata_id": null,
+      "title": "يهوذا الكالاي",
       "start": "1948-05-15",
       "end": null,
       "perp_ids": [],
@@ -882,36 +882,6 @@
           "slug": "يهوذا_الكالاي",
           "lang": "ar",
           "strlength": 1330
-        },
-        {
-          "slug": "Judah_Alkalai",
-          "lang": "de",
-          "strlength": 2184
-        },
-        {
-          "slug": "Judah_Alkalai",
-          "lang": "en",
-          "strlength": 8885
-        },
-        {
-          "slug": "Yehuda_Hay_Alkalai",
-          "lang": "es",
-          "strlength": 3030
-        },
-        {
-          "slug": "Yehouda_Hay_Alkalay",
-          "lang": "fr",
-          "strlength": 1832
-        },
-        {
-          "slug": "יהודה_אלקלעי",
-          "lang": "he",
-          "strlength": 7750
-        },
-        {
-          "slug": "Judah_Alkalai",
-          "lang": "id",
-          "strlength": 1106
         }
       ]
     },
@@ -975,11 +945,6 @@
         },
         {
           "slug": "Avraham_Stern",
-          "lang": "en",
-          "strlength": 18589
-        },
-        {
-          "slug": "Avraham_Stern",
           "lang": "fr",
           "strlength": 5747
         }
@@ -1030,11 +995,6 @@
         },
         {
           "slug": "Chaim_Weizmann",
-          "lang": "en",
-          "strlength": 62808
-        },
-        {
-          "slug": "Chaim_Weizmann",
           "lang": "fr",
           "strlength": 13287
         },
@@ -1060,11 +1020,6 @@
         },
         {
           "slug": "David_Ben-Gurion",
-          "lang": "en",
-          "strlength": 96891
-        },
-        {
-          "slug": "David_Ben-Gurion",
           "lang": "id",
           "strlength": 23356
         }
@@ -1082,11 +1037,6 @@
           "slug": "Ehud_Barak",
           "lang": "de",
           "strlength": 15864
-        },
-        {
-          "slug": "Ehud_Barak",
-          "lang": "en",
-          "strlength": 28171
         },
         {
           "slug": "Ehud_Barak",
@@ -1120,11 +1070,6 @@
         },
         {
           "slug": "Ehud_Olmert",
-          "lang": "en",
-          "strlength": 58487
-        },
-        {
-          "slug": "Ehud_Olmert",
           "lang": "fr",
           "strlength": 15086
         },
@@ -1147,6 +1092,21 @@
           "slug": "Eliezer_Ben-Jehuda",
           "lang": "de",
           "strlength": 13696
+        }
+      ]
+    },
+    {
+      "id": "ev_ezer_weizmann",
+      "wikidata_id": null,
+      "title": "Ezer Weizmann",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Ezer_Weizmann",
+          "lang": "de",
+          "strlength": 13542
         }
       ]
     },
@@ -1200,11 +1160,6 @@
         },
         {
           "slug": "François_Georges-Picot",
-          "lang": "en",
-          "strlength": 3784
-        },
-        {
-          "slug": "François_Georges-Picot",
           "lang": "es",
           "strlength": 2402
         },
@@ -1232,11 +1187,6 @@
           "slug": "Golda_Meir",
           "lang": "de",
           "strlength": 21827
-        },
-        {
-          "slug": "Golda_Meir",
-          "lang": "en",
-          "strlength": 67406
         },
         {
           "slug": "Golda_Meir",
@@ -1361,6 +1311,21 @@
       ]
     },
     {
+      "id": "ev_judah_alkalai",
+      "wikidata_id": null,
+      "title": "Judah Alkalai",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Judah_Alkalai",
+          "lang": "de",
+          "strlength": 2184
+        }
+      ]
+    },
+    {
       "id": "ev_lechi",
       "wikidata_id": null,
       "title": "Lechi",
@@ -1420,11 +1385,6 @@
         },
         {
           "slug": "Mark_Sykes",
-          "lang": "en",
-          "strlength": 29587
-        },
-        {
-          "slug": "Mark_Sykes",
           "lang": "es",
           "strlength": 7405
         },
@@ -1441,6 +1401,21 @@
       ]
     },
     {
+      "id": "ev_massaker_von_deir_yasin",
+      "wikidata_id": null,
+      "title": "Massaker von Deir Yasin",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Massaker_von_Deir_Yasin",
+          "lang": "de",
+          "strlength": 33185
+        }
+      ]
+    },
+    {
       "id": "ev_menachem_begin",
       "wikidata_id": null,
       "title": "Menachem Begin",
@@ -1452,11 +1427,6 @@
           "slug": "Menachem_Begin",
           "lang": "de",
           "strlength": 27909
-        },
-        {
-          "slug": "Menachem_Begin",
-          "lang": "en",
-          "strlength": 83801
         },
         {
           "slug": "Menachem_Begin",
@@ -1515,11 +1485,6 @@
         },
         {
           "slug": "Moses_Hess",
-          "lang": "en",
-          "strlength": 32585
-        },
-        {
-          "slug": "Moses_Hess",
           "lang": "es",
           "strlength": 2394
         },
@@ -1547,11 +1512,6 @@
           "slug": "Naftali_Bennett",
           "lang": "de",
           "strlength": 21368
-        },
-        {
-          "slug": "Naftali_Bennett",
-          "lang": "en",
-          "strlength": 69639
         },
         {
           "slug": "Naftali_Bennett",
@@ -1612,11 +1572,6 @@
           "slug": "Neville_Chamberlain",
           "lang": "de",
           "strlength": 23868
-        },
-        {
-          "slug": "Neville_Chamberlain",
-          "lang": "en",
-          "strlength": 107063
         },
         {
           "slug": "Neville_Chamberlain",
@@ -1717,11 +1672,6 @@
           "slug": "Theodor_Herzl",
           "lang": "de",
           "strlength": 38212
-        },
-        {
-          "slug": "Theodor_Herzl",
-          "lang": "en",
-          "strlength": 74238
         },
         {
           "slug": "Theodor_Herzl",
@@ -1876,46 +1826,6 @@
       ]
     },
     {
-      "id": "ev_amin_al-husseini",
-      "wikidata_id": null,
-      "title": "Amin al-Husseini",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Amin_al-Husseini",
-          "lang": "en",
-          "strlength": 178346
-        }
-      ]
-    },
-    {
-      "id": "ev_ariel_sharon",
-      "wikidata_id": null,
-      "title": "Ariel Sharon",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Ariel_Sharon",
-          "lang": "en",
-          "strlength": 79939
-        },
-        {
-          "slug": "Ariel_Sharon",
-          "lang": "fr",
-          "strlength": 36270
-        },
-        {
-          "slug": "Ariel_Sharon",
-          "lang": "id",
-          "strlength": 11911
-        }
-      ]
-    },
-    {
       "id": "ev_balfour_declaration",
       "wikidata_id": null,
       "title": "Balfour Declaration",
@@ -1931,42 +1841,17 @@
       ]
     },
     {
-      "id": "ev_benjamin_netanyahu",
+      "id": "ev_deir_yassin_massacre",
       "wikidata_id": null,
-      "title": "Benjamin Netanyahu",
+      "title": "Deir Yassin massacre",
       "start": "1948-05-15",
       "end": null,
       "perp_ids": [],
       "source": [
         {
-          "slug": "Benjamin_Netanyahu",
+          "slug": "Deir_Yassin_massacre",
           "lang": "en",
-          "strlength": 169892
-        },
-        {
-          "slug": "Benjamin_Netanyahu",
-          "lang": "id",
-          "strlength": 22447
-        }
-      ]
-    },
-    {
-      "id": "ev_eliezer_ben-yehuda",
-      "wikidata_id": null,
-      "title": "Eliezer Ben-Yehuda",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Eliezer_Ben-Yehuda",
-          "lang": "en",
-          "strlength": 14028
-        },
-        {
-          "slug": "Eliezer_Ben-Yehuda",
-          "lang": "id",
-          "strlength": 4458
+          "strlength": 108203
         }
       ]
     },
@@ -2101,6 +1986,21 @@
       ]
     },
     {
+      "id": "ev_king_david_hotel_bombing",
+      "wikidata_id": null,
+      "title": "King David Hotel bombing",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "King_David_Hotel_bombing",
+          "lang": "en",
+          "strlength": 44138
+        }
+      ]
+    },
+    {
       "id": "ev_lehi_(militant_group)",
       "wikidata_id": null,
       "title": "Lehi (militant group)",
@@ -2112,76 +2012,6 @@
           "slug": "Lehi_(militant_group)",
           "lang": "en",
           "strlength": 62529
-        }
-      ]
-    },
-    {
-      "id": "ev_leon_pinsker",
-      "wikidata_id": null,
-      "title": "Leon Pinsker",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Leon_Pinsker",
-          "lang": "en",
-          "strlength": 7433
-        },
-        {
-          "slug": "Leon_Pinsker",
-          "lang": "id",
-          "strlength": 921
-        }
-      ]
-    },
-    {
-      "id": "ev_levi_eshkol",
-      "wikidata_id": null,
-      "title": "Levi Eshkol",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Levi_Eshkol",
-          "lang": "en",
-          "strlength": 29497
-        },
-        {
-          "slug": "Levi_Eshkol",
-          "lang": "es",
-          "strlength": 26899
-        },
-        {
-          "slug": "Levi_Eshkol",
-          "lang": "fr",
-          "strlength": 2325
-        },
-        {
-          "slug": "Levi_Eshkol",
-          "lang": "id",
-          "strlength": 6875
-        }
-      ]
-    },
-    {
-      "id": "ev_moshe_sharett",
-      "wikidata_id": null,
-      "title": "Moshe Sharett",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Moshe_Sharett",
-          "lang": "en",
-          "strlength": 23204
-        },
-        {
-          "slug": "Moshe_Sharett",
-          "lang": "id",
-          "strlength": 5826
         }
       ]
     },
@@ -2246,36 +2076,6 @@
       ]
     },
     {
-      "id": "ev_shimon_peres",
-      "wikidata_id": null,
-      "title": "Shimon Peres",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Shimon_Peres",
-          "lang": "en",
-          "strlength": 103252
-        },
-        {
-          "slug": "Shimon_Peres",
-          "lang": "es",
-          "strlength": 12068
-        },
-        {
-          "slug": "Shimon_Peres",
-          "lang": "fr",
-          "strlength": 34789
-        },
-        {
-          "slug": "Shimon_Peres",
-          "lang": "id",
-          "strlength": 9033
-        }
-      ]
-    },
-    {
       "id": "ev_sykes–picot_agreement",
       "wikidata_id": null,
       "title": "Sykes–Picot Agreement",
@@ -2321,21 +2121,6 @@
       ]
     },
     {
-      "id": "ev_walter_guinness,_1st_baron_moyne",
-      "wikidata_id": null,
-      "title": "Walter Guinness, 1st Baron Moyne",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Walter_Guinness,_1st_Baron_Moyne",
-          "lang": "en",
-          "strlength": 46684
-        }
-      ]
-    },
-    {
       "id": "ev_white_paper_of_1939",
       "wikidata_id": null,
       "title": "White Paper of 1939",
@@ -2347,56 +2132,6 @@
           "slug": "White_Paper_of_1939",
           "lang": "en",
           "strlength": 33479
-        }
-      ]
-    },
-    {
-      "id": "ev_yair_lapid",
-      "wikidata_id": null,
-      "title": "Yair Lapid",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Yair_Lapid",
-          "lang": "en",
-          "strlength": 51837
-        },
-        {
-          "slug": "Yair_Lapid",
-          "lang": "es",
-          "strlength": 3745
-        },
-        {
-          "slug": "Yair_Lapid",
-          "lang": "id",
-          "strlength": 4038
-        }
-      ]
-    },
-    {
-      "id": "ev_yigal_allon",
-      "wikidata_id": null,
-      "title": "Yigal Allon",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Yigal_Allon",
-          "lang": "en",
-          "strlength": 16158
-        },
-        {
-          "slug": "Yigal_Allon",
-          "lang": "fr",
-          "strlength": 9618
-        },
-        {
-          "slug": "Yigal_Allon",
-          "lang": "id",
-          "strlength": 992
         }
       ]
     },
@@ -2421,56 +2156,6 @@
       ]
     },
     {
-      "id": "ev_yitzhak_rabin",
-      "wikidata_id": null,
-      "title": "Yitzhak Rabin",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Yitzhak_Rabin",
-          "lang": "en",
-          "strlength": 52776
-        },
-        {
-          "slug": "Yitzhak_Rabin",
-          "lang": "fr",
-          "strlength": 16080
-        },
-        {
-          "slug": "Yitzhak_Rabin",
-          "lang": "id",
-          "strlength": 3013
-        }
-      ]
-    },
-    {
-      "id": "ev_yitzhak_shamir",
-      "wikidata_id": null,
-      "title": "Yitzhak Shamir",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Yitzhak_Shamir",
-          "lang": "en",
-          "strlength": 38622
-        },
-        {
-          "slug": "Yitzhak_Shamir",
-          "lang": "fr",
-          "strlength": 14962
-        },
-        {
-          "slug": "Yitzhak_Shamir",
-          "lang": "id",
-          "strlength": 6993
-        }
-      ]
-    },
-    {
       "id": "ev_zionism",
       "wikidata_id": null,
       "title": "Zionism",
@@ -2482,31 +2167,6 @@
           "slug": "Zionism",
           "lang": "en",
           "strlength": 304754
-        }
-      ]
-    },
-    {
-      "id": "ev_zvi_hirsch_kalischer",
-      "wikidata_id": null,
-      "title": "Zvi Hirsch Kalischer",
-      "start": "1948-05-15",
-      "end": null,
-      "perp_ids": [],
-      "source": [
-        {
-          "slug": "Zvi_Hirsch_Kalischer",
-          "lang": "en",
-          "strlength": 8410
-        },
-        {
-          "slug": "Zvi_Hirsch_Kalischer",
-          "lang": "es",
-          "strlength": 1871
-        },
-        {
-          "slug": "Zvi_Hirsch_Kalischer",
-          "lang": "id",
-          "strlength": 992
         }
       ]
     },
@@ -2602,6 +2262,21 @@
           "slug": "Ariel_Sharón",
           "lang": "es",
           "strlength": 25286
+        }
+      ]
+    },
+    {
+      "id": "ev_atentado_al_hotel_rey_david",
+      "wikidata_id": null,
+      "title": "Atentado al Hotel Rey David",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Atentado_al_Hotel_Rey_David",
+          "lang": "es",
+          "strlength": 8023
         }
       ]
     },
@@ -2722,6 +2397,31 @@
           "slug": "Eliezer_Ben_Yehuda",
           "lang": "es",
           "strlength": 8051
+        }
+      ]
+    },
+    {
+      "id": "ev_ezer_weizman",
+      "wikidata_id": null,
+      "title": "Ezer Weizman",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Ezer_Weizman",
+          "lang": "es",
+          "strlength": 7567
+        },
+        {
+          "slug": "Ezer_Weizman",
+          "lang": "fr",
+          "strlength": 6354
+        },
+        {
+          "slug": "Ezer_Weizman",
+          "lang": "id",
+          "strlength": 1444
         }
       ]
     },
@@ -2861,6 +2561,31 @@
       ]
     },
     {
+      "id": "ev_levi_eshkol",
+      "wikidata_id": null,
+      "title": "Levi Eshkol",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Levi_Eshkol",
+          "lang": "es",
+          "strlength": 26899
+        },
+        {
+          "slug": "Levi_Eshkol",
+          "lang": "fr",
+          "strlength": 2325
+        },
+        {
+          "slug": "Levi_Eshkol",
+          "lang": "id",
+          "strlength": 6875
+        }
+      ]
+    },
+    {
       "id": "ev_león_pinsker",
       "wikidata_id": null,
       "title": "León Pinsker",
@@ -2887,6 +2612,21 @@
           "slug": "Libro_Blanco_de_1939",
           "lang": "es",
           "strlength": 9673
+        }
+      ]
+    },
+    {
+      "id": "ev_masacre_de_deir_yassin",
+      "wikidata_id": null,
+      "title": "Masacre de Deir Yassin",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Masacre_de_Deir_Yassin",
+          "lang": "es",
+          "strlength": 10201
         }
       ]
     },
@@ -3011,6 +2751,31 @@
       ]
     },
     {
+      "id": "ev_shimon_peres",
+      "wikidata_id": null,
+      "title": "Shimon Peres",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Shimon_Peres",
+          "lang": "es",
+          "strlength": 12068
+        },
+        {
+          "slug": "Shimon_Peres",
+          "lang": "fr",
+          "strlength": 34789
+        },
+        {
+          "slug": "Shimon_Peres",
+          "lang": "id",
+          "strlength": 9033
+        }
+      ]
+    },
+    {
       "id": "ev_sionismo",
       "wikidata_id": null,
       "title": "Sionismo",
@@ -3061,6 +2826,61 @@
       ]
     },
     {
+      "id": "ev_yair_lapid",
+      "wikidata_id": null,
+      "title": "Yair Lapid",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Yair_Lapid",
+          "lang": "es",
+          "strlength": 3745
+        },
+        {
+          "slug": "Yair_Lapid",
+          "lang": "id",
+          "strlength": 4038
+        }
+      ]
+    },
+    {
+      "id": "ev_yehuda_hay_alkalai",
+      "wikidata_id": null,
+      "title": "Yehuda Hay Alkalai",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Yehuda_Hay_Alkalai",
+          "lang": "es",
+          "strlength": 3030
+        }
+      ]
+    },
+    {
+      "id": "ev_zvi_hirsch_kalischer",
+      "wikidata_id": null,
+      "title": "Zvi Hirsch Kalischer",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Zvi_Hirsch_Kalischer",
+          "lang": "es",
+          "strlength": 1871
+        },
+        {
+          "slug": "Zvi_Hirsch_Kalischer",
+          "lang": "id",
+          "strlength": 992
+        }
+      ]
+    },
+    {
       "id": "ev_accords_sykes-picot",
       "wikidata_id": null,
       "title": "Accords Sykes-Picot",
@@ -3087,6 +2907,41 @@
           "slug": "Alya",
           "lang": "fr",
           "strlength": 23108
+        }
+      ]
+    },
+    {
+      "id": "ev_ariel_sharon",
+      "wikidata_id": null,
+      "title": "Ariel Sharon",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Ariel_Sharon",
+          "lang": "fr",
+          "strlength": 36270
+        },
+        {
+          "slug": "Ariel_Sharon",
+          "lang": "id",
+          "strlength": 11911
+        }
+      ]
+    },
+    {
+      "id": "ev_attentat_de_l'hôtel_king_david",
+      "wikidata_id": null,
+      "title": "Attentat de l'hôtel King David",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Attentat_de_l'hôtel_King_David",
+          "lang": "fr",
+          "strlength": 9966
         }
       ]
     },
@@ -3241,6 +3096,21 @@
       ]
     },
     {
+      "id": "ev_massacre_de_deir_yassin",
+      "wikidata_id": null,
+      "title": "Massacre de Deir Yassin",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Massacre_de_Deir_Yassin",
+          "lang": "fr",
+          "strlength": 31500
+        }
+      ]
+    },
+    {
       "id": "ev_menahem_begin",
       "wikidata_id": null,
       "title": "Menahem Begin",
@@ -3391,6 +3261,21 @@
       ]
     },
     {
+      "id": "ev_yehouda_hay_alkalay",
+      "wikidata_id": null,
+      "title": "Yehouda Hay Alkalay",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Yehouda_Hay_Alkalay",
+          "lang": "fr",
+          "strlength": 1832
+        }
+      ]
+    },
+    {
       "id": "ev_yichouv",
       "wikidata_id": null,
       "title": "Yichouv",
@@ -3402,6 +3287,66 @@
           "slug": "Yichouv",
           "lang": "fr",
           "strlength": 3913
+        }
+      ]
+    },
+    {
+      "id": "ev_yigal_allon",
+      "wikidata_id": null,
+      "title": "Yigal Allon",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Yigal_Allon",
+          "lang": "fr",
+          "strlength": 9618
+        },
+        {
+          "slug": "Yigal_Allon",
+          "lang": "id",
+          "strlength": 992
+        }
+      ]
+    },
+    {
+      "id": "ev_yitzhak_rabin",
+      "wikidata_id": null,
+      "title": "Yitzhak Rabin",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Yitzhak_Rabin",
+          "lang": "fr",
+          "strlength": 16080
+        },
+        {
+          "slug": "Yitzhak_Rabin",
+          "lang": "id",
+          "strlength": 3013
+        }
+      ]
+    },
+    {
+      "id": "ev_yitzhak_shamir",
+      "wikidata_id": null,
+      "title": "Yitzhak Shamir",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Yitzhak_Shamir",
+          "lang": "fr",
+          "strlength": 14962
+        },
+        {
+          "slug": "Yitzhak_Shamir",
+          "lang": "id",
+          "strlength": 6993
         }
       ]
     },
@@ -3916,6 +3861,21 @@
       ]
     },
     {
+      "id": "ev_יהודה_אלקלעי",
+      "wikidata_id": null,
+      "title": "יהודה אלקלעי",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "יהודה_אלקלעי",
+          "lang": "he",
+          "strlength": 7750
+        }
+      ]
+    },
+    {
       "id": "ev_יהודה_לייב_פינסקר",
       "wikidata_id": null,
       "title": "יהודה לייב פינסקר",
@@ -4111,6 +4071,21 @@
       ]
     },
     {
+      "id": "ev_עזר_ויצמן",
+      "wikidata_id": null,
+      "title": "עזר ויצמן",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "עזר_ויצמן",
+          "lang": "he",
+          "strlength": 21584
+        }
+      ]
+    },
+    {
       "id": "ev_עלייה_לארץ_ישראל",
       "wikidata_id": null,
       "title": "עלייה לארץ ישראל",
@@ -4122,6 +4097,36 @@
           "slug": "עלייה_לארץ_ישראל",
           "lang": "he",
           "strlength": 24703
+        }
+      ]
+    },
+    {
+      "id": "ev_פיצוץ_מלון_המלך_דוד",
+      "wikidata_id": null,
+      "title": "פיצוץ מלון המלך דוד",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "פיצוץ_מלון_המלך_דוד",
+          "lang": "he",
+          "strlength": 13259
+        }
+      ]
+    },
+    {
+      "id": "ev_פרשת_דיר_יאסין",
+      "wikidata_id": null,
+      "title": "פרשת דיר יאסין",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "פרשת_דיר_יאסין",
+          "lang": "he",
+          "strlength": 36758
         }
       ]
     },
@@ -4261,6 +4266,21 @@
       ]
     },
     {
+      "id": "ev_benjamin_netanyahu",
+      "wikidata_id": null,
+      "title": "Benjamin Netanyahu",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Benjamin_Netanyahu",
+          "lang": "id",
+          "strlength": 22447
+        }
+      ]
+    },
+    {
       "id": "ev_buku_putih_1939",
       "wikidata_id": null,
       "title": "Buku Putih 1939",
@@ -4287,6 +4307,21 @@
           "slug": "Deklarasi_Balfour",
           "lang": "id",
           "strlength": 215571
+        }
+      ]
+    },
+    {
+      "id": "ev_eliezer_ben-yehuda",
+      "wikidata_id": null,
+      "title": "Eliezer Ben-Yehuda",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Eliezer_Ben-Yehuda",
+          "lang": "id",
+          "strlength": 4458
         }
       ]
     },
@@ -4321,6 +4356,51 @@
       ]
     },
     {
+      "id": "ev_leon_pinsker",
+      "wikidata_id": null,
+      "title": "Leon Pinsker",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Leon_Pinsker",
+          "lang": "id",
+          "strlength": 921
+        }
+      ]
+    },
+    {
+      "id": "ev_moshe_sharett",
+      "wikidata_id": null,
+      "title": "Moshe Sharett",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Moshe_Sharett",
+          "lang": "id",
+          "strlength": 5826
+        }
+      ]
+    },
+    {
+      "id": "ev_pembantaian_deir_yassin",
+      "wikidata_id": null,
+      "title": "Pembantaian Deir Yassin",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Pembantaian_Deir_Yassin",
+          "lang": "id",
+          "strlength": 772
+        }
+      ]
+    },
+    {
       "id": "ev_pemerintah_britania_raya",
       "wikidata_id": null,
       "title": "Pemerintah Britania Raya",
@@ -4347,6 +4427,21 @@
           "slug": "Pemisahan_Kekaisaran_Utsmaniyah",
           "lang": "id",
           "strlength": 1982
+        }
+      ]
+    },
+    {
+      "id": "ev_pengeboman_king_david_hotel",
+      "wikidata_id": null,
+      "title": "Pengeboman King David Hotel",
+      "start": "1948-05-15",
+      "end": null,
+      "perp_ids": [],
+      "source": [
+        {
+          "slug": "Pengeboman_King_David_Hotel",
+          "lang": "id",
+          "strlength": 3251
         }
       ]
     },

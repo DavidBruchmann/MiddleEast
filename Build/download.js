@@ -151,11 +151,61 @@ const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'data.json');
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 const eventMap = new Map();
 
-// Helper utility to safely convert text month string characters into zero-padded numeric indices
 function getMonthByName(monthNameString) {
     const monthsMatrixMap = { january: "01", february: "02", march: "03", april: "04", may: "05", june: "06", july: "07", august: "08", september: "09", october: "10", november: "11", december: "12" };
     const cleanLowerKey = String(monthNameString || "").trim().toLowerCase();
     return monthsMatrixMap[cleanLowerKey] || null; // ~~Fallback cleanly to January 1st if unmatched~~
+}
+function findAndParseDate(dateType = 'birth', htmlContent, lang='', slug='') {
+    let parsedDate = null;
+    // const jsonBirthDateMatch = htmlContent.match(/\"birth_date\"\:\{\"wt\"\:\"((\d{1,2})\s?(January|February|March|April|May|June|July|August|September|October|November|December)?\s?((17|18|19|20)\d{2})?)\"}/);
+    const jsonBirthDateMatch = htmlContent.match(/\"birth_date\"\:\{\"wt\"\:\"((?:(\d{1,2})\s+)?(?:(January|February|March|April|May|June|July|August|September|October|November|December)\s+)?((?:17|18|19|20)\d{2}))\"}/i);
+    const jsonDeathDateMatch = htmlContent.match(/\"death_date\"\:\{\"wt\"\:\"((?:(\d{1,2})\s+)?(?:(January|February|March|April|May|June|July|August|September|October|November|December)\s+)?((?:17|18|19|20)\d{2}))\"}/i);
+    jsonDateMatch = dateType == 'birth' ? jsonBirthDateMatch : jsonDeathDateMatch;
+    if (jsonDateMatch) {
+    // jsonDateMatch[8] = null;
+    // console.log(jsonDateMatch);
+        const rawExtractedYearString  = jsonDateMatch[4] ? jsonDateMatch[4].trim() : null; // Group 4: The 4-digit Year (e.g. 1798)
+        const rawExtractedMonthString = jsonDateMatch[3] ? jsonDateMatch[3].trim() : null; // Group 3: The Text Month (e.g. October)
+        const rawExtractedDayString   = jsonDateMatch[2] ? jsonDateMatch[2].trim() : null; // Group 2: The Numeric Day (e.g. 27)
+        parsedDate = rawExtractedYearString;
+        if (rawExtractedMonthString) {
+            const calculatedMonthIndex = getMonthByName(rawExtractedMonthString);
+            parsedDate += '-' + calculatedMonthIndex;
+            if (rawExtractedDayString) {
+                // FIXED: Pad single digit day variables with a leading zero to lock strict ISO formats
+                const cleanPaddedDayValue = rawExtractedDayString.padStart(2, '0');
+                parsedDate += '-' + cleanPaddedDayValue; // FIXED: Appends the day index variable, NOT a month function!
+            }
+        }
+    }
+    if (!parsedDate) {
+        const $ = cheerio.load(htmlContent);
+        const elm = dateType == 'birth' ? 'span.bday' : 'span.dday';
+        let cheeiroTagElement = $(elm).first().attr('datetime');
+        parsedDate = cheeiroTagElement?.trim();
+        if (!parsedDate) {
+            // console.warn(`  ⚠️  Validation warning: Missing or unparseable ${dateType}date ${lang}: ${slug}`);
+        }
+    }
+    if (!parsedDate) {
+        const $ = cheerio.load(htmlContent);
+        $('.infobox tr').each((i, el) => {
+            const th = $(el).find('th').text().toLowerCase();
+            const td = $(el).find('td').text().trim();
+            if (dateType == 'birth' && th.includes('born')) {
+                // Use a basic regex to grab a 4-digit year string out of the text block as a fallback
+                const yearMatch = td.match(/\b(17|18|19|20)\d{2}\b/);
+                if (yearMatch) parsedDate = `${yearMatch[0]}`;
+            }
+            else if (dateType != 'birth' && th.includes('died')) {
+                const yearMatch = td.match(/\b(17|18|19|20)\d{2}\b/);
+                if (yearMatch) parsedDate = `${yearMatch[0]}`;
+            }
+        });
+    }
+    // if (parsedDate) console.log(`  ✓ Successfully processed ${dateType}date profile parameter: ${parsedDate}`);
+    return parsedDate;
 }
 function parseCacheToUnifiedStructure() {
     if (!fs.existsSync(BASE_CACHE_DIR)) {
@@ -211,36 +261,7 @@ function parseCacheToUnifiedStructure() {
             }
 
             // 1. Initialize your data pointer tracking states explicitly as text strings
-            let birthDateTextOutput = null;
-
-            const jsonBirthDateMatch = htmlContent.match(/\"birth_date\"\:\{\"wt\"\:\"((\d{1,2}) (January|February|March|April|May|June|July|August|September|October|November|December) ((17|18|19|20)\d{2}))\"}/);
-            if (jsonBirthDateMatch) {
-                const rawExtractedYearString  = jsonBirthDateMatch[5].trim(); // Group 5: The 4-digit Year (e.g. 1798)
-                const rawExtractedMonthString = jsonBirthDateMatch[3].trim(); // Group 3: The Text Month (e.g. October)
-                const rawExtractedDayString   = jsonBirthDateMatch[2].trim(); // Group 2: The Numeric Day (e.g. 27)
-
-                // Compile baseline year node anchor
-                birthDateTextOutput = rawExtractedYearString;
-
-                if (rawExtractedMonthString) {
-                    const calculatedMonthIndex = getMonthByName(rawExtractedMonthString);
-                    birthDateTextOutput += '-' + calculatedMonthIndex;
-
-                    if (rawExtractedDayString) {
-                        // FIXED: Pad single digit day variables with a leading zero to lock strict ISO formats
-                        const cleanPaddedDayValue = rawExtractedDayString.padStart(2, '0');
-                        birthDateTextOutput += '-' + cleanPaddedDayValue; // FIXED: Appends the day index variable, NOT a month function!
-                    }
-                }
-            }
-            if (!birthDateTextOutput) {
-                // Look for standard frontend elements inside the DOM header
-                const cheeiroBdayTagElement = $('span.bday').first().attr('datetime');
-                birthDateTextOutput = cheeiroBdayTagElement.trim();
-                if (!birthDateTextOutput) {
-                    console.warn(`  ⚠️  Validation warning: Missing or unparseable birthdate data fields structural context.`);
-                }
-            }
+            let birthDateTextOutput = findAndParseDate('birth', htmlContent, lang, slug);
             // if (birthDateTextOutput) console.log(`  ✓ Successfully processed birthdate profile parameter: ${birthDateTextOutput}`);
 
 // console.log(birthDateTextOutput);
@@ -512,7 +533,7 @@ async function startPipeline() {
     let registry = {};
 
     //  for (const englishArticle of TARGET_ARTICLES) {
-    Object.keys(TARGET_ARTICLES).forEach(function(key, englishArticle) {
+    Object.keys(TARGET_ARTICLES).forEach(async (key, englishArticle) => {
       if (englishArticle.length) {
         const cleanEnglishSlug = englishArticle.replace(/ /g, '_');
         console.log(`Processing Topic: "${cleanEnglishSlug}"`);
@@ -524,7 +545,7 @@ async function startPipeline() {
         const qNumber = await fetchWikidataId(cleanEnglishSlug);
         if (Object.keys(translations).length === 0) {
             console.log(`  ✕ Skipping topic: mapping empty.`);
-            continue;
+            return;
         }
 //console.log(cleanEnglishSlug + '_2');
 
@@ -546,7 +567,7 @@ async function startPipeline() {
         }
         console.log(`  ✓ Topic successfully mapped: ` + cleanEnglishSlug);
       }
-    }
+    });
 
     // Write file cleanly onto disk drive space
     fs.writeFileSync(REGISTRY_FILE, JSON.stringify(registry, null, 2));
