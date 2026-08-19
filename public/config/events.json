@@ -138,5 +138,124 @@
     "context_id": "context_nakba_2",
     "perp_ids": ["group_israeli_govt", "group_idf"],
     "bg_image_url": ""
+  },
+  {
+    "id": "ev_first_zionist_congress",
+    "english_title": "First_Zionist_Congress",
+    "start": "1897-08-29",
+    "end": "1897-08-31",
+    "context_id": "context_aliyah",
+    "perp_ids": ["group_hovevei_zion"]
+  },
+  {
+    "id": "ev_sykes_picot_agreement",
+    "english_title": "Sykes–Picot_Agreement",
+    "display_title_override": "Sykes–Picot Agreement",
+    "start": "1916-05-16",
+    "end": "1916-05-16",
+    "context_id": "context_war_milestones"
+  },
+  {
+    "id": "ev_jaffa_riots",
+    "english_title": "Jaffa_riots",
+    "start": "1921-05-01",
+    "end": "1921-05-07",
+    "context_id": "context_nakba"
+  },
+  {
+    "id": "ev_1929_palestine_riots",
+    "english_title": "1929_Palestine_riots",
+    "display_title_override": "1929 Palestine Riots & Massacres",
+    "start": "1929-08-23",
+    "end": "1929-08-29",
+    "context_id": "context_nakba"
+  },
+  {
+    "id": "ev_1936_1939_arab_revolt",
+    "english_title": "1936–1939_Arab_revolt_in_Palestine",
+    "display_title_override": "1936–1939 Arab Revolt",
+    "start": "1936-04-19",
+    "end": "1939-08-26",
+    "context_id": "context_nakba",
+    "perp_ids": ["group_haganah"]
+  },
+  {
+    "id": "ev_king_david_hotel_bombing",
+    "english_title": "King_David_Hotel_bombing",
+    "start": "1946-07-22",
+    "end": "1946-07-22",
+    "perp_ids": ["group_irgun"]
+  },
+  {
+    "id": "ev_un_partition_plan",
+    "english_title": "United_Nations_Partition_Plan_for_Palestine",
+    "display_title_override": "UN Resolution 181 (Partition Plan)",
+    "start": "1947-11-29",
+    "end": "1947-11-29",
+    "context_id": "context_nakba"
+  },
+  {
+    "id": "ev_deir_yassin_massacre",
+    "english_title": "Deir_Yassin_massacre",
+    "start": "1948-04-09",
+    "end": "1948-04-09",
+    "perp_ids": ["group_irgun"]
+  },
+  {
+    "id": "ev_israeli_declaration_of_independence",
+    "english_title": "Israeli_Declaration_of_Independence",
+    "start": "1948-05-14",
+    "end": "1948-05-14",
+    "perp_ids": ["person_ben_gurion", "group_israeli_govt"]
+  },
+  {
+    "id": "ev_suez_crisis",
+    "english_title": "Suez_Crisis",
+    "start": "1956-10-29",
+    "end": "1956-11-07",
+    "perp_ids": ["group_israeli_govt", "group_idf"]
+  },
+  {
+    "id": "ev_six_day_war",
+    "english_title": "Six-Day_War",
+    "display_title_override": "Six-Day War (1967)",
+    "start": "1967-06-05",
+    "end": "1967-06-10",
+    "perp_ids": ["group_israeli_govt", "group_idf"]
+  },
+  {
+    "id": "ev_yom_kippur_war",
+    "english_title": "Yom_Kippur_War",
+    "start": "1973-10-06",
+    "end": "1973-10-25",
+    "perp_ids": ["group_idf"]
+  },
+  {
+    "id": "ev_sabra_and_shatila_massacre",
+    "english_title": "Sabra_and_Shatila_massacre",
+    "start": "1982-09-16",
+    "end": "1982-09-18",
+    "perp_ids": ["group_idf"]
+  },
+  {
+    "id": "ev_first_intifada",
+    "english_title": "First_Intifada",
+    "start": "1987-12-08",
+    "end": "1993-09-13",
+    "perp_ids": ["group_fatah"]
+  },
+  {
+    "id": "ev_oslo_i_accord",
+    "english_title": "Oslo_I_Accord",
+    "start": "1993-09-13",
+    "end": "1993-09-13",
+    "perp_ids": ["person_arafat"]
+  },
+  {
+    "id": "ev_second_intifada",
+    "english_title": "Second_Intifada",
+    "start": "2000-09-28",
+    "end": "2005-02-08",
+    "perp_ids": ["group_fatah"]
   }
 ]

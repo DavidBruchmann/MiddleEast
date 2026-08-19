@@ -26,12 +26,29 @@ const EVENT_ARTICLES = [
     "Deir_Yassin_massacre", // Lehi, Irgun
     "King_David_Hotel_bombing",
     "Walter_Guinness,_1st_Baron_Moyne#Assassination",
-];
-const FRAMEWORK_ARTICLES = [
+    "Israeli_Declaration_of_Independence",
+    "Suez_Crisis",
+    "Six-Day_War",
+    "Yom_Kippur_War",
+    "Sabra_and_Shatila_massacre",
+    "First_Intifada",
+    "Oslo_I_Accord",
+    "Second_Intifada",
+    "First_Zionist_Congress",
+    "Sykes–Picot_Agreement",
+    "Jaffa_riots",
+    "1929_Palestine_riots",
+    "1936–1939_Arab_revolt_in_Palestine",
+    "United_Nations_Partition_Plan_for_Palestine",
     "Balfour_Declaration",
     "White_Paper_of_1939",
+];
+
+const FRAMEWORK_ARTICLES = [
+    "Balfour_Declaration",
     "United_Nations_Partition_Plan_for_Palestine",
     "Sykes–Picot_Agreement",
+    "White_Paper_of_1939",
 ];
 const PEOPLE_ARTICLES = [
 
@@ -67,6 +84,7 @@ const PEOPLE_ARTICLES = [
     "Chaim_Weizmann",
     "Amin_al-Husseini",
     // --- Pro Palestine ---
+    "Yasser_Arafat",
 
     // --- Britains ---
     "Neville_Chamberlain", // Prime Minister of the United Kingdom from May 1937 to May 1940 and Leader of the Conservative Party from May 1937 to October 1940
@@ -103,7 +121,10 @@ const IDEALOGICAL_ARTICLES = [
 ];
 
 const TARGET_ARTICLES = {
-  'events': EVENT_ARTICLES,
+    'events': EVENT_ARTICLES,
+    'people': PEOPLE_ARTICLES,
+    'groups': GROUP_ARTICLES,
+    'ideology': IDEALOGICAL_ARTICLES,
 };
 /*
 [
@@ -490,13 +511,12 @@ async function startPipeline() {
 
     let registry = {};
 
-    for (const englishArticle of TARGET_ARTICLES.events) {
+    //  for (const englishArticle of TARGET_ARTICLES) {
+    Object.keys(TARGET_ARTICLES).forEach(function(key, englishArticle) {
       if (englishArticle.length) {
         const cleanEnglishSlug = englishArticle.replace(/ /g, '_');
         console.log(`Processing Topic: "${cleanEnglishSlug}"`);
 //console.log(cleanEnglishSlug + '_1');
-        // const result = await fetchUniversalTopicMetadata(cleanEnglishSlug);
-        // if (!result) continue;
 
         // Execute split requests back-to-back safely
         const translations = await fetchLangLinks(cleanEnglishSlug);
