@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const cheerio = require('cheerio');
 
 // Safe relative directory steps moving outward from Build/ into public/
 const CONFIG_DIR = path.join(__dirname, '..', 'public', 'config');
@@ -14,68 +15,128 @@ function standardizeKey(str) {
 }
 
 /**
- * FIXED: Advanced Multi-Format File Reader Sieve Pass
+ * Advanced Multi-Format File Reader Sieve Pass
  * Searches for an article using any available extension and extracts pure text.
  */
+ /**
+ * FIXED: Priority-Enforced Multi-Format Cache Sieve Engine
+ * Scans the entire folder cache, prioritizing JSON and TXT over HTML files.
+ */
 function extractTextContentFromCacheFile(lang, localizedSlug) {
-    const baseSlugName = localizedSlug.replace(/ /g, '_');
-
-    // Define the three possible paths our downloader might have used
-    const jsonPath = path.join(CACHE_DIR, lang, `${baseSlugName}.json`);
-    const txtPath  = path.join(CACHE_DIR, lang, `${baseSlugName}.txt`);
-    const htmlPath = path.join(CACHE_DIR, lang, `${baseSlugName}.html`);
-
-    // Case-Sensitivity Sieve Pass for Linux Systems:
-    // If the exact file is missing, look through the directory for a case-insensitive match
     const langFolder = path.join(CACHE_DIR, lang);
-    let finalPathToRead = null;
-    let foundExtension = '';
+    if (!fs.existsSync(langFolder)) return null;
 
-    if (fs.existsSync(langFolder)) {
-        const filesOnDisk = fs.readdirSync(langFolder);
-        const lowerTargetJson = `${baseSlugName.toLowerCase()}.json`;
-        const lowerTargetTxt  = `${baseSlugName.toLowerCase()}.txt`;
-        const lowerTargetHtml = `${baseSlugName.toLowerCase()}.html`;
+    const targetSignature = standardizeKey(localizedSlug);
+    const filesOnDisk = fs.readdirSync(langFolder);
 
-        for (const file of filesOnDisk) {
-            const lowerFile = file.toLowerCase();
-            if (lowerFile === lowerTargetJson) { finalPathToRead = path.join(langFolder, file); foundExtension = 'json'; break; }
-            if (lowerFile === lowerTargetTxt)  { finalPathToRead = path.join(langFolder, file); foundExtension = 'txt'; break; }
-            if (lowerFile === lowerTargetHtml) { finalPathToRead = path.join(langFolder, file); foundExtension = 'html'; break; }
+    // Track matching formats found for this specific title slug
+    const matchedFileVariants = {
+        json: null,
+        txt: null,
+        html: null
+    };
+
+    // 1. Gather ALL available file formats on disk without breaking prematurely
+    for (const file of filesOnDisk) {
+        const ext = path.extname(file).toLowerCase();
+        const baseNameWithoutExt = path.basename(file, ext);
+
+        if (standardizeKey(baseNameWithoutExt) === targetSignature) {
+            const cleanExt = ext.substring(1); // 'json', 'txt', or 'html'
+            if (matchedFileVariants.hasOwnProperty(cleanExt)) {
+                matchedFileVariants[cleanExt] = path.join(langFolder, file);
+            }
         }
     }
 
-    if (!finalPathToRead) return null; // No file variant found on disk
+    // 2. ENFORCE PRIORITY QUEUE: Select the cleanest available format strictly
+    let finalPathToRead = null;
+    let detectedExtension = '';
 
+    if (matchedFileVariants.json) {
+        finalPathToRead = matchedFileVariants.json;
+        detectedExtension = 'json';
+    } else if (matchedFileVariants.txt) {
+        finalPathToRead = matchedFileVariants.txt;
+        detectedExtension = 'txt';
+    } else if (matchedFileVariants.html) {
+        finalPathToRead = matchedFileVariants.html;
+        detectedExtension = 'html';
+    }
+
+    if (!finalPathToRead) return null; // No cache variant exists on disk
+
+    // 3. READ AND EXTRACT PURE TEXT DATA
     try {
         const rawContent = fs.readFileSync(finalPathToRead, 'utf-8');
 
-        // FORMAT 1: Standard structured JSON summary
-        if (foundExtension === 'json') {
+        if (detectedExtension === 'json') {
             const parsed = JSON.parse(rawContent);
             return parsed.extract || "";
         }
 
-        // FORMAT 2: Clean plain text summary file
-        if (foundExtension === 'txt') {
-            return rawContent.trim();
+        if (detectedExtension === 'txt') {
+            // keep linebreaks
+            return rawContent.trim().replace(/\r\n/g, '\n').replace(/\n{2,}/g, '\n\n');
         }
 
-        // FORMAT 3: Raw Wikipedia HTML page content snapshot dump
-        if (foundExtension === 'html') {
-            // Basic lightweight regex sieve strips tags away cleanly without needing cheerio overhead
+        if (detectedExtension === 'html') {
+            // Strict Cheerio-like extraction filters out image thumbnails and captions
+            const $ = cheerio.load(rawContent);
+            $(
+                'script, style, link, meta, ' +
+                '.infobox, table.infobox, .navbox, .metadata, ' + // Strips dense table boxes entirely
+                '.thumb, .thumbcaption, figcaption, ' +           // Strips image metadata and captions
+                '.mw-empty-elt, .ambox, .mbox-small, ' +          // Strips cleanup notices and disclaimers
+                'div[role="note"], .mw-references-wrap, ' +       // Strips navigation notes and references
+                '.shortdescription' // '.shortdescription.nomobile.noexcerpt.noprint'
+            ).remove();
+            return $.text();
+            // TARGET PROSE ONLY: Locate all standard narrative text paragraphs
+            let paragraphCollectionText = "";
+            let paragraphArray = [];
+            $('p').each((i, el) => {
+                const textSnippet = $(el).text().trim()
+                    .replace(/\[\d+\]/g, '') // Strip citations
+                    .replace(/\s+/g, ' ');   // Collapse double spaces
+                
+                if (textSnippet.length > 20) {
+                    paragraphArray.push(textSnippet);
+                }
+            });
+            return paragraphArray.join('\n\n');
+            /*
+            // FALLBACK: If Wikipedia structure wraps the intro inside structural divs instead of <p> tags
+            if (paragraphCollectionText.trim().length ]+&gt;/gi, ' ')  // Strip escaping codes
+                .replace(/<\/?[^>]+>/g, ' ')       // Strip stray tag remnants
+                .replace(/\[\d+\]/g, '')           // Strip Wikipedia citation brackets like [1]
+                .replace(/\s+/g, ' ')              // Collapse formatting gaps into neat single spaces
+                .trim();
+            */
+            const purifiedContentText = $.text().replace(/\s+/g, ' ').trim();
+            return purifiedContentText;
+            /*
             return rawContent
                 .replace(/<script[^>]*>([\s\S]*?)<\/script>/gi, '')
                 .replace(/<style[^>]*>([\s\S]*?)<\/style>/gi, '')
+                .replace(/<figcaption[^>]*>([\s\S]*?)<\/figcaption>/gi, '')
+                .replace(/<table[^>]*>([\s\S]*?)<\/table>/gi, '') // Strips messy Infoboxes completely
+                .replace(/<div class="[^"]*thumbcaption[^"]*"[^>]*>([\s\S]*?)<\/div>/gi, '') // Strips image captions
+                .replace(/<div class="[^"]*shortdescription[^"]*"[^>]*>([\s\S]*?)<\/div>/gi, '') // Strips image captions
                 .replace(/<[^>]+>/g, ' ')
                 .replace(/\s+/g, ' ')
                 .trim();
+            */
+        }
+        if (foundExtension === 'html') {
+            // Basic lightweight regex sieve strips tags away cleanly without needing cheerio overhead
         }
     } catch (err) {
         return null;
     }
     return null;
 }
+
 
 function parseAndGenerateDataFiles() {
     console.log("Executing Staged Parse with Multi-Format Cache Sieve Engine...\n");
@@ -120,7 +181,7 @@ function parseAndGenerateDataFiles() {
 
             if (cleanTextExtract) {
                 // Slice text to keep the frontend inspector card panels clean and snappy
-                eventNode.descriptions[lang] = cleanTextExtract.substring(0, 450) + "...";
+                eventNode.descriptions[lang] = cleanTextExtract; //.substring(0, 800) + "...";
                 eventNode.source.push({
                     slug: localizedSlug.replace(/ /g, '_'),
                     lang: lang,

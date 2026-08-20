@@ -224,7 +224,10 @@ function displayDeepDetailsView(rawSelectionId) {
     const activeTitleDisplay = (matched.titles && matched.titles[lang]) || matched.title;
 
     document.getElementById('drawerTitle').innerHTML = `${activeTitleDisplay}${warning} <br><span style="font-size:13px; font-weight:normal; color:var(--text-muted);">📅 Timeline Period: ${startYear}</span>`;
-    document.getElementById('drawerDesc').textContent = textSummaryOutput;
+    const drawerDescElement = document.getElementById('drawerDesc');
+    drawerDescElement.style.whiteSpace = 'pre-wrap';
+    drawerDescElement.style.textAlign = 'justify';
+    drawerDescElement.textContent = textSummaryOutput;
 
     const img = document.getElementById('drawerHeroImg');
     if (matched.bg_image_url) {

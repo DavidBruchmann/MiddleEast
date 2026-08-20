@@ -496,7 +496,8 @@ async function downloadArticleText(lang, slug) {
     urlObj.searchParams.set('action', 'query');
     urlObj.searchParams.set('prop', 'extracts');
     urlObj.searchParams.set('explaintext', '1');
-    urlObj.searchParams.set('exsentences', '10');
+    urlObj.searchParams.set('exintro', '1');
+    // urlObj.searchParams.set('exsentences', '10');
     urlObj.searchParams.set('exsectionformat', 'plain');
     urlObj.searchParams.set('titles', `${encodeURIComponent(slug)}`);
     urlObj.searchParams.set('format', 'json');
@@ -517,6 +518,8 @@ async function downloadArticleText(lang, slug) {
         }
 //console.log(pages[pageId]);
         const articleText = pages[pageId]?.extract || null;
+        
+        
         fs.writeFileSync(destinationPath, articleText, 'utf-8');
         console.log(`  ✓ [${lang.toUpperCase()}] TEXT Cached: ${slug}`);
         return articleText;
