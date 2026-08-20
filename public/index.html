@@ -27,9 +27,9 @@
             </a>
         </div>
         <select id="themeSelector" class="dropdown-control" onchange="applyUserThemeChoiceSelection()">
-            <option value="system">🌗 System Theme</option>
-            <option value="light">☀️ Light High-Contrast</option>
-            <option value="dark">🌙 Dark High-Contrast</option>
+            <option id="optThemeSystem" value="system">🌗 System Theme</option>
+            <option id="optThemeLight" value="light">☀️ Light High-Contrast</option>
+            <option id="optThemeDark" value="dark">🌙 Dark High-Contrast</option>
         </select>
         <select id="langSelector" class="dropdown-control" onchange="changeGlobalInterfaceLanguage()">
             <option value="en" dir="ltr">English 🇬🇧</option>
@@ -43,23 +43,23 @@
     </header>
     <main>
     <div class="timeline-outer-wrapper">
-        <div style="margin-bottom:10px; display:flex; gap:10px; align-items:center;">
-            <h1 id="uiMainHeadline" style="font-size:16px;">Israel in the Middle East</h1>
-            <span style="margin-left: auto; padding-right: 480px;">
-                <strong style="font-size:16px;">Zoom:</strong>
-                <button class="timeline-zoom-btn" id="zoom-in">🔍 In</button>
-                <button class="timeline-zoom-btn" id="zoom-out">🔍 Out</button>
+        <div class="timeline-headerarea">
+            <h1 id="uiMainHeadline">Israel in the Middle East</h1>
+            <span class="zoom-bar">
+                <strong id="uiZoomLabel">Zoom:</strong>
+                <button class="timeline-zoom-btn" id="zoom-in">➕</button>
+                <button class="timeline-zoom-btn" id="zoom-out">➖</button>
             </span>
         </div>
-        <div id="uiSubheading" style="font-size:12px; margin-bottom:2px; opacity:0.85;">Loading interface translations...</div>
+        <div id="uiSubheading" class="uiSubheading">Loading interface translations...</div>
         <div id="timelineContainer"></div>
     </div>
     <div class="bottom-split">
         <div class="inspector-panel" id="inspectorPanel">
             <div class="inspector-content-box" id="inspectorContent" dir="ltr">
                 <img id="drawerHeroImg" class="inspector-hero-img" alt="Historical Document Frame">
-                <h2 id="drawerTitle" style="margin-top:0; font-size:22px; color:var(--accent-blue); margin-bottom:8px;">Select an Event</h2>
-                <p style="font-size:15px; line-height:1.6; margin:0;" id="drawerDesc">
+                <h2 id="drawerTitle" class="drawerTitle">Select an Event</h2>
+                <p id="drawerDesc" class="drawerDesc">
                     Click an item node box in the top track or select a card from the list to unpack multi-language documentation details.
                 </p>
                 <div id="drawerLinks"></div>
@@ -67,7 +67,8 @@
         </div>
         <div class="list-sidebar">
             <div class="sidebar-header">
-                <input type="text" id="sidebarSearch" class="search-box" oninput="filterSidebarList()" placeholder="Quick filter list rows...">
+                <input type="text" id="sidebarSearch" class="search-box" oninput="applySidebarFilterPass()" placeholder="Filter entries...">
+                <!--<input type="text" id="sidebarSearch" class="search-box" oninput="filterSidebarList()" placeholder="Quick filter list rows...">-->
             </div>
             <div id="listScrollArea" class="list-scroll-area"></div>
         </div>

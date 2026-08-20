@@ -139,9 +139,31 @@ a, a:visited {
     margin-top: 40px;
     position: relative: top: 50px;
 }
-.timeline-outer-wrapper h1,
-#uiSubheading {
+.timeline-headerarea {
+    margin-bottom:10px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+.timeline-headerarea h1 {
+    font-size:16px;
     padding: 0 1rem;
+}
+.zoom-bar {
+    padding-right: 1rem;
+
+    margin-left: auto;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    font-size:12px;
+    font-weight:bold;
+}
+.uiSubheading {
+    padding: 0 1rem 1rem;
+    font-size:12px;
+    margin-bottom:2px;
+    opacity:0.85;
 }
 
 #timelineContainer {
@@ -170,6 +192,9 @@ button.timeline-zoom-btn {
     color: var(--text-main);
     border: 1px solid var(--border-color);
     border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
 }
 /* Vis.js Canvas Element Overrides */
 .vis-item {
@@ -194,11 +219,13 @@ button.timeline-zoom-btn {
     font-weight: bold !important;
 }
 .vis-item.fuzzy-uncertainty-node {
+    /*
     background: linear-gradient(
         45deg, var(--card-item-bg) 25%, #e2e8f0 25%, #e2e8f0 50%,
                var(--card-item-bg) 50%,
                var(--card-item-bg) 75%, #e2e8f0 75%, #e2e8f0) !important;
     background-size: 20px 20px !important;
+    */
 }
 
 /* Bottom Split Layout Frame */
@@ -245,11 +272,25 @@ button.timeline-zoom-btn {
     transition: opacity 0.4s ease-in-out;
     */
 }
+.drawerTitle {
+    margin-top: 0;
+    font-size: 22px;
+    color: var(--text-main);
+    margin-bottom: 8px;
+}
+.drawerDesc {
+    font-size:15px;
+    line-height:1.6;
+    margin:0;
+}
+.drawerLinks {
+
+}
 .list-sidebar {
     background: var(--bg-primary);
     border: 2px solid var(--border-color);
     border-radius: 8px;
-    max-height:80vh;
+    max-height: 80vh;
     overflow-y: hidden;
 }
 .sidebar-header {

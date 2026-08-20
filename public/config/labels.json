@@ -25,5 +25,41 @@
     "id": "Filter cepat baris daftar:",
     "fr": "Filtrer rapidement les lignes:",
     "es": "Filtrar rápidamente las filas de la lista:"
+  },
+  "zoom_text": {
+    "en": "Zoom:",
+    "de": "Zoom:",
+    "ar": "تكبير:",
+    "he": "זום:",
+    "id": "Perbesar:",
+    "fr": "Zoom :",
+    "es": "Zoom:"
+  },
+  "theme_system": {
+    "en": "🌗 System Theme",
+    "de": "🌗 System-Design",
+    "ar": "🌗 مظهر النظام",
+    "he": "🌗 תבנית מערכת",
+    "id": "🌗 Tema Sistem",
+    "fr": "🌗 Thème Système",
+    "es": "🌗 Tema del Sistema"
+  },
+  "theme_light": {
+    "en": "☀️ Light High-Contrast",
+    "de": "☀️ Helles Design",
+    "ar": "☀️ تباين عالٍ فاتح",
+    "he": "☀️ ניגודיות גבוהה בהירה",
+    "id": "☀️ Kontras Tinggi Terang",
+    "fr": "☀️ Clair Haute-Contraste",
+    "es": "☀️ Claro de Alto Contraste"
+  },
+  "theme_dark": {
+    "en": "🌙 Dark High-Contrast",
+    "de": "🌙 Dunkles Design",
+    "ar": "🌙 تباين عالٍ داكن",
+    "he": "🌙 ניגודיות גבוהה כהה",
+    "id": "🌙 Kontras Tinggi Gelap",
+    "fr": "🌙 Sombre Haute-Contraste",
+    "es": "🌙 Oscuro de Alto Contraste"
   }
 }

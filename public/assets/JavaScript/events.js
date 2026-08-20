@@ -27,9 +27,14 @@ function renderAllInterfaceComponents() {
     const fallbackLabels = {
         headline: "Historical Conflict Ledger",
         subheading: "Side-by-side verification interface. Select entries to reveal language source trees.",
-        filter_label: "Quick filter list rows:"
+        filter_label: "Quick filter list rows:",
+        zoom_text: "Zoom: ",
+        theme_system: "🌗 System Theme",
+        theme_light: "☀️ Light High-Contrast",
+        theme_dark: "🌙 Dark High-Contrast",
     };
     const getLabel = (key) => (masterDataset.labels[key] && masterDataset.labels[key][selectedActiveLanguageCode]) || fallbackLabels[key];
+    //const getLabel = (key, fallback) => (masterDataset.labels[key] && masterDataset.labels[key][selectedActiveLanguageCode]) || fallback;
 
     const dir = ['ar', 'he'].includes(selectedActiveLanguageCode) ? 'rtl' : 'ltr';
     const uiMainHeadline = document.getElementById('uiMainHeadline');
@@ -43,15 +48,18 @@ function renderAllInterfaceComponents() {
     sidebarSearch.setAttribute('dir', dir);
     const langSelector = document.getElementById('langSelector')
     langSelector.setAttribute('dir', dir);
+    const uiZoomLabel = document.getElementById('uiZoomLabel');
+    uiZoomLabel.textContent = getLabel('zoom_text');
+    // console.log(getLabel('zoom_text'));
+    // uiZoomLabel.setAttribute('dir', dir);
+    document.getElementById('optThemeSystem').textContent = getLabel('theme_system', "🌗 System Theme");
+    document.getElementById('optThemeLight').textContent = getLabel('theme_light', "☀️ Light High-Contrast");
+    document.getElementById('optThemeDark').textContent = getLabel('theme_dark', "🌙 Dark High-Contrast");
 
     //contentBox.setAttribute('dir', ['ar', 'he'].includes(selectedActiveLanguageCode) ? 'rtl' : 'ltr');
-
     // Redraw Dependent Navigation Panels
     applySidebarFilterPass();
-    let r = globalFilteredEventsSubset();
-    console.log(r);
-    renderTimelineCanvasView(r, dir);
-
+    renderTimelineCanvasView(globalFilteredEventsSubset(), dir);
     // Keep open description cards sync'd
     if (activeSelectedEventId) {
         displayDeepDetailsView(activeSelectedEventId);
@@ -74,7 +82,6 @@ function renderTimelineCanvasView(eventsToRender, dir) {
         timelineInstance = null;
     }
     container.innerHTML = '';
-
     const items = eventsToRender.map(e => {
         const rawStart = String(e.start).trim();
         const rawEnd = e.end ? String(e.end).trim() : "";
@@ -86,22 +93,18 @@ function renderTimelineCanvasView(eventsToRender, dir) {
             visStart = `${rawStart}-01-01`;
         }
         let visEnd = e.end ? (rawEnd.length === 4 ? `${rawEnd}-12-31` : rawEnd) : null;
-
+        const localizedBarTitle = (e.titles && e.titles[selectedActiveLanguageCode]) || e.title;
         const itemNode = {
             id: e.id,
-            content: e.title,
+            content: localizedBarTitle,
             start: visStart,
             end: visEnd,
-            type: e.end ? 'range' : 'point'
+            type: e.end ? 'range' : 'point',
+            title: `${localizedBarTitle} (${rawStart.substring(0,4)})`, // ◄ Accessible screen-reader tooltip string
+            className: rawStart.length === 4 ? 'fuzzy-uncertainty-node' : ''
         };
-
-        // If start date is a fuzzy inexact year, inject striped uncertainty class pattern
-        if (rawStart.length === 4) {
-            // itemNode.className = 'fuzzy-uncertainty-node';
-        }
         return itemNode;
     });
-
     const options = {
         stack: true,
         margin: {
@@ -119,39 +122,50 @@ function renderTimelineCanvasView(eventsToRender, dir) {
         autoResize: true
     };
     options.rtl = dir == 'rtl' ? true : false;
-
     timelineInstance = new vis.Timeline(container, items, options);
     timelineInstance.on('select', (props) => {
         if(props.items.length > 0) {
-            activeSelectedEventId = props.items;
+            activeSelectedEventId = props.items[0];
             displayDeepDetailsView(activeSelectedEventId);
+            focusAndScrollSidebarListCard(activeSelectedEventId);
         }
     });
+}
+
+function focusAndScrollSidebarListCard(eventId) {
+    highlightActiveSidebarListCard(eventId);
+    const activeTargetCard = document.getElementById(`sidebar_card_${eventId}`);
+    if (activeTargetCard) {
+        // Auto-scrolls the sidebar pane vertically to snap the selected element right into center focus
+        activeTargetCard.scrollIntoView({
+            behavior: 'smooth',
+            block: 'nearest'
+        });
+    }
+}
+
+function highlightActiveSidebarListCard(eventId) {
+    document.querySelectorAll('.compact-list-card').forEach(c => c.classList.remove('active'));
+    const activeTargetCard = document.getElementById(`sidebar_card_${eventId}`);
+    if (activeTargetCard) activeTargetCard.classList.add('active');
 }
 
 function renderSidebarList(events) {
     const container = document.getElementById('listScrollArea'); container.innerHTML = '';
     events.forEach(e => {
         const displayYear = e.start.substring(0, 4);
-        const card = document.createElement('div'); card.className = 'compact-list-card';
-
-        // FIXED: Dynamically map list row card text titles to current language setting
+        const card = document.createElement('div');
+        card.className = 'compact-list-card';
+        card.id = 'sidebar_card_' + e.id;
+        // Dynamically map list row card text titles to current language setting
         const localizedCardTitle = (e.titles && e.titles[selectedActiveLanguageCode]) || e.title;
-// console.log(selectedActiveLanguageCode, localizedCardTitle);
         card.innerHTML = `<span class="date">${displayYear}</span><h4 style="margin:2px 0 0 0; font-size:14px;">${localizedCardTitle}</h4>`;
-
         card.onclick = () => {
             console.log(card);
             const allCards = document.querySelectorAll('.compact-list-card');
             allCards.forEach(function(item) {
                 item.classList.remove('active')
             })
-            /*
-            for (let n; n<allCards.length; n++) {
-                // console.log(n);
-                allCards[n].classList.remove("active");
-            }
-            */
             card.classList.add('active');
             activeSelectedEventId = e.id;
             displayDeepDetailsView(e.id);
@@ -163,10 +177,13 @@ function renderSidebarList(events) {
         container.appendChild(card);
     });
 }
+
 function applySidebarFilterPass() {
-    const q = document.getElementById('sidebarSearch').value.toLowerCase();
-    renderSidebarList(masterDataset.events.filter(e => e.title.toLowerCase().includes(q)));
+    const subset = globalFilteredEventsSubset();
+    renderSidebarList(subset);
+    if (timelineInstance) renderTimelineCanvasView(subset);
 }
+
 function filterSidebarList() {
     const query = document.getElementById('sidebarSearch').value.toLowerCase();
     renderSidebarList(globalEventsRegistry.filter(e => e.title.toLowerCase().includes(query)));
@@ -201,34 +218,27 @@ function applyThemeStyles(theme) {
 
 function displayDeepDetailsView(rawSelectionId) {
     if (!rawSelectionId) return;
-
     const cleanEventId = Array.isArray(rawSelectionId) ? rawSelectionId[0] : rawSelectionId;
     const matched = masterDataset.events.find(e => e.id === cleanEventId);
     if (!matched) {
       console.log('eventId not found');
       return;
     }
-// console.log('matched', matched);
     const contentBox = document.getElementById('inspectorContent');
     const lang = document.getElementById('langSelector').value;
     contentBox.setAttribute('dir', ['ar', 'he'].includes(selectedActiveLanguageCode) ? 'rtl' : 'ltr');
-
     const startYear = matched.start.substring(0, 4);
     const endYear = matched.end ? matched.end.substring(0, 4) : '';
     const timeframeDisplay = endYear ? `${startYear} to ${endYear}` : startYear;
-// console.log('matched.descriptions', matched.descriptions);
     const hasText = matched.descriptions && matched.descriptions[lang];
     const textSummaryOutput = hasText ? matched.descriptions[lang] : (matched.descriptions['en'] || 'Text summary unavailable.');
     const warning = hasText ? '' : ' (Displaying EN baseline)';
-
     const activeTitleDisplay = (matched.titles && matched.titles[lang]) || matched.title;
-
     document.getElementById('drawerTitle').innerHTML = `${activeTitleDisplay}${warning} <br><span style="font-size:13px; font-weight:normal; color:var(--text-muted);">📅 Timeline Period: ${startYear}</span>`;
     const drawerDescElement = document.getElementById('drawerDesc');
     drawerDescElement.style.whiteSpace = 'pre-wrap';
     drawerDescElement.style.textAlign = 'justify';
     drawerDescElement.textContent = textSummaryOutput;
-
     const img = document.getElementById('drawerHeroImg');
     if (matched.bg_image_url) {
         img.src = matched.bg_image_url;
@@ -236,10 +246,8 @@ function displayDeepDetailsView(rawSelectionId) {
     } else {
         img.style.display = 'none';
     }
-
     const linksBox = document.getElementById('drawerLinks');
     linksBox.innerHTML = '';
-
     if (matched.source && matched.source.length > 0) {
         matched.source.forEach(src => {
             // If an anchor target exists, append it using the hash modifier
