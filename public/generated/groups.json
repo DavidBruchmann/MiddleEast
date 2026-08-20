@@ -1,0 +1,74 @@
+[
+  {
+    "id": "group_irgun",
+    "name": "Irgun",
+    "side": "Israeli",
+    "keywords": [
+      "irgun",
+      "إرجون",
+      "ארגון צבאי לאומי",
+      "אצ״ל",
+      "etzel"
+    ]
+  },
+  {
+    "id": "group_fatah",
+    "name": "Fatah",
+    "side": "Palestinian",
+    "keywords": [
+      "fatah",
+      "فتح",
+      "حركة فتح",
+      "פתאח"
+    ]
+  },
+  {
+    "id": "group_haganah",
+    "name": "Haganah",
+    "side": "Israeli",
+    "keywords": [
+      "haganah",
+      "الهاجاناه",
+      "ההגנה"
+    ]
+  },
+  {
+    "id": "group_idf",
+    "name": "Israel Defense Forces",
+    "side": "Israeli",
+    "keywords": [
+      "idf",
+      "جيش الدفاع الإسرائيلي",
+      "צה״ל",
+      "צבא הגנה לישראל",
+      "israel defense forces"
+    ]
+  },
+  {
+    "id": "group_russian_mobs",
+    "english_title": "Anti-Jewish_rioters_in_the_Russian_Empire",
+    "display_title_override": "Anti-Jewish Rioters / Mobs",
+    "side": "Russian Empire",
+    "keywords": [
+      "mob",
+      "rioter",
+      "pogromshchik",
+      "מפגינים"
+    ],
+    "description": "A pogrom is a violent riot aimed at the massacre or persecution of an ethnic or religious group, particularly Jews. Historically, these were driven by localized mobs with passive or active state complicity."
+  },
+  {
+    "id": "group_israeli_settlers",
+    "english_title": "Israeli_settler_violence",
+    "display_title_override": "Violent Israeli Settler Mobs",
+    "side": "Israeli",
+    "keywords": [
+      "settler violence",
+      "price tag",
+      "עציון",
+      "נוער הגבעות",
+      "מתנחלים"
+    ],
+    "description": "Localized nationalist groups and vigilante mobs engaging in property destruction or physical attacks against Palestinian communities, often acting outside formal state military chains but under military cover."
+  }
+]

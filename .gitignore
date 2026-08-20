@@ -1,11 +1,12 @@
 # Dependency tracking folders
 node_modules/
 npm-debug.log*
+.npm/
 
 # LOCAL RAW CACHE (Do not commit to GitHub)
 wikipedia_cache/
 .WIP/
-public/generated/
+# public/generated/
 !public/generated/.gitkeep
 
 # Local database experiments if you run them later
@@ -15,3 +16,20 @@ public/generated/
 # Operating system trash files
 .DS_Store
 Thumbs.db
+.pnp
+.pnp.js
+
+# IDE and Text Editor Tracking States
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==========================================================================
+# CRITICAL PIPELINE DEPLOYMENT LAWS:
+# DO NOT include public/generated/ or Build/wikipedia_cache/ inside this file!
+# They must remain UNBLOCKED so Git can push your compiled datasets to GitHub.
+# ==========================================================================
