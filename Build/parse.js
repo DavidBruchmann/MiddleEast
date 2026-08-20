@@ -166,7 +166,8 @@ function parseAndGenerateDataFiles() {
             anchor_target: e.anchor_target || null,
             titles: {},
             descriptions: {},
-            source: []
+            source: [],
+            media_id: e.media_id || null, 
         };
 
         const langs = ['en', 'de', 'he', 'ar', 'id', 'fr', 'es'];

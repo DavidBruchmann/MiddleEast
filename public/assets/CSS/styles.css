@@ -211,6 +211,7 @@ button.timeline-zoom-btn {
 .vis-item .vis-item-content {
     overflow: visible !important;
     white-space: nowrap !important;
+    cursor: pointer;
 }
 .vis-time-axis {
 }
@@ -263,11 +264,11 @@ button.timeline-zoom-btn {
     width: 100%;
     max-height: 220px;
     object-fit: cover;
-    border-radius: 6px;
-    border: 2px solid var(--border-color);
-    margin-bottom: 20px;
     display: none;
     /*
+    border-radius: 6px;
+    margin-bottom: 20px;
+    border: 2px solid var(--border-color);
     opacity: 0;
     transition: opacity 0.4s ease-in-out;
     */
@@ -360,8 +361,33 @@ footer {
 }
 .compact-list-card {
     padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 .compact-list-card.active {
     background: #aaa;
     color: #000;
 }
+/* ==========================================================================
+   Vis.js Custom Vertical Time Axis Overrides (AAA Contrast Levels)
+   ========================================================================== */
+.vis-custom-time {
+    width: 2px !important;
+    background-color: var(--accent-blue) !important;
+    z-index: 5;
+}
+
+/* Specific Line Coloring Parameters Matrix */
+.vis-custom-time.axis_anchor_1948 { background-color: #cc0000 !important; } /* High-contrast red for 1948 threshold */
+.vis-custom-time.axis_anchor_1917 { background-color: #e67e22 !important; } /* Orange for British/Ottoman transition */
+.vis-custom-time.axis_anchor_1876 { background-color: #8e44ad !important; } /* Purple for Early Ottoman structural anchor */
+
+/* Accessible text label overlays pinned to the top of your custom vertical lines */
+.vis-custom-time::after {
+    position: absolute; top: 5px; left: 5px;
+    padding: 2px 6px; border-radius: 3px; font-size: 10px; font-weight: bold;
+    color: #ffffff; background: rgba(10, 10, 10, 0.85); white-space: nowrap; pointer-events: none;
+}
+
+.vis-custom-time.axis_anchor_1948::after { content: "🎯 14 May 1948: State Declaration / End of Mandate"; }
+.vis-custom-time.axis_anchor_1917::after { content: "🏛️ 9 Dec 1917: Fall of Ottoman Jerusalem"; }
+.vis-custom-time.axis_anchor_1876::after { content: "👑 31 Aug 1876: Reign of Sultan Abdul Hamid II"; }

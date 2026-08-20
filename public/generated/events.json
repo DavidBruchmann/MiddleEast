@@ -64,7 +64,8 @@
         "lang": "es",
         "strlength": 292
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_founding_petah-tikva",
@@ -73,7 +74,7 @@
     "end": "1878",
     "perp_ids": [],
     "context_id": "context_aliyah",
-    "bg_image_url": "media/Israel_outline_center_ta.png",
+    "bg_image_url": "",
     "anchor_target": "History",
     "titles": {
       "en": "Petah Tikva",
@@ -129,7 +130,8 @@
         "lang": "es",
         "strlength": 200
       }
-    ]
+    ],
+    "media_id": "img_israel_outline_center_ta"
   },
   {
     "id": "ev_russian_pogroms_wave1",
@@ -138,7 +140,7 @@
     "end": "1884",
     "perp_ids": [],
     "context_id": "context_russian_pogroms",
-    "bg_image_url": "media/Jewish_pogrom_in_Kiev_(1881).jpg",
+    "bg_image_url": "",
     "anchor_target": "1881–1882",
     "titles": {
       "en": "Pogroms in the Russian Empire",
@@ -187,7 +189,8 @@
         "lang": "es",
         "strlength": 2668
       }
-    ]
+    ],
+    "media_id": "img_pogrom_kiev_1881"
   },
   {
     "id": "ev_first_aliyah",
@@ -198,7 +201,7 @@
       "group_hovevei_zion"
     ],
     "context_id": "context_aliyah",
-    "bg_image_url": "media/Be'er_Tuvia_(before_1899).jpg",
+    "bg_image_url": "",
     "anchor_target": null,
     "titles": {
       "en": "First Aliyah",
@@ -247,7 +250,8 @@
         "lang": "es",
         "strlength": 2906
       }
-    ]
+    ],
+    "media_id": "img_Be-er Tuvia_before_1899"
   },
   {
     "id": "ev_first_zionist_congress",
@@ -307,7 +311,8 @@
         "lang": "es",
         "strlength": 717
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_second_aliyah",
@@ -316,7 +321,7 @@
     "end": "1914",
     "perp_ids": [],
     "context_id": "context_aliyah",
-    "bg_image_url": "media/Pale-of-settlement-1884.jpg",
+    "bg_image_url": "",
     "anchor_target": null,
     "titles": {
       "en": "Second Aliyah",
@@ -358,7 +363,8 @@
         "lang": "es",
         "strlength": 2341
       }
-    ]
+    ],
+    "media_id": "img_Pale_of_settlement_1884"
   },
   {
     "id": "ev_sykes_picot_agreement",
@@ -423,7 +429,8 @@
         "lang": "es",
         "strlength": 3007
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_third_aliyah",
@@ -432,7 +439,7 @@
     "end": "1923",
     "perp_ids": [],
     "context_id": "context_aliyah",
-    "bg_image_url": "media/Hachshara.JPG",
+    "bg_image_url": "",
     "anchor_target": null,
     "titles": {
       "en": "Third Aliyah",
@@ -467,7 +474,8 @@
         "lang": "es",
         "strlength": 3478
       }
-    ]
+    ],
+    "media_id": "img_Hachshara"
   },
   {
     "id": "ev_jaffa_riots",
@@ -490,7 +498,8 @@
         "lang": "en",
         "strlength": 167
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_fourth_aliyah",
@@ -499,7 +508,7 @@
     "end": "1929",
     "perp_ids": [],
     "context_id": "context_aliyah",
-    "bg_image_url": "media/PikiWiki_Israel_20841_The_Palmach.jpg",
+    "bg_image_url": "",
     "anchor_target": null,
     "titles": {
       "en": "Fourth Aliyah",
@@ -534,7 +543,8 @@
         "lang": "es",
         "strlength": 2097
       }
-    ]
+    ],
+    "media_id": "img_PikiWiki_Israel_20841_The_Palmach"
   },
   {
     "id": "ev_fifth_aliyah",
@@ -543,7 +553,7 @@
     "end": "1939",
     "perp_ids": [],
     "context_id": "context_aliyah",
-    "bg_image_url": "media/IMMIGRANTS_FROM_GERMANY_BEFORE_DEBARKATION_AT_THE_JAFFA_PORT._עולים_מגרמניה_על_סיפון_אונייה_העושה_את_דרכה_לנמל_יפו.D420-151.jpg",
+    "bg_image_url": "",
     "anchor_target": null,
     "titles": {
       "en": "Fifth Aliyah",
@@ -578,7 +588,8 @@
         "lang": "es",
         "strlength": 2891
       }
-    ]
+    ],
+    "media_id": "img_de_immigrants_at_jaffa_port"
   },
   {
     "id": "ev_1929_palestine_riots",
@@ -629,7 +640,8 @@
         "lang": "es",
         "strlength": 1509
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_aliyah_bet",
@@ -694,7 +706,8 @@
         "lang": "es",
         "strlength": 8487
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_1936_1939_arab_revolt",
@@ -761,7 +774,8 @@
         "lang": "es",
         "strlength": 16411
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_king_david_hotel_bombing",
@@ -828,7 +842,8 @@
         "lang": "es",
         "strlength": 1397
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_nakba_phase1",
@@ -844,7 +859,8 @@
     "anchor_target": null,
     "titles": {},
     "descriptions": {},
-    "source": []
+    "source": [],
+    "media_id": null
   },
   {
     "id": "ev_un_partition_plan",
@@ -909,7 +925,8 @@
         "lang": "es",
         "strlength": 22083
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_1948_war",
@@ -960,7 +977,8 @@
         "lang": "es",
         "strlength": 38507
       }
-    ]
+    ],
+    "media_id": "img_Tel_Aviv-Yafo"
   },
   {
     "id": "ev_deir_yassin_massacre",
@@ -1027,7 +1045,8 @@
         "lang": "es",
         "strlength": 389
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_israeli_declaration_of_independence",
@@ -1095,7 +1114,8 @@
         "lang": "es",
         "strlength": 28401
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_suez_crisis",
@@ -1163,7 +1183,8 @@
         "lang": "es",
         "strlength": 18567
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_six_day_war",
@@ -1231,7 +1252,8 @@
         "lang": "es",
         "strlength": 39558
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_yom_kippur_war",
@@ -1298,7 +1320,8 @@
         "lang": "es",
         "strlength": 4349
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_sabra_and_shatila_massacre",
@@ -1365,7 +1388,8 @@
         "lang": "es",
         "strlength": 2073
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_first_intifada",
@@ -1432,7 +1456,8 @@
         "lang": "es",
         "strlength": 4584
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_oslo_i_accord",
@@ -1485,7 +1510,8 @@
         "lang": "id",
         "strlength": 390
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_second_intifada",
@@ -1552,7 +1578,8 @@
         "lang": "es",
         "strlength": 2862
       }
-    ]
+    ],
+    "media_id": null
   },
   {
     "id": "ev_nakba_2_campaign",
@@ -1568,6 +1595,7 @@
     "anchor_target": null,
     "titles": {},
     "descriptions": {},
-    "source": []
+    "source": [],
+    "media_id": null
   }
 ]

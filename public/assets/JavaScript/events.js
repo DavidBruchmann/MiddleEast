@@ -7,10 +7,11 @@ let activeSelectedEventId = null;
 // Ingest both compiled assets and localized glossary matrices asynchronously
 Promise.all([
     fetch('generated/events.json').then(res => res.json()),
+    fetch('generated/media.json').then(res => res.json()).catch(() => ({})),
     fetch('generated/labels.json').then(res => res.json()).catch(() => ({}))
-]).then(([events, labels]) => {
-console.log(events);
+]).then(([events, media, labels]) => {
     masterDataset.events = events;
+    masterDataset.media = media;
     masterDataset.labels = labels;
     selectedActiveLanguageCode = document.getElementById('langSelector').value;
 
@@ -123,6 +124,20 @@ function renderTimelineCanvasView(eventsToRender, dir) {
     };
     options.rtl = dir == 'rtl' ? true : false;
     timelineInstance = new vis.Timeline(container, items, options);
+    // 3. Early Ottoman Anchor: 31 August 1876 (Ascension of Abdul Hamid II)
+    timelineInstance.addCustomTime('1876-08-31', 'axis_anchor_1876');
+    // 2. Ottoman Transition Axis Anchor: 9 December 1917 (Fall of Jerusalem)
+    timelineInstance.addCustomTime('1917-12-09', 'axis_anchor_1917');
+    // 1. Mandatory Axis Anchor: 14 May 1948 (End of Mandate / Declaration)
+    timelineInstance.addCustomTime('1948-05-14', 'axis_anchor_1948');
+    // Optional: Ensure researchers cannot accidentally drag or displace your structural milestone lines
+    timelineInstance.on('timechange', function (properties) {
+        // Reverts any manual drag adjustments instantly back to their true historical coordinates
+        if (properties.id === 'axis_anchor_1948') timelineInstance.setCustomTime('1948-05-14', 'axis_anchor_1948');
+        if (properties.id === 'axis_anchor_1917') timelineInstance.setCustomTime('1917-12-09', 'axis_anchor_1917');
+        if (properties.id === 'axis_anchor_1876') timelineInstance.setCustomTime('1876-08-31', 'axis_anchor_1876');
+    });
+
     timelineInstance.on('select', (props) => {
         if(props.items.length > 0) {
             activeSelectedEventId = props.items[0];
@@ -161,7 +176,6 @@ function renderSidebarList(events) {
         const localizedCardTitle = (e.titles && e.titles[selectedActiveLanguageCode]) || e.title;
         card.innerHTML = `<span class="date">${displayYear}</span><h4 style="margin:2px 0 0 0; font-size:14px;">${localizedCardTitle}</h4>`;
         card.onclick = () => {
-            console.log(card);
             const allCards = document.querySelectorAll('.compact-list-card');
             allCards.forEach(function(item) {
                 item.classList.remove('active')
@@ -239,12 +253,24 @@ function displayDeepDetailsView(rawSelectionId) {
     drawerDescElement.style.whiteSpace = 'pre-wrap';
     drawerDescElement.style.textAlign = 'justify';
     drawerDescElement.textContent = textSummaryOutput;
-    const img = document.getElementById('drawerHeroImg');
-    if (matched.bg_image_url) {
-        img.src = matched.bg_image_url;
-        img.style.display = 'block';
+    const imgContainer = document.getElementById('inspectorImageContainer');
+    //const img = document.getElementById('drawerHeroImg');
+    const heroImg = document.getElementById('drawerHeroImg');
+    if (matched.media_id && masterDataset.media && masterDataset.media[matched.media_id]) {
+        const mediaMeta = masterDataset.media[matched.media_id];
+        heroImg.style.opacity = '0';
+        imgContainer.style.display = 'block';
+        setTimeout(() => {
+            heroImg.src = mediaMeta.url;
+            heroImg.style.opacity = '1';
+            // Populate our overlay caption parameters cleanly
+            document.getElementById('captionText').textContent = mediaMeta.title || matched.title;
+            document.getElementById('captionAuthor').textContent = mediaMeta.author || 'Archive Record';
+            document.getElementById('captionLicense').textContent = mediaMeta.license || 'Unspecified';
+            document.getElementById('captionSourceLink').href = mediaMeta.source_url || '#';
+        }, 100);
     } else {
-        img.style.display = 'none';
+        imgContainer.style.display = 'none'; // Hide completely if no media token is assigned
     }
     const linksBox = document.getElementById('drawerLinks');
     linksBox.innerHTML = '';
@@ -254,7 +280,6 @@ function displayDeepDetailsView(rawSelectionId) {
             // Otherwise, leave the URL pointing straight to the main root article page
             const anchorHashSuffix = matched.anchor_target ? `#${encodeURIComponent(matched.anchor_target)}` : '';
             const url = `https://${src.lang}.wikipedia.org/wiki/${src.slug}${anchorHashSuffix}`;
-
             const a = document.createElement('a');
             a.href = url;
             a.target = '_blank';
@@ -265,6 +290,28 @@ function displayDeepDetailsView(rawSelectionId) {
     } else {
         linksBox.innerHTML = '<span style="font-size:12px; color:var(--text-muted); font-style:italic;">No active verification badges discovered.</span>';
     }
+}
+
+/**
+ * Lightbox Interaction Lifecycle Engines
+ */
+function openImageLightboxViewport() {
+    const heroImg = document.getElementById('drawerHeroImg');
+    const lightboxModal = document.getElementById('globalLightboxModal');
+    const lightboxMainImg = document.getElementById('lightboxMainImg');
+    const lightboxCaptionDeck = document.getElementById('lightboxCaptionDeck');
+    if (!heroImg.src) return;
+    // Copy source URL and descriptive metadata blocks into the hidden modal window elements
+    lightboxMainImg.src = heroImg.src;
+    lightboxCaptionDeck.innerHTML = `
+        <strong>${document.getElementById('captionText').textContent}</strong><br>
+        <span style="font-size:12px; opacity:0.85;">📸 ${document.getElementById('captionAuthor').textContent} | ${document.getElementById('captionLicense').textContent}</span>
+    `;
+    lightboxModal.style.display = 'flex'; // Activates modal instantly via flex centering
+}
+
+function closeImageLightboxViewport() {
+    document.getElementById('globalLightboxModal').style.display = 'none';
 }
 
 document.querySelector('#zoom-in').onclick = () => {if(timelineInstance) timelineInstance.zoomIn(0.4)};

@@ -7,7 +7,7 @@
     "end": "1843",
     "context_id": "context_aliyah",
     "perp_ids": ["person_yehuda_alkalai"],
-    "bg_image_url": "",
+    "media_id": "",
     "sort_anchors": {
       "before": "ev_petahtikva"
     }
@@ -20,7 +20,7 @@
     "start": "1878",
     "end": "1878",
     "context_id": "context_aliyah",
-    "bg_image_url": "media/Israel_outline_center_ta.png",
+    "media_id": "img_israel_outline_center_ta",
     "TODO": "CHECK DATES"
   },
   {
@@ -31,12 +31,7 @@
     "start": "1881-04-27",
     "end": "1884",
     "context_id": "context_russian_pogroms",
-    "bg_image_url": "media/Jewish_pogrom_in_Kiev_(1881).jpg",
-    "bg_image": {
-      "url": "media/Jewish_pogrom_in_Kiev_(1881).jpg",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/8/89/Jewish_pogrom_in_Kiev_(1881).jpg",
-      "page": "https://en.wikipedia.org/wiki/File:Jewish_pogrom_in_Kiev_(1881).jpg"
-    },
+    "media_id": "img_pogrom_kiev_1881",
     "TODO": "CHECK DATES start 1/15.March, end?"
   },
   {
@@ -45,11 +40,7 @@
     "display_title_override": "The first Arab–Israeli War (1948)",
     "start": "1948-05-15",
     "end": "1949-03-10",
-    "bg_image": {
-      "url": "media/Tel_Aviv-Yafo_(997008136796005171).jpg",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Tel_Aviv-Yafo_(997008136796005171).jpg",
-      "page": "https://en.wikipedia.org/wiki/File:Tel_Aviv-Yafo_(997008136796005171).jpg"
-    }
+    "media_id": "img_Tel_Aviv-Yafo"
   },
   {
     "id": "ev_first_aliyah",
@@ -59,7 +50,7 @@
     "end": "1903",
     "context_id": "context_aliyah",
     "perp_ids": ["group_hovevei_zion"],
-    "bg_image_url": "media/Be'er_Tuvia_(before_1899).jpg",
+    "media_id": "img_Be-er Tuvia_before_1899",
     "sort_anchors": {
       "after": "ev_russian_pogroms_wave1"
     }
@@ -71,12 +62,7 @@
     "start": "1904",
     "end": "1914",
     "context_id": "context_aliyah",
-    "bg_image_url": "media/Pale-of-settlement-1884.jpg",
-    "bg_image": {
-      "url": "media/Pale-of-settlement-1884.jpg",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/2/26/Pale-of-settlement-1884.jpg",
-      "page": "https://en.wikipedia.org/wiki/File:Pale-of-settlement-1884.jpg"
-    }
+    "media_id": "img_Pale_of_settlement_1884"
   },
   {
     "id": "ev_third_aliyah",
@@ -85,12 +71,7 @@
     "start": "1919",
     "end": "1923",
     "context_id": "context_aliyah",
-    "bg_image_url": "media/Hachshara.JPG",
-    "bg_image": {
-      "url": "media/Hachshara.JPG",
-      "src": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hachshara.JPG",
-      "page": "https://en.wikipedia.org/wiki/File:Hachshara.JPG"
-    }
+    "media_id": "img_Hachshara"
   },
   {
     "id": "ev_fourth_aliyah",
@@ -99,7 +80,7 @@
     "start": "1924",
     "end": "1929",
     "context_id": "context_aliyah",
-    "bg_image_url": "media/PikiWiki_Israel_20841_The_Palmach.jpg"
+    "media_id": "img_PikiWiki_Israel_20841_The_Palmach"
   },
   {
     "id": "ev_fifth_aliyah",
@@ -108,7 +89,7 @@
     "start": "1929",
     "end": "1939",
     "context_id": "context_aliyah",
-    "bg_image_url": "media/IMMIGRANTS_FROM_GERMANY_BEFORE_DEBARKATION_AT_THE_JAFFA_PORT._עולים_מגרמניה_על_סיפון_אונייה_העושה_את_דרכה_לנמל_יפו.D420-151.jpg"
+    "media_id": "img_de_immigrants_at_jaffa_port"
   },
   {
     "id": "ev_aliyah_bet",
@@ -117,7 +98,7 @@
     "start": "1933",
     "end": "1948",
     "context_id": "context_aliyah",
-    "bg_image_url": ""
+    "media_id": ""
   },
   {
     "id": "ev_nakba_phase1",
@@ -127,7 +108,7 @@
     "end": "1948-05-14",
     "context_id": "context_nakba",
     "perp_ids": ["group_haganah", "group_irgun"],
-    "bg_image_url": ""
+    "media_id": ""
   },
   {
     "id": "ev_nakba_2_campaign",
@@ -137,7 +118,7 @@
     "end": "2026-08-03",
     "context_id": "context_nakba_2",
     "perp_ids": ["group_israeli_govt", "group_idf"],
-    "bg_image_url": ""
+    "media_id": ""
   },
   {
     "id": "ev_first_zionist_congress",
@@ -145,7 +126,8 @@
     "start": "1897-08-29",
     "end": "1897-08-31",
     "context_id": "context_aliyah",
-    "perp_ids": ["group_hovevei_zion"]
+    "perp_ids": ["group_hovevei_zion"],
+    "media_id": ""
   },
   {
     "id": "ev_sykes_picot_agreement",
@@ -153,14 +135,16 @@
     "display_title_override": "Sykes–Picot Agreement",
     "start": "1916-05-16",
     "end": "1916-05-16",
-    "context_id": "context_war_milestones"
+    "context_id": "context_war_milestones",
+    "media_id": ""
   },
   {
     "id": "ev_jaffa_riots",
     "english_title": "Jaffa_riots",
     "start": "1921-05-01",
     "end": "1921-05-07",
-    "context_id": "context_nakba"
+    "context_id": "context_nakba",
+    "media_id": ""
   },
   {
     "id": "ev_1929_palestine_riots",
@@ -168,7 +152,8 @@
     "display_title_override": "1929 Palestine Riots & Massacres",
     "start": "1929-08-23",
     "end": "1929-08-29",
-    "context_id": "context_nakba"
+    "context_id": "context_nakba",
+    "media_id": ""
   },
   {
     "id": "ev_1936_1939_arab_revolt",
@@ -177,14 +162,16 @@
     "start": "1936-04-19",
     "end": "1939-08-26",
     "context_id": "context_nakba",
-    "perp_ids": ["group_haganah"]
+    "perp_ids": ["group_haganah"],
+    "media_id": ""
   },
   {
     "id": "ev_king_david_hotel_bombing",
     "english_title": "King_David_Hotel_bombing",
     "start": "1946-07-22",
     "end": "1946-07-22",
-    "perp_ids": ["group_irgun"]
+    "perp_ids": ["group_irgun"],
+    "media_id": ""
   },
   {
     "id": "ev_un_partition_plan",
@@ -192,28 +179,32 @@
     "display_title_override": "UN Resolution 181 (Partition Plan)",
     "start": "1947-11-29",
     "end": "1947-11-29",
-    "context_id": "context_nakba"
+    "context_id": "context_nakba",
+    "media_id": ""
   },
   {
     "id": "ev_deir_yassin_massacre",
     "english_title": "Deir_Yassin_massacre",
     "start": "1948-04-09",
     "end": "1948-04-09",
-    "perp_ids": ["group_irgun"]
+    "perp_ids": ["group_irgun"],
+    "media_id": ""
   },
   {
     "id": "ev_israeli_declaration_of_independence",
     "english_title": "Israeli_Declaration_of_Independence",
     "start": "1948-05-14",
     "end": "1948-05-14",
-    "perp_ids": ["person_ben_gurion", "group_israeli_govt"]
+    "perp_ids": ["person_ben_gurion", "group_israeli_govt"],
+    "media_id": ""
   },
   {
     "id": "ev_suez_crisis",
     "english_title": "Suez_Crisis",
     "start": "1956-10-29",
     "end": "1956-11-07",
-    "perp_ids": ["group_israeli_govt", "group_idf"]
+    "perp_ids": ["group_israeli_govt", "group_idf"],
+    "media_id": ""
   },
   {
     "id": "ev_six_day_war",
@@ -221,41 +212,47 @@
     "display_title_override": "Six-Day War (1967)",
     "start": "1967-06-05",
     "end": "1967-06-10",
-    "perp_ids": ["group_israeli_govt", "group_idf"]
+    "perp_ids": ["group_israeli_govt", "group_idf"],
+    "media_id": ""
   },
   {
     "id": "ev_yom_kippur_war",
     "english_title": "Yom_Kippur_War",
     "start": "1973-10-06",
     "end": "1973-10-25",
-    "perp_ids": ["group_idf"]
+    "perp_ids": ["group_idf"],
+    "media_id": ""
   },
   {
     "id": "ev_sabra_and_shatila_massacre",
     "english_title": "Sabra_and_Shatila_massacre",
     "start": "1982-09-16",
     "end": "1982-09-18",
-    "perp_ids": ["group_idf"]
+    "perp_ids": ["group_idf"],
+    "media_id": ""
   },
   {
     "id": "ev_first_intifada",
     "english_title": "First_Intifada",
     "start": "1987-12-08",
     "end": "1993-09-13",
-    "perp_ids": ["group_fatah"]
+    "perp_ids": ["group_fatah"],
+    "media_id": ""
   },
   {
     "id": "ev_oslo_i_accord",
     "english_title": "Oslo_I_Accord",
     "start": "1993-09-13",
     "end": "1993-09-13",
-    "perp_ids": ["person_arafat"]
+    "perp_ids": ["person_arafat"],
+    "media_id": ""
   },
   {
     "id": "ev_second_intifada",
     "english_title": "Second_Intifada",
     "start": "2000-09-28",
     "end": "2005-02-08",
-    "perp_ids": ["group_fatah"]
+    "perp_ids": ["group_fatah"],
+    "media_id": ""
   }
 ]
