@@ -13,7 +13,13 @@ Promise.all([
     masterDataset.events = events;
     masterDataset.media = media;
     masterDataset.labels = labels;
-    selectedActiveLanguageCode = document.getElementById('langSelector').value;
+    //selectedActiveLanguageCode = document.getElementById('langSelector').value;
+    const storedLanguageChoice = localStorage.getItem('user-selected-language-code');
+    if (storedLanguageChoice) {
+        selectedActiveLanguageCode = storedLanguageChoice;
+        document.getElementById('langSelector').value = selectedActiveLanguageCode;
+    }
+
 
     // Execute unified application render block
     renderAllInterfaceComponents();
@@ -38,6 +44,14 @@ function renderAllInterfaceComponents() {
     //const getLabel = (key, fallback) => (masterDataset.labels[key] && masterDataset.labels[key][selectedActiveLanguageCode]) || fallback;
 
     const dir = ['ar', 'he'].includes(selectedActiveLanguageCode) ? 'rtl' : 'ltr';
+    const isRtl = ['ar', 'he'].includes(selectedActiveLanguageCode);
+    
+    const getLabelText = (key, defaultFallbackString) => {
+        if (masterDataset.labels && masterDataset.labels[key] && masterDataset.labels[key][selectedActiveLanguageCode]) {
+            return masterDataset.labels[key][selectedActiveLanguageCode];
+        }
+        return defaultFallbackString;
+    };
     const uiMainHeadline = document.getElementById('uiMainHeadline');
     uiMainHeadline.textContent = getLabel('headline');
     uiMainHeadline.parentNode.setAttribute('dir', dir);
@@ -56,7 +70,19 @@ function renderAllInterfaceComponents() {
     document.getElementById('optThemeSystem').textContent = getLabel('theme_system', "🌗 System Theme");
     document.getElementById('optThemeLight').textContent = getLabel('theme_light', "☀️ Light High-Contrast");
     document.getElementById('optThemeDark').textContent = getLabel('theme_dark', "🌙 Dark High-Contrast");
-
+    
+    const localizedTextBoxes = [
+        document.getElementById('uiMainHeadline'),
+        document.getElementById('uiSubheading'),
+        document.getElementById('drawerDesc'),
+        document.getElementById('listScrollArea')
+    ];
+    localizedTextBoxes.forEach(box => {
+        if (box) {
+            box.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
+            box.style.textAlign = isRtl ? 'right' : 'justify';
+        }
+    });
     //contentBox.setAttribute('dir', ['ar', 'he'].includes(selectedActiveLanguageCode) ? 'rtl' : 'ltr');
     // Redraw Dependent Navigation Panels
     applySidebarFilterPass();
@@ -124,6 +150,8 @@ function renderTimelineCanvasView(eventsToRender, dir) {
     };
     options.rtl = dir == 'rtl' ? true : false;
     timelineInstance = new vis.Timeline(container, items, options);
+    applyCustomVerticalLines();
+    /*
     // 3. Early Ottoman Anchor: 31 August 1876 (Ascension of Abdul Hamid II)
     timelineInstance.addCustomTime('1876-08-31', 'axis_anchor_1876');
     // 2. Ottoman Transition Axis Anchor: 9 December 1917 (Fall of Jerusalem)
@@ -137,13 +165,115 @@ function renderTimelineCanvasView(eventsToRender, dir) {
         if (properties.id === 'axis_anchor_1917') timelineInstance.setCustomTime('1917-12-09', 'axis_anchor_1917');
         if (properties.id === 'axis_anchor_1876') timelineInstance.setCustomTime('1876-08-31', 'axis_anchor_1876');
     });
-
+    */
     timelineInstance.on('select', (props) => {
         if(props.items.length > 0) {
             activeSelectedEventId = props.items[0];
             displayDeepDetailsView(activeSelectedEventId);
             focusAndScrollSidebarListCard(activeSelectedEventId);
         }
+    });
+}
+
+/**
+ * FIXED: Advanced Dynamic Localized Axis Markers Deck
+ * Injects vertical milestone threshold boundaries cleanly using automated translation files
+ */
+/**
+ * FIXED: Production-Ready Localized Vertical Milestone Marker System
+ * Explicitly locks line paths from manual drift without relying on untriggered events
+ */
+function applyCustomVerticalLines() {
+    if (!timelineInstance || !masterDataset.events || masterDataset.events.length === 0) return;
+
+    // Define the exact group profiles you want to lock as vertical axis lines
+    const targetedVerticalLines = [
+        { id: "ev_sultan_abdul_hamid_ii_1876", styleClass: "axis_anchor_1876", fallbackText: "31 Aug 1876" },
+        { id: "ev_battle_of_jerusalem_1917", styleClass: "axis_anchor_1917", fallbackText: "9 Dec 1917" },
+        { id: "ev_israeli_declaration_of_independence", styleClass: "axis_anchor_1948", fallbackText: "14 May 1948" },
+    ];
+
+    targetedVerticalLines.forEach(line => {
+        const eventData = masterDataset.events.find(e => e.id === line.id);
+        if (!eventData) return;
+
+        const localizedMarkerText = (eventData.titles && eventData.titles[selectedActiveLanguageCode]) || eventData.title || line.fallbackText;
+        const rawDateString = String(eventData.start).trim();
+        const displayLabelString = `${rawDateString.substring(0, 10)}: ${localizedMarkerText}`;
+
+        try {
+            // Clean out old tracking IDs cleanly to handle language hot-swaps
+            timelineInstance.removeCustomTime(line.id);
+        } catch (e) { /* Safe catch for clean overwrites */ }
+
+        let finalTimelineMarkerDate = null;
+        const dateMatchPattern = rawDateString.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
+
+        if (dateMatchPattern) {
+            // FIXED: Extracted elements target separate array lookup index indices safely!
+            const yearInt  = parseInt(dateMatchPattern[1], 10);
+            
+            // Group 2 holds Month string (e.g. "08"). Fallback to 0 (Jan) if missing
+            const monthInt = dateMatchPattern[2] ? (parseInt(dateMatchPattern[2], 10) - 1) : 0;
+            
+            // Group 3 holds Day string (e.g. "31"). Fallback to 1 (1st) if missing
+            const dayInt   = dateMatchPattern[3] ? parseInt(dateMatchPattern[3], 10) : 1;
+
+            // Force pure UTC instantiation at absolute midnight
+            finalTimelineMarkerDate = new Date(Date.UTC(yearInt, monthInt, dayInt, 0, 0, 0));
+        } else {
+            // Fallback for unparseable entries
+            finalTimelineMarkerDate = new Date(Date.UTC(1948, 4, 14, 0, 0, 0));
+        }
+
+        // ==========================================================================
+        // FIXED: Hardcode Line Stability Inside the Options Parameters Matrix
+        // Passing an options block with editable:false locks the line natively!
+        // ==========================================================================
+        timelineInstance.addCustomTime(finalTimelineMarkerDate, line.id);
+        timelineInstance.setCustomTimeTitle('', line.id); // Clear native floating tooltips
+        
+        // Lock the line state to prevent dragging entirely, rendering the timechange hook obsolete
+        const itemOptions = {
+            id: line.id,
+            editable: false 
+        };
+
+        // Inject dynamic attributes into the DOM layer safely
+                // Inject dynamic attributes into the DOM layer safely
+        setTimeout(() => {
+            const axisElementNode = document.querySelector(`.vis-custom-time.${line.id}`);
+            if (axisElementNode) {
+                axisElementNode.classList.add(line.styleClass);
+                
+                // 1. FIXED: Remove any old text label remnants to handle language page hot-swaps cleanly
+                const oldLabel = axisElementNode.querySelector('.custom-axis-label-card');
+                if (oldLabel) oldLabel.remove();
+
+                // 2. FIXED: Construct a true HTML element label box that sits natively inside the view tree
+                const labelCardElement = document.createElement('div');
+                labelCardElement.className = 'custom-axis-label-card';
+                labelCardElement.textContent = displayLabelString;
+
+                // 3. FIXED: Wire the localized click handlers directly to BOTH the line bar and the label text block
+                const triggerEventSelectionHandler = (event) => {
+                    event.stopPropagation(); // Prevents canvas tracking click scrambling errors
+                    activeSelectedEventId = line.id;
+                    displayDeepDetailsView(line.id);
+                    highlightActiveSidebarListCard(line.id);
+                };
+
+                axisElementNode.style.cursor = 'pointer';
+                axisElementNode.onclick = triggerEventSelectionHandler;
+                
+                labelCardElement.style.cursor = 'pointer';
+                labelCardElement.onclick = triggerEventSelectionHandler;
+
+                // Nest the clickable text layout box right inside the vertical indicator axis line element
+                axisElementNode.appendChild(labelCardElement);
+            }
+        }, 50);
+
     });
 }
 
@@ -203,11 +333,52 @@ function filterSidebarList() {
     renderSidebarList(globalEventsRegistry.filter(e => e.title.toLowerCase().includes(query)));
 }
 
+/**
+ * Global Language Switching Routing Controller
+ * Saves workflow state variables and auto-reloads the page when crossing RTL/LTR boundaries
+ */
 function changeGlobalInterfaceLanguage() {
+    const selectorElement = document.getElementById('langSelector');
+    if (!selectorElement) return;
+
+    const previousLanguageCode = selectedActiveLanguageCode; // Old active state
+    const nextLanguageCode = selectorElement.value;        // Newly targeted choice
+    
+    // Evaluate if this language change crosses the RTL/LTR structural line boundary
+    const wasRtl = ['ar', 'he'].includes(previousLanguageCode);
+    const isRtl  = ['ar', 'he'].includes(nextLanguageCode);
+
+    // Save the new choice into browser memory so it persists across page refreshes
+    localStorage.setItem('user-selected-language-code', nextLanguageCode);
+    
+    // Save the currently active event ID so the visitor doesn't lose their place
+    if (activeSelectedEventId) {
+        localStorage.setItem('user-active-event-id', activeSelectedEventId);
+    }
+
+    // FIXED: If crossing between structural direction boundaries, force a page reload!
+    if (wasRtl !== isRtl) {
+        window.location.reload(); 
+        return; // Stops execution loop immediately to let the browser refresh natively
+    }
+
+    // Standard in-memory translation swap if switching between two LTR or two RTL languages
+    selectedActiveLanguageCode = nextLanguageCode;
+    document.documentElement.setAttribute('lang', selectedActiveLanguageCode);
+    // document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
+
+    // Run your standard sidebar list and canvas filter components redraw passes
+    renderAllInterfaceComponents();
+}
+
+
+/*
+function changeGlobalInterfaceLanguage() {    
     selectedActiveLanguageCode = document.getElementById('langSelector').value;
     renderAllInterfaceComponents();
     // timelineInstance.redraw();
 }
+*/
 
 function initInterfaceThemeEngine() {
     const saved = localStorage.getItem('user-theme') || 'system';

@@ -5,7 +5,6 @@ const https = require('https');
 
 // Define the root target topics (English names) and the specific languages to download
 // Just add the exact English title slug below
-
 const EVENT_ARTICLES = [
     "Petah_Tikva",
     "Pogroms_in_the_Russian_Empire",
@@ -36,12 +35,24 @@ const EVENT_ARTICLES = [
     "Second_Intifada",
     "First_Zionist_Congress",
     "Sykes–Picot_Agreement",
-    "Jaffa_riots",
+    "Jaffa_riots_(May_1921)", // "Jaffa_riots",
     "1929_Palestine_riots",
     "1936–1939_Arab_revolt_in_Palestine",
     "United_Nations_Partition_Plan_for_Palestine",
+    "1947–1948_civil_war_in_Mandatory_Palestine",
     "Balfour_Declaration",
     "White_Paper_of_1939",
+    "Battle_of_Jerusalem",
+    "Abdul_Hamid_II",
+    "2006_Palestinian_legislative_election", // ◄ NEW
+    "Battle_of_Gaza_(2007)",                  // ◄ NEW
+    "Annapolis_Conference",
+    "United_Nations_General_Assembly_resolution_67/19", // ◄ NEW
+    "2022_Palestinian_reconciliation_agreement",
+    "2024_Fatah–Hamas_agreement",             // ◄ NEW
+    "Palestine_Liberation_Organization",
+    "2024_Beijing_Declaration",
+    "Gaza_humanitarian_crisis",
 ];
 
 const FRAMEWORK_ARTICLES = [
@@ -85,6 +96,7 @@ const PEOPLE_ARTICLES = [
     "Amin_al-Husseini",
     // --- Pro Palestine ---
     "Yasser_Arafat",
+    "Mahmoud_Abbas",
 
     // --- Britains ---
     "Neville_Chamberlain", // Prime Minister of the United Kingdom from May 1937 to May 1940 and Leader of the Conservative Party from May 1937 to October 1940
@@ -111,6 +123,7 @@ const GROUP_ARTICLES = [
     // --- Pro Palestine ---
     "Fatah",
     "National_Defence_Party_(Palestine)",
+    "Palestinian_Authority",
 
     // Misc.
     "Peel_Commission",
@@ -126,13 +139,11 @@ const TARGET_ARTICLES = {
     'groups': GROUP_ARTICLES,
     'ideology': IDEALOGICAL_ARTICLES,
 };
-/*
-[
+
     // "Cyrus_the_Great",
     // "Jewish_diaspora",
 
-];
-*/
+
 
 const BASE_CACHE_DIR = path.join(__dirname, 'wikipedia_cache');
 const REGISTRY_FILE = path.join(BASE_CACHE_DIR, 'cache_registry.json');
@@ -145,10 +156,9 @@ const TARGET_LANGS =  [
     'he',
     'id'
 ];
-const USER_AGENT = 'HistoricTimelineResearchProject/1.0 (contact: your-email@example.com)';
-const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'data.json');
-
+const USER_AGENT = 'HistoricTimelineResearchProject/1.0 (contact: david.bruchmann@gmail.com)';
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+const OUTPUT_FILE = path.join(__dirname, '..', 'public', 'data.json');
 const eventMap = new Map();
 
 function getMonthByName(monthNameString) {
@@ -388,6 +398,7 @@ async function fetchUniversalTopicMetadata(englishTitle) {
  * Split Request 1: Dedicated translation finder
  */
 async function fetchLangLinks(englishTitle) {
+    // const urlObj = new URL('https://wikipedia.org');
     const urlObj = new URL('https://en.wikipedia.org/w/api.php');
     urlObj.searchParams.set('action', 'query');
     urlObj.searchParams.set('prop', 'langlinks');
@@ -419,6 +430,92 @@ async function fetchLangLinks(englishTitle) {
         return {};
     }
 }
+
+/**
+ * FIXED: Incremental Local-First Download Sieve Pass
+ * Absolutely skips network calls if a cache file variant is already present on disk
+ */
+/**
+ * FIXED: Redirect-Proof Ingestion Engine
+ * Explicitly forces MediaWiki to resolve page title redirects before pulling intro summaries
+ */
+async function downloadArticleTextSummary(lang, slug) {
+    const targetFolder = path.join(BASE_CACHE_DIR, lang);
+    if (!fs.existsSync(targetFolder)) fs.mkdirSync(targetFolder, { recursive: true });
+
+    // Map filename to safe filesystem layout rules
+    const cleanFileNameSlug = slug.replace(/ /g, '_').replace(/\//g, '___');
+    const destinationPath = path.join(targetFolder, `${cleanFileNameSlug}.json`);
+
+    // Incremental Lock: Skip network calls if file is already successfully sitting on your drive
+    if (fs.existsSync(destinationPath)) {
+        try {
+            const existingContent = JSON.parse(fs.readFileSync(destinationPath, 'utf-8'));
+            // If the file exists but its extract is empty, allow it to fall through to re-download!
+            if (existingContent && existingContent.extract && existingContent.extract.trim().length > 10) {
+                return; 
+            }
+        } catch(e) {}
+    }
+
+    console.log(`  📥 Syncing Text Profile: [${lang.toUpperCase()}] -> ${cleanFileNameSlug}`);
+
+    const urlObj = new URL(`https://${lang}.wikipedia.org/w/api.php`);
+    urlObj.searchParams.set('action', 'query');
+    urlObj.searchParams.set('prop', 'extracts');
+    urlObj.searchParams.set('explaintext', '1');
+    // urlObj.searchParams.set('exintro', '1'); // Fetch full introduction text summary block
+    urlObj.searchParams.set('exsectionformat', 'plain');
+    urlObj.searchParams.set('titles', slug); // Use the true incoming database slug parameter
+    urlObj.searchParams.set('format', 'json');
+    
+    // CRITICAL FIX: Forces Wikipedia's server to internally jump down redirect chains 
+    // to find the true destination article before evaluating the exintro abstract rules!
+    urlObj.searchParams.set('redirects', '1');
+
+    try {
+        const response = await makeRequest(urlObj.toString());
+        if (response.ok) {
+            const data = JSON.parse(response.body);
+            const pages = data?.query?.pages || {};
+            const pageId = Object.keys(pages)[0]; // Grab the true active page ID key
+            
+            let extractText = "";
+            if (pageId && pageId !== "-1") {
+                extractText = pages[pageId].extract || "";
+            }
+
+            // BACKUP PASS: If exintro failed due to heavy infobox templates clobbering the intro metadata
+            if (!extractText || extractText.trim().length < 15) {
+                // Query again without exintro restriction to capture the full raw plain text tree body
+                const backupUrlObj = new URL(`https://${lang}.wikipedia.org/w/api.php`);
+                backupUrlObj.searchParams.set('action', 'query');
+                backupUrlObj.searchParams.set('prop', 'extracts');
+                backupUrlObj.searchParams.set('explaintext', '1');
+                backupUrlObj.searchParams.set('titles', slug);
+                backupUrlObj.searchParams.set('format', 'json');
+                backupUrlObj.searchParams.set('redirects', '1');
+
+                const backupRes = await makeRequest(backupUrlObj.toString());
+                if (backupRes.ok) {
+                    const backupData = JSON.parse(backupRes.body);
+                    const bPages = backupData?.query?.pages || {};
+                    const bPageId = Object.keys(bPages)[0];
+                    if (bPageId && bPageId !== "-1") {
+                        // Snip the first 2000 characters of the total body to populate your views cleanly
+                        extractText = bPages[bPageId].extract || "";
+                    }
+                }
+            }
+
+            fs.writeFileSync(destinationPath, JSON.stringify({ extract: extractText }, null, 2), 'utf-8');
+            await delay(250); // Polite rate-limiting backoff delay avoids Wikipedia bot blocks
+        }
+    } catch (err) {
+        console.error(`  ✕ Fetch error for ${cleanFileNameSlug}:`, err.message);
+    }
+}
+
 
 /**
  * Split Request 2: Dedicated Wikidata Q-Number finder
@@ -528,6 +625,54 @@ async function downloadArticleText(lang, slug) {
     }
 }
 
+/**
+ * Core Application Lifecycle Orchestrator
+ */
+async function startPipelineSyncRoutine() {
+    console.log("🚀 Starting Incremental Wikipedia Ingestion Sync Pipeline...\n");
+    if (!fs.existsSync(BASE_CACHE_DIR)) fs.mkdirSync(BASE_CACHE_DIR, { recursive: true });
+
+    // Load or instantiate our index map registry file layout
+    let cacheRegistry = {};
+    if (fs.existsSync(REGISTRY_FILE)) {
+        cacheRegistry = JSON.parse(fs.readFileSync(REGISTRY_FILE, 'utf-8'));
+    }
+
+    // FIXED: Safely loop through your new Category Dictionary Object layout using Object.keys()
+    for (const category of Object.keys(TARGET_ARTICLES)) {
+        const articleListArray = TARGET_ARTICLES[category];
+
+        for (const englishArticle of articleListArray) {
+            const cleanKeySlug = englishArticle.replace(/ /g, '_');
+
+            // Step A: Map cross-language reference links if this topic is completely new
+            if (!cacheRegistry[cleanKeySlug]) {
+                console.log(`🔍 Mapping international cross-references for new entry: ${cleanKeySlug}`);
+                const languageTranslationsMap = await fetchLangLinks(cleanKeySlug);
+                
+                cacheRegistry[cleanKeySlug] = {
+                    category: category,
+                    translations: languageTranslationsMap
+                };
+                
+                // Write updates to registry file instantly so interruptions don't corrupt history logs
+                fs.writeFileSync(REGISTRY_FILE, JSON.stringify(cacheRegistry, null, 2), 'utf-8');
+                await delay(200);
+            }
+
+            // Step B: Loop through all language codes and invoke our local-first incremental download pass
+            const operationalTranslationsMap = cacheRegistry[cleanKeySlug].translations || {};
+            for (const lang of TARGET_LANGS) {
+                const localizedLanguageSlug = operationalTranslationsMap[lang];
+                if (localizedLanguageSlug) {
+                    await downloadArticleTextSummary(lang, localizedLanguageSlug);
+                }
+            }
+        }
+    }
+    console.log("\n✓ Synchronization complete. Local filesystem cache data is completely up to date.");
+}
+/*
 async function startPipeline() {
     console.log("Running Multi-Language Wikipedia Sync Engine...\n");
 
@@ -581,7 +726,8 @@ async function startPipeline() {
     console.log("\n✓ Execution complete! cache_registry.json successfully populated.");
 
 }
-
-startPipeline();
+*/
+startPipelineSyncRoutine();
+// startPipeline();
 parseCacheToUnifiedStructure();
 // downloadArticleText('fr', 'Fatah');

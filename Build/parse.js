@@ -25,8 +25,9 @@ function standardizeKey(str) {
 function extractTextContentFromCacheFile(lang, localizedSlug) {
     const langFolder = path.join(CACHE_DIR, lang);
     if (!fs.existsSync(langFolder)) return null;
-
-    const targetSignature = standardizeKey(localizedSlug);
+    
+    const normalizedTargetSlug = localizedSlug.replace(/\//g, '___');
+    const targetSignature = standardizeKey(normalizedTargetSlug);
     const filesOnDisk = fs.readdirSync(langFolder);
 
     // Track matching formats found for this specific title slug
@@ -146,7 +147,8 @@ function parseAndGenerateDataFiles() {
     const configGroups = JSON.parse(fs.readFileSync(path.join(CONFIG_DIR, 'groups.json'), 'utf-8'));
     const configPersons = JSON.parse(fs.readFileSync(path.join(CONFIG_DIR, 'persons.json'), 'utf-8'));
     const configContext = JSON.parse(fs.readFileSync(path.join(CONFIG_DIR, 'context.json'), 'utf-8'));
-
+    const configLabels = JSON.parse(fs.readFileSync(path.join(CONFIG_DIR, 'labels.json'), 'utf-8'));
+    
     const REGISTRY_FILE = path.join(CACHE_DIR, 'cache_registry.json');
     let cacheRegistry = fs.existsSync(REGISTRY_FILE) ? JSON.parse(fs.readFileSync(REGISTRY_FILE, 'utf-8')) : {};
 
@@ -226,6 +228,7 @@ function parseAndGenerateDataFiles() {
     fs.writeFileSync(path.join(GENERATED_DIR, 'groups.json'), JSON.stringify(configGroups, null, 2));
     fs.writeFileSync(path.join(GENERATED_DIR, 'persons.json'), JSON.stringify(configPersons, null, 2));
     fs.writeFileSync(path.join(GENERATED_DIR, 'context.json'), JSON.stringify(configContext, null, 2));
+    fs.writeFileSync(path.join(GENERATED_DIR, 'labels.json'), JSON.stringify(configLabels, null, 2));
 
     console.log("✓ Success! Rebuilt datasets across all formats smoothly into public/generated/");
 }

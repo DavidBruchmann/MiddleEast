@@ -9,8 +9,19 @@
     "perp_ids": ["person_yehuda_alkalai"],
     "media_id": "",
     "sort_anchors": {
-      "before": "ev_petahtikva"
+      "before": "ev_founding_petah-tikva"
     }
+  },
+  {
+    "id": "ev_sultan_abdul_hamid_ii_1876",
+    "english_title": "Abdul_Hamid_II",
+    "display_title_override": "Ascension of Sultan Abdul Hamid II: Late Ottoman Administrative Era",
+    "start": "1876-08-31",
+    "end": "1909-04-27",
+    "context_id": "context_aliyah",
+    "perp_ids": [],
+    "media_id": "",
+    "anchor_target": null
   },
   {
     "id": "ev_founding_petah-tikva",
@@ -65,6 +76,17 @@
     "media_id": "img_Pale_of_settlement_1884"
   },
   {
+    "id": "ev_battle_of_jerusalem_1917",
+    "english_title": "Battle_of_Jerusalem",
+    "display_title_override": "Fall of Jerusalem: British Forces End 400 Years of Ottoman Rule",
+    "start": "1917-12-09",
+    "end": "1917-12-30",
+    "context_id": "context_war_milestones",
+    "perp_ids": [],
+    "media_id": "",
+    "anchor_target": null
+  },
+  {
     "id": "ev_third_aliyah",
     "english_title": "Third_Aliyah",
     "display_title_override": "Third Aliyah (1919–1923)",
@@ -112,10 +134,10 @@
   },
   {
     "id": "ev_nakba_2_campaign",
-    "english_title": "Gaza_humanitarian_crisis_(2023–present)",
+    "english_title": "Gaza_humanitarian_crisis",
     "display_title_override": "Nakba II: Modern Displacement Campaign",
     "start": "2023-10-07",
-    "end": "2026-08-03",
+    "end": "2026-08-21",
     "context_id": "context_nakba_2",
     "perp_ids": ["group_israeli_govt", "group_idf"],
     "media_id": ""
@@ -139,8 +161,8 @@
     "media_id": ""
   },
   {
-    "id": "ev_jaffa_riots",
-    "english_title": "Jaffa_riots",
+    "id": "ev_jaffa_riots_1921",
+    "english_title": "Jaffa_riots_(May_1921)",
     "start": "1921-05-01",
     "end": "1921-05-07",
     "context_id": "context_nakba",
@@ -193,10 +215,13 @@
   {
     "id": "ev_israeli_declaration_of_independence",
     "english_title": "Israeli_Declaration_of_Independence",
+    "display_title_override": "Declaration of the State of Israel & End of British Mandate",
     "start": "1948-05-14",
     "end": "1948-05-14",
-    "perp_ids": ["person_ben_gurion", "group_israeli_govt"],
-    "media_id": ""
+    "context_id": "context_war_milestones",
+    "perp_ids": ["group_israeli_govt", "person_ben_gurion"],
+    "media_id": "",
+    "anchor_target": null
   },
   {
     "id": "ev_suez_crisis",
@@ -254,5 +279,69 @@
     "end": "2005-02-08",
     "perp_ids": ["group_fatah"],
     "media_id": ""
+  },
+  {
+    "id": "ev_plo_mahmoud_abbas_chairman_2004",
+    "english_title": "Mahmoud_Abbas",
+    "display_title_override": "Mahmoud Abbas succeeds Yasser Arafat as Chairman of the PLO Executive Committee",
+    "start": "2004-11-11",
+    "end": "2004-11-11",
+    "context_id": "context_war_milestones",
+    "perp_ids": ["group_fatah"]
+  },
+  {
+    "id": "ev_palestinian_legislative_election_2006",
+    "english_title": "2006_Palestinian_legislative_election",
+    "display_title_override": "Palestinian Legislative Election: Hamas wins majority over Fatah",
+    "start": "2006-01-25",
+    "end": "2006-01-25",
+    "context_id": "context_war_milestones",
+    "perp_ids": ["group_fatah"]
+  },
+  {
+    "id": "ev_battle_of_gaza_2007",
+    "english_title": "Battle_of_Gaza_(2007)",
+    "display_title_override": "Battle of Gaza: Fatah–Hamas conflict splits Gaza Strip from West Bank governance",
+    "start": "2007-06-10",
+    "end": "2007-06-15",
+    "context_id": "context_war_milestones",
+    "perp_ids": ["group_fatah"]
+  },
+  {
+    "id": "ev_annapolis_conference",
+    "english_title": "Annapolis_Conference",
+    "display_title_override": "",
+    "start": "2007-11-27",
+    "end": "2007-11-27",
+    "context_id": "context_war_milestones",
+    "perp_ids": ["group_fatah"]
+  },
+  {
+    "id": "ev_un_observer_state_status_2012",
+    "english_title": "United_Nations_General_Assembly_resolution_67/19",
+    "display_title_override": "UN Resolution 67/19: Palestine granted Non-Member Observer State status",
+    "start": "2012-11-29",
+    "end": "2012-11-29",
+    "context_id": "context_war_milestones",
+    "perp_ids": ["group_israeli_govt"]
+  },
+  {
+    "id": "ev_plo_central_council_israel_recognition_2018",
+    "english_title": "Palestine_Liberation_Organization",
+    "anchor_target": "21st_century",
+    "display_title_override": "PLO Central Council votes to suspend recognition of the State of Israel",
+    "start": "2018-10-29",
+    "end": "2018-10-29",
+    "context_id": "context_war_milestones",
+    "perp_ids": ["group_fatah"]
+  },
+  {
+    "id": "ev_beijing_declaration_palestinian_reconciliation_2024",
+    "english_title": "2024_Beijing_Declaration",
+    "display_title_override": "Beijing Declaration: 14 Palestinian factions sign reconciliation accord",
+    "start": "2024-07-23",
+    "end": "2024-07-23",
+    "context_id": "context_war_milestones",
+    "perp_ids": ["group_fatah"]
   }
 ]
