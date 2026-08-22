@@ -409,3 +409,19 @@ footer {
 .vis-custom-time.axis_anchor_1948::after { content: "🎯 14 May 1948: State Declaration / End of Mandate"; }
 .vis-custom-time.axis_anchor_1917::after { content: "🏛️ 9 Dec 1917: Fall of Ottoman Jerusalem"; }
 .vis-custom-time.axis_anchor_1876::after { content: "👑 31 Aug 1876: Reign of Sultan Abdul Hamid II"; }
+/* ==========================================================================
+   Semantic Accessible List Anchor Resets (Sharp Aesthetic Style)
+   ========================================================================== */
+a.compact-list-card {
+    display: block;
+    text-decoration: none !important; /* Strips ugly default links underlines natively */
+    color: var(--text-main) !important; /* Overrides default links ink color safely */
+    cursor: pointer;
+    outline: none;
+}
+
+/* Ensure focus states look completely clear for keyboard tab-navigation visitors */
+a.compact-list-card:focus-visible {
+    box-shadow: 0 0 0 2px var(--accent-blue);
+    background: var(--bg-secondary);
+}
