@@ -70,6 +70,9 @@ function renderAllInterfaceComponents() {
     document.getElementById('optThemeSystem').textContent = getLabel('theme_system', "🌗 System Theme");
     document.getElementById('optThemeLight').textContent = getLabel('theme_light', "☀️ Light High-Contrast");
     document.getElementById('optThemeDark').textContent = getLabel('theme_dark', "🌙 Dark High-Contrast");
+    document.getElementById('uiTopAttributionBanner').innerHTML = getLabelText('top_attribution', "Ingested directly from Wikipedia under CC-BY-SA terms.");
+    document.getElementById('uiFooterLegalText').innerHTML = getLabelText('footer_legal', "Data Attribution & Licensing Notice...");
+
     
     const localizedTextBoxes = [
         document.getElementById('uiMainHeadline'),
@@ -230,14 +233,14 @@ function applyCustomVerticalLines() {
         // FIXED: Hardcode Line Stability Inside the Options Parameters Matrix
         // Passing an options block with editable:false locks the line natively!
         // ==========================================================================
-        timelineInstance.addCustomTime(finalTimelineMarkerDate, line.id);
-        timelineInstance.setCustomTimeTitle('', line.id); // Clear native floating tooltips
-        
         // Lock the line state to prevent dragging entirely, rendering the timechange hook obsolete
         const itemOptions = {
             id: line.id,
             editable: false 
         };
+        timelineInstance.addCustomTime(finalTimelineMarkerDate, line.id);
+        timelineInstance.setCustomTimeTitle('qqqqqq', line.id); // Clear native floating tooltips
+        
 
         // Inject dynamic attributes into the DOM layer safely
                 // Inject dynamic attributes into the DOM layer safely

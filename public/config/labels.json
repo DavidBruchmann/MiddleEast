@@ -1,21 +1,21 @@
 {
   "headline": {
-    "en": "Historical Conflict Ledger",
-    "de": "Historisches Konfliktregister",
-    "ar": "سجل الصراعات التاريخية",
-    "he": "פנקס הסכסוכים ההיסטורי",
-    "id": "Buku Besar Konflik Sejarah",
-    "fr": "Registre des Conflits Historiques",
-    "es": "Registro de Conflictos Históricos"
+    "en": "Hotspot Israel in the Middle East",
+    "de": "Brennpunkt Israel im Nahen Osten",
+    "ar": "بؤرة إسرائيل في الشرق الأوسط",
+    "he": "מוקד ישראל במזרח התיכון",
+    "id": "Hotspot Israel di Timur Tengah",
+    "fr": "Point Chaud Israël au Moyen-Orient",
+    "es": "Punto Crítico Israel en el Medio Oriente"
   },
   "subheading": {
-    "en": "Side-by-side verification interface. Select entries to reveal language source trees.",
-    "de": "Schnittstelle zur parallelen Überprüfung. Einträge auswählen, um Sprachquellen anzuzeigen.",
-    "ar": "واجهة التحقق جنباً إلى جنب. حدد الإدخالات للكشف عن أشجار مصادر اللغة.",
-    "he": "ממשק אימות זה לצד זה. בחר רשומות כדי לחשוף עצי מקור שפה.",
-    "id": "Antarmuka verifikasi berdampingan. Pilih entri untuk menampilkan pohon sumber bahasa.",
-    "fr": "Interface de vérification côte à côte. Sélectionnez des entrées para afficher les sources.",
-    "es": "Interfaz de verificación lado a lado. Seleccione entradas para revelar las fuentes de idioma."
+    "en": "An interactive chronological ledger tracing geopolitical milestones, individual actors, institutional factions, and historical eras from 1843 to the modern day.",
+    "de": "Ein interaktives chronologisches Register zur Verfolgung geopolitischer Meilensteine, individueller Akteure, institutioneller Fraktionen und historischer Epochen von 1843 bis zur Gegenwart.",
+    "ar": "سجل كرونولوجي تفاعلي يتتبع المعالم الجيوسياسية، والفرقاء الفاعلين، والفصائل المؤسسية، والحقب التاريخية من عام 1843 إلى العصر الحديث.",
+    "he": "פנקס כרונולוגי אינטראקטיבי העוקב אחר אבני דרך גיאופוליטיות, שחקנים אינדיבידואליים, פלגים מוסדיים ועידנים היסטוריים משנת 1843 ועד היום.",
+    "id": "Buku besar kronologis interaktif yang melacak tonggak geopolitik, aktor individu, faksi institusional, dan era sejarah dari tahun 1843 hingga zaman modern.",
+    "fr": "Un registre chronologique interactif retraçant les jalons géopolitiques, los acteurs individuels, les factions institutionnelles et les ères historiques de 1843 à nos jours.",
+    "es": "Un registro cronológico interactivo que rastrea hitos geopolíticos, actores individuales, facciones institucionales y eras históricas desde 1843 hasta el día de hoy."
   },
   "filter_label": {
     "en": "Quick filter list rows:",
@@ -61,5 +61,23 @@
     "id": "🌙 Kontras Tinggi Gelap",
     "fr": "🌙 Sombre Haute-Contraste",
     "es": "🌙 Oscuro de Alto Contraste"
+  },
+  "top_attribution": {
+    "en": "📖 All chronological text logs, translations, and media imagery assets are ingested directly from Wikipedia under CC-BY-SA terms.",
+    "de": "📖 Alle chronologischen Textprotokolle, Übersetzungen und Bildmedien werden direkt von Wikipedia unter CC-BY-SA-Bedingungen bezogen.",
+    "ar": "📖 يتم جلب جميع النصوص التاريخية والترجمات والصور مباشرة من ويكيبيديا بموجب شروط رخصة المشاع الإبداعي (CC-BY-SA).",
+    "he": "📖 כל יומני הטקסט הכרונולוגיים, התרגומים ונכסי המדיה נלקחים ישירות מוויקיפדיה תחת תנאי רישיון CC-BY-SA.",
+    "id": "📖 Semua log teks kronologis, terjemahan, dan aset gambar media diambil langsung dari Wikipedia di bawah ketentuan CC-BY-SA.",
+    "fr": "📖 Tous les journaux textuels, traductions et images de médias sont extraits directement de Wikipédia selon les conditions CC-BY-SA.",
+    "es": "📖 Todos los registros de texto cronológicos, traductions e imágenes de medios se obtienen directamente de Wikipedia bajo los términos CC-BY-SA."
+  },
+  "footer_legal": {
+    "en": "<strong>Data Attribution & Licensing Notice:</strong> This platform functions strictly as an interactive educational compilation ledger. All narrative summaries, localized title strings, historical photographs, and map graphics displayed across these tracks originate from Wikipedia and are cached natively from MediaWiki servers.",
+    "de": "<strong>Hinweis zu Datenattributierung & Lizenzierung:</strong> Diese Plattform fungiert ausschließlich als interaktives Bildungsregister. Alle narrativen Zusammenfassungen, lokalisierten Titel, historischen Fotografien und Karten auf diesen Spuren stammen von Wikipedia und werden nativ von MediaWiki-Servern zwischengespeichert.",
+    "ar": "<strong>إشعار نسبة البيانات والترخيص:</strong> تعمل هذه المنصة حصرياً كدفتر تاريخي تعليمي تفاعلي. جميع الملخصات السردية، وسلاسل العناوين المحلية، والصور الفوتوغرافية التاريخية، ورسومات الخرائط المعروضة تأتي من ويكيبيديا ويتم تخزينها مؤقتاً من خوادم ميدياويكي.",
+    "he": "<strong>הודעת ייחוס נתונים ורישוי:</strong> פלטפורמה זו פועלת אך ורק כפנקס כרונולוגי חינוכי ואינטראקטיבי. כל הסיכומים, כותרות השפה המקומיות, התצלומים ההיסטוריים והמפות מקורם בוויקיפדיה והם נשמרים מקומית משרתי מדיה-ויקי.",
+    "id": "<strong>Pemberitahuan Atribusi & Lisensi Data:</strong> Platform ini berfungsi murni sebagai buku besar kompilasi edukatif yang interaktif. Semua ringkasan naratif, judul lokal, foto sejarah, dan peta grafik berasal dari Wikipedia dan disimpan secara lokal dari server MediaWiki.",
+    "fr": "<strong>Avis d'attribution et de licence des données :</strong> Cette plateforme fonctionne strictement comme un registre de compilation éducatif interactif. Tous les résumés, titres localisés, photographies historiques et cartes proviennent de Wikipédia et sont mis en cache depuis les serveurs MediaWiki.",
+    "es": "<strong>Aviso de atribución y licencia de datos:</strong> Esta plataforma funciona estrictamente como un registro interactivo de compilación educativa. Todos los resúmenes, títulos localizados, fotografías históricas y mapas provienen de Wikipedia."
   }
 }

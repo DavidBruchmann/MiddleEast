@@ -20,6 +20,7 @@
     --accent-color: #330;
     --vis-item-bg: #2d3748;
     --card-item-bg: #222222;
+    --darkreader-border--border-color: #e9ecef;
 }
 
 body {
@@ -46,7 +47,7 @@ a, a:visited {
 }
 
 /* Upper Right Fixed Controls Station */
-.upper-controls-deck {
+header.upper-controls-deck {
     position: absolute;
     top: 0;
     right: 0;
@@ -55,6 +56,7 @@ a, a:visited {
     gap: 15px;
     align-items: center;
     z-index: 10;
+    padding: 0 1rem;
 }
 .theme-switch-btn {
     position: absolute;
@@ -128,8 +130,22 @@ a, a:visited {
     color: var(--text-main);
     border-radius: 0 0 4px 4px;
 }
+/*
 .dropdown-control#langSelector {
     margin-right: 1rem;
+}
+*/
+main {
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.main-headerarea {
+    padding: 0 1rem;
+}
+.main-headerarea h1,
+.main-headerarea p {
+    font-size:16px;
 }
 
 .timeline-outer-wrapper {
@@ -141,23 +157,24 @@ a, a:visited {
 }
 .timeline-headerarea {
     margin-bottom:10px;
+    /*
     display:flex;
     gap:10px;
     align-items:center;
+    */
 }
-.timeline-headerarea h1 {
-    font-size:16px;
-    padding: 0 1rem;
+.timeline-header {
+    display: flex;
 }
 .zoom-bar {
     padding-right: 1rem;
-
     margin-left: auto;
     display:inline-flex;
     align-items:center;
     gap:6px;
     font-size:12px;
     font-weight:bold;
+    margin-bottom: 1rem;
 }
 .uiSubheading {
     padding: 0 1rem 1rem;
@@ -317,7 +334,7 @@ button.timeline-zoom-btn {
     display: flex;
     flex-direction: column;
     max-height: calc(100% - 30px);
-    gap: 0.5rem;
+    /* gap: 0.5rem; */
 }
 .event-list-card {
     background: var(--bg-secondary);
@@ -363,7 +380,8 @@ footer {
     padding: 0.5rem 1rem;
     cursor: pointer;
 }
-.compact-list-card.active {
+.compact-list-card.active,
+.compact-list-card:hover {
     background: #aaa;
     color: #000;
 }

@@ -16,21 +16,6 @@
 <body>
 <div class="layout-grid">
     <header class="upper-controls-deck">
-        <div class="contribute">
-            <a href="https://ko-fi.com/davidbruchmann/" target="_blank"><span>Contribute on github&nbsp;&nbsp;</span>
-                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="octicon octicon-mark-github" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:top; margin-top:3px;"><style></style><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
-            </a>
-        </div>
-        <div class="support">
-            <a href="https://ko-fi.com/davidbruchmann/" target="_blank">
-                <img height="30" src="assets/images/support_me_on_kofi_dark-ae82f4af76f8f47305452b88ed83526e.png" alt="Support this project">
-            </a>
-        </div>
-        <select id="themeSelector" class="dropdown-control" onchange="applyUserThemeChoiceSelection()">
-            <option id="optThemeSystem" value="system">🌗 System Theme</option>
-            <option id="optThemeLight" value="light">☀️ Light High-Contrast</option>
-            <option id="optThemeDark" value="dark">🌙 Dark High-Contrast</option>
-        </select>
         <select id="langSelector" class="dropdown-control" onchange="changeGlobalInterfaceLanguage()">
             <option value="en" dir="ltr">English 🇬🇧</option>
             <option value="de" dir="ltr">Deutsch 🇩🇪</option>
@@ -40,18 +25,38 @@
             <option value="fr" dir="ltr">Français 🇫🇷</option>
             <option value="es" dir="ltr">Español 🇪🇸</option>
         </select>
+        <select id="themeSelector" class="dropdown-control" onchange="applyUserThemeChoiceSelection()">
+            <option id="optThemeSystem" value="system">🌗 System Theme</option>
+            <option id="optThemeLight" value="light">☀️ Light High-Contrast</option>
+            <option id="optThemeDark" value="dark">🌙 Dark High-Contrast</option>
+        </select>
+        <div class="support">
+            <a href="https://ko-fi.com/davidbruchmann/" target="_blank">
+                <img height="30" src="assets/images/support_me_on_kofi_dark-ae82f4af76f8f47305452b88ed83526e.png" alt="Support this project">
+            </a>
+        </div>
+        <div class="contribute">
+            <a href="https://ko-fi.com/davidbruchmann/" target="_blank"><span>Contribute on github&nbsp;&nbsp;</span>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="octicon octicon-mark-github" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:top; margin-top:3px;"><style></style><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </a>
+        </div>
     </header>
     <main>
+    <div class="main-headerarea">
+        <h1 id="uiMainHeadline">Israel in the Middle East</h1>
+        <div id="uiTopAttributionBanner">
+            All chronological text logs, translations, and media imagery assets are ingested directly from Wikipedia under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC-BY-SA</a> terms.
+        </div>
+    </div>
     <div class="timeline-outer-wrapper">
-        <div class="timeline-headerarea">
-            <h1 id="uiMainHeadline">Israel in the Middle East</h1>
+        <div class="timeline-header">
+            <div id="uiSubheading" class="uiSubheading">Loading interface translations...</div>
             <span class="zoom-bar">
                 <strong id="uiZoomLabel">Zoom:</strong>
                 <button class="timeline-zoom-btn" id="zoom-in">➕</button>
                 <button class="timeline-zoom-btn" id="zoom-out">➖</button>
             </span>
         </div>
-        <div id="uiSubheading" class="uiSubheading">Loading interface translations...</div>
         <div id="timelineContainer"></div>
     </div>
     <div class="bottom-split">
@@ -89,7 +94,17 @@
     </div>
 </div>
 </main>
-<footer><p>© 2026 David Bruchmann</p></footer>
+<footer>
+    <div style="max-width: 1600px; margin: 0 1rem;">
+        <p>© 2026 David Bruchmann</p>
+        <p id="uiFooterLegalText" style="margin: 0; text-align: justify;">
+            <strong>Data Attribution & Licensing Notice:</strong> This platform functions strictly as an interactive educational compilation ledger. All narrative summaries, localized title strings, historical photographs, and map graphics displayed across these tracks originate from Wikipedia and are cached natively from MediaWiki servers.
+        </p>
+        <p id="uiFooterLicenseList" class="uiFooterLicenseList">
+            All educational source content is published in strict compliance with underlying copyright frameworks and open-source sharing protocols, utilizing <strong>Creative Commons (CC-BY-SA 3.0 / CC-BY-SA 4.0)</strong> and <strong>Public Domain (PD)</strong> licensing parameters. Original records, complete text length trees, and author attribution registries remain permanently linked and accessible via the active multi-language verification badges embedded within each inspector event card.
+        </p>
+    </div>
+</footer>
 <script src="assets/JavaScript/events.js"></script>
 <div id="globalLightboxModal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(10, 10, 10, 0.95); z-index: 20000; justify-content: center; align-items: center; cursor: zoom-out;" onclick="closeImageLightboxViewport()">
     <!-- Close controller helper asset corner trigger text token -->
