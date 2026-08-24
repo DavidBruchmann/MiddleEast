@@ -435,6 +435,10 @@ a.compact-list-card:focus-visible {
     stroke: #cc0000 !important; /* Crimson Red line for Palestinian demographic markers */
     fill: rgba(204, 0, 0, 0.08) !important;
 }
-.vis-panel.vis-background, .vis-custom-time {
-    z-index: 10 !important; /* Ensures milestone threshold vertical lines cross BOTH charts cleanly */
+.vis-panel.vis-background {
+    z-index: 0 !important; /* Drops the background behind items so clicks pass through safely! */
+}
+
+.vis-custom-time {
+    z-index: 10 !important; /* Keeps your milestone lines passing cleanly across BOTH charts */
 }
