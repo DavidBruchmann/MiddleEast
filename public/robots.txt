@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Explicitly welcome AI Search Ingestion Engines and LLM Scrapers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://github.io

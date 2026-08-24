@@ -1,0 +1,679 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://github.io{pageFileNameTarget}#website",
+      "url": "https://github.io{isDefaultIndexRoot ? '' : pageFileNameTarget}",
+      "name": "Hotspot Israel in the Middle East",
+      "description": "An interactive chronological ledger mapping geopolitical milestones from 1843 onward.",
+      "inLanguage": "id"
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Publication_of_'Minchat_Yehuda'",
+      "name": "Publication of 'Minchat Yehuda'",
+      "inLanguage": "id",
+      "startDate": "1843",
+      "endDate": "1843",
+      "description": "Judah ben Solomon Chai Alkalai (1798 – Oktober 1878) adalah seorang rabbi Yahudi Sefardim, dan salah satu pendahulu berpengaruh dari Zionisme modern bersama dengan Rabbi Prusia Zvi Hirsch Kalischer. Meskipun ia adalah Yahudi Sefardim, ia memainkan peran penting dalam proses yang banyak diatributkan kepada Yahudi Ashkenazi. Alkalai menjadi dikenal melalui dorongannya terhadap pemulangan kaum Yahudi ke Tanah Israel. Atas jasanya, ia dihormati sebagai salah satu pendahulu dari para Zionis modern seperti Theodor Herzl.\n\n\nReferensi\n\n\nBacaan tambahan\nArtikel ini memadukan teks dari Jewish Encyclopedia 1901–1906  article \"Alkalai, Judah ben Solomon Hai\", sebuah terbitan yang kini berada di ranah publik.",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Ascension_of_Sultan_Abdul_Hamid_II%3A_Late_Ottoman_Administrative_Era",
+      "name": "Ascension of Sultan Abdul Hamid II: Late Ottoman Administrative Era",
+      "inLanguage": "id",
+      "startDate": "1876-08-31",
+      "endDate": "1909-04-27",
+      "description": "Abdülhamid atau Abdul Hamid II (Turki Utsmaniyah: عبد الحميد ثانیcode: ota is deprecated  Abdül-Hamid-i sānī; bahasa Turki: II. Abdülhamidcode: tr is deprecated ; 21 September 1842 –  10 Februari 1918) adalah sultan ke-34 Kesultanan Utsmaniyah dan sultan terakhir yang menerima kekuasaan absolut. Selama 34 tahun pemerintahannya, ia mengalami periode disintegrasi Kesultanan Utsmaniyah dan Balkan, pemberontakan di berbagai wilayah Utsmaniyah, dan kegagalan perang melawan Kekaisaran Rusia. Dia naik takhta pada tanggal 31 Agustus 1876 dan memerintah negara itu selama 33 tahun sampai ia digulingkan pada tanggal 27 April 1909 melalui kudeta militer, tak lama setelah Revolusi Turki Muda pada tahun sebelumnya. Sebagai hasil dari perjanjian yang ia buat dengan kaum pro-Konstitusional Genç Osmanlılar (Utsmani Muda), ia mendeklarasikan parlemen konstitusional pertama Utsmaniyah pada tanggal 23 Desember 1876 dan dengan demikian memberikan kesan bahwa negara tersebut akan mendukung proses demokratisasi. Namun, tak lama setelah itu, ia menangguhkan konstitusi dan menutup parlemen pada tahun 1878, dengan alasan ketidaksetujuannya dengan Parlemen. Setelah menutup majelis, ia memulai kekuasaan absolutnya dengan menggabungkan kekuatannya.\nUpaya menuju modernisasi Kesultanan Utsmaniyah dilanjutkan oleh Abdulhamid. Selain reformasi dalam birokrasi, proyek-proyek seperti pembangunan dan pengembangan Jalur Kereta Api Rumelia, Jalur Kereta Api Anatolia, Jalur Kereta Api Baghdad dan Jalur Kereta Api Hejaz, serta pembangunan berbagai jembatan dan kabel telegraf dilaksanakan. Sistem kereta api dan te",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Petah_Tikva_was_founded_in_1878",
+      "name": "Petah Tikva was founded in 1878",
+      "inLanguage": "id",
+      "startDate": "1878",
+      "endDate": "1878",
+      "description": "Petah Tikva (juga Petah-Tikva maupun Petah Tiqwa; bahasa Ibrani: פתח תקוה), yang berarti gerbang harapan, adalah kota satelit Tel Aviv di Israel yang terletak di timur Bnei Brak. Kota ini terletak 12 kilometer dari Tel Aviv.\nPetah Tikva didirikan pada tahun 1878 sebagai koloni pertania tertua di Israel. Setelah Perang Dunia I, koloni ini mulai membesar dan pada tahun 1973 mendapatkan status kota.\nSekarang Petah Tikva menjadi salah satu kota terbesar di Israel dan memiliki zona industri yang besar dan sejumlah museum.\nPetah Tikva berpenduduk ±179.000 jiwa.\n\n\nPranala luar\n(Inggris) Situs resmi",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Russian_Empire_Pogroms_(First_Wave)",
+      "name": "Russian Empire Pogroms (First Wave)",
+      "inLanguage": "id",
+      "startDate": "1881-04-27",
+      "endDate": "1884",
+      "description": "Pogrom anti-Yahudi di Kekaisaran Rusia (bahasa Rusia: Еврейские погромы в Россииcode: ru is deprecated ; (bahasa Ibrani: הסופות בנגבcode: he is deprecated ‎; \"Badai di Negev\") adalah sebuah kerusuhan anti-Yahudi berskala besar, tertarget dan berulang-ulang yang dimulai pada abad ke-19. Pogrom mulai terjaid setelah Kekaisaran Rusia, yang sebelumnya memiliki sedikit Yahudi, meraih kawasan dengan populasi Yahudi besar dari kekaisaran Lithuania Polandia pada 1791–1835. Wilayah tersebut diangkat menjadi \"Pangkal Pemukiman\" oleh pemerintah Kekaisaran Rusia, di mana Yahudi kurang diizinkan untuk tinggal, dan wilayah tersebut adalah tempat di mana pogrom sebagian besar terjadi. Kebanyakan Yahudi dilarang pindah ke wilayah lain dari Kekaisaran tersebut, selain mereka berpindah ke agama negara Ortodoks Rusia.\n\n\nPranala luar\nPidato Lenin: Tentang Pogrom Anti-Yahudi (Teks pidato, )\nJewish history of the Russian Federation (through the Second World War)\nModern History Sourcebook: The Jewish Chronicle: Outrages Upon Jews in Russia, May 6, 1881\nJewish Virtual Library page \"Pogroms\"\nHistory of pogroms in Odessa\nThe Pogrom of 1905 in Odessa: A Case Study\nKishinev pogrom history",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=The_first_Arab%E2%80%93Israeli_War_(1948)",
+      "name": "The first Arab–Israeli War (1948)",
+      "inLanguage": "id",
+      "startDate": "1948-05-15",
+      "endDate": "1949-03-10",
+      "description": "Perang Arab–Israel 1948, atau disebut juga sebagai \"Perang Kemerdekaan\" (bahasa Ibrani: מלחמת העצמאות) atau \"Perang Pembebasan\" (bahasa Ibrani: מלחמת השחרור) oleh orang Israel, adalah konflik bersenjata pertama dari serangkaian konflik yang terjadi antara Israel dan tetangga-tetangga Arabnya dalam konflik Arab–Israel. Bagi orang-orang Palestina, perang ini menandai awal dari rangkaian kejadian yang disebut sebagai \"Bencana\" (bahasa Inggris: The Catastrophe, bahasa Arab: النكبة).\nPada tahun 1947, Perserikatan Bangsa-Bangsa memutuskan untuk membagi wilayah Mandat Palestina. Namun hal ini ditentang keras oleh negara-negara Timur Tengah lainnya dan juga banyak negeri-negeri Muslim. Kaum Yahudi mendapat 55% dari seluruh wilayah tanah meskipun hanya merupakan 30% dari seluruh penduduk di daerah ini. Sedangkan kota Yerusalem yang dianggap suci, tidak hanya oleh orang Yahudi tetapi juga orang Muslim dan Kristen, akan dijadikan kota internasional.\nNegara Israel diproklamasikan pada tanggal 14 Mei 1948 dan sehari kemudian terjadilah perang antara ArabIsrael. Namun Israel bisa memenangkan peperangan ini dan  merebut kurang lebih 70% dari luas total wilayah daerah mandat PBB Britania Raya, Palestina. Perang ini menyebabkan banyak orang Palestina mengungsi dari daerah Israel.\nPada akhir perang, Negara Israel menguasai sekitar 78% dari bekas wilayah Mandat Palestina: semua wilayah yang telah diusulkan PBB untuk negara Yahudi, serta hampir 60% wilayah yang diusulkan untuk negara Arab, termasuk daerah Jaffa, Lydda dan Ramle, Galilea Atas, beberapa bagian dari Negev, pantai barat sejauh Kot",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=First_Aliyah",
+      "name": "First Aliyah",
+      "inLanguage": "id",
+      "startDate": "1881",
+      "endDate": "1903",
+      "description": "Aliyah Pertama (juga Aliyah Agribudaya) adalah sebuah istilah yang digunakan untuk mendeskripsikan arus besar imigrasi Zionis ke kawasan yang sekarang menjadi wilayah Israel (aliyah) antara 1882 dan 1903. Yahudi yang berimigrasi ke Palestina Utsmaniyah dalam arus ini sebagian besar datang dari Eropa Timur dan dari Yaman. Sekitar 25,000–35,000 Yahudi berimigrasi ke Palestina Utsmasniyah pada Aliyah Pertama. Diperkirakan antara 40% sampai 90% imigran tersebut meninggalkan Palestina kembali, sebagian besar beberapa tahun setelah kedatangan mereka. Karena terdapat juga imigrasi ke Palestina pada tahun-tahun sebelumnya, istilah Aliyah Pertama sanagt dikritik oleh beberapa sarjana.\n\n\nCatatan\n\n\nDaftar pustaka\nKark, Ruth; Oren-Nordheim, Michal (2001). Jerusalem and Its Environs. Magnes Press. ISBN 0-8143-2909-8.\n\n\nBacaan tambahan\nBen-Gurion, David (1976), From Class to Nation: Reflections on the Vocation and Mission of the Labor Movement, Am Oved (Ibrani)",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Second_Aliyah",
+      "name": "Second Aliyah",
+      "inLanguage": "id",
+      "startDate": "1904",
+      "endDate": "1914",
+      "description": "Aliyah Kedua (Ibrani:העלייה השנייה, HaAliyah HaSheniya) adalah sebuah aliyah (emigrasi Yahudi ke Tanah Israel) paling penting dan berpengaruh yang terjadi antara 1904 dan 1914, di mana sekitar 35,000 Yahudi bermigrasi ke Tanah Israel yang dikuasai Ottoman, kebanyakand ari Kekaisaran Rusia, beberapa dari Yaman.\nAliyah Kedua adalah bagian kecil dari emigrasi yang lebih besar dari Yahudi asal Eropa Timur yang berlangsung dari 1870-an sampai 1920-an.\n\n\nPenghuni\nKebanyakan dari para pendatang adalah mereka yang sudah menikah dan banyak yang sudah memiliki anak; 40% adalah wanita. Hanya sedikit yang memiliki sumber daya dan banyak yang tetap melarat. Beberapa imigran, seperti Akiva Aryeh Weiss, lebih suka menetap di distrik baru yang dibuat Ahuzat Bayit dekat Jaffa, yang kemudian diubah namanya menjadi Tel Aviv. Pada tahun 1914 terdapat sekitar 2.000 orang Yahudi di lokasi tersebut.\n\n\nReferensi\n\n\nBacaan tambahan\nBen-Gurion, David, From Class to Nation: Reflections on the Vocation and Mission of the Labor Movement (Ibrani), Am Oved (1976)",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fall_of_Jerusalem%3A_British_Forces_End_400_Years_of_Ottoman_Rule",
+      "name": "Fall of Jerusalem: British Forces End 400 Years of Ottoman Rule",
+      "inLanguage": "id",
+      "startDate": "1917-12-09",
+      "endDate": "1917-12-30",
+      "description": "Pertempuran Yerusalem terjadi saat \"Operasi Yerusalem\" Kekaisaran Britania melawan Kekaisaran Ottoman, saat pertikaian di kota tersebut berkembang dari 17 November, berlanjut setelah penyerahan pada 30 Desember 1917, untuk mewujudkan tujuan akhir dari Serangan Palestina Selatan saat Kampanye Sinai dan Palestina dari Perang Dunia I. Sebelum Yerusalem direbut, dua pertempuran diakui oleh Inggris sebagai pertarungan di Perbukitan Yudea sampai timur laut jalur Stasiun persimpangan Hebron. Itu adalah Pertempuran Nebi Samwill dari 17 sampai 24 November dan Pertahanan Yerusalem dari 26 sampai 30 Desember 1917. Mereka juga mengakui upaya kedua yang sukses dari Operasi Yerusalem tersebut pada 21 dan 22 Desember 1917 untuk maju di sepanjang Nahr el Auja, sebagai Pertempuran Jaffa, meskipin Jaffa telah direbut sebagai konsekuensi dari Pertempuran Mughar Ridge pada 16 November.\n\n\nCatatan\n\n\nCatatan kaki\n\n\nKutipan\n\n\nReferensi\n\nTemplat:Ottoman battles in the 20th century",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Third_Aliyah_(1919%E2%80%931923)",
+      "name": "Third Aliyah (1919–1923)",
+      "inLanguage": "id",
+      "startDate": "1919",
+      "endDate": "1923",
+      "description": "❌ Missing local asset payload cache file target: /id/Third_Aliyah.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fourth_Aliyah_(1924%E2%80%931929)",
+      "name": "Fourth Aliyah (1924–1929)",
+      "inLanguage": "id",
+      "startDate": "1924",
+      "endDate": "1929",
+      "description": "❌ Missing local asset payload cache file target: /id/Fourth_Aliyah.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fifth_Aliyah_(1929%E2%80%931939)",
+      "name": "Fifth Aliyah (1929–1939)",
+      "inLanguage": "id",
+      "startDate": "1929",
+      "endDate": "1939",
+      "description": "❌ Missing local asset payload cache file target: /id/Fifth_Aliyah.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Aliyah_Bet%3A_Illegal_immigration_(1933%E2%80%931948)",
+      "name": "Aliyah Bet: Illegal immigration (1933–1948)",
+      "inLanguage": "id",
+      "startDate": "1933",
+      "endDate": "1948",
+      "description": "Aliyah Bet (Ibrani: 'עלייה ב), berarti \"Aliyah 'B'\" (bet adalah huruf kedua dalam aksara Ibrani) adalah nama yang diberikan untuk imigrasi ilegal bangsa Yahudi ke Palestina pada tahun 1934-1948. Di Israel modern, Aliyah Bet disebut sebagai Ha'apala (bahasa Ibrani: ההעפלהcode: he is deprecated ‎).\nIstilah ini berbeda dengan Aliyah Aleph (\"Aliyah 'A'\") (Aleph adalah huruf pertama aksara Ibrani): imigrasi Yahudi terbatas yang diperbolehkan oleh pemerintah Britania pada periode yang sama.\n\n\nReferensi\n\nAliyah Bet and Machal Virtual Museum\n\"Aliyah During World War II and its Aftermath\", Jewish Virtual Library\nUnited States Holocaust Memorial Museum - Aliyah Bet\nAliyah Bet Voyages Aliyah Bet Project Aliyah Bet Voyages includes pictures and details of the boats of Aliyah Bet, ports of origin, dates of sailing, dates of arrival in Palestine and the number of immigrants on board.",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Nakba_Phase_1%3A_Civil_War_Era",
+      "name": "Nakba Phase 1: Civil War Era",
+      "inLanguage": "id",
+      "startDate": "1947-11-30",
+      "endDate": "1948-05-14",
+      "description": "❌ Missing local asset payload cache file target: /id/1947–1948_civil_war_in_Mandatory_Palestine.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Nakba_II%3A_Modern_Displacement_Campaign",
+      "name": "Nakba II: Modern Displacement Campaign",
+      "inLanguage": "id",
+      "startDate": "2023-10-07",
+      "endDate": "2026-08-21",
+      "description": "Krisis kemanusiaan di Gaza (2023 - sekarang) merupakan krisis yang terjadi sebagai akibat dari perang antar Gaza dan Israel. Krisis ini melibatkan bencana kelaparan yang mendatang dan runtuhnya fasilitas kesehatan. Israel memperketat blokade terhadap Jalur Gaza pada awal perang. Perang tersebut mengakibatkan krisis bahan bakar, makanan, obat-obatan, air, dan pasokan medis penting yang signifikan. Pengepungan ini mengakibatkan penurunan ketersediaan listrik sebesar 90%, yang berdampak pada pasokan listrik rumah sakit, pabrik pembuangan limbah, dan penutupan pabrik desalinasi yang menyediakan air minum. Dokter memperingatkan tentang wabah penyakit yang menyebar karena rumah sakit yang penuh sesak.\n\n\nLatar Belakang\nHamas telah berulang kali mengatakan dalam beberapa bulan menjelang 7 Oktober 2023 bahwa mereka tidak menginginkan eskalasi militer lain di Gaza karena akan memperburuk krisis kemanusiaan yang terjadi setelah konflik 2021.\n\n\nReferensi",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Kongres_Zionis_Pertama",
+      "name": "Kongres Zionis Pertama",
+      "inLanguage": "id",
+      "startDate": "1897-08-29",
+      "endDate": "1897-08-31",
+      "description": "Kongres Zionis Pertama (bahasa Ibrani: הקונגרס הציוני הראשוןcode: he is deprecated ‎) adalah kongres pembukaan Organisasi Zionis (kemudian menjadi Organisasi Zionis Sedunia pada 1960) yang diadakan di Basel (Basle), Swiss, dari 29 Agustus sampai 31 Agustus 1897. 208 delegasi dan 26 korespenden pers menghadiri acara tersebut.\nAcara tersebut dipandu dan diketuai oleh Theodor Herzl, pendiri gerakan Zionisme modern. Kongres tersebut merumuskan sebuah wadah Zionis, yang dikenal sebagai program Basel, dan mendirikan Organisasi Zionis. Acara tersebut juga mengangkat Hatikvah sebagai lagu kebangsaannya (lagu kebangsaan Hovevei Zion dan kemudian menjadi lagu kebangsaan Negara Israel).\nKongres Zionis Pertama tersebut diliput oleh pers internasional untuk memberitahukan penyelenggaraannya kepada pubik. Publikasi atas Kongres Zionis Pertama menginspirasi pemalsuan antisemitik Protokol Tetua Zion.\n\n\nReferensi\n\n\nDaftar pustaka\n\nJubilee Publication (1947). The Jubilee of the first Zionist Congress, 1897-1947. Jerusalem: Executive of the Zionist Organisation. hlm. 108 pages, 2 leaves of platesPublished simultaneously in Hebrew, French, Spanish and Yiddish {{cite book}}: |ref=harv tidak validPemeliharaan CS1: Postscript (link)\nThe Jewish Encyclopedia: Basel Program",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Sykes%E2%80%93Picot_Agreement",
+      "name": "Sykes–Picot Agreement",
+      "inLanguage": "id",
+      "startDate": "1916-05-16",
+      "endDate": "1916-05-16",
+      "description": "Perjanjian Sykes–Picot yang ditandatangani pada tahun 1916 adalah perjanjian rahasia antar pemerintah Britania Raya dengan pemerintah Prancis yang diikuti dan disetujui oleh Kekaisaran Rusia, di mana dalam perjanjian ini ketiga negara mendiskusikan pengaruh dan kendali di Asia Barat setelah jatuhnya Kesultanan Utsmaniyah pada Perang Dunia I yang telah diprediksi sebelumnya. Perjanjian ini secara efektif membelah daerah-daerah Arab di bawah Kesultanan Utsmaniyah di luar Semenanjung Arab sehingga pada masa depan dapat ditentukan di mana kendali atau pengaruh Inggris atau Prancis akan berlaku. Perjanjian ini ditandatangani pada tanggal 16 Mei 1916 dan diberi nama sesuai dengan diplomat Prancis François Georges-Picot dan diplomat Inggris Sir Mark Sykes.\nKarena pecahnya Revolusi Bolshevik, Rusia mengundurkan diri dari perjanjian ini. Pada Revolusi Rusia pada bulan Oktober 1917, para pejuang Bolshevik memublikasikan perjanjian ini dan mempermalukan Inggris, membuat Arab marah, dan Turki senang.\n\n\nReferensi",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Kerusuhan_Jaffa",
+      "name": "Kerusuhan Jaffa",
+      "inLanguage": "id",
+      "startDate": "1921-05-01",
+      "endDate": "1921-05-07",
+      "description": "Kerusuhan Jaffa adalah kerusuhan dan pembunuhan yang terjadi di Mandat Britania atas Palestina antara 1 hingga 7 Mei 1921. Bersama dengan kerusuhan Nebi Musa satu tahun sebelumnya, kerusuhan ini dianggap sebagai bibit dari konflik Arab-Israel dan konflik Israel-Palestina - meskipun negara Israel baru dibentuk beberapa dekade kemudian.\nSetelah terjadinya kerusuhan Jaffa, Britania membatasi imigrasi Yahudi ke Palestina.\n\n\nReferensi\nISBN 0-7475-7366-2 City of Oranges: Arabs and Jews in Jaffa by Adam LeBor\nISBN 1-56663-189-0 Weathered by Miracles: A history of Palestine from Bonaparte and Muhammad Ali to Ben-Gurion and the mufti (by Thomas A. Idinopulos)",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=1929_Palestine_Riots_%26_Massacres",
+      "name": "1929 Palestine Riots & Massacres",
+      "inLanguage": "id",
+      "startDate": "1929-08-23",
+      "endDate": "1929-08-29",
+      "description": "❌ Missing local asset payload cache file target: /id/1929_Palestine_riots.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=1936%E2%80%931939_Arab_Revolt",
+      "name": "1936–1939 Arab Revolt",
+      "inLanguage": "id",
+      "startDate": "1936-04-19",
+      "endDate": "1939-08-26",
+      "description": "Pemberontakan Arab di Palestina 1936–1939 adalah pemberontakan bangsa Arab melawan kekuasaan kolonial Britania dan imigrasi besar-besaran orang Yahudi di Palestina.\nMenurut data dari Britania, tentara dan polisi Britania membunuh sekitar 2.000 orang Arab dalam pertempuran, 108 orang digantung, dan 961 orang dibunuh karena \"aktivitas perlawanan\". Meskipun pemberontakan gagal, akibat dari pemberontakan ini memengaruhi hasil dari perang Palestina 1948.\n\n\nCatatan kaki\n\n\nPranala luar\n\nThe Arab Revolt in Palestine—A Zionist point of view\nThe 1936–1939 Revolt in Palestine Diarsipkan 2016-03-13 di Wayback Machine.—A Palestinian point of view by Ghassan Kanafani.\nThe First Intifada: Rebellion in Palestine 1936 - 1939—A view from British historian Charles Townshend.",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Pengeboman_King_David_Hotel",
+      "name": "Pengeboman King David Hotel",
+      "inLanguage": "id",
+      "startDate": "1946-07-22",
+      "endDate": "1946-07-22",
+      "description": "Pengeboman Hotel Raja Daud adalah sebuah serangan teroris yang terjadi pada Senin, 22 Juli 1946 oleh organisasi bawah tanah Zionis militan, Irgun, terhadap markas besar administratif Inggris untuk Palestina, yang berada sayap selatan Hotel Raja Daud di Yerusalem. 91 orang dari berbagai kewarganegaraan tewas dan 46 orang luka-luka.\nHotel tersebut adalah tempat dari kantor pusat otoritas Palestina Mandat Inggris, utamanya Sekretariat Pemerintahan Palestina dan Markas Besar Pasukan Bersenjata Inggris di Palestina dan Trans-Yordania. Serangan tersebut awalnya disetujui oleh Haganah (kelompok paramiliter Yahudi penting di Palestina). Serangan tersebut dianggap sebagai balasan terhadap Operasi Agatha (serangkaian penyerbuan di seluruh di seluruh lapisan, termasuk salah satu Agensi Yahudi, yang dilakukan oleh otoritas Inggris) dan merupakan peristiwa paling mematikan yang terjadi terhadap Inggris pada era Mandat (1920–1948).\nMenyamar sebagai orang Arab, Irgun merencanakan sebuah bom di ruang bawah tanah bangunan utama hotel tersebut, yang sayap selatannya terdapat Sekretariat Mandat dan beberapa kantor markas besar militer Inggris. Irgun mengirimkan peringatan melalui telepon, termasuk salah satu badan perhubungan dari hotel itu sendiri, yang dihiraukan oleh para staf, tetapi tidak langsung ke otoritas Inggris. Alasan yang diyakini dari kenapa peringatan tersebut dihiraukan adalah peringatan bom palsu adalah hal biasa pada waktu itu.\n\n\nCatatan akhir\n\n\nReferensi\n\n\nPranala luar\nAttack on the King David Hotel (Site: 1 Diarsipkan 2017-12-28 di Wayback Machine., 2) - an account of the",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=UN_Resolution_181_(Partition_Plan)",
+      "name": "UN Resolution 181 (Partition Plan)",
+      "inLanguage": "id",
+      "startDate": "1947-11-29",
+      "endDate": "1947-11-29",
+      "description": "Pada tanggal 29 November 1947, Perserikatan Bangsa-Bangsa menyetujui untuk mengakhiri Mandat Britania untuk Palestina dari tanggal 1 Agustus 1948, untuk mengakhiri konflik di wilayah tersebut, dengan melakukan pembagian wilayah mandat. Rencana tersebut kemudian disebut Rencana Pembagian Palestina atau Resolusi 181. Rencana tersebut disetujui oleh Majelis Umum PBB dengan 33 setuju, 13 menolak, dan 10 netral.\nRencana itu memecah Palestina dalam wilayah untuk Yahudi dan Arab, dengan wilayah besar Yerusalem, termasuk Betlehem, berada di bawah kendali internasional. Pihak Yahudi mendapatkan daerah pesisir sekitar Tel Aviv, daerah di sekitar Danau Galilea dan daerah di Gurun Negev. Sementara itu pihak Arab mendapatkan sisa dari Palestina termasuk sebuah enklave kecil Jaffa di sebelah selatan Tel Aviv.\nSecara kasar pihak Yahudi mendapat sekitar 55% dari area total tanah sementara pihak Arab mendapatkan 45%.\n\n\nLihat juga\nPerjanjian Faisal–Weizmann\nSejarah Negara Palestina\nDeklarasi Kemerdekaan Israel\nKonflik Israel–Palestina\nKonferensi Lausanne tahun 1949\nPerjanjian Minoritas\nPerjanjian Sykes–Picot\nSolusi dua-negara\nPembagian Perserikatan Bangsa-Bangsa untuk Hak Palestina\nSistem Informasi Perserikatan Bangsa-Bangsa Tentang Masalah Palestina\n\n\nReferensi\n\n\nBibliografi\nBregman, Ahron (2002). Israel's Wars: A History Since 1947. London: Routledge.\nArieh L. Avneri (1984). The Claim of Dispossession: Jewish Land Settlement and the Arabs, 1878–1948. Transaction Publishers.\nFischbach, Michael R. (2003). Records of Dispossession: Palestinian Refugee Property and the Arab-Israeli Conflict. C",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Pembantaian_Deir_Yassin",
+      "name": "Pembantaian Deir Yassin",
+      "inLanguage": "id",
+      "startDate": "1948-04-09",
+      "endDate": "1948-04-09",
+      "description": "Pembantaian Deir Yassin adalah sebuah peristiwa pembantaian yang terjadi pada tanggal 9 April 1948 di sebuah kawasan perdesaan bernama Deir Yassin, terletak di barat Baitul Maqdis, Yerusalem. Pembantaian dilakukan oleh kelompok paramiliter Zionis, Irgun dan Lehi, yang menewaskan setidaknya 270 warga sipil Arab, termasuk ke dalamnya anak-anak dan perempuan. Peristiwa ini dikomandoi pimpinan Menachem Begin, seorang tokoh fundamentalis Yahudi yang kelak menjadi Perdana Mentri Israel. Akibat aksi teror menakutkan terus menerus yang dilakukan Yahudi, sejumlah besar warga Palestina mengungsi ke kawasan-kawasan sekitar Palestina.\n\n\nRujukan",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Declaration_of_the_State_of_Israel_%26_End_of_British_Mandate",
+      "name": "Declaration of the State of Israel & End of British Mandate",
+      "inLanguage": "id",
+      "startDate": "1948-05-14",
+      "endDate": "1948-05-14",
+      "description": "Pembentukan Negara Israel (bahasa Ibrani: הכרזת העצמאותcode: he is deprecated ‎, Hakhrazat HaAtzma'ut atau bahasa Ibrani: מגילת העצמאותcode: he is deprecated ‎ Megilat HaAtzma'ut), terjadi pada tanggal 14 Mei 1948 (5 Iyar, 5708), hari ketika Mandat Britania atas Palestina berakhir, adalah pengumuman resmi bahwa negara Yahudi baru bernama Israel secara resmi didirikan di wilayah Mandat Britania atas Palestina dan di tanah di mana kerajaan Israel, kerajaan Yehuda dan Yudea berada.\n\n\nPranala luar\n\nOfficial text\nOriginal Recording\nOriginal Document: Press Release Announcing US Recognition of Israel Diarsipkan 2008-04-16 di Wayback Machine.",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Krisis_Suez",
+      "name": "Krisis Suez",
+      "inLanguage": "id",
+      "startDate": "1956-10-29",
+      "endDate": "1956-11-07",
+      "description": "Krisis Suez (bahasa Arab: أزمة السويس - العدوان الثلاثيcode: ar is deprecated  ʾAzmat al-Sūwais/Al-ʿIdwān al-Thalāthī; bahasa Prancis: Crise du canal de Suezcode: fr is deprecated ; bahasa Ibrani: מבצע קדשcode: he is deprecated ‎ Mivtza' Kadesh \"Operasi Kadesh,\" atau מלחמת סיניcode: he is deprecated  Milẖemet Sinai, \"Perang Sinai\") adalah serangan militer Britania Raya, Prancis dan Israel terhadap Mesir yang dimulai pada tanggal 29 Oktober 1956. Serangan ini dilancarkan karena pada tanggal 26 Juli 1956, Mesir menasionalisasikan Terusan Suez setelah tawaran Britania Raya dan Amerika Serikat untuk mendanai pembangunan Bendungan Aswan dicabut.\n\n\nLatar belakang\nTerusan Suez dibuka pada tahun 1869, didanai oleh pemerintah Prancis dan Mesir. Secara teknis, wilayah yang mengelilingi terusan ini merupakan wilayah kedaulatan Mesir, dan perusahaan yang mengurusnya, Universal Company of the Suez Maritime Canal (Suez Canal Company) adalah perusahaan mesir.\nTerusan ini penting bagi Britania Raya dan negara-negara Eropa lainnya. Bagi Britania, terusan ini merupakan penghubung ke koloni Britania di India, Timur Jauh, Australia dan Selandia Baru. Maka pada tahun 1875, Britania membeli saham dari Suez Canal Company, memperoleh sebagian kekuasaan atas pengoperasian terusan dan membaginya dengan investor swasta Prancis. Pada tahun 1882, selama invasi dan pendudukan Mesir, Britania Raya secara de facto menguasai terusan ini.\nKonvensi Konstantinopel 1888 mendeklarasikan terusan ini sebagai zona netral dibawah perlindungan Britania. Dalam meratifikasinya, Kesultanan Utsmaniyah setuju untuk membe",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Six-Day_War_(1967)",
+      "name": "Six-Day War (1967)",
+      "inLanguage": "id",
+      "startDate": "1967-06-05",
+      "endDate": "1967-06-10",
+      "description": "Perang Enam Hari (bahasa Ibrani: מלחמת ששת הימיםcode: he is deprecated ‎, Milhemet Syesyet Hayamim; bahasa Arab: حرب الأيام الستةcode: ar is deprecated , Harbul Ayyamus Sittah), yang disebut pula Musibah Kemunduran (bahasa Arab: النكسةcode: ar is deprecated , An-Naksah), Perang Juni, Perang Arab-Israel Ketiga, Perang Arab-Israel 1967, atau Perang 1967 (bahasa Arab: حرب ۱۹٦۷code: ar is deprecated , Ḥarb 1967), adalah perang antara Israel dan tiga negara Arab tetangganya, yakni Mesir (kala itu bernama Republik Arab Bersatu), Yordania, dan Suriah, yang berlangsung dari tanggal 5–10 Juni 1967.\nHubungan antara Israel dan negara-negara jirannya tidak kunjung membaik selepas Perang Arab-Israel 1948. Pada tahun 1956, Israel menginvasi Semenanjung Sinai, dengan salah satu tujuan untuk membuka kembali Selat Tiran yang ditutup bagi industri pelayaran Israel oleh Mesir sejak tahun 1950. Israel dapat didesak mundur, tetapi berhasil memaksa Mesir menjamin keleluasaan kapal-kapal Israel untuk berlalu-lalang di Selat Tiran. Meskipun Pasukan Darurat Perserikatan Bangsa-Bangsa ditempatkan di sepanjang tapal batas kedua negara, tidak ada kesepakatan demiliterisasi.\nSituasi kian genting menjelang bulan Juni 1967. Israel mengulangi pernyataan pasca-1956 bahwa penutupan Selat Tiran bagi industri pelayarannya akan menjadi casus belli. Pada bulan Mei, Presiden Mesir, Gamal Abdul Nasir memaklumkan penutupan selat bagi kapal-kapal Israel, lalu mengerahkan angkatan bersenjata Mesir untuk berjaga-jaga di sepanjang tapal batas Israel. Pada tanggal 5 Juni, Israel melancarkan serangan yang diklaimnya seb",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Perang_Yom_Kippur",
+      "name": "Perang Yom Kippur",
+      "inLanguage": "id",
+      "startDate": "1973-10-06",
+      "endDate": "1973-10-25",
+      "description": "Perang Yom Kippur, dikenal juga dengan nama Perang Ramadan atau Perang Oktober (bahasa Ibrani: מלחמת יום הכיפוריםcode: he is deprecated ‎ Milẖemet Yom HaKipurim atau מלחמת יום כיפור Milẖemet Yom Kipur; bahasa Arab: حرب أكتوبرcode: ar is deprecated  ḥarb ʾUktōbar atau حرب تشرينcode: ar is deprecated  ḥarb Tišrīn) adalah perang yang terjadi pada tanggal 6 - 26 Oktober 1973 antara negara Israel melawan koalisi negara-negara Arab yang dipimpin oleh Mesir dan Suriah.\n\n\nJalannya perang\nPada tanggal 6 Oktober 1973, pada hari Yom Kippur, hari raya Yahudi terbesar, ketika orang-orang Israel sedang khusyuk merayakannya, yang juga bertepatan dengan bulan Ramadan bagi umat Islam sehingga dinamakan \"Perang Ramadan 1973\", Suriah, Libya dan Mesir menyerbu Israel secara tiba-tiba. Di Dataran Tinggi Golan, garis pertahanan Israel yang hanya berjumlah 180 tank harus berhadapan dengan 1400 tank Suriah. Sedangkan di terusan Suez, kurang dari 500 prajurit Israel berhadapan dengan 80.000 prajurit Mesir.\nMesir mengambil pelajaran pada Perang Enam Hari pada tahun 1967 tentang lemahnya pertahanan udara sehingga saat itu 3/4 kekuatan udara Mesir hancur total sementara Suriah masih dapat memberikan perlawanan. Sadar bahwa armada pesawat tempur Mesir masih banyak menggunakan teknologi lama dibandingkan Israel, Mesir akhirnya menerapkan strategi payung udara dengan menggunakan rudal dan meriam anti serangan udara bergerak yang jarak tembaknya dipadukan. Angkatan udara Israel akhirnya kewalahan bahkan banyak yang menjadi korban karena berusaha menembus \"jaring-jaring\" pertahanan udara itu.\nPada permulaa",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Pembantaian_Sabra_dan_Shatila",
+      "name": "Pembantaian Sabra dan Shatila",
+      "inLanguage": "id",
+      "startDate": "1982-09-16",
+      "endDate": "1982-09-18",
+      "description": "Pembantaian Sabra dan Shatila terjadi pada September 1982, di Beirut, Lebanon, yang saat itu diduduki oleh Israel. Pembantaian ini dilakukan oleh para milisi Kristen Maronit Lebanon atas para pengungsi Palestina di kamp-kamp pengungsi Sabra dan Shatila. Pasukan-pasukan Maronit berada langsung di bawah komando Elie Hobeika yang belakangan menjadi anggota parlemen Lebanon, dan pada tahun 1990-an juga menjadi seorang menteri di kabinet Lebanon.\nSepanjang peristiwa ini, kamp-kamp ini dikepung oleh tentara-tentara Israel, dan para milisi itu dikirim oleh Israel untuk mencari anggota-anggota PLO. Sejauh mana Israel bersalah dalam pembantaian ini banyak diperdebatkan, dan Israel menyangkal bahwa pihaknya bertanggungjawab langsung. Namun temuan-temuan membuktikan bahwa orang-orang Israel, antara lain Ariel Sharon, secara tidak langsung bertanggungjawab.\n\n\nLatarbelakang\nSejak 1975 hingga 1990, Lebanon terlibat dalam perang saudara antara kelompok-kelompok yang bersaingan, dan didukung oleh sejumlah negara tetangga. Orang-orang Kristen Maronit, yang dipimpin oleh partai Falangis dan milisi, mula-mula bersekutu dengan Suriah, dan kemudian dengan Israel, yang mendukung mereka dengan senjata dan latihan untuk memerangi fraksi PLO (Organisasi Pembebasan Palestina). Sementara itu, fraksi-fraksi yang lainnya bersekutu dengan Suriah, Iran dan negara-negara lain di wilayah itu. Selain itu, sejak 1978 Israel telah melatih, mempersenjatai, memasok dan menyediakan seragam bagi Tentara Kristen Lebanon Selatan, yang dipimpin oleh Saad Haddad.\nPertempuran dan pembantaian antara kelompok-kelompok i",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Intifadah_Pertama",
+      "name": "Intifadah Pertama",
+      "inLanguage": "id",
+      "startDate": "1987-12-08",
+      "endDate": "1993-09-13",
+      "description": "Intifadah Pertama (bahasa Arab: الانتفاضة الفلسطينية الأولىcode: ar is deprecated , 'Pemberontakan Pertama'), juga dikenal sebagai Intifada Palestina Pertama, adalah pemberontakan berkelanjutan yang melibatkan protes kekerasan dan non-kekerasan, aksi pembangkangan sipil, kerusuhan, dan serangan teroris yang dilakukan oleh warga sipil Palestina dan militan di wilayah Palestina yang diduduki Israel dan Israel. Pemberontakan ini dimotivasi oleh frustrasi kolektif Palestina atas pendudukan militer Israel di Tepi Barat dan Jalur Gaza yang mendekati dua puluh tahun, dimulai setelah Perang Arab-Israel 1967. Pemberontakan ini berlangsung dari Desember 1987 hingga Konferensi Madrid 1991, meskipun beberapa pihak memperkirakan akhir pemberontakan ini terjadi pada tahun 1993, tahun ditandatanganinya Perjanjian Oslo.\nIntifada dimulai pada 9 Desember 1987 di kamp pengungsi Jabalia setelah seorang pengemudi truk Israel menabrak kendaraan sipil yang terparkir, menewaskan empat pekerja Palestina, tiga di antaranya berasal dari kamp pengungsi tersebut. Pihak Palestina menuduh tabrakan tersebut merupakan respons yang disengaja atas pembunuhan seorang warga Israel di Gaza beberapa hari sebelumnya. Israel membantah bahwa kecelakaan tersebut, yang terjadi pada saat ketegangan meningkat, merupakan tindakan yang disengaja atau terkoordinasi. Respons dari pihak Palestina ditandai dengan protes, pembangkangan sipil, dan pemogokan, yang ditanggapi dengan kekerasan berlebihan oleh pasukan keamanan Israel. Terdapat grafiti, barikade, dan pelemparan batu serta bom molotov yang meluas ke arah tentara Isr",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Perjanjian_Oslo_I",
+      "name": "Perjanjian Oslo I",
+      "inLanguage": "id",
+      "startDate": "1993-09-13",
+      "endDate": "1993-09-13",
+      "description": "Perjanjian Oslo I atau Oslo I, bernama resmi Deklarasi Prinsip-prinsip tentang Aransemen Pemerintahan Sendiri Sementara atau disingkat Deklarasi Prinsip-prinsip, adalah sebuah upaya pada 1993 untuk membentuk kerangka kerja yang akan menuntun resolusi terhadap konflik Israel-Palestina. Ini adalah perjanjian tatap muka pertama antara pemerintahan Israel dan Organisasi Pembebasan Palestina.\n\n\nReferensi\n\n\nDaftar pustaka\nBregman, Ahron Elusive Peace: How the Holy Land Defeated America.\nClinton, Bill (2005). My Life. Vintage. ISBN 1-4000-3003-X.\nEran, Oded.  \"Arab–Israel Peacemaking\". The Continuum Political Encyclopedia of the Middle East. Ed. Avraham Sela. New York: Continuum, 2002.\n\n\nPranala luar\n\n Karya yang berkaitan dengan Declaration of Principles on Interim Self-Government Arrangements di Wikisource\nDean Peter Krogh Examines Prospects for Peace from the Dean Peter Krogh Foreign Affairs Digital Archives\nIsrael's Self-Rule Plan. Knesset website, 28 December 1977",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Intifadah_al-Aqsha",
+      "name": "Intifadah al-Aqsha",
+      "inLanguage": "id",
+      "startDate": "2000-09-28",
+      "endDate": "2005-02-08",
+      "description": "Intifadah al-Aqsha (bahasa Arab:,انتفاضة الاقصى, transliterasi: Intifādat El Aqsa atau Intifādat Al Aqsa; bahasa Ibrani: אינתיפאדת אל אקצה (atau אינתיפאדת אל-אקצה dengan tanda hubung), transliterasi: Intifadat El Aqtsa) adalah sebuah gelombang kerusuhan yang terjadi pada September 2000 antara orang Arab Palestina dan Israel; juga disebut Intifadah Kedua (lihat juga Intifadah Pertama). \"Intifadah\" merupkana kata Arab untuk \"pemberontakan\" (secara harfiah \"melepaskan\"). Ini adalah salah satu perang yang mengupayakan pembebasan bangsa Palestina-Arab terhadap pemerintahan Israel.\nAngkatan Pertahanan Israel memberinya nama kode (sebelum pecah) אירועי גאות ושפל (\"peristiwa pasang surut\"). Nama ini tetap menjadi kode internal Angkatan Pertahanan Israel, tetapi lebih sering di Israel Intifadhah dipanggil אינתיפאדת אל-אקצה atau Intifadhah al-Aqsha.\nNama lain (yang kurang terkenal) ialah Perang Oslo, nama yang diberikan oleh mereka yang menganggapnya sebagai konsesi yang dibuat Israel menyusul Persetujuan Oslo, dan Perang Arafat, menurut nama tokoh Palestina yang disalahkan Israel telah memulainya.\n\nSecara resmi Intifadhah belum berakhir. Namun, KTT Sharm el-Sheikh, gencatan senjata (bahasa Arab: تهدئة Tahdi'ah) yang disetujui oleh Presiden Mahmoud Abbas dan organisasi mujahidin Palestina, dan tingkat kekerasan yang relatif rendah selama 2005, dianggap sebagai akhirnya, secara umum dihubungkan dengan perubahan dalam pemerintahan Palestina menyusul kematian Yasser Arafat dan penarikan mundur sepihak Israel.\nPada 25 Januari 2006, Hamas memenangkan pemilu legislatif Palestina, dan tokoh",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Mahmoud_Abbas_succeeds_Yasser_Arafat_as_Chairman_of_the_PLO_Executive_Committee",
+      "name": "Mahmoud Abbas succeeds Yasser Arafat as Chairman of the PLO Executive Committee",
+      "inLanguage": "id",
+      "startDate": "2004-11-11",
+      "endDate": "2004-11-11",
+      "description": "Mahmoud Abbas (bahasa Arab: مَحْمُود عَبَّاسcode: ar is deprecated , translit. Maḥmūd ʿAbbās; lahir 26 Maret 1935), umumnya dikenal dengan kunya atau nom de guerre Abu Mazen (bahasa Arab: أَبُو مَازِنcode: ar is deprecated , ʾAbū Māzin) adalah Presiden Palestina dan Otoritas Nasional Palestina (PNA). Dia telah menjadi ketua Organisasi Pembebasan Palestina (PLO) sejak 11 November 2004, presiden PNA sejak 15 Januari 2005, dan presiden Negara Palestina sejak 8 Mei 2005. Abbas juga anggota partai Fatah dan terpilih sebagai ketua pada tahun 2009.\nAbbas terpilih pada 9 Januari 2005 untuk menjabat sebagai Presiden Otoritas Nasional Palestina hingga 15 Januari 2009, tetapi memperpanjang masa jabatannya hingga pemilihan berikutnya pada 2010, mengutip konstitusi PLO, dan pada 16 Desember 2009 dipilih untuk menjabat tanpa batas waktu oleh Dewan Pusat PLO. Akibatnya, saingan utama Fatah, Hamas, pada awalnya mengumumkan bahwa mereka tidak akan mengakui perpanjangan atau memandang Abbas sebagai presiden yang sah. Namun, Abbas diakui secara internasional dalam posisinya dan Hamas dan Fatah melakukan banyak negosiasi pada tahun-tahun berikutnya, yang mengarah pada kesepakatan pada April 2014 untuk Pemerintah Persatuan (yang berlangsung hingga Oktober 2016) dan pengakuan jabatannya oleh Hamas. Abbas juga dipilih sebagai presiden Negara Palestina oleh Dewan Pusat PLO pada 23 November 2008, posisi yang dipegangnya secara tidak resmi sejak 8 Mei 2005.\nAbbas menjabat sebagai Perdana Menteri Otoritas Palestina pertama dari Maret hingga September 2003. Sebelum diangkat menjadi Perdana Menteri, Ab",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Palestinian_Legislative_Election%3A_Hamas_wins_majority_over_Fatah",
+      "name": "Palestinian Legislative Election: Hamas wins majority over Fatah",
+      "inLanguage": "id",
+      "startDate": "2006-01-25",
+      "endDate": "2006-01-25",
+      "description": "Pemilihan umum untuk Dewan Legislatif Palestina kedua, legislatif Otoritas Nasional Palestina, diadakan pada 25 Januari 2006. Hasilnya adalah kemenangan untuk Hamas, yang bersaing dengan nama Perubahan dan Reformasi, yang memenangkan 74 kursi dair 132 kursi, sementara kelompok pemerintahan Fatah hanya memenangkan 45 kursi. Dalam hal jumlah suara yang diraih, Hamas meraih 44.45% suara, sementara Fatah meraih 41.43% dan Distrik-distrik Elektoral, para kandidat partai Hamas meraih 41.73% dan para kandidat partai Fatah meraih 36.96%. DLP kedua mula-mula bertemu pada 18 Februari 2006.\nPerdana Menteri, Ahmed Qurei, mengundurkan diri, namun atas permintaan Presiden Mahmoud Abbas, tetap menjadi Perdana Menteri sementara sampai 19 Februari 2006, saat pemimpin Hamas Ismail Haniya membentuk pemerintahan baru.\n\n\nReferensi\n\n\nPranala luar\nPalestine's Central Elections Commission website\nElectoral system explained\nMap of final turnout\nElection arrangements in East Jerusalem\nMap of election districts (from the NY Times)\nElectronic Intifada on the election, with constituency results\nNational Democratic Institute / The Carter Center - election observation report\nHamas wins Palestinian election, Wikinews",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Battle_of_Gaza%3A_Fatah%E2%80%93Hamas_conflict_splits_Gaza_Strip_from_West_Bank_governance",
+      "name": "Battle of Gaza: Fatah–Hamas conflict splits Gaza Strip from West Bank governance",
+      "inLanguage": "id",
+      "startDate": "2007-06-10",
+      "endDate": "2007-06-15",
+      "description": "Pertempuran Gaza adalah sebuah konflik militer antara Fatah dan Hamas yang terjadi di Jalur Gaza dari tanggal 10 hingga 15 Juni 2007. Ini adalah peristiwa penting dalam konflik Fatah-Hamas, yang berpusat pada perebutan kekuasaan setelah Fatah kalah dalam pemilihan umum legislatif Palestina 2006. Pertempuran ini mengakibatkan pembubaran Pemerintahan Haniyeh Kedua. dan pembagian de facto wilayah Palestina menjadi dua entitas: Tepi Barat yang diperintah oleh Otoritas Nasional Palestina (PNA), dan Jalur Gaza yang diperintah oleh Hamas. Pejuang Hamas menguasai Jalur Gaza, sementara para pejabat Fatah ditawan, dieksekusi, atau diusir. Pusat Hak Asasi Manusia Palestina melaporkan bahwa setidaknya 161 orang terbunuh dan lebih dari 700 orang terluka selama pertempuran.\n\n\nLatar belakang\n\n\nPeristiwa-peristiwa yang terjadi menjelang pemilihan umum legislatif Palestina tahun 2006\nPada tahun 2003, Hukum Dasar Palestina dari PNA diamendemen dan bentuk pemerintahan semi-presidensial didirikan, di mana sebuah konstitusi menciptakan seorang presiden dengan masa jabatan tetap yang dipilih secara langsung, ditambah dengan perdana menteri dan kabinet yang secara kolektif bertanggung jawab kepada legislatif.\nDokumen yang diterbitkan dalam Makalah Palestina mengungkapkan bahwa pada tahun 2004, Dinas Intelijen Rahasia MI6 Inggris membantu menyusun rencana keamanan untuk PNA yang dipimpin oleh Fatah. Rencana tersebut mengusulkan sejumlah cara untuk menurunkan kemampuan kelompok-kelompok oposisi seperti Hamas, Jihad Islam Palestina (PIJ), dan Brigade Martir al-Aqsa. Strategi ini akan melibatkan gang",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Annapolis_Conference",
+      "name": "Annapolis Conference",
+      "inLanguage": "id",
+      "startDate": "2007-11-27",
+      "endDate": "2007-11-27",
+      "description": "❌ Missing local asset payload cache file target: /id/Annapolis_Conference.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=UN_Resolution_67%2F19%3A_Palestine_granted_Non-Member_Observer_State_status",
+      "name": "UN Resolution 67/19: Palestine granted Non-Member Observer State status",
+      "inLanguage": "id",
+      "startDate": "2012-11-29",
+      "endDate": "2012-11-29",
+      "description": "Resolusi Majelis Umum Perserikatan Bangsa-Bangsa 67/19 adalah sebuah resolusi mengenai masuknya Palestina sebagai negara non-anggota Perserikatan Bangsa-Bangsa. Resolusi ini disahkan oleh Sidang Majelis Umum Perserikatan Bangsa-Bangsa ke-67 pada tanggal 29 November 2012, tanggal Hari Solidaritas dengan Bangsa Palestina Internasional (ulang tahun ketika Majelis Umum mengesahkan Resolusi 181(II) tentang Pemerintahan Masa Depan Palestina), sehingga menaikkan keanggotaannya dari entitas non-anggota ke negara non-anggota. Resolusi ini diajukan oleh perwakilan Palestina di Perserikatan Bangsa-Bangsa. Meski ditentang oleh pemerintah Israel, mantan Perdana Menteri Ehud Olmert mengaku mendukung upaya ini. Meski dianggap luas sebagai tindakan simbolis, mosi untuk mengadopsi resolusi ini disahkan. Status baru ini membuat Palestina sejajar dengan Tahta Suci.\n\n\nLatar belakang\nPada Sidang Majelis Umum Perserikatan Bangsa-Bangsa ke-66, Presiden Palestina Mahmoud Abbas dari Fatah meminta bergabung sebagai anggota penuh Perserikatan Bangsa-Bangsa. Akan tetapi, inisiatif Palestine 194 tidak pernah dijadikan subjek pemungutan suara di Dewan Keamanan Perserikatan Bangsa-Bangsa. Hanya 8 dari 15 anggota yang mendukung upaya ini, kurang satu suara lagi, termasuk suara setuju dari anggota permanen yang tercantum dalam Artikel 27 Piagam PBB. Pada tanggal 31 Oktober 2011, Konferensi Umum Organisasi Pendidikan, Keilmuan, dan Kebudayaan Perserikatan Bangsa-Bangsa (UNESCO) menerima Palestina sebagai negara anggotanya. Keputusan ini berlaku tanggal 23 November 2011 ketika Palestina meratifikasi konstitu",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=PLO_Central_Council_votes_to_suspend_recognition_of_the_State_of_Israel",
+      "name": "PLO Central Council votes to suspend recognition of the State of Israel",
+      "inLanguage": "id",
+      "startDate": "2018-10-29",
+      "endDate": "2018-10-29",
+      "description": "Organisasi Pembebasan Palestina (bahasa Arab: منظمة التحرير الفلسطينيةcode: ar is deprecated  Munaẓẓamat at-Taḥrīr al-Filasṭīniyyah; bahasa Inggris: Palestine Liberation Organizationcode: en is deprecated  atau disingkat PLO) adalah koalisi nasionalis Palestina yang diakui secara internasional sebagai perwakilan resmi rakyat Palestina. Didirikan pada tahun 1964, PLO awalnya bertujuan untuk mendirikan negara Arab di seluruh wilayah bekas Mandat Palestina, dan menganjurkan penghapusan Negara Israel. Namun, pada tahun 1993, PLO mengakui kedaulatan Israel melalui Perjanjian Oslo I, dan kini hanya mengupayakan status negara Arab di wilayah Palestina (Tepi Barat dan Jalur Gaza) yang telah diduduki secara militer oleh Israel sejak Perang Arab-Israel tahun 1967.\nPLO berkantor pusat di Al-Bireh, sebuah kota di Tepi Barat. Sebagai pemerintah Negara Palestina yang diakui secara resmi secara de jure, negara ini telah memiliki status pengamat Perserikatan Bangsa-Bangsa sejak tahun 1974. Sebelum Perjanjian Oslo, sayap militan PLO secara terbuka terlibat dalam tindakan kekerasan terhadap warga sipil Israel, baik di Israel maupun di luar Israel. Akibatnya, Amerika Serikat menetapkan kelompok ini sebagai kelompok teroris pada tahun 1987, meskipun pengabaian presiden telah mengizinkan kontak Amerika-PLO sejak tahun 1988. Pembicaraan yang dimediasi antara pemerintah Israel dan PLO pada tahun 1993 (Perjanjian Oslo I) menghasilkan PLO mengakui hak Israel untuk hidup dalam damai dan menerima Resolusi Dewan Keamanan Perserikatan Bangsa-Bangsa 242, sementara Israel mengakui PLO sebagai otoritas sa",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Beijing_Declaration%3A_14_Palestinian_factions_sign_reconciliation_accord",
+      "name": "Beijing Declaration: 14 Palestinian factions sign reconciliation accord",
+      "inLanguage": "id",
+      "startDate": "2024-07-23",
+      "endDate": "2024-07-23",
+      "description": "Deklarasi Beijing tentang Mengakhiri Perpecahan dan Memperkuat Persatuan Nasional Palestina, yang lebih dikenal sebagai Deklarasi Beijing, adalah sebuah perjanjian yang ditandatangani pada 23 Juli 2024 oleh 14 faksi Palestina berbeda, terutama Fatah dan Hamas, sebagai bagian dari proses rekonsiliasi antara dua faksi dalam konflik yang dimulai akibat pemilihan umum legislatif Palestina 2006 dan meliputi pengambilalihan Hamas terhadap Gaza 2007.\n\n\nNegosiasi\nPemerintah Republik Rakyat Tiongkok menawarkan faksi-faksi Palestina di kantor-kantornya untuk mengupayakan pencapaian perjanjian. Pada Juli 2024, para perwakilan 14 organisasi Palestina bertemu di Beijing, Tiongkok. Pada 23 Juli, mereka membuat perjanjian baru tentang pemerintahan persatuan.\nSorotan paling menonjol dalam kesepakatan tersebut adalah rencana untuk membentuk pemerintahan rekonsiliasi nasional sementara pada pemerintahan Gaza setelah perang dengan Israel, serta Tepi Barat, ujar Direktur Kantor Komisi Urusan Luar Negeri Pusat Wang Yi. Wang juga menyebut pertemuan tersebut sebagai \"peristiwa bersejarah untuk perjuangan pembebasan Palestina\".\nNegosiasi tersebut disaksikan oleh para utusan dari Mesir, Aljazair, Arab Saudi, Qatar, Yordania, Suriah, Lebanon, Rusia, dan Turki.\n\n\nCatatan\n\n\nReferensi",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    }
+  ]
+}

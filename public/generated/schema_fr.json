@@ -1,0 +1,679 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://github.io{pageFileNameTarget}#website",
+      "url": "https://github.io{isDefaultIndexRoot ? '' : pageFileNameTarget}",
+      "name": "Hotspot Israel in the Middle East",
+      "description": "An interactive chronological ledger mapping geopolitical milestones from 1843 onward.",
+      "inLanguage": "fr"
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Publication_of_'Minchat_Yehuda'",
+      "name": "Publication of 'Minchat Yehuda'",
+      "inLanguage": "fr",
+      "startDate": "1843",
+      "endDate": "1843",
+      "description": "Yéhouda Hay Alkalay (en hébreu : יהודה חי אלקלעי), né en 1798 à Sarajevo et mort en 1878 à Jérusalem, est un célèbre rabbin du XIXe siècle, comptant parmi les premiers adeptes du mouvement « Les Amants de Sion », et parmi les initiateurs du « Retour à Sion ».\n\n\nBiographie\nIl naît en 1798 à Sarajevo alors sous souveraineté ottomane, mais s'installe très jeune à Jérusalem en Palestine où il étudie.\nEn 1825, il retourne en Yougoslavie où il fait fonction de rabbin de la communauté sépharade de Zemun (זמלין), une banlieue de Belgrade, jusqu'en 1874. Là, il fait la connaissance du grand-père de Theodor Herzl et certains pensent qu'il pourrait être à l'origine des idées sionistes de celui-ci .\nPuis il retourne à Jérusalem et y défend l'idée suivante : un peuple, dans l'attente du miracle du Messie rédempteur, se doit d'entreprendre des actions concrètes en vue de sa délivrance, et ce par l'installation sur la Terre d'Israël. Il compose alors un programme détaillé sur l'auto-défense juive et sur la pratique de la langue hébreu.\n\nIl meurt à Jérusalem en 1878 où il est enterré au cimetière juif du mont des Oliviers.\n\n\nHommage\n\nEn son souvenir, la ville de Or Yehuda, proche de Tel-Aviv, porte son nom.\n\n\nNotes et références\n\n\nLiens internes\nHistoire des Juifs en Bosnie-Herzégovine\n\n\nLiens externes\n\n Portail du judaïsme   Portail de la Yougoslavie   Portail de Jérusalem   Portail du XIXe siècle",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Ascension_of_Sultan_Abdul_Hamid_II%3A_Late_Ottoman_Administrative_Era",
+      "name": "Ascension of Sultan Abdul Hamid II: Late Ottoman Administrative Era",
+      "inLanguage": "fr",
+      "startDate": "1876-08-31",
+      "endDate": "1909-04-27",
+      "description": "Abdülhamid II (en turc ottoman : عبد الحميد ثانی, `Abdü'l-Ḥamīd-i sânî ; en turc : İkinci Abdülhamit), né le 21 septembre 1842 à Constantinople et mort le 10 février 1918 dans la même ville, est sultan ottoman et calife de l'islam de 1876 à sa déposition en 1909.\nTrente-quatrième sultan ottoman, Abdülhamid est le dernier monarque à exercer une véritable autorité sur l'empire. Son règne est caractérisé par le déclin persistant de l'État ottoman malgré une politique de modernisation. La période hamidienne voit ainsi l'établissement d'une administration centralisée, la réforme du système judiciaire, l'ouverture de nombreuses écoles et universités, et l'extension massive des réseaux télégraphique et ferroviaire ottomans à l'image des célèbres lignes du Hedjaz et de Berlin-Bagdad. Mais ces transformations n'empêchent pas la perte de territoires en Europe, en Asie et en Afrique, le renforcement des influences étrangères au sein de l'empire et les révoltes de minorités. La répression brutale de ces rébellions (massacres hamidiens) valent en Europe à Abdülhamid les sobriquets de « Sultan rouge » et de « Grand Saigneur », bien que le sultan n'ait commandité aucun des massacres qui lui ont été attribués[réf. nécessaire].\nAbdülhamid II accède au trône le 31 août 1876 dans une période troublée et fait promulguer la première constitution de l'histoire ottomane sous la pression de ses ministres et vizirs qui sont libéraux et démocrates. Mais après la désastreuse guerre russo-turque de 1878, il en profite pour la suspendre et gouverne en autocrate durant les trente années qui suivent. En",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Petah_Tikva_was_founded_in_1878",
+      "name": "Petah Tikva was founded in 1878",
+      "inLanguage": "fr",
+      "startDate": "1878",
+      "endDate": "1878",
+      "description": "Petah Tikva ((he) פֶּתַח תִּקְוָה, « le Seuil de l'Espoir ») est une ville d'Israël située dans le district central, au nord-est de Tel-Aviv. Sa superficie est de 39 km2 et sa population s'élevait à 253 529 habitants en 2022. Elle est parfois qualifiée de « Mère des Moshavot » en terre d'Israël.\n\n\nHistoire\n\nPetah Tikva a été fondée en 1878 par des pionniers religieux venant de Jérusalem, qui étaient menés par Yehoshua Stampfer. Ce fut la première implantation agricole juive moderne en Palestine, alors intégrée dans l’Empire ottoman. Elle a depuis prospéré et s’est développée au point de devenir la 7e ville d’Israël.\nLes pionniers avaient au départ l’intention de s’établir dans la vallée de l’Achor, près de Jéricho, et commencèrent l’acquisition de terres dans ce but. Ils choisirent le nom de leur implantation d’après la prophétie d’Osée (2 : 15) : « Et de là-bas, je lui rendrai ses vignobles, et je ferai de la vallée de Akor une porte d’espérance, et là elle répondra comme au temps de sa jeunesse. » Cependant, le sultan turc annula la vente et leur interdit de s’implanter à cet endroit, ils gardèrent le nom de Petah Tikva comme symbole de leurs aspirations.\nNullement découragés, les pionniers achetèrent finalement 3,40 km2 de terres du village de Mulabbis, près de la source du Yarkon. Le Sultan permit le développement du projet. Mais l’emplacement était constitué de marais infectés par la malaria et ils durent évacuer le site pour fonder la ville de Yehud à proximité du village arabe de Yehudiyya, à environ 20 kilomètres au sud. Avec l’aide financière du baron Edmond de Rot",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Russian_Empire_Pogroms_(First_Wave)",
+      "name": "Russian Empire Pogroms (First Wave)",
+      "inLanguage": "fr",
+      "startDate": "1881-04-27",
+      "endDate": "1884",
+      "description": "Les pogroms antisémites en Russie sont des actions de masse violentes envers les Juifs, en tant que minorité nationale et religieuse, qui se déroulèrent dans l'Empire russe jusqu'en 1917, puis en Biélorussie et en Ukraine, en 1919, lors des interventions étrangères et de la guerre menée par les armées blanches contre la Russie révolutionnaire. Les pogroms sont une des manifestations typiques de l’antisémitisme.\n\n\nOrigine russe du terme « pogrom »\n\nL’expression « pogroms antisémites en Russie » n’est pas un pléonasme car d’autres minorités furent également victimes de pogroms, mot russe signifiant « destruction, pillage, émeute » et s’appliquant de façon neutre à tout groupe.\nDes pogroms surviennent à des époques différentes dans divers pays où vivent des Juifs. Mais, comme l’écrit la « Petite encyclopédie juive », c’est dans l’Empire russe au XIXe siècle qu’il faut chercher l’origine du mot « pogrom » et du lien établi avec l’antisémitisme. Du fait même de l’occurrence de nombreux pogroms dirigé contre des Juifs en Russie, le mot russe pogrom ((ru)Погро́м) pour désigner ces agressions est en effet passé dans toutes les langues européennes. Dans le cas d’une destruction complète, c’est le terme razgrom qui est utilisé ou encore celui de reznia signifiant « massacre ». La connotation antisémite du terme apparait avec son emprunt dans des langues étrangères, et est moins marquée en russe.\nEn français, le terme désignant initialement un mouvement antisémite a retrouvé par extension le sens premier russe d’« émeute meurtrière », mais dans certaines sources on trouve aussi les te",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=The_first_Arab%E2%80%93Israeli_War_(1948)",
+      "name": "The first Arab–Israeli War (1948)",
+      "inLanguage": "fr",
+      "startDate": "1948-05-15",
+      "endDate": "1949-03-10",
+      "description": "La guerre israélo-arabe de 1948-1949, appelée également guerre d'indépendance d'Israël, est un conflit militaire qui débute le 15 mai 1948 et se conclut le 10 mars 1949, dans le contexte de la fin du mandat britannique sur la Palestine et de la prise d'indépendance d'Israël.\nSeconde phase de la guerre israélo-arabe de 1948 après six mois de guerre civile intense entre populations juive et arabe, elle constitue une escalade géopolitique de grande ampleur et oppose au tout jeune État d'Israël une coalition arabe de plusieurs pays de la région. Elle se termine avec les différents cessez-le-feu israélo-arabes, conclus entre février et juillet 1949.\n\n\nPrésentation\nDès le 30 novembre 1947, le lendemain du vote par l'ONU du plan de partage de la Palestine, les forces paramilitaires juives (la Haganah soumise au Yichouv, le Palmah, unité d'élite créée en 1941, l'Irgoun, scission de la Haganah créée en 1931 et le Lehi, ou « groupe Stern », scission de l'Irgoun apparue au début de l'année 1941) affrontent les irréguliers arabes palestiniens et les volontaires de l'Armée de libération arabe, tandis que les Britanniques, qui avaient obtenu de la Société des Nations un mandat en 1922 et qui sont responsables de l'administration du pays, commencent à évacuer leurs forces armées, composées d'environ 100 000 hommes. Les forces arabes palestiniennes sont défaites ; plusieurs villes mixtes, à l'exception notable de Jérusalem, sont sous le contrôle des forces paramilitaires juives et 350 000 à 400 000 Arabes palestiniens ont déjà pris les routes de l'exode, fuyant les combats ou expulsés de l",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=First_Aliyah",
+      "name": "First Aliyah",
+      "inLanguage": "fr",
+      "startDate": "1881",
+      "endDate": "1903",
+      "description": "La Première Aliyah, (en hébreu : העלייה הראשונה, \"HaAliyah HaRishona\") ou Aliyah des Fermiers  est la première vague moderne d'immigration de Juifs en Palestine, commençant en 1881 en provenance d'Europe de l'Est (principalement de Russie et de Roumanie) ainsi que du Yémen, et se prolongeant jusqu'en 1903. Entre 25 000 et 35 000 Juifs immigrent alors dans la Palestine ottomane. Bien que l'aliyah  juive en Israël ait toujours existé depuis le second exil – l'une des dernières avant la Première Aliyah ayant été celle de disciples du Gaon de Vilna entre 1808 et 1812 – il s'agissait de groupes moins importants, dont les motivations étaient personnelles ou religieuses et non politiques.\n\n\nAliyah du Yémen\nUn premier groupe d'émigrants juifs du Yémen précède d'environ sept mois les Juifs d'Europe de l'Est en Palestine ; ses motivations ne sont pas politiques mais plutôt économiques.\n\n\nInstallation\nEn raison de l'opposition d'Abdülhamid qui a déjà refusé le projet d'implantation de Laurence Oliphant, l'acquisition des terres se fait par l'intermédiaire de prête-nom. La première aliyah pose les fondations de l'installation juive en Israël, créant plusieurs points de peuplement : Rishon LeZion fondé le 30 juillet 1882, Rosh Pina (pierre angulaire), Zikhron Yaaqov, Guedera, etc.\nUn petit groupe de Bilou est pris en charge par l'école agricole de Charles Netter bien que ce dernier favorise plutôt l'immigration juive vers les États-Unis \nLa Jewish Virtual Library dit de la première aliyah qu'une moitié à peine d'immigrés juifs demeura en Palestine.\n\n\nNotes\n\n\nBibliographie\nBen-Gurion, Da",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Second_Aliyah",
+      "name": "Second Aliyah",
+      "inLanguage": "fr",
+      "startDate": "1904",
+      "endDate": "1914",
+      "description": "❌ Missing local asset payload cache file target: /fr/Second_Aliyah.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fall_of_Jerusalem%3A_British_Forces_End_400_Years_of_Ottoman_Rule",
+      "name": "Fall of Jerusalem: British Forces End 400 Years of Ottoman Rule",
+      "inLanguage": "fr",
+      "startDate": "1917-12-09",
+      "endDate": "1917-12-30",
+      "description": "La bataille de Jérusalem (turc : Kudüs Muharebesi) est une bataille de la Première Guerre mondiale. Elle fait partie de la campagne du Sinaï et de la Palestine et oppose les forces de l'Empire britannique à celles de l'Empire ottoman soutenu par l'Allemagne. Elle consiste en une série d'opérations livrées en novembre et décembre 1917 dans le sud de la Palestine, alors partie de l'Empire ottoman, et s'achève par la victoire des Britanniques et de leurs alliés australiens et néo-zélandais qui s'emparent de Jérusalem.\n\n\nContexte militaire\n\nLes forces britanniques de l'Egyptian Expeditionary Force, basées dans le sultanat d'Égypte sous protectorat britannique et commandées depuis juin 1917 par Edmund Allenby, ont repoussé deux offensives ottomanes contre le canal de Suez en 1915 et 1916. Avec le concours du Desert Mounted Corps, corps de cavalerie australo-néo-zélandais, elles se sont assuré le contrôle du désert du Sinaï et ont pris pied dans le sud-ouest de la Palestine où elles remportent la bataille de Beer-Sheva le 31 octobre 1917 suivie de celle de Mughar Ridge (en) le 13 novembre. Elles ont construit un chemin de fer traversant le Sinaï, à voie étroite, prolongé jusqu'à Deir el-Balah près de Gaza, pour assurer leur logistique depuis l'Égypte et se préparent à une nouvelle offensive.\nLe ravitaillement reste cependant le point critique de la guerre du désert. Les 25 000 chevaux du Desert Mounted Corps consomment plus de 100 tonnes de grain par jour. Une centaine de camions, plus des convois de chameaux et de mules, avec la main-d'œuvre des Égyptiens de l'Egyptian Labour Co",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Third_Aliyah_(1919%E2%80%931923)",
+      "name": "Third Aliyah (1919–1923)",
+      "inLanguage": "fr",
+      "startDate": "1919",
+      "endDate": "1923",
+      "description": "❌ Missing local asset payload cache file target: /fr/Third_Aliyah.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fourth_Aliyah_(1924%E2%80%931929)",
+      "name": "Fourth Aliyah (1924–1929)",
+      "inLanguage": "fr",
+      "startDate": "1924",
+      "endDate": "1929",
+      "description": "❌ Missing local asset payload cache file target: /fr/Fourth_Aliyah.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fifth_Aliyah_(1929%E2%80%931939)",
+      "name": "Fifth Aliyah (1929–1939)",
+      "inLanguage": "fr",
+      "startDate": "1929",
+      "endDate": "1939",
+      "description": "❌ Missing local asset payload cache file target: /fr/Fifth_Aliyah.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Aliyah_Bet%3A_Illegal_immigration_(1933%E2%80%931948)",
+      "name": "Aliyah Bet: Illegal immigration (1933–1948)",
+      "inLanguage": "fr",
+      "startDate": "1933",
+      "endDate": "1948",
+      "description": "L'Aliyah Bet (héb.: 'עלייה ב \"Aliyah 'B'\", bet étant la seconde lettre de l'alphabet hébreu) était le nom de code de l'immigration illégale de Juifs en Palestine mandataire de 1933 à 1948, en violation des quotas britanniques contre une telle immigration, par opposition à l'Aliyah Aleph, qui se faisait dans le respect des dites normes. En Israël, on désigne actuellement l'Aliyah Bet sous l'appellation de Ha'apala (héb.: העפלה \"escalade\").\nPlusieurs organisations juives, dont la plus prééminente fut le Mossad Le'aliyah Bet, coordonnèrent ainsi leurs efforts pour permettre cette immigration irrégulière, qu'ils refusaient de qualifier d'illégale, préférant parler d'immigration clandestine. Leurs efforts s'intensifièrent avec les persécutions des Juifs d'Europe sous l'ère nazie.\nL'Aliyah Bet doit être distinguée de la Berih'ah (Fuite), qui visa au même but et employa les mêmes institutions, mais fut initiée par des sionistes de Lublin, alors que l'Aliyah Bet était une initiative du Yichouv.\n\n\nLiens externes\n\n Portail d’Israël",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Nakba_Phase_1%3A_Civil_War_Era",
+      "name": "Nakba Phase 1: Civil War Era",
+      "inLanguage": "fr",
+      "startDate": "1947-11-30",
+      "endDate": "1948-05-14",
+      "description": "La guerre civile en Palestine de 1947-1948 couvre la période du 30 novembre 1947, lendemain du vote du plan de partage de la Palestine, au 14 mai 1948, qui marque la fin du mandat britannique sur la Palestine.\nCette période constitue la première phase de la guerre de Palestine de 1948. Durant celle-ci, la communauté juive et la communauté arabe de Palestine s'affrontent tandis que les Britanniques, qui sont censés y garantir la sécurité, organisent leur retrait et n'interviennent que ponctuellement.\nLa phase suivante, la guerre israélo-arabe de 1948-1949 démarre le 15 mai, avec la création de l'État d'Israël la veille et l'entrée en guerre contre Israël des armées de plusieurs États arabes voisins.\nLes différents épisodes et événements clés de la période de la guerre civile constituent la première phase de la guerre de Palestine de 1948.\n\n\nContexte historique\n\nDepuis la défaite de la Turquie en 1920, la Palestine est sous contrôle et administration britanniques mais le pays est l'objet d'un conflit entre les nationalismes juif sioniste et arabe palestinien, qui s'opposent l'un à l'autre ainsi qu'à l'occupant britannique.\nL'opposition palestinienne culmine avec la grande révolte de 1936-1939. Menée par les nationalistes palestiniens, elle s'oppose à la fois au sionisme, à la présence britannique en Palestine et aux hommes politiques se réclamant d'un nationalisme panarabe. À son terme, les nationalistes palestiniens obtiennent toutefois des Britanniques une diminution draconienne de l'immigration juive traduite par le Livre blanc de 1939. Mais les conséquences sont lourdes.",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Nakba_II%3A_Modern_Displacement_Campaign",
+      "name": "Nakba II: Modern Displacement Campaign",
+      "inLanguage": "fr",
+      "startDate": "2023-10-07",
+      "endDate": "2026-08-21",
+      "description": "La bande de Gaza connaît une situation continue de crise humanitaire durant la guerre à Gaza depuis 2023.\n\n\nContexte\n\n\nHistorique\nAu début de la guerre, Israël met en œuvre un blocus complet de la bande de Gaza, ce qui entraîne d’importantes pénuries de carburant, de nourriture, de médicaments, d’eau et de fournitures médicales essentielles. Ce siège provoque également une baisse de 90 % de la disponibilité de l'électricité, affectant l'alimentation électrique des hôpitaux, les stations d'épuration et la fermeture des usines de dessalement qui fournissent de l'eau potable Des épidémies généralisées se propagent à Gaza.\nLes bombardements intensifs israéliens causent des dégâts aux infrastructures de Gaza, aggravant encore la crise. Conflict Damage revèle qu'entre 49,7 % (142 000) et 61,5 % (176 000) des bâtiments ont été détruits ou endommagé dans la bande de Gaza.\nLe ministère de la Santé du Hamas fait état de plus de 4 000 enfants tués au cours du premier mois de la guerre. Le 6 novembre, le secrétaire général de l'ONU António Guterres déclare que Gaza est « devenue un cimetière pour les enfants ».\nDes organisations telles que Médecins sans frontières, la Croix-Rouge et l'UNICEF, l'Organisation mondiale de la santé, la Programme des Nations unies pour le développement, le Fonds des Nations Unies pour la population et le Programme alimentaire mondial mettent en garde contre un désastre humanitaire. Le 8 novembre, le commissaire aux droits de l'homme de l'ONU, Volker Türk, décrit le passage de Rafah comme « les portes d'un cauchemar vivant. »\nDix experts indépendants de l'ON",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Premier_congr%C3%A8s_sioniste",
+      "name": "Premier congrès sioniste",
+      "inLanguage": "fr",
+      "startDate": "1897-08-29",
+      "endDate": "1897-08-31",
+      "description": "Le Premier congrès sioniste (hébreu : הקונגרס הציוני הראשון) est le nom donné au premier des congrès sionistes qui s'est tenu à Bâle, en Suisse, du 29 août au 31 août 1897. Ce fut le premier congrès de l'Organisation sioniste (qui deviendra l'Organisation sioniste mondiale en 1960). \nIl fut réuni et présidé par Theodor Herzl, le fondateur du sionisme moderne. Les conséquences les plus importantes de ce congrès furent : la formulation de la plateforme sioniste, plus connue sous le nom de programme de Bâle ; la fondation de l'Organisation sioniste mondiale ; et l'adoption de l'Hatikvah comme hymne (qui était déjà alors l'hymne des Amants de Sion et qui deviendra plus tard l'hymne national de l'État d’Israël).\n\n\nLes origines\n\nLe premier congrès sioniste fut créé par Theodor Herzl en tant que parlement symbolique pour tous ceux qui soutenaient la mise en œuvre des objectifs du sionisme. Initialement, le congrès aurait dû avoir lieu à Munich, en Allemagne. Cependant, en raison de l'opposition des responsables locaux des juifs orthodoxes et des juifs réformés, M. Herzl décida de plutôt réunir le congrès dans la ville de Bâle. Outre Theodor Herzl, les personnalités les plus connues étaient Nordau et Zangwill ; Zadoc Kahn a refusé de s'y rendre, mais a envoyé un message de sympathie ; les dirigeants des Amants de Sion Lilienblum, Ussishkin, Ahad Ha'Am étaient présents. Le congrès s'est tenu dans la salle de concert du Casino municipal de Bâle le 29 août 1897.\n\n\nLe congrès\nTheodor Herzl fut le président de ce congrès auquel assistèrent quelque 200 participants, venant de 17 pays, do",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Sykes%E2%80%93Picot_Agreement",
+      "name": "Sykes–Picot Agreement",
+      "inLanguage": "fr",
+      "startDate": "1916-05-16",
+      "endDate": "1916-05-16",
+      "description": "Les accords Sykes-Picot sont des accords secrets signés le 16 mai 1916, après négociations entre novembre 1915 et mars 1916, entre la France et le Royaume-Uni (avec l'aval de l'Empire russe et du royaume d'Italie), prévoyant le découpage du Proche-Orient à la fin de la guerre en plusieurs zones d'influence au profit de ces puissances, ce qui revenait à dépecer l'Empire ottoman. Les accords s'inscrivent dans le contexte d'une domination coloniale par laquelle deux pays exercent une action déterminante et durable sur les peuples d'une région étrangère.\nEn contradiction totale avec des promesses antérieures d'indépendance faites par Mac-Mahon en 1915-6 au chérif de la Mecque Hussein ben Ali, roi du Hedjaz, dernier calife sunnite et porte-parole de la nation arabe, le Royaume-Uni et la France décident le morcellement du Moyen-Orient en 4 zones géographiques. Ces deux pays se réservent le droit d'une zone « d'administration directe » et d'une zone « d'influence» ; à ces quatre zones s'ajoute une cinquième, la Palestine, censée devenir plus tard une zone internationale.\nÀ l'issue de la Première Guerre mondiale, les zones seront, pour certaines, modifiées. La Palestine sera cédée au Royaume-Uni, au lieu d'être internationalisée. Les Kurdes de Mossoul se retrouveront non pas en Syrie comme il était prévu mais, dès 1925, dans le nouvel État d'Irak créé par les Britanniques, la région de Mossoul ayant été cédée par la France au Royaume-Uni.\nLes accords Sykes-Picot, relevant de la diplomatie secrète, n'ont pas de valeur légale. Le Royaume-Uni et la France mettent en application ces ac",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=%C3%89meutes_de_1921_en_Palestine_mandataire",
+      "name": "Émeutes de 1921 en Palestine mandataire",
+      "inLanguage": "fr",
+      "startDate": "1921-05-01",
+      "endDate": "1921-05-07",
+      "description": "Les émeutes de 1921 en Palestine mandataire sont des événements sanglants qui se déroulent du 1er au 7 mai de cette année. Elles commencent par une confrontation entre deux groupes de Juifs, l'un communiste, l'autre socialiste, puis elles dégénèrent en heurts entre Arabes et Juifs, qui se répandent dans d'autres localités de la Palestine mandataire. Ces troubles causent la mort de 47 Juifs et 48 Arabes, 146 Juifs et 73 Arabes étant blessés. C'est le deuxième conflit majeur entre Arabes et Juifs après les émeutes de Jérusalem de 1920.\n\n\nLes événements\nAu cours de la nuit du 30 avril 1921, des militants du Parti socialiste des ouvriers, d'orientation communiste, répandent des tracts écrits en hébreu, yiddish et arabe qui appellent à l'unité des ouvriers juifs et arabes en vue d'une révolution socialiste pour renverser les oppresseurs. Ils finissent par des slogans communistes, dont « Vive la Palestine soviétique ! » et sont signés « Comité exécutif du Parti communiste de Palestine ». Le parti annonce aussi son intention de tenir une manifestation de Jaffa à Tel Aviv pour commémorer le 1er Mai. Le matin du 1er Mai, l'inspecteur de police Toufiq Bey al-Said se rend avec quelques policiers au siège du parti, devant lequel sont rassemblées une soixantaine de personnes, et les prévient que leur manifestation n'est pas autorisée. Les manifestants partent tout de même vers Tel Aviv à travers le quartier Al-Manshiyya de Jaffa, habité par des Juifs et des Arabes. Les policiers tentent, en vain, de disperser les manifestants, ainsi qu'un groupe d'Arabes hostiles aux communistes.\nÀ Tel",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=1929_Palestine_Riots_%26_Massacres",
+      "name": "1929 Palestine Riots & Massacres",
+      "inLanguage": "fr",
+      "startDate": "1929-08-23",
+      "endDate": "1929-08-29",
+      "description": "Les émeutes de 1929 en Palestine mandataire, également connues sous le nom de Massacres de 1929 ( מאורעות תרפ\"ט, littéralement les évènements de 5689 Anno Mundi), ou de la révolte de la Bouraq (ثورة البراق), se réfèrent à une série de manifestations et d'émeutes fin août 1929, qui font suite à un différend de longue date entre arabes et Juifs sur l'accès au Mur des Lamentations à Jérusalem.\nPendant la semaine d'émeutes du 23 au 29 août, 133 à 135 Juifs ont été tués par les Arabes et 339 autres ont été blessés, tandis que 110 à 136 Arabes ont été tués et 232 ont été blessés, la grande majorité par les forces de l’Empire britannique ou des milices paramilitaires sionistes.\nLa Commission Shaw du nom du juge britannique Sir Walter Shaw qui la présida, a émis pour opinion dans son rapport que la cause fondamentale « sans laquelle les troubles n’auraient pas eu lieu ou n’auraient été que des manifestations locales est le sentiment d'animosité et d'hostilité des Arabes envers les Juifs qui découlent de la non-réalisation de leurs aspirations politiques et nationales et de la peur pour leur avenir économique ». Cette peur provenant entre autres des réceptions devant les termes de la déclaration de Balfour. Une autre cause majeure est le pressentiment par les Arabes que les nouveaux immigrants juifs soient non seulement une menace pour leur gagne-pain, mais se présentent comme une nouvelle autorité pour l’avenir. Avraham Sela décrit les émeutes comme « sans précédent dans l'histoire du conflit arabo-juif en Palestine, dans la durée, l'étendue géographique et les dommages directs en",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=1936%E2%80%931939_Arab_Revolt",
+      "name": "1936–1939 Arab Revolt",
+      "inLanguage": "fr",
+      "startDate": "1936-04-19",
+      "endDate": "1939-08-26",
+      "description": "La grande révolte arabe de 1936-1939 en Palestine mandataire (ou révolte arabe de Palestine ou grande révolte palestinienne) est une rébellion des Arabes de Palestine alors sous mandat britannique qui revendiquent la fin de celui-ci, la création d'un État arabe indépendant et la fin de l'immigration juive (sioniste).\nRévolte essentiellement rurale, elle est le point culminant dans le combat des nationalistes palestiniens à l'époque du mandat britannique et ses conséquences sont importantes dans le déroulement du conflit arabo-sioniste et la fondation de l'État d'Israël.\nSon échec militaire aboutit au démantèlement des forces paramilitaires arabes et à l'arrestation ou à l'exil de ses dirigeants. Elle provoque le renforcement des forces paramilitaires sionistes, notamment avec le soutien des Britanniques. Sur le plan politique, elle pousse les dirigeants arabes envoyés en exil, parmi lesquels Mohammed Amin al-Husseini, à demander le soutien de l'Allemagne nazie à la veille de la Seconde Guerre mondiale.\nBien que vaincus militairement, les Arabes palestiniens obtiennent des concessions politiques. Le Livre blanc britannique de 1939 impose ainsi une limitation de l'immigration juive et du transfert de terres arabes à des Juifs, et promet la création d'un État unitaire dans les dix ans, dans lequel Juifs et Arabes partageront un gouvernement qui permettrait de préserver les intérêts de chaque communauté. Cette proposition est rejetée par la communauté juive palestinienne et ses forces paramilitaires, qui se lancent à leur tour dans une révolte générale (en) de 1944 à 1948.\nSelo",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Attentat_de_l'h%C3%B4tel_King_David",
+      "name": "Attentat de l'hôtel King David",
+      "inLanguage": "fr",
+      "startDate": "1946-07-22",
+      "endDate": "1946-07-22",
+      "description": "L’attentat de l'hôtel King David à Jérusalem a été perpétré le 22 juillet 1946. Cette attaque à la bombe a été préparée et menée par l'organisation juive Irgoun (dirigé alors par Menahem Begin, qui sera Premier ministre d’Israël de 1977 à 1983) avec l'aval du Mouvement de la résistance hébraïque (structure en juin 1945  fédérant la Haganah, l'Irgoun et le Lehi, ou groupe Stern), et visait les autorités britanniques dont les bureaux étaient situés au sein de l'hôtel King David à Jérusalem, alors en Palestine mandataire. Cet attentat a fait de nombreuses victimes : 91 morts et 46 blessés.\n\n\nHistorique\n\nÀ la suite de différentes attaques de la part de l'Irgoun qui combat la présence anglaise, les autorités britanniques lancent le 29 juin, l'opération Agatha, avec pour but le démantèlement des différentes cellules de l'organisation juive. Des documents contenant des informations importantes sur l'Irgoun ainsi que la Haganah sont saisis à l'Agence juive, des caches d'armes sont découvertes et environ 2 700 Juifs sont arrêtés par la police britannique et les autorités militaires britanniques.\n\n\nL'hôtel\n\n\nPrésentation des lieux\n\nL’hôtel King David, un des hôtels les plus prestigieux de l'époque, abrite alors au sein de son aile sud, le secrétariat du gouvernement britannique de Palestine (British Mandate Secretariat in Palestine), le commandement militaire britannique (Army Headquarters) et le service d'investigation et de renseignement britannique, au sein de la British Police in Palestine. C'est ce service qui détient de nombreux documents importants sur les groupes armés sionis",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=UN_Resolution_181_(Partition_Plan)",
+      "name": "UN Resolution 181 (Partition Plan)",
+      "inLanguage": "fr",
+      "startDate": "1947-11-29",
+      "endDate": "1947-11-29",
+      "description": "Le plan de partage de la Palestine élaboré par le Comité spécial des Nations unies sur la Palestine (UNSCOP) créé par l’Assemblée générale de l'ONU le 29 novembre 1947, est approuvé par cette dernière à New York, par le vote de sa résolution 181.\nCe plan prévoit la partition de la Palestine mandataire en trois entités, avec la création d’un État juif sur 56 % du territoire de la Palestine mandataire dont une majorité est constituée du désert du Néguev, quasiment inhabité, parfait pour y créer plus tard une centrale nucléaire à Dimona et d’un État arabe sur 42 % du territoire. La ville de Jérusalem et sa proche banlieue (2 % du territoire) sont placées sous contrôle international en tant que corpus separatum. Le plan est ainsi établi de manière à éviter le déplacement des populations résidentes.\nLa première partie du plan précise les dispositions de la fin du mandat britannique — devant intervenir aussi vite que possible —, du partage et de l’indépendance des entités. Les Britanniques prévoient de se retirer le 1er août 1948 et le partage doit être réalisé au 1er octobre. La partie II du plan comporte la description détaillée des frontières proposées pour chaque État.\nLe plan est accepté par les dirigeants de la communauté juive en Palestine (Yichouv) par le biais de l'organisation sioniste Agence juive et il est refusé par des organisations paramilitaires classées terroristes par la suite : Irgoun et Lehi. Il est rejeté par la quasi-totalité des dirigeants de la communauté arabe[Lesquels ?], dont le Haut Comité arabe palestinien, appuyé par la Ligue arabe qui annonce son in",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Massacre_de_Deir_Yassin",
+      "name": "Massacre de Deir Yassin",
+      "inLanguage": "fr",
+      "startDate": "1948-04-09",
+      "endDate": "1948-04-09",
+      "description": "Le massacre de Deir Yassin se déroule le 9 avril 1948 au cours de la prise du village de Deir Yassin, à l'ouest de Jérusalem, durant la guerre de 1947-1948 en Palestine mandataire. Il est perpétré par 120 terroristes de l'Irgoun et du Lehi. Les historiens évaluent aujourd'hui le nombre de tués entre 77 et 120 Arabes. À l'époque, la presse et différents commentateurs exagèrent le nombre à 254 victimes, afin d'exercer une pression psychologique sur les Palestiniens.\nSelon les historiens et commentateurs, ce massacre a eu des répercussions importantes sur la suite du conflit, notamment en favorisant l'exode de Palestiniens, craignant de subir le même sort, et comme justification pour les dirigeants arabes des pays voisins à intervenir dans le conflit. Il est resté un symbole dans l'histoire du conflit israélo-arabe.\nAujourd'hui, l'hôpital psychiatrique Kfar Shaul (en) est construit sur le site de cet ancien village palestinien à 7 km à l'ouest de la vieille ville de Jérusalem.\n\n\nContexte\n\nLes événements se produisent le 9 avril 1948 lors de la guerre civile en Palestine. À ce moment, le pays est toujours sous le contrôle des autorités britanniques, bien qu'elles aient entamé leur évacuation du pays depuis février et que leur retrait complet soit prévu pour le 15 mai.\nFin mars, la guerre des routes entamée par le chef de la milice arabe Abd al-Kader al-Husseini et la Jaysh al-Jihad al-Muqaddas porte ses fruits : la ville de Jérusalem, où habitent cent mille Juifs, soit un sixième de la communauté juive palestinienne, est assiégée et ne peut plus être ravitaillée.\nDébut avril, l",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Declaration_of_the_State_of_Israel_%26_End_of_British_Mandate",
+      "name": "Declaration of the State of Israel & End of British Mandate",
+      "inLanguage": "fr",
+      "startDate": "1948-05-14",
+      "endDate": "1948-05-14",
+      "description": "La déclaration d'indépendance de l'État d'Israël, officiellement la Déclaration d'établissement de l'État d'Israël (en hébreu : הכרזה על הקמת מדינת ישראל), a lieu le 14 mai 1948, dernier jour du mandat britannique sur la Palestine dans le hall du Musée d'art de Tel Aviv. C'est l'annonce officielle de la naissance d'un État juif en Terre d'Israël.\nElle est prononcée par David Ben Gourion, président de l'Agence juive et du Yishouv, qui devient le premier Premier ministre du pays.\nLa déclaration fait suite au plan de partage de la Palestine voté à l'ONU le 29 novembre 1947. La déclaration d'indépendance de l'État d'Israël est l'aboutissement du projet sioniste 50 ans après sa lancée.\n\n\nImportance juridique, nationale et religieuse\nEn l'absence de constitution ou de traité intégrant Israël à une union d'États, cette déclaration est actuellement au sommet de la hiérarchie des normes israéliennes.\nL'événement est célébré chaque année par la fête nationale israélienne Yom Ha'atzmaout (hébreu : יום העצמאות, c'est-à-dire « journée de l'Indépendance ») le 5 Iyar selon le calendrier hébraïque. Il est aussi célébré en diaspora dans de nombreuses communautés juives, en France au moins depuis 1963.\n\n\nDéroulement\n\n\nPréparatifs\nÀ l'approche de la fin du mandat britannique, le Conseil général sioniste établit un Conseil national de 37 membres représentant tous les partis et factions de la carte politique qui, sous la houlette de Ben Gourion, se met à agir en tant que parlement provisoire. Le 12 mai 1948, au terme d'une séance-marathon de 11 heures, le Conseil national décide que l'indépenda",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Crise_du_canal_de_Suez",
+      "name": "Crise du canal de Suez",
+      "inLanguage": "fr",
+      "startDate": "1956-10-29",
+      "endDate": "1956-11-07",
+      "description": "La crise du canal de Suez, aussi appelée expédition de Suez, guerre de Suez, campagne de Suez, Agression tripartite ou opération Kadesh selon le nom de code israélien, est une guerre qui éclata en 1956 en territoire égyptien. Le conflit opposa l'Égypte à une alliance secrète actée par le protocole de Sèvres, dont les entretiens se sont tenus du 21 au 24 octobre 1956, formée par la France, le Royaume-Uni et l'État d'Israël à la suite de la nationalisation du canal de Suez par l'Égypte le 26 juillet 1956. Cette alliance entre deux États européens et Israël répondait à des intérêts communs : les nations européennes avaient des intérêts politiques, économiques (ils en étaient actionnaires) et commerciaux (il était principalement utilisé pour le transport de pétrole) dans le canal de Suez. Israël avait besoin du canal pour assurer son transport maritime entre Méditerranée et mer Rouge, mais utilisait comme prétexte à son intervention militaire une réponse aux attaques de fedayins qu'il subissait sur son territoire. Le renversement de Gamal Abdel Nasser était également prévu.\nLe 29 octobre 1956, conformément aux accords secrets, Israël envahit l'Est du canal, suivi rapidement par les Français et les Britanniques qui bombardent à partir du 31 octobre, parachutent et débarquent leurs troupes le 5 novembre, officiellement comme des troupes de maintien de la paix. Finalement, alors que les Égyptiens sont battus militairement (cessez-le-feu le 7 novembre), les coalisés, en échange de certaines concessions d'ordre économique, sont obligés de battre en retraite sous la pression des État",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Six-Day_War_(1967)",
+      "name": "Six-Day War (1967)",
+      "inLanguage": "fr",
+      "startDate": "1967-06-05",
+      "endDate": "1967-06-10",
+      "description": "La guerre des Six Jours s'est déroulée du lundi 5 au samedi 10 juin 1967 et a opposé Israël à l'Égypte, la Syrie, l’Irak, et la Jordanie, après une offensive israélienne contre l’Égypte.\nLes relations entre Israël et ses voisins arabes étaient restées conflictuelles depuis les accords d’armistice de 1949 qui ont mis fin à la guerre israélo-arabe de 1948-1949. En 1956, les tensions régionales se sont intensifiées lors de la crise de Suez, lorsque Israël a envahi l’Égypte en réaction à la fermeture du détroit de Tiran aux navires israéliens.\nLes tensions israélo-arabes s’intensifient à nouveau au printemps 1967. La crise débuta le 7 avril, lorsqu'à la suite d'un incident mineur à la frontière israélo-syrienne, un combat aérien aboutit à la destruction de sept avions syriens. La montée des tensions fut exacerbée par les actions des commandos palestiniens opérant sur le territoire israélien, tandis que Israël menaça la Syrie d'une guerre en raison de son soutien aux Palestiniens. Le chef d'État égyptien, Gamal Abdel Nasser, répondit en fermant le détroit de Tiran, et en déployant des troupes aux frontières.\nLe 5 juin 1967, Israël lança une série de frappes aériennes contre des aérodromes égyptiens et d'autres installations dans le cadre de l'opération Focus. Les forces égyptiennes furent prises par surprise et la quasi-totalité des moyens aériens militaires égyptiens furent détruits au sol, donnant à Israël la suprématie aérienne. Simultanément, l'armée israélienne lança une offensive terrestre dans la péninsule du Sinaï ainsi que dans la bande de Gaza. Les chars de l'armée isr",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Guerre_du_Kippour",
+      "name": "Guerre du Kippour",
+      "inLanguage": "fr",
+      "startDate": "1973-10-06",
+      "endDate": "1973-10-25",
+      "description": "La guerre du Kippour (en hébreu : מלחמת יום הכיפורים) ou guerre du Ramadan (en arabe حرب رمضان) ou guerre d'Octobre (en arabe حرب أكتوبر ou حرب تشرين) ou guerre israélo-arabe de 1973 opposa, du 6 au 25 octobre 1973, Israël à une coalition militaire arabe menée par l'Égypte et la Syrie.\nLe jour du jeûne de Yom Kippour, férié en Israël, qui coïncide en 1973 avec la période du ramadan, les Égyptiens et les Syriens attaquent par surprise simultanément dans la péninsule du Sinaï et sur le plateau du Golan, territoires respectivement égyptien et syrien occupés par Israël depuis la guerre des Six Jours.\nProfitant de l’effet de surprise et d’une supériorité numérique initiale, les armées égyptiennes et syriennes avancent durant les premiers jours du conflit. Le temps pour Israël de mobiliser ses réservistes et d’acheminer des renforts, la situation se stabilise progressivement. Par la suite, le pont aérien américain permet de compenser les pertes israéliennes et contribue à la reprise de l’initiative par Israël. En une semaine, Israël retrouve son potentiel militaire et lance des contre-offensives qui lui permettent de pénétrer profondément en Syrie et de traverser le canal de Suez pour progresser au sud et à l'ouest en Égypte lorsque le Conseil de sécurité des Nations unies, en coopération avec les deux superpuissances soviétique et américaine, par l'intermédiaire du Royaume-Uni, demande un cessez-le-feu pour laisser place aux négociations. Alors que les armées israélienne et égyptienne se regroupent, les combats reprennent sur les fronts syriens et égyptiens après l'heure du cess",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Massacre_de_Sabra_et_Chatila",
+      "name": "Massacre de Sabra et Chatila",
+      "inLanguage": "fr",
+      "startDate": "1982-09-16",
+      "endDate": "1982-09-18",
+      "description": "Le massacre de Sabra et Chatila est commis du 16 au 18 septembre 1982 par les milices libanaises chrétiennes phalangistes, alliées d'Israël, à l'encontre de Palestiniens dans le quartier de Sabra et le camp de réfugiés de Chatila, situés à Beyrouth-Ouest, alors sous occupation israélienne.\nLe massacre se déroule dans le double contexte du conflit israélo-palestinien et de la guerre civile libanaise. Pour le premier, à la suite de la guerre des Six Jours en 1967, la bande de Gaza et la Cisjordanie sont occupés par Israël. Les combattants palestiniens, en particulier ceux de l'Organisation de libération de la Palestine (OLP), mènent alors leurs opérations depuis les camps de réfugiés, et notamment, à partir du milieu des années 1970, ceux du sud Liban. Visé par des attaques de l'OLP sur ses villages, Israël mène des raids sur les positions palestiniennes au Sud-Liban. Parallèlement, à partir de 1975, la guerre civile libanaise fait rage, opposant les différentes confessions (essentiellement les musulmans, plus nombreux démographiquement mais qui n'ont pas le pouvoir, aux chrétiens, minoritaires mais qui détiennent les postes clé de l'État), mais aussi les idéologies politiques.\nL'élimination de l'OLP est l'objectif commun d'Israël et de leur allié Bachir Gemayel, commandant suprême des Forces libanaises, qui a promis de signer un traité de paix libano-israélien. À partir de juin 1982, avec l'aide des phalangistes, l'armée israélienne occupe la moitié sud du Liban. Le 30 août, les combattants palestiniens se retirent du pays, dans le cadre d'un accord de cessez-le-feu supervis",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Premi%C3%A8re_intifada",
+      "name": "Première intifada",
+      "inLanguage": "fr",
+      "startDate": "1987-12-08",
+      "endDate": "1993-09-13",
+      "description": "La première intifada, appelée également guerre des pierres, désigne la période de conflit entre les Palestiniens des territoires occupés et Israël, qui s'étend du 9 décembre 1987 à la signature des accords d'Oslo en 1993.\nElle est marquée par le soulèvement de la population palestinienne et est caractérisée par des émeutes violentes et par la répression de l'armée israélienne. Elle est accompagnée par des attentats contre la population israélienne et par des conflits entre factions palestiniennes.\n\n\nCasus belli\nLe 6 décembre 1987, un Israélien est poignardé. Le 8 décembre 1987, un camion israélien rentre dans une voiture palestinienne tuant les quatre passagers palestiniens au checkpoint d'Erez. La radio diffuse la nouvelle sans insister car il s'agit d'un accident. Une rumeur fait surface selon laquelle il s'agit d'un acte de vengeance commis par un parent de l'Israélien poignardé deux jours plus tôt. Les Palestiniens y voient un accident provoqué intentionnellement et un meurtre prémédité.\nLe lendemain, pendant les funérailles des victimes, la foule s'en prend à une position militaire de Tsahal au camp de réfugiés de Jabaliya en lançant des pierres et des cocktails Molotov. Des coups de feu sont tirés par les soldats mais cela n'a aucun effet sur la foule. Des renforts sont appelés mais ceux-ci se retrouvent sous un déluge de pierres et de cocktails Molotov. Cet événement est considéré comme le début de la première Intifada. Cependant, celle-ci est le résultat de l'accumulation de plusieurs facteurs.\n\n\nSous-estimation\nPlusieurs officiers de la compagnie de Jabaliya se réu",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Oslo_I_Accord",
+      "name": "Oslo I Accord",
+      "inLanguage": "fr",
+      "startDate": "1993-09-13",
+      "endDate": "1993-09-13",
+      "description": "❌ Missing local asset payload cache file target: /fr/Oslo_I_Accord.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Seconde_intifada",
+      "name": "Seconde intifada",
+      "inLanguage": "fr",
+      "startDate": "2000-09-28",
+      "endDate": "2005-02-08",
+      "description": "La seconde intifada ou Intifada al-Aqsa (arabe : الإنتفاضة الفلسطينية الثانية ou إنتفاضة الأقصى) désigne la période de violence israélo-palestinienne à partir de septembre 2000 jusqu'à environ février 2005. Les événements sont décrits par Israël comme une campagne de terrorisme palestinien, tandis qu'ils sont décrits par les Palestiniens comme une révolte contre l'occupation et la colonisation.\nLe début de la seconde intifada est marqué par la visite d'Ariel Sharon, le chef de l'opposition israélienne sur l'esplanade des Mosquées et le mont du Temple, le 28 septembre 2000 et la mort de Mohammed al-Dura deux jours plus tard. Elle se marque par des émeutes palestiniennes dans les territoires occupés auxquelles se joint la population palestinienne de nationalité israélienne. Elle est immédiatement réprimée par l'armée israélienne. Après quinze jours, on compte plus de 100 morts palestiniens et vingt-quatre israéliens (dix Juifs, ainsi que quatorze Arabes israéliens tués par la police israélienne). Le 30 octobre, la violence grimpe d'un cran quand le Hamas et le Jihad islamique lancent une campagne d'attentats-suicides contre les centres urbains israéliens, avec plus d'une quarantaine d'attentats perpétrés jusqu'à la fin de l'année 2001.\nIsraël lance l'opération Rempart en avril 2002, marquée par la bataille de Jénine et la construction d'un mur de séparation israélienne. Suivront également plusieurs opérations militaires dont l'opération Arc-en-ciel (mai 2004), l'opération Pluies d'été (juin 2006), l'opération Plomb durci (nouvel an 2009) suivie par la guerre de Gaza.\nCertains",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Mahmoud_Abbas_succeeds_Yasser_Arafat_as_Chairman_of_the_PLO_Executive_Committee",
+      "name": "Mahmoud Abbas succeeds Yasser Arafat as Chairman of the PLO Executive Committee",
+      "inLanguage": "fr",
+      "startDate": "2004-11-11",
+      "endDate": "2004-11-11",
+      "description": "Mahmoud Abbas (arabe : مَحْمُود عَبَّاس), aussi connu par son surnom d’Abou Mazen (أَبُو مَازَن), né le 15 novembre 1935 à Safed en Palestine mandataire, est un homme d'État palestinien, président de l'Autorité palestinienne à partir de 2005 puis président de l'État de Palestine depuis 2013, ainsi que secrétaire général de l’Organisation de libération de la Palestine jusqu'en 2015.\nDéfenseur de la solution à deux États, Mahmoud Tahhan Abbas fait sa carrière aux côtés de Yasser Arafat. Il dirige la délégation palestinienne aux accords d'Oslo, qu'il signe au nom de l'OLP en 1993, et où est stipulé que l’État d'Israël a droit à une existence en paix et en sécurité. Il exerce la fonction de Premier ministre de l’Autorité nationale palestinienne sous la présidence d'Arafat avant de lui succéder comme président, en 2005.\nC'est sous sa présidence que le statut d'État observateur non membre de l'Organisation des Nations unies a été reconnu pour la Palestine.\n\n\nBiographie\n\n\nOrigines\nMahmoud Selman Tahhan Abbas naît le 26 mars 1935 ou le 15 novembre 1935 à Safed en Galilée, dans le nord de la Palestine mandataire. Cette ville comptait en 1922, selon le recensement britannique, une population de 8 761 personnes dont 5 431 musulmans et 2 986 Juifs, la ville considérée comme « ville sainte » étant un centre important du judaïsme depuis des siècles. Après les émeutes arabes de 1929 - qui tuent notamment 18 Juifs à Safed, le recensement de la ville de 1931 indique 109 713 habitants dont 33 975 musulmans et 3 678 Juifs qui ne l'ont pas désertée.\nIl existe un doute sur la date de naissance",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Palestinian_Legislative_Election%3A_Hamas_wins_majority_over_Fatah",
+      "name": "Palestinian Legislative Election: Hamas wins majority over Fatah",
+      "inLanguage": "fr",
+      "startDate": "2006-01-25",
+      "endDate": "2006-01-25",
+      "description": "Les élections législatives palestiniennes de 2006 ont lieu le 25 janvier 2006 afin de renouveler les sièges du Conseil législatif palestinien. Les précédentes élections de cette assemblée datent de 1996. Le scrutin est repoussé à plusieurs reprises, à cause de la situation du conflit israélo-palestinien. Les électeurs de la bande de Gaza, de la Cisjordanie et de Jérusalem-Est sont appelés aux urnes par l'Autorité palestinienne.\nLe nouveau conseil législatif comprend 132 sièges, contre 88 dans le précédent. La moitié des représentants sont désignés à la proportionnelle.\n\n\nContexte\nL'assemblée est dominée jusqu'en 2006 par le mouvement Fatah des présidents palestiniens Yasser Arafat puis Mahmoud Abbas. La principale opposition est le mouvement islamiste Hamas qui n'a pas participé au scrutin de 1996.\n\n\nFormations en lice\n\n\nFatah\nLe Fatah détient 68 des 88 sièges. Toutefois, des divisions internes se font sentir dans le mouvement et de nouvelles personnalités ont émergé dans la « jeune garde » et s'élèvent contre la corruption du parti, tel que Marouane Barghouti mais il purge une peine de prison en Israël, étant condamné pour ses responsabilités au sein du tanzim et des Brigades des Martyrs d'Al Aqsa, structure armée proche du Fatah. Sa nouvelle faction, Al-Moustaqbal, doit initialement présenter Barghouti comme tête de liste. Des négociations entre les deux courants conduisent, le 28 décembre 2005, à une liste unique avec Barghouti pour tête de liste, malgré les divergences profondes qui continuent de les opposer.\nLa vieille garde et Al-Moustaqbal se mobilisent au sein du Fa",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Battle_of_Gaza%3A_Fatah%E2%80%93Hamas_conflict_splits_Gaza_Strip_from_West_Bank_governance",
+      "name": "Battle of Gaza: Fatah–Hamas conflict splits Gaza Strip from West Bank governance",
+      "inLanguage": "fr",
+      "startDate": "2007-06-10",
+      "endDate": "2007-06-15",
+      "description": "La prise de contrôle de Gaza par le Hamas fait référence à l'offensive du mouvement islamiste dans la bande de Gaza opérée entre le 12 et le 14 juin 2007 contre les attributs du pouvoir présidentiel de Mahmoud Abbas, en place depuis 2005, et plus généralement contre les forces du Fatah.\nCette ultime offensive fait suite aux tensions interpalestiniennes, récurrentes lors des mois précédents, et catalyse le blocus de la bande de Gaza par Israël.\nLa Croix-Rouge estime qu'au moins 116 personnes ont été tuées et plus de 550 blessées au cours de ces affrontements.\n\n\nContexte de l'assaut\nLe 25 janvier 2006, le Hamas remporte les élections législatives palestiniennes de 2006 avec la majorité des suffrages (42,9 % sur l'ensemble du corps électoral). Ismaël Haniyeh est nommé Premier ministre de l'Autorité palestinienne. La collaboration avec l'appareil politique mis en place par le Fatah est difficile.\nAprès la reprise du conflit entre le Fatah et le Hamas le 10 juin 2007, des militants du Hamas capturent plusieurs membres du Fatah et jettent l'un des officiers de la Garde présidentielle, Mohammed Sweirki, du haut d'un immeuble de 15 étages à Gaza. En représailles, des militants du Fatah attaquent et tuent l'imam de la plus importante mosquée de la ville, Mohammed al-Rifati. Ils ouvrent le feu contre la maison du Premier ministre Ismaël Haniyeh. Avant minuit, un militant du Hamas est également jeté du haut d'un immeuble de 12 étages.\nLe 11 juin, les résidences de Mahmoud Abbas, dirigeant du Fatah et de l'Autorité palestinienne, et d'Ismaël Haniyeh, Premier ministre et l'un des dirige",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Conf%C3%A9rence_d'Annapolis",
+      "name": "Conférence d'Annapolis",
+      "inLanguage": "fr",
+      "startDate": "2007-11-27",
+      "endDate": "2007-11-27",
+      "description": "La conférence d'Annapolis est une conférence diplomatique pour la paix au Moyen-Orient qui s'est tenue aux États-Unis le 27 novembre 2007, à l'Académie navale d'Annapolis, dans le Maryland.\nCette conférence officialise pour la première fois la « solution à deux États » pour résoudre le conflit israélo-palestinien. La solution est inscrite à l'ordre du jour et acceptée par les deux parties.\nLa conférence s'est terminée par la publication d'une déclaration conjointe de toutes les parties.\n\n\nNotes et références\n\n Portail du conflit israélo-arabe   Portail des relations internationales   Portail des années 2000   Portail du Maryland   Portail de la paix",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=UN_Resolution_67%2F19%3A_Palestine_granted_Non-Member_Observer_State_status",
+      "name": "UN Resolution 67/19: Palestine granted Non-Member Observer State status",
+      "inLanguage": "fr",
+      "startDate": "2012-11-29",
+      "endDate": "2012-11-29",
+      "description": "La résolution 67/19 de l'Assemblée générale des Nations unies, adoptée le 29 novembre 2012, accorde « à la Palestine le statut d’État observateur non membre auprès de l’Organisation des Nations unies ».\n\n\nContenu\nLa fin de cette résolution est la suivante :\nL’Assemblée générale,\n[…]\n1. Réaffirme le droit du peuple palestinien à l’autodétermination et à l’indépendance dans un État de Palestine sur le territoire palestinien occupé depuis 1967 ;\n2. Décide d’accorder à la Palestine le statut d’État non membre observateur auprès de l’Organisation des Nations unies, sans préjudice des droits et privilèges acquis et du rôle de l’Organisation de libération de la Palestine auprès de l’ONU en sa qualité de représentante du peuple palestinien, conformément aux résolutions et pratiques pertinentes ;\n3. Exprime l’espoir que le Conseil de sécurité examinera favorablement la demande présentée le 23 septembre 2011 par l’État de Palestine, qui souhaite devenir membre de plein droit de l’Organisation des Nations unies ;\n4. Affirme sa détermination à contribuer à la réalisation des droits inaliénables du peuple palestinien et à un règlement pacifique de la question du Moyen-Orient qui mette fin à l’occupation remontant à 1967 et corresponde à la solution prévoyant deux États, avec un État palestinien indépendant, souverain, démocratique, d’un seul tenant et viable vivant dans la paix et la sécurité côte à côte avec Israël, sur la base des frontières d’avant 1967 ;\n5. Considère qu’il est urgent de reprendre et d’accélérer les négociations dans le cadre du processus de paix au Moyen-Orient, sur",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=PLO_Central_Council_votes_to_suspend_recognition_of_the_State_of_Israel",
+      "name": "PLO Central Council votes to suspend recognition of the State of Israel",
+      "inLanguage": "fr",
+      "startDate": "2018-10-29",
+      "endDate": "2018-10-29",
+      "description": "L’Organisation de libération de la Palestine (arabe : مُنَظَمَة ٱلتّحْرِير ٱلْفِلَسْطِينِيَّة, Munaẓamaẗ ʾal-ttaḥrīr ʾal-filasṭīniyya, OLP, anglais : Palestine Liberation Organization, PLO) est une organisation palestinienne politique et militaire, créée le 28 mai 1964 à Jérusalem. L'OLP est composée de plusieurs organisations palestiniennes, dont le Fatah, le Front populaire de libération de la Palestine (FPLP) et le Front démocratique pour la libération de la Palestine (FDLP). Elle a été dirigée par Yasser Arafat à partir de 1969.\nDepuis sa création, l'OLP, qui comporte des institutions politiques, s'est présentée comme un mouvement de résistance armée représentant les Palestiniens. Le 22 novembre 1974, l’Assemblée générale des Nations unies, lui accorde le statut d’observateur. L'OLP est signataire des accords d'Oslo en 1993.\n\n\nNom\nL'Organisation de libération de la Palestine (OLP) est également connue sous le nom Munazzamat at-Tahrir Filastin ou Munaẓẓamat al-Taḥrīr Filasṭīniyyah.\n\n\nHistoire\n\n\nContexte\n\n\nGuerre de 1948-1949\nAu début des années 1960, les conséquences de la défaite des Palestiniens en 1949 pèsent sur le projet d'établissement d'une Palestine indépendante : des centaines de milliers de réfugiés (Nakba), l’annexion par Israël d’une partie des territoires prévus par les Nations unies pour l’État palestinien, l’annexion de la Cisjordanie par le roi Hussein de Jordanie. Seule la bande de Gaza, sous contrôle égyptien, garde son autonomie. Le Haut Comité arabe (HCA), qui a dirigé les luttes nationales palestiniennes dans les années 1930 et 1940, est considérable",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Beijing_Declaration%3A_14_Palestinian_factions_sign_reconciliation_accord",
+      "name": "Beijing Declaration: 14 Palestinian factions sign reconciliation accord",
+      "inLanguage": "fr",
+      "startDate": "2024-07-23",
+      "endDate": "2024-07-23",
+      "description": "La déclaration de Pékin sur la fin de la division et le renforcement de l'unité nationale palestinienne, en arabe : اعلان بكين لإنهاء الانقسام وتعزيز الوحدة الوطنية الفلسطينية - en chinois : 关于结束分裂加强巴勒斯坦民族团结的北京宣言, communément appelée Déclaration de Pékin, est un accord signé le 23 juillet 2024 par 14 factions et partis politiques palestiniens différents, dont le Fatah et le Hamas, dans le cadre du processus de réconciliation entre les deux factions, dans un conflit qui a débuté au lendemain des élections législatives palestiniennes de 2006 et qui a inclus la prise de contrôle de Gaza par le Hamas en 2007.\n\n\nContexte\nÀ la suite de l'invasion israélienne de Gaza, en octobre 2023, l'armée israélienne pénètre dans la bande de Gaza. Au cours de la guerre, une agence des Nations unies et des organisations internationales, dont Amnesty International, estiment qu'Israël commet un génocide à Gaza. Cette crise incite l'Autorité nationale palestinienne à Ramallah et les dirigeants du Hamas à tenter de parvenir à un nouvel accord sur un gouvernement d'unité, dans le but d'élaborer un plan d'action commun pour la reconstruction éventuelle de la bande de Gaza. Les précédents accords de ce type n'ont jamais été pleinement mis en œuvre.\nLe Fatah et le Hamas sont les deux plus importantes factions palestiniennes. Fondé en 1959, le Fatah est le principal membre de l'Organisation de libération de la Palestine (OLP), qui regroupe plusieurs mouvements. Il adopte une position modérée sur le conflit avec Israël, favorisant une solution à deux États où l'État palestinien serait construit sur la Ci",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    }
+  ]
+}

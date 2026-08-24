@@ -419,7 +419,7 @@ async function fetchLangLinks(englishTitle) {
 
         const mappings = { en: englishTitle.replace(/ /g, '_') };
         const langLinksArray = pages[pageId].langlinks || [];
-
+console.log(langLinksArray);
         langLinksArray.forEach(link => {
             if (TARGET_LANGS.includes(link.lang)) {
                 mappings[link.lang] = link['*'].replace(/ /g, '_');
@@ -645,20 +645,32 @@ async function startPipelineSyncRoutine() {
         for (const englishArticle of articleListArray) {
             const cleanKeySlug = englishArticle.replace(/ /g, '_');
 
+            const rawEventsConfig = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'public', 'config', 'events.json'), 'utf-8'));
+            const specificEventConfig = rawEventsConfig.find(ev => ev.english_title === englishArticle);
+
             // Step A: Map cross-language reference links if this topic is completely new
             if (!cacheRegistry[cleanKeySlug]) {
                 console.log(`🔍 Mapping international cross-references for new entry: ${cleanKeySlug}`);
                 const languageTranslationsMap = await fetchLangLinks(cleanKeySlug);
-                
+
                 cacheRegistry[cleanKeySlug] = {
                     category: category,
                     translations: languageTranslationsMap
                 };
-                
-                // Write updates to registry file instantly so interruptions don't corrupt history logs
-                fs.writeFileSync(REGISTRY_FILE, JSON.stringify(cacheRegistry, null, 2), 'utf-8');
-                await delay(200);
             }
+
+            // ==========================================================================
+            // Inject Manual Override Enforcement Layer Natively!
+            // If the config declares a custom wiki page name for a language, use it!
+            // ==========================================================================
+            if (specificEventConfig && specificEventConfig.wikipedia_title_overrides) {
+                Object.keys(specificEventConfig.wikipedia_title_overrides).forEach(langOverrideKey => {
+                    const customTargetSlug = specificEventConfig.wikipedia_title_overrides[langOverrideKey];
+                    // Overwrite the mapping matrix value directly inside memory registry
+                    cacheRegistry[cleanKeySlug].translations[langOverrideKey] = customTargetSlug.replace(/ /g, '_');
+                });
+            }
+            fs.writeFileSync(REGISTRY_FILE, JSON.stringify(cacheRegistry, null, 2), 'utf-8');
 
             // Step B: Loop through all language codes and invoke our local-first incremental download pass
             const operationalTranslationsMap = cacheRegistry[cleanKeySlug].translations || {};

@@ -59,6 +59,8 @@ jobs:
         uses: actions/upload-pages-artifact@v5
         with:
           path: public
+          exclude: |
+            config/
         
       - name: Deploy to GitHub Pages
         id: deployment

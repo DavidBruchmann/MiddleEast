@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="no-js">
+<head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="generated/events.json" as="fetch" crossorigin="anonymous">
+    <link rel="preload" href="events.js" as="script">
+    <link rel="preconnect" href="https://wikipedia.org">
+    <script>
+        var cl = document.querySelector('html').classList;
+        cl.remove('no-js');
+        cl.add('has-js');
+    </script>
+    <link href="assets/CSS/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/CSS/styles.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="assets/JavaScript/vis-timeline-graph2d.min.js"></script>
+    <script type="application/ld+json" src="generated/seo_schema.json" id="jsonld-seo-schema-block"></script>
+
+    <!-- PRIMARY CORE SEO MARKS -->
+    <title>Hotspot Israel in the Middle East | Geopolitical Conflict Ledger</title>
+    <meta name="description" content="An interactive multi-language chronological ledger mapping geopolitical milestones, individual actors, institutional factions, and historical eras from 1843 to the modern day. Ingested directly from primary records under CC-BY-SA terms.">
+    <meta name="keywords" content="Middle East history, Israel history, Palestine history, British Mandate, Ottoman Empire history, geopolitical timeline, Aliyah, PLO conflict records">
+    <meta name="author" content="David Bruchmann">
+    <meta name="robots" content="index, follow">
+
+    <!-- GEOGRAPHIC METADATA LOCATION TAGGING (GEO-SEO) -->
+    <!-- Pins the visual center of your research dataset directly onto the Middle East coordinate grid natively -->
+    <meta name="geo.region" content="IL-M" />
+    <meta name="geo.placename" content="Middle East / Jerusalem" />
+    <meta name="geo.position" content="31.7683;35.2137" />
+    <meta name="ICBM" content="31.7683, 35.2137" />
+
+    <!-- OPEN GRAPH SOCIAL NETWORKS INDEX PREVIEWS (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Hotspot Israel in the Middle East | Geopolitical Conflict Ledger">
+    <meta property="og:description" content="Interactive multi-language chronological ledger tracing geopolitical milestones, factions, and verification trees from 1843 onward.">
+    <meta property="og:url" content="https://davidbruchmann.github.io/MiddleEast/">
+    <meta property="og:image" content="https://github.iomedia/Pale-of-settlement-1884.jpg">
+
+    <!-- TWITTER CARD PRESENTATION METADATA MARKS -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hotspot Israel in the Middle East">
+    <meta name="twitter:description" content="Interactive chronological ledger tracing Middle Eastern milestones across 7 regional languages.">
+    <meta name="twitter:image" content="https://davidbruchmann.github.io/MiddleEast//media/Pale-of-settlement-1884.jpg">
+
+    <!-- CRAWLER LANGUAGE TRANSLATION DIRECT ROUTING FLAGS -->
+    <!-- Tells search engines that your site carries native sub-language tracks via your ?L= query routing engines -->
+    <link rel="alternate" hreflang="x-default" href="https://davidbruchmann.github.io/MiddleEast/" />
+    <link rel="alternate" hreflang="en" href="https://davidbruchmann.github.io/MiddleEast/index.html" />
+    <link rel="alternate" hreflang="de" href="https://davidbruchmann.github.io/MiddleEast/index_de.html" />
+    <link rel="alternate" hreflang="ar" href="https://davidbruchmann.github.io/MiddleEast/index_ar.html" />
+    <link rel="alternate" hreflang="he" href="https://davidbruchmann.github.io/MiddleEast/index_he.html" />
+    <link rel="alternate" hreflang="id" href="https://davidbruchmann.github.io/MiddleEast/index_id.html" />
+    <link rel="alternate" hreflang="fr" href="https://davidbruchmann.github.io/MiddleEast/index_fr.html" />
+    <link rel="alternate" hreflang="es" href="https://davidbruchmann.github.io/MiddleEast/index_es.html" />
+</head>
+<body>
+<div class="layout-grid">
+    <header class="upper-controls-deck">
+        <select id="langSelector" class="dropdown-control" onchange="changeGlobalInterfaceLanguage()">
+            <option value="en" dir="ltr">English 🇬🇧</option>
+            <option value="de" dir="ltr">Deutsch 🇩🇪</option>
+            <option value="ar" dir="rtl">العربية 🇵🇸</option>
+            <option value="he" dir="rtl">עברית 🇮🇱</option>
+            <option value="id" dir="ltr">Bahasa Indonesia 🇮🇩</option>
+            <option value="fr" dir="ltr">Français 🇫🇷</option>
+            <option value="es" dir="ltr">Español 🇪🇸</option>
+        </select>
+        <select id="themeSelector" class="dropdown-control" onchange="applyUserThemeChoiceSelection()">
+            <option id="optThemeSystem" value="system">🌗 System Theme</option>
+            <option id="optThemeLight" value="light">☀️ Light High-Contrast</option>
+            <option id="optThemeDark" value="dark">🌙 Dark High-Contrast</option>
+        </select>
+        <div class="support">
+            <a href="https://ko-fi.com/davidbruchmann/" target="_blank">
+                <img height="30" src="assets/images/support_me_on_kofi_dark-ae82f4af76f8f47305452b88ed83526e.png" alt="Support this project">
+            </a>
+        </div>
+        <div class="contribute">
+            <a href="https://ko-fi.com/davidbruchmann/" target="_blank"><span>Contribute on github&nbsp;&nbsp;</span>
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="octicon octicon-mark-github" viewBox="0 0 16 16" width="16" height="16" fill="currentColor" display="inline-block" overflow="visible" style="vertical-align:top; margin-top:3px;"><style></style><path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path></svg>
+            </a>
+        </div>
+    </header>
+    <main>
+    <div class="main-headerarea">
+        <h1 id="uiMainHeadline">Israel in the Middle East</h1>
+        <div id="uiTopAttributionBanner">
+            All chronological text logs, translations, and media imagery assets are ingested directly from Wikipedia under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank">CC-BY-SA</a> terms.
+        </div>
+    </div>
+    <div class="timeline-outer-wrapper">
+        <div class="timeline-header">
+            <div id="uiSubheading" class="uiSubheading">Loading interface translations...</div>
+            <span class="zoom-bar">
+                <strong id="uiZoomLabel">Zoom:</strong>
+                <button class="timeline-zoom-btn" id="zoom-in">➕</button>
+                <button class="timeline-zoom-btn" id="zoom-out">➖</button>
+            </span>
+        </div>
+        <div id="timelineContainer"></div>
+    </div>
+    <div class="bottom-split">
+        <div class="inspector-panel" id="inspectorPanel">
+            <div class="inspector-content-box" id="inspectorContent" dir="ltr">
+                <div id="inspectorImageContainer" style="display: none; flex-direction: column; margin-bottom: 20px; border: 1px solid var(--border-color); border-radius: 0px; overflow: hidden; background: #000000;">
+                    <img id="drawerHeroImg" class="inspector-hero-img" alt="Historical Event View" style="cursor: zoom-in; width: 100%; display: block; max-height: 250px; object-fit: cover;" onclick="openImageLightboxViewport()">
+
+                    <!-- FIXED: Overlay transitions to standard static block padding to stop element collapse bugs -->
+                    <div id="imageCaptionOverlay" style="background: rgba(15, 15, 15, 0.95); color: #ffffff; padding: 12px 14px; font-size: 11px; line-height: 1.4; text-align: left; border-top: 1px solid rgba(255,255,255,0.15); z-index: 2;">
+                        <span id="captionText" style="display:block; font-weight: bold; font-size: 13px; margin-bottom: 3px; color: #ffffff;">Image Title</span>
+                        <span style="opacity: 0.85; display: inline-block;">
+                            📅 <span id="captionDate">1884</span> | 📸 <span id="captionAuthor">Author</span> | ⚖️ <span id="captionLicense">License</span>
+                        </span>
+                        <div style="margin-top: 6px;">
+                            <a id="captionSourceLink" href="#" target="_blank" style="color: #66b2ff; text-decoration: underline; font-weight: bold; margin-right: 12px;">Image File ↗</a>
+                            <a id="captionPageLink" href="#" target="_blank" style="color: #66b2ff; text-decoration: underline; font-weight: bold;">Description Page ↗</a>
+                        </div>
+                    </div>
+                </div>
+                <h2 id="drawerTitle" class="drawerTitle">Select an Event</h2>
+                <p id="drawerDesc" class="drawerDesc">
+                    Click an item node box in the top track or select a card from the list to unpack multi-language documentation details.
+                </p>
+                <div id="drawerLinks"></div>
+            </div>
+        </div>
+        <div class="list-sidebar">
+            <div class="sidebar-header">
+                <input type="text" id="sidebarSearch" class="search-box" oninput="applySidebarFilterPass()" placeholder="Filter entries...">
+                <!--<input type="text" id="sidebarSearch" class="search-box" oninput="filterSidebarList()" placeholder="Quick filter list rows...">-->
+            </div>
+            <div id="listScrollArea" class="list-scroll-area">
+                <!-- ##NOSCRIPT_DATA_INJECTION_MARKER## -->
+
+        <a class="compact-list-card" id="sidebar_card_ev_alkalai_minchat_yehuda_1843" href="index_en.html?E=Judah_Alkalai" aria-label="Go to event: Judah Alkalai (1843)">
+            <span class="date">1843</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Judah Alkalai</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_sultan_abdul_hamid_ii_1876" href="index_en.html?E=Abdul_Hamid_II" aria-label="Go to event: Abdul Hamid II (1876)">
+            <span class="date">1876</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Abdul Hamid II</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_founding_petah-tikva" href="index_en.html?E=Petah_Tikva" aria-label="Go to event: Petah Tikva (1878)">
+            <span class="date">1878</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Petah Tikva</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_russian_pogroms_wave1" href="index_en.html?E=Pogroms_in_the_Russian_Empire" aria-label="Go to event: Pogroms in the Russian Empire (1881)">
+            <span class="date">1881</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Pogroms in the Russian Empire</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_first_aliyah" href="index_en.html?E=First_Aliyah" aria-label="Go to event: First Aliyah (1881)">
+            <span class="date">1881</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">First Aliyah</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_first_zionist_congress" href="index_en.html?E=First_Zionist_Congress" aria-label="Go to event: First Zionist Congress (1897)">
+            <span class="date">1897</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">First Zionist Congress</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_second_aliyah" href="index_en.html?E=Second_Aliyah" aria-label="Go to event: Second Aliyah (1904)">
+            <span class="date">1904</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Second Aliyah</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_sykes_picot_agreement" href="index_en.html?E=Sykes%E2%80%93Picot_Agreement" aria-label="Go to event: Sykes–Picot Agreement (1916)">
+            <span class="date">1916</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Sykes–Picot Agreement</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_battle_of_jerusalem_1917" href="index_en.html?E=Battle_of_Jerusalem" aria-label="Go to event: Battle of Jerusalem (1917)">
+            <span class="date">1917</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Battle of Jerusalem</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_third_aliyah" href="index_en.html?E=Third_Aliyah" aria-label="Go to event: Third Aliyah (1919)">
+            <span class="date">1919</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Third Aliyah</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_jaffa_riots_1921" href="index_en.html?E=Jaffa_riots_(May_1921)" aria-label="Go to event: Jaffa riots (May 1921) (1921)">
+            <span class="date">1921</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Jaffa riots (May 1921)</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_fourth_aliyah" href="index_en.html?E=Fourth_Aliyah" aria-label="Go to event: Fourth Aliyah (1924)">
+            <span class="date">1924</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Fourth Aliyah</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_fifth_aliyah" href="index_en.html?E=Fifth_Aliyah" aria-label="Go to event: Fifth Aliyah (1929)">
+            <span class="date">1929</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Fifth Aliyah</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_1929_palestine_riots" href="index_en.html?E=1929_Palestine_riots" aria-label="Go to event: 1929 Palestine riots (1929)">
+            <span class="date">1929</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">1929 Palestine riots</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_aliyah_bet" href="index_en.html?E=Aliyah_Bet" aria-label="Go to event: Aliyah Bet (1933)">
+            <span class="date">1933</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Aliyah Bet</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_1936_1939_arab_revolt" href="index_en.html?E=1936%E2%80%931939_Arab_revolt_in_Palestine" aria-label="Go to event: 1936–1939 Arab revolt in Palestine (1936)">
+            <span class="date">1936</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">1936–1939 Arab revolt in Palestine</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_king_david_hotel_bombing" href="index_en.html?E=King_David_Hotel_bombing" aria-label="Go to event: King David Hotel bombing (1946)">
+            <span class="date">1946</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">King David Hotel bombing</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_nakba_phase1" href="index_en.html?E=1947%E2%80%931948_civil_war_in_Mandatory_Palestine" aria-label="Go to event: 1947–1948 civil war in Mandatory Palestine (1947)">
+            <span class="date">1947</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">1947–1948 civil war in Mandatory Palestine</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_un_partition_plan" href="index_en.html?E=United_Nations_Partition_Plan_for_Palestine" aria-label="Go to event: United Nations Partition Plan for Palestine (1947)">
+            <span class="date">1947</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">United Nations Partition Plan for Palestine</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_1948_war" href="index_en.html?E=1948_Arab%E2%80%93Israeli_War" aria-label="Go to event: 1948 Arab–Israeli War (1948)">
+            <span class="date">1948</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">1948 Arab–Israeli War</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_deir_yassin_massacre" href="index_en.html?E=Deir_Yassin_massacre" aria-label="Go to event: Deir Yassin massacre (1948)">
+            <span class="date">1948</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Deir Yassin massacre</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_israeli_declaration_of_independence" href="index_en.html?E=Israeli_Declaration_of_Independence" aria-label="Go to event: Israeli Declaration of Independence (1948)">
+            <span class="date">1948</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Israeli Declaration of Independence</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_suez_crisis" href="index_en.html?E=Suez_Crisis" aria-label="Go to event: Suez Crisis (1956)">
+            <span class="date">1956</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Suez Crisis</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_six_day_war" href="index_en.html?E=Six-Day_War" aria-label="Go to event: Six-Day War (1967)">
+            <span class="date">1967</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Six-Day War</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_yom_kippur_war" href="index_en.html?E=Yom_Kippur_War" aria-label="Go to event: Yom Kippur War (1973)">
+            <span class="date">1973</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Yom Kippur War</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_sabra_and_shatila_massacre" href="index_en.html?E=Sabra_and_Shatila_massacre" aria-label="Go to event: Sabra and Shatila massacre (1982)">
+            <span class="date">1982</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Sabra and Shatila massacre</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_first_intifada" href="index_en.html?E=First_Intifada" aria-label="Go to event: First Intifada (1987)">
+            <span class="date">1987</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">First Intifada</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_oslo_i_accord" href="index_en.html?E=Oslo_I_Accord" aria-label="Go to event: Oslo I Accord (1993)">
+            <span class="date">1993</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Oslo I Accord</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_second_intifada" href="index_en.html?E=Second_Intifada" aria-label="Go to event: Second Intifada (2000)">
+            <span class="date">2000</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Second Intifada</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_plo_mahmoud_abbas_chairman_2004" href="index_en.html?E=Mahmoud_Abbas" aria-label="Go to event: Mahmoud Abbas (2004)">
+            <span class="date">2004</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Mahmoud Abbas</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_palestinian_legislative_election_2006" href="index_en.html?E=2006_Palestinian_legislative_election" aria-label="Go to event: 2006 Palestinian legislative election (2006)">
+            <span class="date">2006</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">2006 Palestinian legislative election</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_battle_of_gaza_2007" href="index_en.html?E=Battle_of_Gaza_(2007)" aria-label="Go to event: Battle of Gaza (2007) (2007)">
+            <span class="date">2007</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Battle of Gaza (2007)</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_annapolis_conference" href="index_en.html?E=Annapolis_Conference" aria-label="Go to event: Annapolis Conference (2007)">
+            <span class="date">2007</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Annapolis Conference</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_un_observer_state_status_2012" href="index_en.html?E=United_Nations_General_Assembly_resolution_67%2F19" aria-label="Go to event: United Nations General Assembly resolution 67/19 (2012)">
+            <span class="date">2012</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">United Nations General Assembly resolution 67/19</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_plo_central_council_israel_recognition_2018" href="index_en.html?E=Palestine_Liberation_Organization" aria-label="Go to event: Palestine Liberation Organization (2018)">
+            <span class="date">2018</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Palestine Liberation Organization</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_nakba_2_campaign" href="index_en.html?E=Gaza_humanitarian_crisis" aria-label="Go to event: Gaza humanitarian crisis (2023)">
+            <span class="date">2023</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">Gaza humanitarian crisis</h4>
+        </a>
+        <a class="compact-list-card" id="sidebar_card_ev_beijing_declaration_palestinian_reconciliation_2024" href="index_en.html?E=2024_Beijing_Declaration" aria-label="Go to event: 2024 Beijing Declaration (2024)">
+            <span class="date">2024</span>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">2024 Beijing Declaration</h4>
+        </a>
+        <!-- ##/NOSCRIPT_DATA_INJECTION_MARKER## -->
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<footer>
+    <div style="max-width: 1600px; margin: 0 1rem;">
+        <p>© 2026 David Bruchmann</p>
+        <p id="uiFooterLegalText" style="margin: 0; text-align: justify;">
+            <strong>Data Attribution &amp; Licensing Notice:</strong> This platform functions strictly as an interactive educational compilation ledger. All narrative summaries, localized title strings, historical photographs, and map graphics displayed across these tracks originate from Wikipedia and are cached natively from MediaWiki servers.
+        </p>
+        <p id="uiFooterLicenseList" class="uiFooterLicenseList">
+            All educational source content is published in strict compliance with underlying copyright frameworks and open-source sharing protocols, utilizing <strong>Creative Commons (CC-BY-SA 3.0 / CC-BY-SA 4.0)</strong> and <strong>Public Domain (PD)</strong> licensing parameters. Original records, complete text length trees, and author attribution registries remain permanently linked and accessible via the active multi-language verification badges embedded within each inspector event card.
+        </p>
+        <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank">CC-BY-SA 3.0</a>,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC-BY-SA 4.0</a>
+    </div>
+</footer>
+<script src="assets/JavaScript/events.js"></script>
+<div id="globalLightboxModal" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(10, 10, 10, 0.95); z-index: 20000; justify-content: center; align-items: center; cursor: zoom-out;" onclick="closeImageLightboxViewport()">
+    <button style="position: absolute; top: 20px; right: 20px; background: none; border: 0; color: #ffffff; font-size: 32px; font-weight: bold; cursor: pointer;" aria-label="Close Lightbox">×</button>
+    <div style="display: flex; flex-direction: column; max-width: 90vw; max-height: 90vh; align-items: center;">
+        <img id="lightboxMainImg" src="" alt="Full-Scale Historical Document Frame" style="max-width: 100%; max-height: 80vh; object-fit: contain; border: 3px solid #ffffff; box-shadow: 0 4px 24px rgba(0,0,0,0.5);">
+        <div id="lightboxCaptionDeck" style="color: #ffffff; text-align: center; margin-top: 15px; font-family: sans-serif; font-size: 14px; max-width: 600px; text-shadow: 0 2px 4px rgba(0,0,0,0.8);"></div>
+    </div>
+</div>
+</body>
+</html>

@@ -64,6 +64,12 @@
     "media_id": "img_Be-er Tuvia_before_1899",
     "sort_anchors": {
       "after": "ev_russian_pogroms_wave1"
+    },
+    "wikipedia_title_overrides": {
+      "de": "Alija"
+    },
+    "wikipedia_section_overrides": {
+      "de": "Die erste Alija"
     }
   },
   {
@@ -73,7 +79,13 @@
     "start": "1904",
     "end": "1914",
     "context_id": "context_aliyah",
-    "media_id": "img_Pale_of_settlement_1884"
+    "media_id": "img_Pale_of_settlement_1884",
+    "wikipedia_title_overrides": {
+      "de": "Alija"
+    },
+    "wikipedia_section_overrides": {
+      "de": "Die zweite Alija"
+    }
   },
   {
     "id": "ev_battle_of_jerusalem_1917",
@@ -93,7 +105,13 @@
     "start": "1919",
     "end": "1923",
     "context_id": "context_aliyah",
-    "media_id": "img_Hachshara"
+    "media_id": "img_Hachshara",
+    "wikipedia_title_overrides": {
+      "de": "Alija"
+    },
+    "wikipedia_section_overrides": {
+      "de": "Die dritte Alija"
+    }
   },
   {
     "id": "ev_fourth_aliyah",
@@ -102,7 +120,13 @@
     "start": "1924",
     "end": "1929",
     "context_id": "context_aliyah",
-    "media_id": "img_PikiWiki_Israel_20841_The_Palmach"
+    "media_id": "img_PikiWiki_Israel_20841_The_Palmach",
+    "wikipedia_title_overrides": {
+      "de": "Alija"
+    },
+    "wikipedia_section_overrides": {
+      "de": "Die vierte Alija"
+    }
   },
   {
     "id": "ev_fifth_aliyah",
@@ -111,7 +135,13 @@
     "start": "1929",
     "end": "1939",
     "context_id": "context_aliyah",
-    "media_id": "img_de_immigrants_at_jaffa_port"
+    "media_id": "img_de_immigrants_at_jaffa_port",
+    "wikipedia_title_overrides": {
+      "de": "Alija"
+    },
+    "wikipedia_section_overrides": {
+      "de": "Die fünfte Alija"
+    }
   },
   {
     "id": "ev_aliyah_bet",
@@ -120,7 +150,13 @@
     "start": "1933",
     "end": "1948",
     "context_id": "context_aliyah",
-    "media_id": ""
+    "media_id": "",
+    "wikipedia_title_overrides": {
+      "de": "Alija"
+    },
+    "wikipedia_section_overrides": {
+      "de": "Die Alija Bet"
+    }
   },
   {
     "id": "ev_nakba_phase1",

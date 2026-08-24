@@ -1,49 +1,43 @@
 let globalEventsRegistry = [];
 let masterDataset = [];
 let timelineInstance = null;
+let lethalityGraphInstance = null;
 let selectedActiveLanguageCode = 'en';
 let activeSelectedEventId = null;
-
 // Ingest both compiled assets and localized glossary matrices asynchronously
 Promise.all([
     fetch('generated/events.json').then(res => res.json()),
     fetch('generated/media.json').then(res => res.json()).catch(() => ({})),
-    fetch('generated/labels.json').then(res => res.json()).catch(() => ({}))
-]).then(([events, media, labels]) => {
+    fetch('generated/labels.json').then(res => res.json()).catch(() => ({})),
+    fetch('generated/lethality.json').then(res => res.json()).catch(() => [])
+]).then(([events, media, labels, lethalityData]) => {
     masterDataset.events = events;
     masterDataset.media = media;
     masterDataset.labels = labels;
-    
-    // EXTRACT INCOMING URL ROUTER ARGUMENTS
+    masterDataset.lethality = lethalityData;
     const urlParamsQueryString = new URLSearchParams(window.location.search);
-    const urlLanguageParameter  = urlParamsQueryString.get('L'); // e.g. "?L=de"
     const rawUrlEventSlugParameter = urlParamsQueryString.get('E'); // e.g. "&E=ev_battle_of_jerusalem_1917"
-
-    // 2. RESOLVE CODES & SET INTERFACE DIRECTION
-    if (urlLanguageParameter && ['en','de','ar','he','id','fr','es'].includes(urlLanguageParameter.toLowerCase())) {
-        selectedActiveLanguageCode = urlLanguageParameter.toLowerCase();
-        localStorage.setItem('user-selected-language-code', selectedActiveLanguageCode);
+    masterDataset.events = events;
+    masterDataset.media = media;
+    // Extract the active language code directly from the current static file name string!
+    // Matches patterns like "index_de.html" or "index_ar.html" fluidly
+    const fileNameMatchPattern = window.location.pathname.match(/index_([a-z]{2})\.html/);
+    if (fileNameMatchPattern && fileNameMatchPattern[1]) {
+        selectedActiveLanguageCode = fileNameMatchPattern[1];
     } else {
-        const storedPreference = localStorage.getItem('user-selected-language-code');
-        selectedActiveLanguageCode = storedPreference ? storedPreference : 'en';
+        // Default baseline configuration if landing on base root index.html
+        const cachedChoice = localStorage.getItem('user-selected-language-code');
+        selectedActiveLanguageCode = cachedChoice ? cachedChoice : 'en';
     }
-    // Sync the dropdown menu indicator control to match the resolved state variables
+    // Keep your working dropdown sync and rendering sequences active below...
     document.getElementById('langSelector').value = selectedActiveLanguageCode;
-    const isRtl = ['ar', 'he'].includes(selectedActiveLanguageCode);
-    
-    // document.documentElement.setAttribute('lang', selectedActiveLanguageCode);
-    // document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
-
     // Draw primary dashboard presentation layout
     renderAllInterfaceComponents();
     initInterfaceThemeEngine();
-    
     let resolvedTargetEventId = null;
-    
     if (rawUrlEventSlugParameter) {
         // Clean up incoming url parameters, mapping spacing components safely
         const normalizedUrlSlug = decodeURIComponent(rawUrlEventSlugParameter).replace(/_/g, ' ').toLowerCase().trim();
-
         // Scan the events array to find the item carrying the localized title match for the ACTIVE language choice!
         const matchedSlugEventNode = masterDataset.events.find(e => {
             // Check if the current language has a matching title entry text string character
@@ -53,27 +47,22 @@ Promise.all([
             // Fall back to check against the core default english baseline string title properties
             return (e.title && e.title.toLowerCase().trim() === normalizedUrlSlug) || (e.id.toLowerCase() === normalizedUrlSlug);
         });
-
         if (matchedSlugEventNode) {
             resolvedTargetEventId = matchedSlugEventNode.id;
         }
     }
-    
     // If no localized parameter matched or was found, fall back to check memory placeholders
     if (!resolvedTargetEventId) {
         resolvedTargetEventId = localStorage.getItem('user-active-event-id');
     }
-    
-    // 4. TRIGGER VIEW CENTER AND SELECTION MARKS
+    // TRIGGER VIEW CENTER AND SELECTION MARKS
     if (resolvedTargetEventId) {
         const matchedNode = masterDataset.events.find(e => e.id === resolvedTargetEventId);
         if (matchedNode) {
             activeSelectedEventId = resolvedTargetEventId;
-            
             // Highlight item selectors across columns instantly
             displayDeepDetailsView(activeSelectedEventId);
             focusAndScrollSidebarListCard(activeSelectedEventId);
-
             // Force Vis.js timeline canvas to center viewport cleanly onto the targeted year
             if (timelineInstance) {
                 timelineInstance.setSelection(activeSelectedEventId, { focus: true });
@@ -82,55 +71,13 @@ Promise.all([
         }
         localStorage.removeItem('user-active-event-id'); // Clear out tracker tokens cleanly
     }
-    /*
-});
-    
-    
-
-    // 3. RESOLVE DEEP-LINK DECK SELECTIONS
-    let targetInitialFocusEventId = urlEventDeepLinkParameter;
-    
-    // If no URL parameter exists, look for a temporary fallback token from an active reload pass
-    if (!targetInitialFocusEventId) {
-        targetInitialFocusEventId = localStorage.getItem('user-active-event-id');
-    }
-    
-    if (targetInitialFocusEventId) {
-        const matchedNode = masterDataset.events.find(e => e.id === targetInitialFocusEventId);
-        if (matchedNode) {
-            activeSelectedEventId = targetInitialFocusEventId;
-            
-            // Highlight item selectors across panels instantly
-            displayDeepDetailsView(activeSelectedEventId);
-            focusAndScrollSidebarListCard(activeSelectedEventId);
-
-            // Force Vis.js timeline canvas to center viewport cleanly onto the targeted year
-            if (timelineInstance) {
-                timelineInstance.setSelection(activeSelectedEventId, { focus: true });
-                timelineInstance.moveTo(`${matchedNode.start.substring(0, 4)}-01-01`);
-            }
-        }
-        localStorage.removeItem('user-active-event-id'); // Wipe placeholder states cleanly
-    }
-    //selectedActiveLanguageCode = document.getElementById('langSelector').value;
-    const storedLanguageChoice = localStorage.getItem('user-selected-language-code');
-    if (storedLanguageChoice) {
-        selectedActiveLanguageCode = storedLanguageChoice;
-        document.getElementById('langSelector').value = selectedActiveLanguageCode;
-    }
-
-
-    // Execute unified application render block
-    renderAllInterfaceComponents();
-    initInterfaceThemeEngine();
-    */
 }).catch(err => console.error("Error loading frontend data assets:", err));
 
 /**
  * UNIFIED APP RENDER STATE LOOP: Flushes and completely rewrites all components on language shift
  */
 function renderAllInterfaceComponents() {
-    // 1. Resolve UI Global Label Strings Translation
+    // Resolve UI Global Label Strings Translation
     const fallbackLabels = {
         headline: "Historical Conflict Ledger",
         subheading: "Side-by-side verification interface. Select entries to reveal language source trees.",
@@ -142,10 +89,8 @@ function renderAllInterfaceComponents() {
     };
     const getLabel = (key) => (masterDataset.labels[key] && masterDataset.labels[key][selectedActiveLanguageCode]) || fallbackLabels[key];
     //const getLabel = (key, fallback) => (masterDataset.labels[key] && masterDataset.labels[key][selectedActiveLanguageCode]) || fallback;
-
     const dir = ['ar', 'he'].includes(selectedActiveLanguageCode) ? 'rtl' : 'ltr';
     const isRtl = ['ar', 'he'].includes(selectedActiveLanguageCode);
-    
     const getLabelText = (key, defaultFallbackString) => {
         if (masterDataset.labels && masterDataset.labels[key] && masterDataset.labels[key][selectedActiveLanguageCode]) {
             return masterDataset.labels[key][selectedActiveLanguageCode];
@@ -172,8 +117,6 @@ function renderAllInterfaceComponents() {
     document.getElementById('optThemeDark').textContent = getLabel('theme_dark', "🌙 Dark High-Contrast");
     document.getElementById('uiTopAttributionBanner').innerHTML = getLabelText('top_attribution', "Ingested directly from Wikipedia under CC-BY-SA terms.");
     document.getElementById('uiFooterLegalText').innerHTML = getLabelText('footer_legal', "Data Attribution & Licensing Notice...");
-
-    
     const localizedTextBoxes = [
         document.getElementById('uiMainHeadline'),
         document.getElementById('uiSubheading'),
@@ -186,7 +129,6 @@ function renderAllInterfaceComponents() {
             box.style.textAlign = isRtl ? 'right' : 'justify';
         }
     });
-    //contentBox.setAttribute('dir', ['ar', 'he'].includes(selectedActiveLanguageCode) ? 'rtl' : 'ltr');
     // Redraw Dependent Navigation Panels
     applySidebarFilterPass();
     renderTimelineCanvasView(globalFilteredEventsSubset(), dir);
@@ -206,16 +148,19 @@ function globalFilteredEventsSubset() {
 
 function renderTimelineCanvasView(eventsToRender, dir) {
     const container = document.getElementById('timelineContainer');
-    //const container = document.getElementById('timelineWrapperFrame');
+    const lethalityGraphContainer = document.getElementById('lethalityGraphContainer');
     if (timelineInstance) {
         timelineInstance.destroy();
         timelineInstance = null;
+    }
+    if (lethalityGraphInstance) {
+      lethalityGraphInstance.destroy();
+      lethalityGraphInstance = null;
     }
     container.innerHTML = '';
     const items = eventsToRender.map(e => {
         const rawStart = String(e.start).trim();
         const rawEnd = e.end ? String(e.end).trim() : "";
-
         // Dynamic on-the-fly range calculation padding
         let visStart = rawStart;
         if (rawStart.length === 4) {
@@ -235,6 +180,40 @@ function renderTimelineCanvasView(eventsToRender, dir) {
         };
         return itemNode;
     });
+    // ==========================================================================
+    // Strict Int-Parsed Graph2d Mapping Engine
+    // Transforms text parameters into mathematical integers to render curves cleanly
+    // ==========================================================================
+    const graphItems = [];
+    if (masterDataset.lethality && masterDataset.lethality.length > 0) {
+    // console.log("masterDataset.lethality", masterDataset.lethality);
+        masterDataset.lethality.forEach(point => {
+            // Ensure the data coordinates exist before mapping them
+            const israeliCount = point.israeli_side !== undefined ? parseInt(point.israeli_side, 10) : 0;
+            const palestinianCount = point.palestinian_side !== undefined ? parseInt(point.palestinian_side, 10) : 0;
+
+            // Only push coordinates to the canvas loop if the year parsing is clean
+            if (point.time) {
+                graphItems.push({
+                    x: String(point.time).trim(),
+                    y: isNaN(israeliCount) ? 0 : israeliCount, 
+                    group: 0
+                });
+                graphItems.push({
+                    x: String(point.time).trim(),
+                    y: isNaN(palestinianCount) ? 0 : palestinianCount,
+                    group: 1
+                });
+            }
+        });
+    }
+
+    const groupDataset = new vis.DataSet([
+        { id: 0, content: 'Israeli Factions Casualties', options: { drawPoints: { style: 'square' }, shaded: { orientation: 'bottom' } }},
+        { id: 1, content: 'Palestinian Factions Casualties', options: { drawPoints: { style: 'circle' }, shaded: { orientation: 'bottom' } }}
+    ]);
+    const initialStartWindow = '1915-01-01';
+    const initialEndWindow = '1950-01-01';
     const options = {
         stack: true,
         margin: {
@@ -253,22 +232,7 @@ function renderTimelineCanvasView(eventsToRender, dir) {
     };
     options.rtl = dir == 'rtl' ? true : false;
     timelineInstance = new vis.Timeline(container, items, options);
-    applyCustomVerticalLines();
-    /*
-    // 3. Early Ottoman Anchor: 31 August 1876 (Ascension of Abdul Hamid II)
-    timelineInstance.addCustomTime('1876-08-31', 'axis_anchor_1876');
-    // 2. Ottoman Transition Axis Anchor: 9 December 1917 (Fall of Jerusalem)
-    timelineInstance.addCustomTime('1917-12-09', 'axis_anchor_1917');
-    // 1. Mandatory Axis Anchor: 14 May 1948 (End of Mandate / Declaration)
-    timelineInstance.addCustomTime('1948-05-14', 'axis_anchor_1948');
-    // Optional: Ensure researchers cannot accidentally drag or displace your structural milestone lines
-    timelineInstance.on('timechange', function (properties) {
-        // Reverts any manual drag adjustments instantly back to their true historical coordinates
-        if (properties.id === 'axis_anchor_1948') timelineInstance.setCustomTime('1948-05-14', 'axis_anchor_1948');
-        if (properties.id === 'axis_anchor_1917') timelineInstance.setCustomTime('1917-12-09', 'axis_anchor_1917');
-        if (properties.id === 'axis_anchor_1876') timelineInstance.setCustomTime('1876-08-31', 'axis_anchor_1876');
-    });
-    */
+    //applyCustomVerticalLines();
     timelineInstance.on('select', (props) => {
         if(props.items.length > 0) {
             activeSelectedEventId = props.items[0];
@@ -276,24 +240,38 @@ function renderTimelineCanvasView(eventsToRender, dir) {
             focusAndScrollSidebarListCard(activeSelectedEventId);
         }
     });
+    lethalityGraphInstance = new vis.Graph2d(lethalityGraphContainer, graphItems, groupDataset, {
+        start: initialStartWindow,
+        end: initialEndWindow,
+        zoomable: false,
+        moveable: true,
+        sampling: false,
+        graphHeight: '110px',
+        showCurrentTime: false,
+        legend: { left: { position: 'top-left' } }
+    });
+    lethalityGraphInstance.rtl = dir == 'rtl' ? true : false;
+    timelineInstance.on('rangechange', (props) => {
+        lethalityGraphInstance.setWindow({ start: props.start, end: props.end, animation: false });
+    });
+    lethalityGraphInstance.on('rangechange', (props) => {
+        timelineInstance.setWindow({ start: props.start, end: props.end, animation: false });
+    });
+    if (typeof applyCustomVerticalLines === "function") applyCustomVerticalLines();
 }
 
 /**
- * FIXED: Advanced Dynamic Localized Axis Markers Deck
- * Injects vertical milestone threshold boundaries cleanly using automated translation files
- */
-/**
- * FIXED: Production-Ready Localized Vertical Milestone Marker System
- * Explicitly locks line paths from manual drift without relying on untriggered events
+ * Localized Vertical Milestone Marker System
+ * RE-ENTRANT VERTICAL AXIS ENGINE
+ * Employs absolute Event Delegation to protect click listeners from viewport zoom repaints
  */
 function applyCustomVerticalLines() {
     if (!timelineInstance || !masterDataset.events || masterDataset.events.length === 0) return;
 
-    // Define the exact group profiles you want to lock as vertical axis lines
     const targetedVerticalLines = [
-        { id: "ev_sultan_abdul_hamid_ii_1876", styleClass: "axis_anchor_1876", fallbackText: "31 Aug 1876" },
-        { id: "ev_battle_of_jerusalem_1917", styleClass: "axis_anchor_1917", fallbackText: "9 Dec 1917" },
         { id: "ev_israeli_declaration_of_independence", styleClass: "axis_anchor_1948", fallbackText: "14 May 1948" },
+        { id: "ev_battle_of_jerusalem_1917", styleClass: "axis_anchor_1917", fallbackText: "9 Dec 1917" },
+        { id: "ev_sultan_abdul_hamid_ii_1876", styleClass: "axis_anchor_1876", fallbackText: "31 Aug 1876" }
     ];
 
     targetedVerticalLines.forEach(line => {
@@ -305,80 +283,70 @@ function applyCustomVerticalLines() {
         const displayLabelString = `${rawDateString.substring(0, 10)}: ${localizedMarkerText}`;
 
         try {
-            // Clean out old tracking IDs cleanly to handle language hot-swaps
             timelineInstance.removeCustomTime(line.id);
-        } catch (e) { /* Safe catch for clean overwrites */ }
+        } catch (e) {}
 
         let finalTimelineMarkerDate = null;
         const dateMatchPattern = rawDateString.match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
 
         if (dateMatchPattern) {
-            // FIXED: Extracted elements target separate array lookup index indices safely!
             const yearInt  = parseInt(dateMatchPattern[1], 10);
-            
-            // Group 2 holds Month string (e.g. "08"). Fallback to 0 (Jan) if missing
             const monthInt = dateMatchPattern[2] ? (parseInt(dateMatchPattern[2], 10) - 1) : 0;
-            
-            // Group 3 holds Day string (e.g. "31"). Fallback to 1 (1st) if missing
             const dayInt   = dateMatchPattern[3] ? parseInt(dateMatchPattern[3], 10) : 1;
-
-            // Force pure UTC instantiation at absolute midnight
             finalTimelineMarkerDate = new Date(Date.UTC(yearInt, monthInt, dayInt, 0, 0, 0));
         } else {
-            // Fallback for unparseable entries
             finalTimelineMarkerDate = new Date(Date.UTC(1948, 4, 14, 0, 0, 0));
         }
 
-        // ==========================================================================
-        // FIXED: Hardcode Line Stability Inside the Options Parameters Matrix
-        // Passing an options block with editable:false locks the line natively!
-        // ==========================================================================
-        // Lock the line state to prevent dragging entirely, rendering the timechange hook obsolete
-        const itemOptions = {
-            id: line.id,
-            editable: false 
-        };
-        timelineInstance.addCustomTime(finalTimelineMarkerDate, line.id);
-        timelineInstance.setCustomTimeTitle('qqqqqq', line.id); // Clear native floating tooltips
-        
+        timelineInstance.addCustomTime(finalTimelineMarkerDate, line.id, { editable: false });
+        timelineInstance.setCustomTimeTitle('', line.id);
 
-        // Inject dynamic attributes into the DOM layer safely
-                // Inject dynamic attributes into the DOM layer safely
         setTimeout(() => {
             const axisElementNode = document.querySelector(`.vis-custom-time.${line.id}`);
             if (axisElementNode) {
                 axisElementNode.classList.add(line.styleClass);
-                
-                // 1. FIXED: Remove any old text label remnants to handle language page hot-swaps cleanly
+
                 const oldLabel = axisElementNode.querySelector('.custom-axis-label-card');
                 if (oldLabel) oldLabel.remove();
 
-                // 2. FIXED: Construct a true HTML element label box that sits natively inside the view tree
                 const labelCardElement = document.createElement('div');
                 labelCardElement.className = 'custom-axis-label-card';
                 labelCardElement.textContent = displayLabelString;
-
-                // 3. FIXED: Wire the localized click handlers directly to BOTH the line bar and the label text block
-                const triggerEventSelectionHandler = (event) => {
-                    event.stopPropagation(); // Prevents canvas tracking click scrambling errors
-                    activeSelectedEventId = line.id;
-                    displayDeepDetailsView(line.id);
-                    highlightActiveSidebarListCard(line.id);
-                };
-
-                axisElementNode.style.cursor = 'pointer';
-                axisElementNode.onclick = triggerEventSelectionHandler;
-                
                 labelCardElement.style.cursor = 'pointer';
-                labelCardElement.onclick = triggerEventSelectionHandler;
 
-                // Nest the clickable text layout box right inside the vertical indicator axis line element
                 axisElementNode.appendChild(labelCardElement);
+                axisElementNode.style.cursor = 'pointer';
             }
         }, 50);
-
     });
+
+    // ==========================================================================
+    // Global Event Delegation Click Listener Core Hook
+    // Captures click event sweeps safely, ensuring zoom levels never break actions!
+    // ==========================================================================
+    const masterTimelineFrameBox = document.getElementById('timelineContainer');
+    // Remove any previously bound delegation instances to avoid double click stack bugs
+    if (masterTimelineFrameBox.getAttribute('data-listener-active') !== 'true') {
+        masterTimelineFrameBox.addEventListener('click', function(event) {
+            // Find if the clicked component or its parents carry a vertical line tracking token class
+            const targetLineNode = event.target.closest('.vis-custom-time');
+            if (!targetLineNode) return;
+            // Match against our explicit marker database lines list
+            const matchedLineConfig = targetedVerticalLines.find(line => targetLineNode.classList.contains(line.id));
+            if (matchedLineConfig) {
+                event.stopPropagation();
+                activeSelectedEventId = matchedLineConfig.id;
+                displayDeepDetailsView(matchedLineConfig.id);
+                highlightActiveSidebarListCard(matchedLineConfig.id);
+                if (timelineInstance) {
+                    timelineInstance.setSelection(matchedLineConfig.id, { focus: true });
+                }
+            }
+        });
+        masterTimelineFrameBox.setAttribute('data-listener-active', 'true');
+    }
 }
+
 
 function focusAndScrollSidebarListCard(eventId) {
     highlightActiveSidebarListCard(eventId);
@@ -399,96 +367,72 @@ function highlightActiveSidebarListCard(eventId) {
 }
 
 /**
- * FIXED: Accessible Semantic List Renderer
+ * Accessible Semantic List Renderer
  * Generates true HTML anchor href elements using localized URL deep-link query structures
+ * Streamlined Evolutionary Sidebar List Hydrator
+ * Re-uses pre-baked HTML code elements on boot to maximize execution performance and SEO scores
  */
 function renderSidebarList(events) {
     const container = document.getElementById('listScrollArea'); 
+    // CAPTURE TRANSITION STATE: If we are viewing English baseline, and the DOM elements are
+    // already pre-baked inside the file container, just select them and hook up their interactions!
+    const preExistingAnchorElements = container.querySelectorAll('a.compact-list-card');
+    if (selectedActiveLanguageCode === 'en' && preExistingAnchorElements.length === events.length && container.getAttribute('data-lang-loaded') !== 'en') {
+        console.log("⚡ Re-using pre-baked index.html semantic markup cards for maximum load performance.");
+        events.forEach(e => {
+            const anchorElementNode = document.getElementById(`sidebar_card_${e.id}`);
+            if (anchorElementNode) {
+                const displayYear = e.start.substring(0, 4);
+                // Map the interactive left-click interception parameters without recreating strings
+                anchorElementNode.onclick = (event) => {
+                    if (event.metaKey || event.ctrlKey || event.button === 1) return;
+                    event.preventDefault();
+                    activeSelectedEventId = e.id;
+                    displayDeepDetailsView(e.id, anchorElementNode.getAttribute('href'));
+                    highlightActiveSidebarListCard(e.id);
+                    if (timelineInstance) {
+                        timelineInstance.setSelection(e.id, { focus: true });
+                        timelineInstance.moveTo(`${displayYear}-01-01`);
+                    }
+                };
+            }
+        });
+        container.setAttribute('data-lang-loaded', 'en');
+        if (activeSelectedEventId) highlightActiveSidebarListCard(activeSelectedEventId);
+        return; // Break out of function early to skip performance-heavy innerHTML rebuilding loops!
+    }
+    // FALLBACK TRACK: Rebuild the strings natively if they choose another language dropdown target (DE, AR, HE, etc.)
     container.innerHTML = '';
-    
+    container.setAttribute('data-lang-loaded', selectedActiveLanguageCode);
     events.forEach(e => {
         const displayYear = e.start.substring(0, 4);
-        
-        // 1. Resolve the active localized title to match your new slug routing engine layout
         const localizedCardTitle = (e.titles && e.titles[selectedActiveLanguageCode]) || e.title;
         const safeUrlSlug = encodeURIComponent(localizedCardTitle.replace(/ /g, '_'));
-        
-        // 2. FIXED: Compile a completely valid, accessible static URL parameter link path destination
-        const trueDeepLinkUrlAddress = `?L=${selectedActiveLanguageCode}&E=${safeUrlSlug}`;
-
-        // 3. FIXED: Evolve the container node from a plain 'div' into a standard structural 'a' anchor link tag
+        // const trueDeepLinkUrlAddress = `?L=${selectedActiveLanguageCode}&E=${safeUrlSlug}`;
+        const trueDeepLinkUrlAddress = `?E=${safeUrlSlug}`;
         const anchorCardElement = document.createElement('a'); 
         anchorCardElement.className = 'compact-list-card';
         anchorCardElement.id = `sidebar_card_${e.id}`;
-        
-        // Native accessibility parameters: Forces screen-readers to interpret this cleanly
         anchorCardElement.href = trueDeepLinkUrlAddress;
-        anchorCardElement.setAttribute('aria-label', `Go to event: ${localizedCardTitle} (${displayYear})`);
-        
-        // Injected inner markup metrics block remains identical
         anchorCardElement.innerHTML = `
             <span class="date">${displayYear}</span>
-            <h4 style="margin:2px 0 0 0; font-size:14px;">${localizedCardTitle}</h4>
+            <h4 style="margin:2px 0 0 0; font-size:14px; display:inline-block;">${localizedCardTitle}</h4>
         `;
-        
-        // 4. FIXED: Advanced Hybrid Event Interception Matrix
         anchorCardElement.onclick = (event) => {
-            // A) If a user middle-clicks, holding Control/Command, or right-clicks to open a tab,
-            // we do NOT intercept it! Let the native browser open the new deep-link tab natively.
-            if (event.metaKey || event.ctrlKey || event.button === 1) {
-                return; 
-            }
-            
-            // B) Standard left-click interaction pattern: Intercept and animate smoothly without a slow page refresh
-            event.preventDefault(); 
-            
+            if (event.metaKey || event.ctrlKey || event.button === 1) return;
+            event.preventDefault();
             activeSelectedEventId = e.id; 
-            const nativeLinkHref = anchorCardElement.getAttribute('href');
-            displayDeepDetailsView(e.id, nativeLinkHref);
+            displayDeepDetailsView(e.id, anchorCardElement.getAttribute('href'));
             highlightActiveSidebarListCard(e.id);
-            
             if (timelineInstance) { 
                 timelineInstance.setSelection(e.id, { focus: true }); 
                 timelineInstance.moveTo(`${displayYear}-01-01`); 
             } 
         };
-        
         container.appendChild(anchorCardElement);
     });
-    
-    // Re-apply highlight markers across switch states seamlessly
     if (activeSelectedEventId) highlightActiveSidebarListCard(activeSelectedEventId);
 }
-
-
-/*
-function renderSidebarList(events) {
-    const container = document.getElementById('listScrollArea'); container.innerHTML = '';
-    events.forEach(e => {
-        const displayYear = e.start.substring(0, 4);
-        const card = document.createElement('div');
-        card.className = 'compact-list-card';
-        card.id = 'sidebar_card_' + e.id;
-        // Dynamically map list row card text titles to current language setting
-        const localizedCardTitle = (e.titles && e.titles[selectedActiveLanguageCode]) || e.title;
-        card.innerHTML = `<span class="date">${displayYear}</span><h4 style="margin:2px 0 0 0; font-size:14px;">${localizedCardTitle}</h4>`;
-        card.onclick = () => {
-            const allCards = document.querySelectorAll('.compact-list-card');
-            allCards.forEach(function(item) {
-                item.classList.remove('active')
-            })
-            card.classList.add('active');
-            activeSelectedEventId = e.id;
-            displayDeepDetailsView(e.id);
-            if (timelineInstance) {
-                timelineInstance.setSelection(e.id, { focus: true });
-                timelineInstance.moveTo(`${displayYear}-01-01`);
-            }
-        };
-        container.appendChild(card);
-    });
-}
-*/
 
 function applySidebarFilterPass() {
     const subset = globalFilteredEventsSubset();
@@ -502,81 +446,31 @@ function filterSidebarList() {
 }
 
 /**
- * Global Language Switching Routing Controller
- * Saves workflow state variables and auto-reloads the page when crossing RTL/LTR boundaries
+ * Streamlined Multi-Page Language Routing Handler
+ * Transitions visitors directly to the absolute pre-baked language sub-file instantly
  */
-function changeGlobalInterfaceLanguage() {
-    const nextLanguageCode = document.getElementById('langSelector').value;
-    
-    localStorage.setItem('user-selected-language-code', nextLanguageCode);
-    
-    let localizedSlugUrlSuffix = '';
-    if (activeSelectedEventId) {
-        localStorage.setItem('user-active-event-id', activeSelectedEventId);
-        const activeNode = masterDataset.events.find(e => e.id === activeSelectedEventId);
-        
-        if (activeNode) {
-            // Find the translation text string for the TARGET language we are shifting INTO!
-            const targetLanguageTitle = (activeNode.titles && activeNode.titles[nextLanguageCode]) || activeNode.title;
-            // Percent-encode special parameters (like Arabic/Hebrew scripts or spaces) to build a valid URL slug string
-            const safeUrlSlug = encodeURIComponent(targetLanguageTitle.replace(/ /g, '_'));
-            localizedSlugUrlSuffix = `&E=${safeUrlSlug}`;
-        }
-    }
-
-    // Automatically forwards your fully translated parameters to the reloaded window location target!
-    window.location.href = `?L=${nextLanguageCode}${localizedSlugUrlSuffix}`;
-}
-
-/*
-function changeGlobalInterfaceLanguage() {
-    const nextLanguageCode = document.getElementById('langSelector').value;
-    
-    localStorage.setItem('user-selected-language-code', nextLanguageCode);
-    if (activeSelectedEventId) {
-        localStorage.setItem('user-active-event-id', activeSelectedEventId);
-    }
-
-    // Build standard, clean query parameters list string
-    let currentEventQueryToken = activeSelectedEventId ? `&E=${activeSelectedEventId}` : '';
-    
-    // Automatically forwards your parameter coordinates to the reloaded window location target!
-    window.location.href = `?L=${nextLanguageCode}${currentEventQueryToken}`;
-}
 function changeGlobalInterfaceLanguage() {
     const selectorElement = document.getElementById('langSelector');
     if (!selectorElement) return;
-
-    const previousLanguageCode = selectedActiveLanguageCode; // Old active state
-    const nextLanguageCode = selectorElement.value;        // Newly targeted choice
-    
-    // Evaluate if this language change crosses the RTL/LTR structural line boundary
-    const wasRtl = ['ar', 'he'].includes(previousLanguageCode);
-    const isRtl  = ['ar', 'he'].includes(nextLanguageCode);
-
-    // Save the new choice into browser memory so it persists across page refreshes
-    localStorage.setItem('user-selected-language-code', nextLanguageCode);
-    
-    // Save the currently active event ID so the visitor doesn't lose their place
+    const targetedLanguageCode = selectorElement.value; // e.g. "de" or "ar"
+    localStorage.setItem('user-selected-language-code', targetedLanguageCode);
+    let activeEventUrlParamSuffix = '';
     if (activeSelectedEventId) {
         localStorage.setItem('user-active-event-id', activeSelectedEventId);
+        const activeNode = masterDataset.events.find(e => e.id === activeSelectedEventId);
+        if (activeNode) {
+            const localizedTitle = (activeNode.titles && activeNode.titles[targetedLanguageCode]) || activeNode.title;
+            activeEventUrlParamSuffix = `?E=${encodeURIComponent(localizedTitle.replace(/ /g, '_'))}`;
+        }
     }
-
-    // FIXED: If crossing between structural direction boundaries, force a page reload!
-    if (wasRtl !== isRtl) {
-        window.location.reload(); 
-        return; // Stops execution loop immediately to let the browser refresh natively
+    // Performs an instantaneous native routing jump directly to the target static page!
+    // window.location.href = `index_${targetedLanguageCode}.html${activeEventUrlParamSuffix}`;
+    if (targetedLanguageCode === 'en') {
+        window.location.href = `index.html${activeEventUrlParamSuffix}`;
+    } else {
+        window.location.href = `index_${targetedLanguageCode}.html${activeEventUrlParamSuffix}`;
     }
-
-    // Standard in-memory translation swap if switching between two LTR or two RTL languages
-    selectedActiveLanguageCode = nextLanguageCode;
-    document.documentElement.setAttribute('lang', selectedActiveLanguageCode);
-    // document.documentElement.setAttribute('dir', isRtl ? 'rtl' : 'ltr');
-
-    // Run your standard sidebar list and canvas filter components redraw passes
-    renderAllInterfaceComponents();
 }
-*/
 
 function initInterfaceThemeEngine() {
     const saved = localStorage.getItem('user-theme') || 'system';
@@ -601,26 +495,19 @@ function applyThemeStyles(theme) {
 
 function displayDeepDetailsView(eventId, targetHref = null) {
     const matched = masterDataset.events.find(e => e.id === eventId); 
-    if (!matched) return;
-    
+    if (!matched) {
+        console.log('eventId not found');
+        return;
+    }
     if (targetHref) {
         window.history.replaceState({ id: eventId }, '', targetHref);
     }
-    
     const activeLocalizedTitle = (matched.titles && matched.titles[selectedActiveLanguageCode]) || matched.title;
     const safeLiveUrlSlug = encodeURIComponent(activeLocalizedTitle.replace(/ /g, '_'));
-    
-    const updatedShareUrl = `?L=${selectedActiveLanguageCode}&E=${safeLiveUrlSlug}`;
+    //const updatedShareUrl = `?L=${selectedActiveLanguageCode}&E=${safeLiveUrlSlug}`;
+    const updatedShareUrl = `?E=${safeLiveUrlSlug}`;
     window.history.replaceState({ id: eventId }, '', updatedShareUrl);
-
     const cleanEventId = Array.isArray(eventId) ? eventId[0] : eventId;
-    /*
-    const matched = masterDataset.events.find(e => e.id === cleanEventId);
-    if (!matched) {
-      console.log('eventId not found');
-      return;
-    }
-    */
     const contentBox = document.getElementById('inspectorContent');
     const lang = document.getElementById('langSelector').value;
     contentBox.setAttribute('dir', ['ar', 'he'].includes(selectedActiveLanguageCode) ? 'rtl' : 'ltr');

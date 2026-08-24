@@ -425,3 +425,16 @@ a.compact-list-card:focus-visible {
     box-shadow: 0 0 0 2px var(--accent-blue);
     background: var(--bg-secondary);
 }
+
+/* Custom Graph2d Styling Tracks Override Layout rules */
+.vis-graph-group0 {
+    stroke: #0044cc !important; /* Royal Blue line for Israeli demographic markers */
+    fill: rgba(0, 68, 204, 0.08) !important;
+}
+.vis-graph-group1 {
+    stroke: #cc0000 !important; /* Crimson Red line for Palestinian demographic markers */
+    fill: rgba(204, 0, 0, 0.08) !important;
+}
+.vis-panel.vis-background, .vis-custom-time {
+    z-index: 10 !important; /* Ensures milestone threshold vertical lines cross BOTH charts cleanly */
+}

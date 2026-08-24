@@ -1,0 +1,679 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://github.io{pageFileNameTarget}#website",
+      "url": "https://github.io{isDefaultIndexRoot ? '' : pageFileNameTarget}",
+      "name": "Hotspot Israel in the Middle East",
+      "description": "An interactive chronological ledger mapping geopolitical milestones from 1843 onward.",
+      "inLanguage": "de"
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Publication_of_'Minchat_Yehuda'",
+      "name": "Publication of 'Minchat Yehuda'",
+      "inLanguage": "de",
+      "startDate": "1843",
+      "endDate": "1843",
+      "description": "Judah Alkalai (auch Juda Alkalay, Jehuda ben Schelomo Chai oder Haj Alkalai; geboren 1798 in Sarajevo; gestorben 1878 in Jerusalem) war längere Zeit Rabbiner in Semlin und ein früher Vorläufer des modernen, politischen Zionismus.\n\n\nLeben\nAlkalai wuchs in Jerusalem auf, kam als junger Mann nach Semlin und war von der Überzeugung durchdrungen, die Juden sollten nicht auf den Messias warten, der sie nach Palästina zurückführen werde, sondern selbst aktiv werden und alle Anstrengungen unternehmen, um dorthin zu kommen und sich dort anzusiedeln.\n1844 bekämpfte er die Beschlüsse der deutschen Rabbinerversammlung, die Erinnerung und Ausrichtung nach Zion aus den Gebeten zu tilgen, und gründete auch zur Verwirklichung seiner nationalen Idee Palästina-Kolonisationsvereine.\nDen traditionellen Begriff Teschuwa deutete er erstmals um: nicht als Rückkehr zu religiöser Observanz, sondern als Rückkehr nach Eretz Israel und zugleich als Erlösung der Juden und Lösung des Judenproblems in Europa und der Diaspora überhaupt. Der Zehnte sollte wieder eingeführt werden, um das große Siedlungswerk finanzieren zu helfen, ein jüdischer Ältestenrat als jüdisches Parlament sollte errichtet, die hebräische Sprache wiederbelebt und eine jüdische Armee aufgebaut werden.\nIn diesem Sinne war er sein Leben lang publizistisch aktiv, veröffentlichte eine Vielzahl von Zeitungsartikeln und Broschüren (z. B. Goral ladonaj, 1857) und reiste dafür werbend durch westeuropäische Länder.\nIn orthodoxen Kreisen riefen seine Ideen und Aktivitäten großen Widerstand hervor.\n\n\nLiteratur\nSalomon Wininger: Große Jüdische Na",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Ascension_of_Sultan_Abdul_Hamid_II%3A_Late_Ottoman_Administrative_Era",
+      "name": "Ascension of Sultan Abdul Hamid II: Late Ottoman Administrative Era",
+      "inLanguage": "de",
+      "startDate": "1876-08-31",
+      "endDate": "1909-04-27",
+      "description": "Abdülhamid II. (auch Abdulhamid und Abdul Hamid [osmanisch عبد الحميد ʿAbdü'l-Ḥamīd]; * 21. September 1842 in İstanbul; † 10. Februar 1918 ebenda) war vom 31. August 1876 bis zum 27. April 1909 Sultan des Osmanischen Reiches. Er war der zweite Sohn des Sultans Abdülmecid I. und folgte seinem Bruder Murad V. nach dessen Absetzung auf den Thron.\n\n\nLeben\n\n\nHerkunft und Werdegang\nAbdülhamid II. war der Sohn von Tîr-î-Müjgan Kadınefendi (türkisch Tirimüjgan Kadınefendi), einer Tscherkessin des Schapsugen-Stammes und des Sultans Abdülmecid I.\nSeine Mutter starb, als er elf Jahre alt war. Er wurde dann von einer kinderlosen Frau des Sultans, der Tscherkessin Perestû, aufgezogen. Seine Ausbildung übernahmen Privatlehrer. Er wurde in Arabisch, Persisch, den Islamwissenschaften und osmanischer Geschichte unterrichtet. Als europäische Fremdsprache lernte er Französisch. Nach osmanischer Tradition lernte er auch ein Handwerk, die Tischlerei, die er als erholsame Freizeitbeschäftigung betrieb.\nEr schuf sich neben dem Hofstaat ein Netz eigener Sozialkontakte, darunter auch griechische oder jüdische Bürger des osmanischen Reiches. Er zeigte sich modernen Ideen gegenüber aufgeschlossen. Er schätzte lebenslang klassische europäische Musik und die Oper, traditionelle türkische Kunstmusik (alaturka) hingegen langweilte ihn und wurde zu seiner Herrschaft besonders verunglimpft. Privat interessierte er sich für Detektivgeschichten aus Europa.\nAbdülhamid begleitete 1867 seinen Onkel, den Sultan Abdülaziz auf eine Europareise. Die Reise hinterließ bei ihm einen positiven Eindruck.\n\n\nFrühe Regieru",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Petah_Tikva_was_founded_in_1878",
+      "name": "Petah Tikva was founded in 1878",
+      "inLanguage": "de",
+      "startDate": "1878",
+      "endDate": "1878",
+      "description": "Petach Tikwa (hebräisch פֶּתַח תִּקְוָה Petach Tiqwah/Petach Tiḳwah, deutsch ‚Tor der Hoffnung‘ [pɛtaχ ˈtikva], arabisch بتاح تكفا, DMG Bitāḥ Tikfā;  auch Petah Tikva) ist eine Stadt in Israel. Sie liegt im Gebiet des Gusch Dan, nur wenige Kilometer östlich von Tel Aviv, im Zentralbezirk. Im Jahr 2022 zählte der Nachbarort Tel Avivs 264.046 Einwohner; er gehört damit zu den größten Städten Israels.\n\n\nGeschichte\n\nDie Geschichte Petach Tikwas reicht ins 19. Jahrhundert zurück. Im Jahr 1878 gründeten Siedler aus Jerusalem eine erste Siedlung auf dem Land, das sie von den im Ausland lebenden Jaffaer Grundbesitzern Salim al-Kassar und Anton al-Tayyan im Dorf Mlabbis gekauft hatten. Sie war die erste jüdische Bauernsiedlung („Moschava“) im damals osmanischen Palästina, weshalb sie später den Beinamen „Mutter der Moschavot“ erhielt. Allerdings war die erste Ortsgründung „gescheitert durch Malaria und Überschwemmungen“. Die „1882 dann 2., erfolgreiche Gründung, jetzt durch eingewanderte Juden“, lag zeitgleich mit der Gründung von Rischon LeZion und Rosch Pina. Einer der ersten Siedler war Mordechai Diskin, ein Einwanderer aus Grodno. Die Siedler benannten den neuen Ort nach einem Satz aus dem Buch Hosea: „Dann will ich ihr [gemeint ist Israel] von dorther ihre Weinberge geben und das Tal Achor zum Tor der Hoffnung machen.“ (Hos 2,17 ) Im Wappen steht auch noch der biblische Satz: „Wer sein Feld bestellt, wird satt von Brot“ aus dem Buch der Sprichwörter. (Spr 2,17 )\nAb 1888 erhielten die Siedler außerdem Unterstützung von Edmond de Rothschild, der viele Siedlungsprojekte im damalig",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Russian_Empire_Pogroms_(First_Wave)",
+      "name": "Russian Empire Pogroms (First Wave)",
+      "inLanguage": "de",
+      "startDate": "1881-04-27",
+      "endDate": "1884",
+      "description": "❌ Missing local asset payload cache file target: /de/Pogroms_in_the_Russian_Empire.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=The_first_Arab%E2%80%93Israeli_War_(1948)",
+      "name": "The first Arab–Israeli War (1948)",
+      "inLanguage": "de",
+      "startDate": "1948-05-15",
+      "endDate": "1949-03-10",
+      "description": "❌ Missing local asset payload cache file target: /de/1948_Arab–Israeli_War.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Die_erste_Alija",
+      "name": "Die erste Alija",
+      "inLanguage": "de",
+      "startDate": "1881",
+      "endDate": "1903",
+      "description": "Die erste Alija dauerte von 1882 bis 1903. Das Gebiet von Palästina gehörte damals zum Osmanischen Reich. Mit der ersten Alija kamen etwa 30.000 Einwanderer aus Osteuropa, Russland, Rumänien und dem Jemen.\nDie Gründe für eine Einwanderung lassen sich auf drei Faktoren zurückführen:\n\nDie uralte Sehnsucht der Juden nach ihrem historischen Heimatland.\nDie andauernden Pogrome in Russland.\nDie Überzeugung, dass nur die Rückkehr in das historische Heimatland imstande sein würde, das „jüdische Problem“ dauerhaft und grundlegend zu lösen.\nDie erste Alija wurde vor allem von den Bewegungen Chibbat Zion und der Bilu beeinflusst. Bilu ist eine Abkürzung für „Beit Ja'akov Lekhu Ve-nelkha“, „Haus Jakob, geht, lasst uns aufbrechen!“ (Jes 2,5 ).\nDiese Bewegungen haben auch die ersten landwirtschaftlichen Siedlungen, Moschawot gegründet, bis 1903 insgesamt 28, darunter in Judäa: Rischon LeZion, Ekron, Gedera, Petach Tikwa, Zichron Jaakov und in Obergaliläa: Rosch Pina, Jesod Hama’alah. Be’er Tuvia war die südlichste und Metulla die nördlichste Siedlung.\nDie erste Gruppe von 14 Personen ging am 6. Juli 1882 in Jaffa an Land; die zweite Gruppe mit 34 Personen kam zwei Jahre später. Zu dieser Gruppe gehörten auch vier Frauen. Gedera ist eine Bilu-Gründung. Am 27. Juni 1901 wurde die Vereinigung Kibbuz Achim gegründet, deren Ziel es war, die Ankömmlinge der ersten Alija bei der Suche nach Arbeit und Unterkunft zu unterstützen.\nEbenfalls ab 1882 begann der in Frankreich lebende Baron Edmond de Rothschild in sechzehn Musterdörfern 12.000 Juden anzusiedeln, die sich selbstständig ernähren konnten",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Die_zweite_Alija",
+      "name": "Die zweite Alija",
+      "inLanguage": "de",
+      "startDate": "1904",
+      "endDate": "1914",
+      "description": "Sie fand von 1904 bis 1914 statt und brachte 35.000 bis 40.000 Einwanderer, vor allem aus Russland und Polen, in das Land Palästina.\nDer erste Anstoß dazu war der blutige Pogrom von Kischinjow (1903). Weitere Pogrome in Russland im Jahre 1904 und 1905 sowie der Tod Theodor Herzls am 3. Juli 1904 führten zu einem neuen Pioniergeist. Die Teilnehmer waren meist junge Männer und Frauen mit sozialistischen Ideen und dem Wunsch nach einer klassenlosen Gesellschaft. Sie ließen sich nicht nur von einer nationalen Ideologie leiten, sondern wünschten sich auch ein Gemeinwesen in Palästina. Sie hatten in der Regel bereits in ihren Heimatländern eine landwirtschaftliche Ausbildung erhalten. Von Einwanderern der zweiten Alija wurden die ersten Parteien der Arbeiterbewegung, die Poalei Tzion und die HaPoel HaZair, die Vorgängerorganisationen der Mapai, aufgebaut.\nDie Teilnehmer der zweiten Alija waren als Arbeiter in den Moschawot oder in den Städten tätig. Sie gründeten 1909 den ersten Kibbuz Degania, die erste jüdische Stadt der Neuzeit Tel Aviv und ebenfalls 1909 die militärische Organisation HaSchomer. Auch schufen sie die Basis für eine neue hebräische Presse und Literatur, was die Verbreitung der Sprache erheblich förderte, und für die Gewerkschaft Histadrut.\nBekannte Teilnehmer der zweiten Alija waren: David Ben-Gurion, Jitzhak Ben Zwi, Berl Katznelson, Israel Schochat, Jitzchak Tabenkin und Joseph Trumpeldor.\nDie Zweite Alija wurde durch den Ausbruch des Ersten Weltkrieges beendet. In der gleichen Zeit wanderten mehr als eine Million Juden aus Osteuropa in die USA aus.\n\nDie dritt",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fall_of_Jerusalem%3A_British_Forces_End_400_Years_of_Ottoman_Rule",
+      "name": "Fall of Jerusalem: British Forces End 400 Years of Ottoman Rule",
+      "inLanguage": "de",
+      "startDate": "1917-12-09",
+      "endDate": "1917-12-30",
+      "description": "In der Schlacht um Jerusalem (türkisch Kudüs Muharebesi) während des Ersten Weltkriegs kämpften britische Truppen ab 19. November 1917 gegen osmanische und deutsche Truppen. Die Übergabe der religiös wichtigen Stadt Jerusalem an die Engländer erfolgte am 9. Dezember und brachte den Osmanen in der arabischen Welt einen schweren Prestigeverlust.\n\n\nHintergrund\n\nAm 27. Juni 1917 war Generalleutnant Edmund Allenby zum Kommandeur der britischen Truppen in Palästina (Egyptian Expeditionary Force) ernannt worden. Er hatte General Archibald Murray abgelöst, dessen mehrfache Angriffe auf die Gaza-Linie bisher gescheitert waren.\nMitte Juli 1917 übernahm General Erich von Falkenhayn auf Bitten der osmanischen Heeresleitung unter Enver Pascha die Führung der Heeresgruppe F, deren Kräfte sich in Syrien versammelten. Nach langen Auseinandersetzungen mit der türkischen Führung wurde Falkenhayn am 7. September aber zum Oberbefehlshaber der osmanischen 7. und 8. Armee in Palästina ernannt.\n\nOsmanische 7. Armee: General Mustafa Kemal\nIII. Korps: General Mustafa İsmet Pascha\nXX. Korps: General Ali Fuat Bey\nOsmanische 8. Armee: General Ismail Cevat Pascha\nXXII. Korps: General Refet Bey\nAsien-Korps Generalmajor von Frankenberg und Proschlitz\nAm Morgen des 31. Oktober begannen die Briten an der Palästinafront eine lange vorbereitete Großoffensive mit einem Überraschungsangriff auf Beerscheba durch das XX. und Desert Mounted Corps. In den folgenden Tagen kam es zur Dritten Schlacht um Gaza, das von den osmanischen Truppen stark befestigt worden war. Am 7. November 1917 nahmen die Briten die Stadt",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Die_dritte_Alija",
+      "name": "Die dritte Alija",
+      "inLanguage": "de",
+      "startDate": "1919",
+      "endDate": "1923",
+      "description": "Die dritte Alija dauerte von 1919 bis 1923 und stellte in vielerlei Hinsicht eine Fortsetzung der zweiten dar. Sie brachte 35.000 Einwanderer ins Land, von denen 53 Prozent aus Russland und 36 Prozent aus Polen stammten. Die Übrigen kamen aus Litauen, Rumänien und anderen osteuropäischen Ländern. Achthundert Einwanderer stammten aus West- und Mitteleuropa. Viele Neuankömmlinge waren Mitglieder der Hechaluz-Bewegung in Russland und Polen oder des Hashomer Hatzair („der junge Wächter“) in Galizien, der ältesten jüdischen Jugendbewegung, die sich selbst als „Weltorganisation der zionistischen Jugend“ bezeichnet.\nDie Ursachen der Einwanderungswelle lagen in den Folgen der russischen Oktoberrevolution und des Bürgerkrieges, den Pogromen in der Ukraine in den Jahren 1919 und 1920 mit 150.000 ermordeten Juden, den Auseinandersetzungen um die nationale Selbstbestimmung in Europa nach dem Ersten Weltkrieg, der Balfour-Deklaration und der britischen Mandatsverwaltung Palästinas mit der Zusicherung auf die Errichtung einer nationalen jüdischen Heimstätte.\nDie Einwanderung in die Vereinigten Staaten war zwar immer noch möglich und wurde auch häufig genutzt, die meisten, die Palästina als Einwanderungsland wählten, kamen aus zionistischer Überzeugung.\nDiese jungen Pioniere brachten eine Schöpferkraft, die den Charakter des Jischuw veränderte. Gemeinsam mit ihren Vorgängern aus der Zweiten Alija spielten sie eine bedeutende Rolle in seiner Führungsschicht. Sie gründeten den Histadrut, den landesweit organisierte Gewerkschaftsverband der Arbeiter, die Selbstverteidigungsorganisation Hagan",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Die_vierte_Alija",
+      "name": "Die vierte Alija",
+      "inLanguage": "de",
+      "startDate": "1924",
+      "endDate": "1929",
+      "description": "Die vierte Alija von 1924 bis 1927 unterschied sich in ihrer sozialen Struktur von den vorhergehenden. Sie begann Mitte des Jahres 1924 und an ihr nahmen 67.000 Einwanderer, die Hälfte von ihnen aus Polen, teil. Auf dem Höhepunkt der vierten Alija, im Jahre 1925, kamen auf 1000 Juden, die in Palästina lebten, 285 Neuankömmlinge. \nSie wird auch als Mittelstands-Alija bezeichnet, weil sie vor allem aus Angehörigen der Mittelklasse, Geschäftsleuten und Handwerkern bestand. Die Immigration von Pionieren kam wegen der Auswanderungsbeschränkungen der Sowjetunion praktisch zum Erliegen.\nDie Einwanderungswelle war das Ergebnis von zwei Entwicklungen: Die Wirtschaftskrise in Polen und die ökonomischen Beschränkungen, die den polnischen Juden auferlegt wurden, daher auch der Name Grabski-Alija nach dem polnischen Finanzminister Władysław Grabski. Ein weiterer Grund war, dass die USA mit dem Immigration Act of 1924 ihre Grenzen für Masseneinwanderungen weitgehend abschotteten.\nDie meisten Neuankömmlinge, insgesamt acht von zehn Einwanderern der vierten Alija, hielten an ihrer Lebensweise fest und ließen sich in den Städten, vor allem in Tel Aviv, nieder. Sie investierten ihr geringes Kapital in Werkstätten und Fabriken, kleinen Hotels, Restaurants, Geschäften, vor allem aber im Baugewerbe. In der Küstenebene kam es auch zu einer bedeutenden landwirtschaftlichen Entwicklung. Neue Ansiedlungen, deren Lebensgrundlage Zitrusplantagen waren, wurden gegründet, darunter Magdiel, Herzlia, Binjamina und Netanja.\n1926 stagnierte die Einwanderung durch eine ernste Wirtschaftskrise in Palästina.",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Die_f%C3%BCnfte_Alija",
+      "name": "Die fünfte Alija",
+      "inLanguage": "de",
+      "startDate": "1929",
+      "endDate": "1939",
+      "description": "Die fünfte Alija erstreckte sich über den Zeitraum von 1930 bis 1939 und brachte 250.000 Einwanderer. Sie kamen überwiegend aus Polen, Deutschland, Österreich, Rumänien, Griechenland, Jemen und Irak. Allein im Zeitraum 1933 bis 1936 kamen nach der Machtübernahme Adolf Hitlers 164.000 Juden legal nach Palästina, neben weiteren illegalen Flüchtlingen. Die überwiegende Mehrheit ließ sich in den Städten nieder; allein nach Tel Aviv zogen etwa die Hälfte der Einwanderer.\nDie deutschen und österreichischen Juden, die über ein Viertel der Gesamteinwandererzahl ausmachten, trugen entscheidend zur Entwicklung des Jischuw bei. Sie waren die erste größere Einwanderergruppe aus West- und Mitteleuropa. Viele von ihnen hatten eine medizinische oder andere akademische Ausbildung. Sie machten auch die Mehrheit der Musiker im neuen Philharmonischen Orchester aus. Die Städte erlebten durch den hohen Bildungsstand, bürgerliche Lebensform und mitteleuropäische Werte wie Pünktlichkeit und Ordnungssinn, sowie den beruflichen Erfahrungen eine Steigerung des Niveaus im Geschäftsleben und der städtischen Einrichtungen. Viele dieser Eigenschaften sind in das bis heute mit Ironie und Respekt verbundene Bild von den deutschen Einwanderern, den Jeckes, eingegangen. Mit diesem Zustrom begann die Erfolgsgeschichte von Tel Aviv.\nAm Vorabend des Zweiten Weltkrieges lebten 475.000 Juden in Palästina, ungefähr vierzig Prozent der Gesamtbevölkerung des Landes.\n\nDie Alija Bet\n\nDie Alija Bet (Bet ist der 2. Buchstabe des hebräischen Alphabets) bezeichnet den sekundären Aufstieg, also die illegale Einreise. Sie",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Die_Alija_Bet",
+      "name": "Die Alija Bet",
+      "inLanguage": "de",
+      "startDate": "1933",
+      "endDate": "1948",
+      "description": "Die Alija Bet (Bet ist der 2. Buchstabe des hebräischen Alphabets) bezeichnet den sekundären Aufstieg, also die illegale Einreise. Sie wird auch als Haʿappalah (hebräisch הַעְפָּלָה) bezeichnet. Sie begann ca. 1934 mit der Verfolgung in Deutschland während der Zeit des Nationalsozialismus und dauerte bis zur Staatsgründung. Die Einwanderung trotzte den Hürden der britischen Regierung (u. a. Weißbuch von 1939) und den Versuchen die Einwanderungswege zu kontrollieren. Im Jahr 1939 wurde durch die Hagana der Mossad le Alija Bet und durch die Revisionisten ebenfalls eine Organisation in Paris für die illegale Einwanderung gegründet.\nUnter der Einwanderrestriktion fanden zwischen 1940 und 1945 nur 31.221 Juden legal im Land Aufnahme, meist auf der Flucht vor der von Deutschland betriebenen und kontinuierlich ausgeweiteten Ermordung europäischer Juden und Antisemitismus in anderen Ländern, während weitere 19.965 jüdische Flüchtlinge illegal ins Land gelangten. In den Jahren nach dem deutscherseits betriebenen Judenmord bestanden die britischen Restriktionen fort, aber insgesamt erreichten zwischen 1934 und 1948 insgesamt 115.000 illegale Einwanderer das Land, während 51.000 von den britischen Behörden in Britisch-Zypern festgehalten wurden und erst nach der Unabhängigkeit des Staates Israel einreisen konnten. Die jüdische Bevölkerung in Palästina stieg bis 1948 auf 650.000 Juden an.\nIn der Literatur finden sich auch Periodisierungsversuche, die eine sechste Alija benennen und auf 1936–1940 datieren. Sie umfasste etwa 90.000 Einwanderer, hauptsächlich „illegale“ Flüchtlinge vor de",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Nakba_Phase_1%3A_Civil_War_Era",
+      "name": "Nakba Phase 1: Civil War Era",
+      "inLanguage": "de",
+      "startDate": "1947-11-30",
+      "endDate": "1948-05-14",
+      "description": "❌ Missing local asset payload cache file target: /de/1947–1948_civil_war_in_Mandatory_Palestine.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Nakba_II%3A_Modern_Displacement_Campaign",
+      "name": "Nakba II: Modern Displacement Campaign",
+      "inLanguage": "de",
+      "startDate": "2023-10-07",
+      "endDate": "2026-08-21",
+      "description": "❌ Missing local asset payload cache file target: /de/Gaza_humanitarian_crisis.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=First_Zionist_Congress",
+      "name": "First Zionist Congress",
+      "inLanguage": "de",
+      "startDate": "1897-08-29",
+      "endDate": "1897-08-31",
+      "description": "❌ Missing local asset payload cache file target: /de/First_Zionist_Congress.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Sykes%E2%80%93Picot_Agreement",
+      "name": "Sykes–Picot Agreement",
+      "inLanguage": "de",
+      "startDate": "1916-05-16",
+      "endDate": "1916-05-16",
+      "description": "Das Sykes-Picot-Abkommen vom 16. Mai 1916 war eine geheime Übereinkunft zwischen den Regierungen Großbritanniens und Frankreichs, durch die deren koloniale Interessengebiete im Nahen Osten nach der erwarteten Niederlage des Osmanischen Reiches im Ersten Weltkrieg festgelegt wurden. Die arabischen Provinzen des Osmanischen Reiches wurden in vier permanente Einflusszonen aufgeteilt.\nDas Abkommen wurde im November 1915 von dem französischen Diplomaten François Georges-Picot und dem britischen Diplomaten Mark Sykes ausgehandelt. Am 3. Januar 1916 wurde ein Entwurf vereinbart, daher wird auch dieses Datum alternativ zum 16. Mai 1916, an dem das Abkommen offiziell geschlossen wurde, genannt. Picot war der deutlich erfahrenere Verhandlungspartner und verstand es, für Frankreich weit mehr als erwartet zu erreichen (militärisch engagiert war an der Sinai- und Palästinafront im Nahen Osten primär die britische Seite).\n\n\nInhalt\nGroßbritannien wurde die Vorherrschaft über ein Gebiet zuerkannt, das insgesamt etwa dem heutigen Jordanien, dem Irak und dem Gebiet um Haifa entspricht. Frankreich sollte die Herrschaft über die Südost-Türkei, den Nordirak, Syrien und den Libanon übernehmen. Jedes Land konnte die Staatsgrenzen innerhalb seiner Einflusszone frei bestimmen. Die Trennlinie zwischen der französischen (A, im Norden) und der britischen (B, im Süden) Einflusssphäre soll \"der junge britische Abgeordnete Sykes im Dezember 1915 in der Downing Street 10 so vorgestellt haben: Ich würde eine Linie ziehen vom e von Acre bis zum letzten k von Kirkuk, worauf er grünes Licht bekommt und die Ve",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Unruhen_von_Jaffa",
+      "name": "Unruhen von Jaffa",
+      "inLanguage": "de",
+      "startDate": "1921-05-01",
+      "endDate": "1921-05-07",
+      "description": "Die Unruhen von Jaffa ereigneten sich vom 1. bis 7. Mai 1921 im Mandatsgebiet Palästina in der von Arabern und Juden bewohnten Stadt Jaffa. Dabei kam es zu Massakern zwischen der Zivilbevölkerung auf beiden Seiten. Kurz darauf gab es Ausschreitungen in Petach Tikwa (5. Mai), Rechovot, (5. Mai) Gedera, Kfar Saba (5. Mai), Tulkarm und Qalqiliya. Dabei fanden nach überwiegender Meinung 47 Juden (davon 43 in Jaffa) und 48 Araber den Tod. 146 Juden und 73 Araber wurden zum Teil schwer verletzt. Der Polizeihistoriker Edward Horne nannte die heute verworfene Zahl von 27 jüdischen und 3 arabischen Toten, britische Geheimdienstdokumente nannten 40 jüdische und 18 arabische Tote.\n\n\nAblauf\nAnlässlich der Feierlichkeiten zum Ersten Mai 1921 veranstaltete die jüdisch-kommunistische Hebräische Partei Sozialistischer Arbeiter (Mifleget Poʿalim Sozialistijjim ʿIvrit, genannt: Mopsi) einen von den britischen Behörden nicht genehmigten Demonstrationsumzug. Zu ihren Forderungen zählte die Errichtung eines Sowjet in Palästina. Am Vortag hatten kommunistische Aktivisten jiddisch und arabisch verfasste Schriften verteilt. Nun zog ihr Umzug von Jaffa ins benachbarte Tel Aviv, wo es zu Handgreiflichkeiten zwischen den Kommunisten und den Mitgliedern der sozialistischen Partei Achdut haʿAvoda kam, die gleichzeitig eine bewilligte Veranstaltung abhielten. Die Polizei versuchte vergeblich, die beiden Gruppen voneinander zu trennen.\nDiese Konfrontation zwang die Mopsi-Mitglieder zum Ausweichen nach Manschiyya, einem Jaffaer Stadtteil, der zwischen der Jaffaer Altstadt und der neuen jüdischen Vorstadt",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=1929_Palestine_Riots_%26_Massacres",
+      "name": "1929 Palestine Riots & Massacres",
+      "inLanguage": "de",
+      "startDate": "1929-08-23",
+      "endDate": "1929-08-29",
+      "description": "❌ Missing local asset payload cache file target: /de/1929_Palestine_riots.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=1936%E2%80%931939_Arab_Revolt",
+      "name": "1936–1939 Arab Revolt",
+      "inLanguage": "de",
+      "startDate": "1936-04-19",
+      "endDate": "1939-08-26",
+      "description": "Der arabische Aufstand, arabisch الثورة العربية, DMG aṯ-ṯaura al-‘arabiyya, auch Großer arabischer Aufstand genannt, bezeichnet eine Serie von Gewaltakten nichtjüdischer arabischer Einwohner Palästinas gegen den jüdischen Jischuv und die Briten im Völkerbundsmandat für Palästina, die sich zwischen April 1936 und April 1939 im Kontext der demografischen, sozialen und politischen Umwälzungen innerhalb der Gesellschaft Palästinas ereigneten. Angeführt wurde er von den sogenannten Nationalkomitees, die zunächst einen Generalstreik initiierten. Mohammed Amin al-Husseinis ad hoc gegründetes Arabisches Hohes Komitee nahm später eine stärkere Stellung ein. Manche Historiker gewichten den Aufstand in seiner zweiten Phase ab 1937 auch als Bauernaufstand gegen die arabische Elite.\nDie Zahl der Aufständischen wird zuweilen auf 2.000–5.000 geschätzt, zuweilen mit 9.000–10.000 angegeben. Die britische Kolonialmacht schlug den Aufstand mit über 20.000 Soldaten gewaltsam nieder. Die Zahl der Todesopfer wird auf 3.000–3.700 Araber, 2.000–2.400 Juden und 600 Briten geschätzt. Zeitgenössische britische Quellen bezeichneten den Aufstand als „disturbances“ (Störungen, Unruhen).\n\n\nVorgeschichte\nMehrere Faktoren trugen dazu bei, dass die angestammte arabische Landbevölkerung Palästinas in der Spätzeit der osmanischen Herrschaft und während der seit 1917 faktisch bestehenden und 1922 durch den Völkerbund für völkerrechtlich bindend erklärten britischen Mandatszeit verarmte und teilweise ihren Grund und Boden und damit ihren Lebensunterhalt verlor. Zu nennen sind vor allem: 1.) Bereits die Osmanen",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Anschlag_auf_das_King_David_Hotel",
+      "name": "Anschlag auf das King David Hotel",
+      "inLanguage": "de",
+      "startDate": "1946-07-22",
+      "endDate": "1946-07-22",
+      "description": "The King David, hebräisch מְלוֹן הַמֶּלֶךְ דָּוִד Məlōn ha-Melech David, ist ein Grand Hotel in Jerusalem. Es gehört zu den Leading Hotels of the World. Das Haus der Luxusklasse befindet sich neben der Montefiore-Windmühle und dem Jerusalem International YMCA auf einer Anhöhe über dem Bloomfield Garden im Stadtteil Talbiyeh, westlich des Jaffators.\n\n\nGeschichte\nDas Haus wurde von der Palestine Cooperation von Sir Robert Waley Cohen gegründet. An der Gesellschaft war zur Hälfte der Bankier Ezra Mosseri, ein jüdischer Ägypter, beteiligt. Weitere 46 % der Anteile hielten andere Kairioter, den Rest die private National Bank of Egypt. Das Hotel wurde 1929 bis 1931 nach Plänen Emil Vogts (Bau) und Gustave-Adolphe Hufschmids (Innenarchitektur) unter der Bauleitung Benjamin Chaikins erbaut. Vogt hatte 1925 ein Hotel in Luxor gebaut. Das King David Hotel ging dann unter Leitung Karl Albert (Charles) Bählers (1868–1937), des im Ägyptentourismus erfolgreichen Hoteliers, in Betrieb. Der Neubau verdrängte das bald zum Bürogebäude umgebaute Palace Hotel vom Rang der edelsten Adresse der Stadt. Aus zionistischer Sicht galt dies als politischer Erfolg, denn das Palace Hotel gehörte dem Obersten islamischen Rat, gebaut wurde es jedoch von Juden und Arabern gemeinsam. \nDas King David beherbergte bald mehrere Monarchen, so 1931 König Alfons XIII. von Spanien, 1936 den exilierten Haile Selassie von Abessinien, 1942 Georg II. von Griechenland. Und, wie der Historiker Simon Sebag Montefiore schreibt, „Gauner, Höflinge, Faulenzer, Magnaten, Zuhälter, Gigolos, Kurtisanen, Filmstars und Spione“. 19",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=UN_Resolution_181_(Partition_Plan)",
+      "name": "UN Resolution 181 (Partition Plan)",
+      "inLanguage": "de",
+      "startDate": "1947-11-29",
+      "endDate": "1947-11-29",
+      "description": "Der UN-Teilungsplan für Palästina wurde am 29. November 1947 von der UN-Generalversammlung als Resolution 181 (II) angenommen. Die Resolution sollte den Konflikt zwischen arabischen und jüdischen Bewohnern des britischen Mandatsgebiets Palästina lösen. Die Resolution beinhaltete die Beendigung des britischen Mandats und sah vor, Palästina in einen Staat für Juden und einen für Araber aufzuteilen, wobei Jerusalem (einschließlich Bethlehem) als Corpus separatum unter internationale Kontrolle gestellt werden sollte. Die beiden neuen Staaten sollte eine Wirtschaftsunion verbinden, und sie sollten demokratische Verfassungen erhalten. Mehrere Faktoren verhinderten, dass dieser Teilungsplan zu einer friedlichen und demokratischen Lösung für Palästina führen konnte. Dazu gehören einerseits die Interessen der Großmächte, andererseits die Weigerung der arabischen Staaten, eine Teilung Palästinas zu akzeptieren, weil sie diese als illegal ansahen und stattdessen die volle Unabhängigkeit unter arabischer Herrschaft forderten.\n\n\nHintergrund und Entstehung\n\n\nHistorischer Kontext\n\n\nDas britische Völkerbundsmandat für Palästina und die „nationale Heimstätte für Juden“\n\nNachdem als Folge des Ersten Weltkriegs das Osmanische Reich untergegangen war, zu dem auch Palästina gehört hatte, hatte 1922 der Völkerbund Großbritannien „zum Zwecke der Umsetzung der Bestimmungen von Artikel 22 der Völkerbundssatzung“ das Völkerbundsmandat für Palästina übertragen. Besagter Artikel 22 verfügte, dass\n\nDer Völkerbund und offiziell auch England interpretierte diese Aufgabe als sogenanntes „Klasse A-Mandat“",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Massaker_von_Deir_Yasin",
+      "name": "Massaker von Deir Yasin",
+      "inLanguage": "de",
+      "startDate": "1948-04-09",
+      "endDate": "1948-04-09",
+      "description": "Das Massaker von Deir Yasin war ein Angriff auf das palästinensische Dorf Deir Yasin (auch Deir Jassin, arabisch دير ياسين Dair Yāsīn bzw. im palästinensischen Dialekt Dēr Yāsīn) am 9. April 1948 während des Bürgerkriegs in Palästina. Mitglieder der zionistischen Untergrund- und Terrororganisationen Irgun und Lechi sowie der Spezialeinheit Palmach der Hagana griffen das etwa 600 Einwohner zählende Dorf nordwestlich von Jerusalem an und töteten dabei nach heutigen Forschungserkenntnissen 99 bis 120 Dorfbewohner, darunter zahlreiche Unbewaffnete, Frauen und Kinder.\nDas Dorf hatte zuvor ein Friedensabkommen mit seiner benachbarten jüdischen Siedlung geschlossen und arabischen Kampfverbänden den Zugang verwehrt. Umstritten ist, wie viele der Getöteten bewaffnete Verteidiger waren und wie viele Zivilisten nach der Einnahme hingerichtet wurden. Die Opferzahlen wurden zunächst von beiden Seiten stark übertrieben, um psychologische Wirkung zu erzielen.\nDas Massaker hatte weitreichende Folgen und verstärkte die Fluchtbereitschaft der palästinensischen Bevölkerung erheblich. Es führte zu Vergeltungsaktionen und gilt als eines der folgenreichsten Ereignisse des Palästinakriegs, das den weiteren Konfliktverlauf maßgeblich beeinflusste und bis heute Gegenstand geschichtswissenschaftlicher Debatten bleibt.\n\n\nHintergrund\nDas Ereignis steht im Kontext des Bürgerkriegs, der kurz vor der Staatsgründung Israels und dem Ende der britischen Mandatszeit zwischen verfeindeten Zionisten und Palästinensern (nebst Truppen weiterer arabischer Staaten) im britischen Mandatsgebiet Palästina tobte. Zion",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Declaration_of_the_State_of_Israel_%26_End_of_British_Mandate",
+      "name": "Declaration of the State of Israel & End of British Mandate",
+      "inLanguage": "de",
+      "startDate": "1948-05-14",
+      "endDate": "1948-05-14",
+      "description": "Die israelische Unabhängigkeitserklärung (hebräisch הַכְרָזַת הָעַצְמָאוּת Hachrasat ha-ʿAzmaʾūt, deutsch ‚Erklärung der Unabhängigkeit‘ oder מְגִלַּת הָעַצְמָאוּת Megillat ha-ʿAzmaʾūt, deutsch ‚Schriftrolle der Unabhängigkeit‘) am 14. Mai 1948 war die Gründung des Staates Israel. Am Tag darauf endete das Völkerbundsmandat für Palästina.\n\n\nHistorischer Hintergrund\nDas Vereinigte Königreich von Großbritannien und Irland hatte im Ersten Weltkrieg Untertanen des Osmanischen Reiches, die sich an der Niederringung dieses Reiches aktiv beteiligen würden, Hoffnungen auf Erfüllung nationaler Aspirationen gemacht (1915/1916 die Hussein-McMahon-Korrespondenz, 1917 die Balfour-Deklaration), darunter die Haschimiten, die auf der Arabischen Halbinsel rebellierten, und Juden in der Levante. Während der Konferenz von Sanremo (1920) über Folgen des Weltkrieges vereinbarten die Teilnehmer die Region Palästina zum britischen Mandatsgebiets des Völkerbundes zu machen. Der Völkerbund erteilte schließlich 1922 dem Vereinigten Königreich das Mandat für Palästina, das als Bezeichnung eines Territoriums dadurch erstmals in der Neuzeit amtlich wurde, in Grenzen, die Briten und Franzosen zuvor bei Aufteilung verschiedener osmanischer Provinzen unter sich neu gezogen hatten.\nDie Bestimmungen des Völkerbundes beauftragten die zivile britische Mandatsverwaltung Government of Palestine, die dem britischen Kolonialministerium unterstand, in Palästina eine jüdische Heimstatt zu schaffen (gemäß dem britischen Versprechen) und es auf die Unabhängigkeit vorzubereiten (gemäß der Idee der Selbstbestimmung der",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Suezkrise",
+      "name": "Suezkrise",
+      "inLanguage": "de",
+      "startDate": "1956-10-29",
+      "endDate": "1956-11-07",
+      "description": "Die Suezkrise oder Sueskrise (auch Suezkrieg, Sinai-Krieg, Sinai-Feldzug und Trilaterale Aggression) war ein internationaler Konflikt im Oktober 1956 zwischen Ägypten auf der einen Seite und dem Vereinigten Königreich, Frankreich und Israel auf der anderen Seite. Auslöser war die Verstaatlichung der mehrheitlich britisch-französischen Suezkanal-Gesellschaft durch den ägyptischen Präsidenten Gamal Abdel Nasser. Dieser wollte dadurch das formal souveräne Ägypten aus der britischen Einflusssphäre befreien. Für das Vereinigte Königreich hatte der Suezkanal große Bedeutung für die Erdölversorgung. Frankreich war durch die ägyptische Unterstützung der algerischen Befreiungsbewegung FLN motiviert, die gegen die französische Kolonialherrschaft kämpfte. Israel wollte sich aus der arabischen Umklammerung und von andauernden Grenzgefechten mit Palästinensern befreien.\nNach ergebnislosen internationalen Verhandlungen über die Nutzungsrechte am Suezkanal planten Frankreich und das Vereinigte Königreich, den zu einem „Hitler vom Nil“ stilisierten Nasser zu stürzen. Das Vereinigte Königreich, Frankreich und Israel vereinbarten daher, dass Ägypten zuerst von Israel auf der Halbinsel Sinai und am Gazastreifen angegriffen werden sollte und das Vereinigte Königreich und Frankreich dann im Rahmen eines als Vermittlungsmission getarnten Luftlandeangriffs den Suezkanal besetzen und fortan dauerhaft kontrollieren würden.\nNach dem Angriff der drei Staaten auf Ägypten brachten jedoch die USA und die Sowjetunion das britisch-französische Unternehmen vor die UNO und erzwangen auf diesem Weg den Rückz",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Six-Day_War_(1967)",
+      "name": "Six-Day War (1967)",
+      "inLanguage": "de",
+      "startDate": "1967-06-05",
+      "endDate": "1967-06-10",
+      "description": "Der Sechstagekrieg oder Junikrieg (arabisch حرب الأيام الستة ḥarb al-ayyām as-sitta, hebräisch מלחמת ששת הימים milchémet schéschet haJamim) zwischen Israel und den arabischen Staaten Ägypten, Jordanien und Syrien dauerte vom 5. bis zum 10. Juni 1967. Als Teilaspekt des Nahostkonfliktes war er nach dem Israelischen Unabhängigkeitskrieg (1948) und der Suezkrise (1956) der dritte arabisch-israelische Krieg.\nUnmittelbare Auslöser des Krieges waren die ägyptische Sperrung der Straße von Tiran für die israelische Schifffahrt am 22. Mai, der vom ägyptischen Präsidenten Nasser erzwungene Abzug der UNEF-Truppen vom Sinai und ein ägyptischer Aufmarsch von 1.000 Panzern und fast 100.000 Soldaten an den Grenzen Israels.\nDie Kampfhandlungen begannen am 5. Juni mit der Operation Focus (hebräisch: מבצע מוקד, Mivtza Moked), einem Präventivschlag der israelischen Luftstreitkräfte gegen ägyptische Luftwaffenbasen, der einem befürchteten Angriff der arabischen Staaten zuvorkommen sollte. Jordanien, das am 30. Mai 1967 einen Verteidigungspakt mit Ägypten geschlossen hatte, griff daraufhin Westjerusalem, Ramat Rachel und Netanja an. Im Verlauf des Krieges erlangte Israel die Kontrolle über den Gazastreifen, die Sinai-Halbinsel, die Golanhöhen, das Westjordanland und Ostjerusalem. Der Ausgang des Krieges beeinflusst die Geopolitik der Region bis zum heutigen Tag.\n\n\nAusgangssituation\nSchon vor dem Sechstagekrieg gab es militärische Auseinandersetzungen zwischen Israel und seinen Nachbarstaaten. Die letzten Kriege lagen 1967 allerdings schon elf (Suezkrise) beziehungsweise 19 Jahre (Unabhängigkeit",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Jom-Kippur-Krieg",
+      "name": "Jom-Kippur-Krieg",
+      "inLanguage": "de",
+      "startDate": "1973-10-06",
+      "endDate": "1973-10-25",
+      "description": "Der Jom-Kippur-Krieg (hebräisch מלחמת יום הכיפורים Milchemet Jom HaKippurim oder מלחמת יום כיפור Milchemet Jom Kippur)  wurde vom 6. bis zum 25. Oktober 1973 von Ägypten, Syrien und weiteren arabischen Staaten gegen Israel geführt. Nach dem Palästinakrieg (1948/49), der Suezkrise (1956), dem Sechstagekrieg von 1967 und dem Abnutzungskrieg (1968–1970) war er der fünfte arabisch-israelische Krieg des Nahostkonflikts.\nAuf arabischer Seite wird der Krieg Ramadan-Krieg oder Oktoberkrieg (arabisch حرب أكتوبر, DMG Ḥarb Uktūbar oder حرب تشرين / Ḥarb Tišrīn) genannt, da er während des islamischen Fastenmonats Ramadan stattfand, der 1973 in den Oktober fiel.\n\n\nÜberblick\nDer Krieg begann mit einem Überraschungsangriff Ägyptens und Syriens am 6. Oktober 1973, dem höchsten jüdischen Feiertag Jom Kippur, auf dem Sinai und den Golanhöhen, die sechs Jahre zuvor von Israel im Zuge des Sechstagekrieges erobert und besetzt worden waren. Während der ersten zwei Tage rückten die Streitkräfte Ägyptens und Syriens vor, danach aber wendete sich der Kriegsverlauf zugunsten der Israelis, die zunächst ihre Truppen hatten mobilisieren müssen. Nach der zweiten Kriegswoche waren die Syrer vollständig aus den Golanhöhen abgedrängt worden. Im Sinai waren die israelischen Verteidigungsstreitkräfte derweil zwischen zwei ägyptischen Armeen durchgebrochen, hatten den Suezkanal (die alte Waffenstillstandslinie) überschritten und eine ganze ägyptische Armee abgeschnitten, bevor der UN-Waffenstillstand am 24. Oktober 1973 in Kraft trat.\nDer Krieg hatte weitreichende Folgen für viele Staaten. In Israel wurde heft",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Massaker_von_Sabra_und_Schatila",
+      "name": "Massaker von Sabra und Schatila",
+      "inLanguage": "de",
+      "startDate": "1982-09-16",
+      "endDate": "1982-09-18",
+      "description": "Das Massaker von Sabra und Schatila (arabisch مذبحة صبرا وشاتيلا, DMG Maḏbaḥat Ṣabrā wa-Šātīlā) bezeichnet den Völkermord an palästinensischen Flüchtlingen, die im südlichen Stadtgebiet von Beirut lebten. Dieser wurde von etwa 150 libanesischen, maronitisch-katholischen – hauptsächlich phalangistischen – Milizionären verübt, unterstützt von der israelischen Armee (IDF), die z. B. aktiv verhinderte, dass Menschen aus dem Gebiet fliehen konnten. Zwischen dem 16. und 18. September 1982 – mitten im libanesischen Bürgerkrieg – wurden die Flüchtlingslager Sabra (Ṣabrā) und Schatila (Šātīlā) gestürmt, die zu jener Zeit von israelischen Soldaten umstellt waren. Nach filmisch belegten Aussagen beteiligter Milizionäre richtete sich die Aktion in erster Linie gegen Zivilisten; bewaffneter Widerstand soll kaum noch vorhanden gewesen sein. Die Milizionäre verstümmelten, folterten, vergewaltigten und töteten überwiegend Zivilisten, unter ihnen viele Frauen, Kinder und Alte. Die Zahl der Opfer konnte nicht geklärt werden, wird aber je nach Quelle zwischen 460 und 3500 angegeben.\n\n\nHintergrund\nDer Staat Libanon stand seit seiner Unabhängigkeit im Jahr 1943 im Spannungsfeld verschiedener ethnischer Konflikte und außenpolitischer Einflüsse. Während arabische Nationalisten vor allem seit den 1950er Jahren die Nähe zu Ägypten und Syrien suchten, orientierten sich die libanesischen Christen mehrheitlich am Westen und den USA. Der Konflikt eskalierte erstmals während der Libanonkrise 1958. Ein Bürgerkrieg wurde durch eine militärische Intervention der USA verhindert, es entstand eine Phase relat",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Erste_Intifada",
+      "name": "Erste Intifada",
+      "inLanguage": "de",
+      "startDate": "1987-12-08",
+      "endDate": "1993-09-13",
+      "description": "Die Erste Intifada (arabisch انتفاضة, DMG intifāḍa ‚Aufstand‘, von انتفض, DMG intafaḍa ‚sich erheben‘ oder „abschütteln“, hebräisch אינתיפאדה ʾintifada), auch bekannt als „Krieg der Steine“, war eine anhaltende gewalttätige Auseinandersetzung zwischen Palästinensern und der israelischen Armee, die im Dezember 1987 begann. Ab 1991 ging die Gewaltintensität deutlich zurück; die Oslo-Abkommen von 1993 stellen das Ende der ersten Intifada dar.\n\n\nUrsachen und Auslöser\nAuslöser der Intifada war der Zusammenstoß eines israelischen Militärlastwagens mit zwei palästinensischen Taxis am 8. Dezember 1987. Dabei starben in der Nähe des Grenzübergangs Erez an der nördlichen Grenze des Gazastreifens vier Palästinenser (wovon drei aus dem Flüchtlingslager Dschabaliya stammten). In den Palästinensergebieten vermutete man einen Vergeltungsakt für einen kurz zuvor im Gazastreifen erstochenen Israeli. Es ging das Gerücht um, der Fahrer des LKW sei ein Verwandter des Ermordeten. Die 1987 in Hebron gegründete Hamas machte sich die Unruhen zunutze, übernahm die Führung und schürte Aufstände gegen israelische Soldaten, in denen sich „die Wut der palästinensischen Jugend“ auf die Besatzer entlud. Während der Begräbnisse der vier Toten im Gazastreifen kam es zu Massendemonstrationen und Ausschreitungen. Im Gazastreifen und dem Westjordanland gingen die Palästinenser auf die Straßen, Kinder warfen Steine auf die israelischen Panzer und Autoreifen wurden in Brand gesteckt.\nDie Debatten über weitere politische Ursachen für diesen palästinensischen Volksaufstand sind vielfältig: Während der 1980er Jahr",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Prinzipienerkl%C3%A4rung_%C3%BCber_die_vor%C3%BCbergehende_Selbstverwaltung",
+      "name": "Prinzipienerklärung über die vorübergehende Selbstverwaltung",
+      "inLanguage": "de",
+      "startDate": "1993-09-13",
+      "endDate": "1993-09-13",
+      "description": "Die Prinzipienerklärung über eine vorübergehende Selbstverwaltung ist eine Rahmenvereinbarung zwischen Israel und der Palästinensischen Befreiungsorganisation (PLO), die am 13. September 1993 in Washington, D.C. unterzeichnet wurde.\nDie Vereinbarung ist auch unter den Bezeichnungen Declaration of Principles (abgekürzt DOP), Oslo-Abkommen oder Oslo I bekannt.\nDie Rahmenvereinbarung wurde eine Woche später von der Knesset völkerrechtlich verbindlich ratifiziert. Eine völkerrechtlich verbindliche Ratifikation durch die PLO ist bis zum heutigen Tag nicht erfolgt. Sie trat dessen ungeachtet am 13. Oktober 1993 in Kraft.\nDie Prinzipienerklärung war das erste Abkommen im Rahmen des Oslo-Friedensprozesses.\nDem Abschluss waren intensive inoffizielle Kontakte zwischen palästinensischen und israelischen Vertretern in Oslo vorausgegangen.\nDie von der PLO und Israel unterzeichnete Rahmenvereinbarung enthält allgemeine Prinzipien für eine fünfjährige Interimsphase palästinensischer Selbstverwaltung. Fragen zum endgültigen Status wurden auf noch zu führende Verhandlungen verschoben.\nNach Unterzeichnung dieses Abkommens wurden Folgeverhandlungen geführt, die im „Abkommen über die palästinensische Teilautonomie im Gazastreifen und im Gebiet von Jericho“, kurz Gaza-Jericho-Abkommen, vom 4. Mai 1994 zu einer Präzisierung der Autonomierechte Palästinas führten.\nNach der Unterzeichnung der Osloer Verträge bekamen Jassir Arafat, Schimon Peres und Jitzchak Rabin den Friedensnobelpreis für 1994. Hier die Preisträger zusammen mit ihrer Medaille und ihrem Diplom im Osloer Rathaus. Die Friedensverträ",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Zweite_Intifada",
+      "name": "Zweite Intifada",
+      "inLanguage": "de",
+      "startDate": "2000-09-28",
+      "endDate": "2005-02-08",
+      "description": "Die Zweite Intifada, auch bekannt als „Al-Aksa-Intifada“ bzw. „Al-Aqsa-Intifada“, war ein gewaltsamer Konflikt zwischen Palästinensern und Israelis, welcher sich von Jerusalem und Israel auf den Gazastreifen und das Westjordanland ausweitete. Sie begann am 28. September 2000, nachdem der Oslo-Friedensprozess mit den ergebnislosen Verhandlungen in Camp David gescheitert war. Im Unterschied zur Ersten Intifada setzten radikale Palästinenser auf Terroranschläge in Israel, insbesondere auf Selbstmordattentate, auf die die israelische Armee mit Vergeltungsaktionen reagierte.\nMit dem Abschluss eines Waffenstillstands zwischen dem Präsidenten der palästinensischen Autonomiebehörde Mahmud Abbas und Israels Ministerpräsidenten Ariel Scharon im ägyptischen Scharm el-Scheich im Februar 2005 war die Zweite Intifada offiziell beendet. Folgen waren der Bau der israelischen Sperranlage, die Umsetzung von Scharons Abkoppelungsplan und Armut unter den Palästinensern. Zu Kampfhandlungen und Terrorakten kam es in der Konfliktregion jedoch trotz Phasen wechselseitiger Ruhe weiterhin.\n\n\nPolitische Besetzungen des Namens\n\nDie Zweite Intifada wird mehrheitlich von arabischen Kreisen auch Al-Aqsa-Intifada (arabisch انتفاضة الأقصى, DMG Intifāḍat al-Aqṣā), nach der Al-Aqsa-Moschee genannt, weil sie nach Darstellung der Palästinenser ihren Ausgangspunkt bei dieser Moschee auf dem Jerusalemer Tempelberg habe. Von der israelischen Armee wird die zweite Intifada als „אירועי גיאות ושפל“ („Flut-und-Ebbe-Ereignisse“) bezeichnet. Manche israelische Kreise bezeichnen die zweite Intifada auch als Oslokrieg, i",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Mahmoud_Abbas_succeeds_Yasser_Arafat_as_Chairman_of_the_PLO_Executive_Committee",
+      "name": "Mahmoud Abbas succeeds Yasser Arafat as Chairman of the PLO Executive Committee",
+      "inLanguage": "de",
+      "startDate": "2004-11-11",
+      "endDate": "2004-11-11",
+      "description": "Mahmud Abbas (arabisch محمود عباس, DMG Maḥmūd ʿAbbās; int. auch Mahmoud Abbas; * 15. November 1935 in Safed, Völkerbundsmandat für Palästina), genannt Abu Mazen (أبو مازن, DMG Abū Māzin), ist ein führender Politiker der palästinensischen Fatah-Bewegung.\nSeit November 2004 ist er Vorsitzender der Palästinensischen Befreiungsorganisation (PLO), seit dem 15. Januar 2005 Präsident der Palästinensischen Autonomiebehörde (PA) und seit dem 23. November 2008 Präsident des von einigen westlichen Staaten nicht anerkannten Staates Palästina. Seit dem 10. Januar 2009 führt Abbas die Amtsgeschäfte ohne demokratische Legitimierung. Er war von März bis September 2003 Ministerpräsident der Palästinensischen Autonomiebehörde. Aufgrund seiner Publikationen, seiner Dissertation mit Bezugnahme auf Holocaustleugner, seiner Buchveröffentlichung und seiner wiederholten Äußerungen gilt er sowohl als Holocaust-Relativierer wie auch als Holocaustleugner.\n\n\nJugend und Studium\nWährend des Palästinakriegs 1948 floh Mahmud Abbas mit seinen Eltern nach Damaskus. Er studierte Englische und Arabische Literatur sowie Rechtswissenschaften an der dortigen Universität.\nZudem studierte er an der Patrice-Lumumba-Universität in Moskau Geschichte. 1982 wurde er im Fachbereich Israelische Politik mit einer Arbeit über Die Verbindungen zwischen Zionismus und Nazismus 1933–1945 (Связи между сионизмом и нацизмом (1933–1945 гг.)) promoviert. Nach einem Bericht des Middle East Media Research Institute bezweifelt Abbas im Vorwort seines 1984 auf Arabisch erschienenen Buches, das auf dieser Dissertation beruht, jeweils mi",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Palestinian_Legislative_Election%3A_Hamas_wins_majority_over_Fatah",
+      "name": "Palestinian Legislative Election: Hamas wins majority over Fatah",
+      "inLanguage": "de",
+      "startDate": "2006-01-25",
+      "endDate": "2006-01-25",
+      "description": "❌ Missing local asset payload cache file target: /de/2006_Palestinian_legislative_election.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Battle_of_Gaza%3A_Fatah%E2%80%93Hamas_conflict_splits_Gaza_Strip_from_West_Bank_governance",
+      "name": "Battle of Gaza: Fatah–Hamas conflict splits Gaza Strip from West Bank governance",
+      "inLanguage": "de",
+      "startDate": "2007-06-10",
+      "endDate": "2007-06-15",
+      "description": "Der Kampf um Gaza im Juni 2007 war eine Reihe von bürger­kriegs­ähn­lichen Gefechten zwischen Milizen der verfeindeten palästinen­sischen Bewegungen Hamas und Fatah sowie den von der Fatah kontrollierten Sicherheitskräften der Palästinen­sischen Autonomie­behörde. Die Auseinander­setzung konzentrierte sich auf die Zeit zwischen dem 12. und 15. Juni 2007. Im Verlauf der Kämpfe gewannen die Milizen der Hamas militärisch die Oberhand über den Gazastreifen, der zu den palästinensischen Autonomiegebieten gehört.\nDer seit langem schwelende Konflikt zwischen den beiden Parteien wurde zu Beginn der Kampfhandlungen wie in der Vergangenheit von beiderseitigen Aufrufen zum sofortigen Waffenstillstand begleitet. Eine offizielle Anordnung zu den Kämpfen gab es weder von der einen noch von der anderen Seite. Erst im späteren Verlauf rief der palästinensische Präsident und Fatah-Chef Mahmud Abbas zum militärischen Widerstand auf. Die politische Führung der Hamas um Ismail Haniyya kommentierte die Übernahme des Gazastreifens durch seine Milizen während der kriegerischen Auseinandersetzungen nicht.\nViele Fatah-Kämpfer flohen im Verlauf der Kämpfe nach Ägypten oder in das mehrheitlich von der Fatah kontrollierte Westjordanland. Die Übernahme des Gazastreifens durch die Hamas wurde international überwiegend als Putsch interpretiert und verurteilt. Die Situation führte zur offiziellen Auflösung der ohnehin handlungsunfähigen Regierung der nationalen Einheit, bei der Hamas und Fatah eine Art große Koalition gebildet hatten.\n\n\nHintergrund\nDie Vorgeschichte der Kämpfe im Gazastreifen liegt nicht",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Annapolis_Conference",
+      "name": "Annapolis Conference",
+      "inLanguage": "de",
+      "startDate": "2007-11-27",
+      "endDate": "2007-11-27",
+      "description": "❌ Missing local asset payload cache file target: /de/Annapolis_Conference.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=UN_Resolution_67%2F19%3A_Palestine_granted_Non-Member_Observer_State_status",
+      "name": "UN Resolution 67/19: Palestine granted Non-Member Observer State status",
+      "inLanguage": "de",
+      "startDate": "2012-11-29",
+      "endDate": "2012-11-29",
+      "description": "❌ Missing local asset payload cache file target: /de/United_Nations_General_Assembly_resolution_67___19.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=PLO_Central_Council_votes_to_suspend_recognition_of_the_State_of_Israel",
+      "name": "PLO Central Council votes to suspend recognition of the State of Israel",
+      "inLanguage": "de",
+      "startDate": "2018-10-29",
+      "endDate": "2018-10-29",
+      "description": "Die Palästinensische Befreiungsorganisation (arabisch منظمة التحرير الفلسطينية Munaẓẓamat at-Taḥrīr al-Filasṭīniya), kurz PLO (von englisch Palestine Liberation Organization), ist eine Dachorganisation verschiedener Fraktionen, die die Vertretung aller Palästinenser, auch der im arabischen und im nichtmuslimischen Exil, anstrebt. Die weitaus stärkste Fraktion ist die Fatah.\nDie PLO wurde am 28. Mai 1964 auf der konstituierenden Tagung des Palästinensischen Nationalrats (PNC) auf Initiative des damaligen ägyptischen Präsidenten Gamal Abdel Nasser in Jerusalem gegründet, um eine Vertretung des arabischen Volkes in Palästina im Rahmen einer panarabischen Bewegung zu schaffen. Ab 1969 bis zu seinem Tod am 11. November 2004 war Jassir Arafat PLO-Vorsitzender. Arafat trug maßgeblich zur Herausbildung eines palästinensischen Nationalbewusstseins und des Wunsches nach einem unabhängigen Staat Palästina bei. Der Sechstagekrieg 1967 löste eine Welle palästinensischer Flüchtlinge aus: ihre Vertretung brachte die PLO zu ihrer heutigen Bedeutung. Unter Arafats Führung radikalisierte sich die PLO, es wurden terroristische Anschläge verübt. Nach der Schlacht von Karame 1968 wurden die palästinensischen Flüchtlingslager in Jordanien zur Machtbasis der PLO. Die jordanische Armee vertrieb die PLO-Milizen im Schwarzen September 1970. Die PLO beschränkte sich daraufhin in den Flüchtlingslagern mit Hilfe ausländischer Finanzierung auf soziale Ziele wie den Aufbau von Krankenhäusern und Schulen und baute gleichzeitig im Südlibanon eine Armee von etwa 20 000 Mann auf. Nachdem die israelische Arme",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Beijing_Declaration%3A_14_Palestinian_factions_sign_reconciliation_accord",
+      "name": "Beijing Declaration: 14 Palestinian factions sign reconciliation accord",
+      "inLanguage": "de",
+      "startDate": "2024-07-23",
+      "endDate": "2024-07-23",
+      "description": "❌ Missing local asset payload cache file target: /de/2024_Beijing_Declaration.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    }
+  ]
+}

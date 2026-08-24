@@ -1,0 +1,679 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://github.io{pageFileNameTarget}#website",
+      "url": "https://github.io{isDefaultIndexRoot ? '' : pageFileNameTarget}",
+      "name": "Hotspot Israel in the Middle East",
+      "description": "An interactive chronological ledger mapping geopolitical milestones from 1843 onward.",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Publication_of_'Minchat_Yehuda'",
+      "name": "Publication of 'Minchat Yehuda'",
+      "inLanguage": "es",
+      "startDate": "1843",
+      "endDate": "1843",
+      "description": "Yehuda ben Solomon Chai Alkalai (en hebreo:(יהודה בן שלמה חי אלקלאי; Sarajevo, Imperio otomano; 1798 - Jerusalén, 1878) fue un famoso rabino del siglo XIX, uno de los primeros seguidores del movimiento Hovevei Zion, y está entre los iniciadores de la Reunión de Israel y del Retorno a Sion. ​\n\n\nBiografía\nNació en 1798 en Sarajevo, en la Bosnia otomana. De niño, se establece en Jerusalén ciudad en la que estudiará. En 1825, se traslada al extranjero, en donde ejercerá como rabino de la comunidad sefardí de Zamlin (זמלין), hasta 1874. A su regreso a Jerusalén preconiza que su pueblo, durante la espera del Mesías, debe emprender acciones que contribuyan a su liberación, y para eso debe instalarse en la Tierra de Israel. Establece un detallado programa de autodefensa judía y favorece el uso del hebreo. Fallece en Jerusalén el año 1878, siendo enterrado en el Cementerio judío del Monte de los Olivos.\n\n\nInfluencia en Theodor Herzl\nEl abuelo paterno de Theodor Herzl, Simon Loeb Herzl, asistía con frecuencia a la sinagoga de Yehuda Alkalai en Semlin, y ambos mantenían una relación cercana. Se sabe que Simon Loeb tuvo acceso a uno de los primeros ejemplares de la obra de Alkalai publicada en 1857, en la que se promovía el \"retorno de los judíos a la Tierra Santa y la renovada gloria de Jerusalén\". Diversos estudiosos contemporáneos concluyen que la implementación del sionismo moderno por parte de Herzl estuvo indudablemente influenciada por esta conexión familiar con Alkalai.​\nLas ideas proto-sionistas de Alkalai —centradas en el asentamiento gradual, la revitalización del hebreo y l",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Ascension_of_Sultan_Abdul_Hamid_II%3A_Late_Ottoman_Administrative_Era",
+      "name": "Ascension of Sultan Abdul Hamid II: Late Ottoman Administrative Era",
+      "inLanguage": "es",
+      "startDate": "1876-08-31",
+      "endDate": "1909-04-27",
+      "description": "Abdülhamid II (en turco otomano: عبد الحميد ثانی `Abdü’l-Ḥamīd-i sânî, en turco: İkinci Abdülhamid; Estambul, 21 de septiembre de 1842​​-Estambul, 10 de febrero de 1918) fue el 34.º sultán del Imperio otomano (31 de agosto de 1876 - 27 de abril de 1909), depuesto por la sublevación militar de los Jóvenes Turcos para ser sustituido por su hermano, Mehmed V. Fue el último sultán capaz de imponer su autocracia.​\nSegundo hijo del sultán Abdülmecid I y de su esposa, la armenia Tirimüjgan (Virjin), Abdülhamid II subió al trono en la deposición de su hermano mentalmente trastornado, Murad V, el 31 de agosto de 1876. Promulgó la primera constitución otomana el 23 de diciembre de 1876, principalmente para evitar la intervención extranjera en un momento en que la represión salvaje de los turcos del levantamiento búlgaro (mayo de 1876) y los éxitos otomanos en Serbia y Montenegro había despertado la indignación de las potencias occidentales y Rusia.\n\n\nPolítica exterior\nEn 1877 estalló la guerra ruso-turca (1877-1878), que terminó en un desastre para el Imperio otomano. Rusia impuso un duro tratado, el de San Stefano, que se sometió a una asamblea europea celebrada en Berlín, que lo aprobó el 13 de julio de 1878, aunque suavizado por los esfuerzos diplomáticos del Gobierno británico de Benjamín Disraeli.\nLa consecuencia de esta derrota fue el desmembramiento del Imperio otomano, que incluyó la cesión o «arrendamiento» al Reino Unido de la isla de Chipre, y obligado por su debilidad, la admisión del protectorado francés sobre Túnez en 1881. El imperio también tuvo problemas en Egipto, d",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Petah_Tikva_was_founded_in_1878",
+      "name": "Petah Tikva was founded in 1878",
+      "inLanguage": "es",
+      "startDate": "1878",
+      "endDate": "1878",
+      "description": "Petaj Tikva (en hebreo: ) es una ciudad del distrito Central de Israel. Según la Oficina Central de Estadísticas de Israel (CBS), a finales de 2008 la ciudad tenía una población de 247 956 habitantes.\n\n\nReferencias",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Russian_Empire_Pogroms_(First_Wave)",
+      "name": "Russian Empire Pogroms (First Wave)",
+      "inLanguage": "es",
+      "startDate": "1881-04-27",
+      "endDate": "1884",
+      "description": "El término \"pogromo\", en el sentido de agresiones multitudinarias, espontáneas o premeditadas antijudías, fue utilizado por primera vez en el siglo XIX, en referencia a los pogromos antijudíos en el Imperio ruso. Los pogromos comenzaron después de que el Imperio ruso, que anteriormente tenía una población judía muy pequeña, adquiriera territorios con importantes poblaciones judías entre los años 1791-1835. Estos territorios fueron designados como la \"Zona de residencia\" por parte del gobierno ruso, dentro de la cual se les permitía vivir a los judíos (aunque a regañadientes), y fue dentro de la misma en la que los pogromos tuvieron lugar. A la mayoría de los judíos se les impedía mudarse a otras partes del imperio, a menos que se convirtieran al cristianismo ortodoxo.\n\n\nOdessa, 1821\n\nLos pogromos de Odessa de 1821 a menudo son considerados como los primeros de su tipo, los cuales tuvieron lugar luego de la ejecución del patriarca de la iglesia ortodoxa Gregorio V en Constantinopla y en los cuales murieron 14 judíos.​ Quienes iniciaron los pogromos en 1821 fueron griegos de la zona, quienes solían tener una diáspora importante en las ciudades portuarias de la región que en ese entonces era conocida como Novorossiya.​ Otras fuentes consideran que el primer pogromo fue el de los disturbios de Odessa de 1859.\nTambién hubo un pogromo grande en la noche del 15-16 de abril de 1881 (el día de pascua para la iglesia ortodoxa) en la ciudad de Yelizavetgrad (actualmente Kirovogrado). El 17 de abril, unidades del ejército fueron despachadas y se les obligó a utilizar armas de fuego par",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=The_first_Arab%E2%80%93Israeli_War_(1948)",
+      "name": "The first Arab–Israeli War (1948)",
+      "inLanguage": "es",
+      "startDate": "1948-05-15",
+      "endDate": "1949-03-10",
+      "description": "La guerra árabe-israelí de 1948, sucedida desde mayo de 1948 hasta mediados de 1949, fue el primero de una serie de conflictos armados que enfrentaron a Israel y a sus vecinos árabes, en lo que se conoce globalmente como el conflicto árabe-israelí. Para el pueblo palestino esta guerra marcó el comienzo de la Nakba (en árabe النكبة, Catástrofe o Desastre). Para el pueblo israelí fue la guerra de Independencia (hebreo: מלחמת העצמאות) o guerra de Liberación (hebreo: מלחמת השחרור). \nLas Naciones Unidas acordaron la partición del Mandato Británico de Palestina en dos estados: uno judío, con el 55 % por ciento del territorio (incluyendo por completo el desierto del Néguev), y otro árabe, con el resto del territorio excepto el área circundante de Jerusalén y Belén, que sería considerada una zona internacionalizada. Esta resolución fue aceptada por los dirigentes judíos, pero rechazada por las organizaciones paramilitares sionistas y por los árabes en su conjunto.​ \nDicho mandato expiró el 15 de mayo de 1948. En la tarde del 14 de mayo, David Ben-Gurión proclamó la independencia de Israel en Tel Aviv, y el nuevo estado fue reconocido rápidamente por los Estados Unidos, la Unión Soviética y muchos otros países. El mismo día de la retirada británica de la región, tropas egipcias, iraquíes, libanesas, sirias y transjordanas, apoyadas por voluntarios libios, saudíes y yemeníes, comenzaron la invasión del recién proclamado estado judío.\n\n\nContexto\n\n\nAntecedentes\nTras la derrota del Imperio otomano en la Primera Guerra Mundial, la Sociedad de las Naciones garantizó a británicos y frances",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=First_Aliyah",
+      "name": "First Aliyah",
+      "inLanguage": "es",
+      "startDate": "1881",
+      "endDate": "1903",
+      "description": "La primera Aliyáh fue la primera ola de inmigración judía a la Siria otomana entre 1881 y 1903.​​​​ Los judíos que emigraron en esta oleada procedían en su mayoría de Europa del Este y de Yemen, impulsados por los pogromos y la violencia contra las comunidades judías de esas zonas.​ Se calcula que emigraron aproximadamente entre 25.000 y 30.000 judíos.​​ Muchos de los inmigrantes judíos europeos de finales del siglo XIX y principios del XX desistieron a los pocos meses y regresaron a su país de origen, a menudo padeciendo hambre y enfermedades.​\nDado que a mediados del siglo XIX se produjo una oleada de inmigración a la Siria otomana (entre 1840 y 1880, la población judía aumentó de 9.000 a 23.000), el uso del término «Primera Aliyá» es controvertido. Casi todos los judíos procedentes de Europa del Este antes de esa época procedían de familias judías tradicionales que no se inspiraban en la ideología sionista moderna, sino más bien en ideas tradicionales sobre la santidad de la tierra combinadas con consideraciones prácticas/económicas. La primera Aliyá representa el comienzo del sionismo organizado en lo que denominan Tierra de Israel, que es en lo que se diferencia de la inmigración anterior.​​\n\n\nVéase también\n Portal:Judaísmo. Contenido relacionado con  Judaísmo.\n\n\nReferencias",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Second_Aliyah",
+      "name": "Second Aliyah",
+      "inLanguage": "es",
+      "startDate": "1904",
+      "endDate": "1914",
+      "description": "La Segunda Aliyá fue probablemente la más importante e influyente de todas las aliot. Se llevó a cabo entre 1904 y 1914, período durante el cual unos 40.000 judíos inmigraron a la jurisdicción entonces llamada provincia Palestina del Imperio otomano,  en su mayoría provenientes de Rusia y Polonia, y en menor medida de Yemen. \nLa principal causa de la inmigración fue el aumento del antisemitismo en Rusia y los pogromos en las poblaciones de la zona de Asentamiento, destacándose el pogromo de Kishinev y los pogromos que acompañaron a la Revolución rusa en 1905. Los inmigrantes sufrieron muchas dificultades, como la falta de viviendas, terrenos y dinero. \n\n\nPoblaciones\nDurante la Segunda Aliyá, los inmigrantes eran principalmente idealistas, inspirados en los ideales sionistas y revolucionarios que se gestaban en las comunidades judías del Imperio ruso. Estos inmigrantes trataron de crear un sistema comunal de asentamientos agrícolas en la región. De este modo se fundó el movimiento kibutziano. El primer kibutz, Degania, fue fundado en 1909.\nA su vez, muchos de los inmigrantes prefirieron instalarse en las ciudades, creando localidades como Ahuzat Bayit, ubicada cerca de Jaffa. En 1909 fue fundada la ciudad de Tel Aviv.\n\n\nCultura\nLa Segunda Aliá tuvo el gran mérito de lograr el resurgimiento del idioma hebreo que pasó a ser el lenguaje oficial del Yishuv. Eliezer Ben Yehuda contribuyó a la creación del primer diccionario del hebreo moderno. Aunque fue un inmigrante de la Primera Aliá, la mayoría de su trabajo rindió sus frutos en esta segunda. \nLa Segunda Aliá también establec",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fall_of_Jerusalem%3A_British_Forces_End_400_Years_of_Ottoman_Rule",
+      "name": "Fall of Jerusalem: British Forces End 400 Years of Ottoman Rule",
+      "inLanguage": "es",
+      "startDate": "1917-12-09",
+      "endDate": "1917-12-30",
+      "description": "La batalla de Jerusalén (denominada por los británicos Operaciones de Jerusalén) constituye un conjunto de enfrentamientos entre el Imperio británico y el Imperio otomano, durante la campaña homónina. La lucha se desarrolló entre el 17 de noviembre y el 30 de diciembre de 1917, día en el cual la ciudad, rendida el 11 de diciembre, se aseguró. Jerusalén era el objetivo final de la ofensiva del sur de Palestina, parte de la campaña del Sinaí, durante la Primera Guerra Mundial. En las operaciones, los británicos obtuvieron la victoria en dos enfrentamientos en los montes de Judea, al norte y al este de la línea Hebrón–Junction Station: la batalla de Nebi Samwill (17-24 de noviembre) y la defensa de Jerusalén (26-30 de diciembre). Asimismo, también ocurrió el exitoso segundo intento de avance a través del Nahr el Auja (21-22 de diciembre), como en la batalla de Jaffa, aunque esa ciudad ya había sido ocupada como consecuencia de la batalla de Mughar Ridge (16 de noviembre).​\nEsta serie de enfrentamientos se sucedieron entre las fuerzas británicas del XX Cuerpo, el XXI Cuerpo y el Cuerpo Montado del Desierto; en contra del Grupo de Ejércitos Yildirim, constituido por el Séptimo (en los montes de Judea) y Octavo Ejército (al norte de Jaffa); a lo largo de la costa mediterránea. La derrota otomana en Jaffa y Jerusalén, así como la pérdida de 50 millas (80 kilómetros) de territorio durante el avance de la Fuerza Expedicionaria Egipcia hacia Gaza, con la ocupación de Beerseba, Gaza, Hareira y Sheria, Tel el Khuweilfe y la batalla de Mughar Ridge, constituían una grave revés para el I",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Third_Aliyah_(1919%E2%80%931923)",
+      "name": "Third Aliyah (1919–1923)",
+      "inLanguage": "es",
+      "startDate": "1919",
+      "endDate": "1923",
+      "description": "La Tercera Aliyá se refiere a la tercera ola de inmigración judía a Israel desde Europa, inspirada por motivos ideológicos sionistas, entre los años 1919 y 1923 (a partir del final de la Primera Guerra Mundial hasta el comienzo de la crisis económica en el país). Un símbolo del inicio de esta tercera ola es la llegada de la embarcación \"Roselan\" en el puerto de Jaffa el 19 de diciembre de 1919. En el barco había 650 nuevos inmigrantes (olim) a bordo. Durante ese período, alrededor de 35.000 nuevos inmigrantes llegaron a Palestina procedentes principalmente de países de Europa Oriental (de los cuales aproximadamente el 45% de los inmigrantes eran llegados de Rusia, 31% de Polonia, el 5% de Rumania y sólo el tres por ciento de Lituania). Lo más destacado fueron los jóvenes pioneros los cuales llegaron al país entre los años 1919 y 1921. Después de esos años su número se hizo menor entre los inmigrantes. La importancia de estos pioneros fue tan grande como la de los integrantes de la Segunda Aliyá. Su ideología contribuyó mucho a la construcción del país, por lo que marcó su huella en el sionismo y en el desarrollo de los asentamientos judíos en la zona, convirtiendo a los sionistas en la población mayoritaria del Yishuv.\n\n\nCausas de la Tercera Aliyá\nLa Declaración Balfour en 1917 le dio esperanzas al movimiento sionista y abrió el camino para la colonización judía en la Tierra de Israel.\nLas consecuencias sociales en Europa después de la Primera Guerra Mundial comenzaron a despertar el nacionalismo entre las naciones de Europa Oriental lo que condujo, entre otras consecuencia",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fourth_Aliyah_(1924%E2%80%931929)",
+      "name": "Fourth Aliyah (1924–1929)",
+      "inLanguage": "es",
+      "startDate": "1924",
+      "endDate": "1929",
+      "description": "La Cuarta Aliyá se refiere a la cuarta ola de inmigración judía a Israel, proveniente de Europa y Asia, entre los años 1924 y 1928. Sus miembros sostenían una ideología de base sionista.\n\n\nCarácter de la Cuarta Aliyá\nDesde 1924 el carácter y la composición de la inmigración a la Tierra de Israel cambió, aunque esta ola inmigratoria era similar a la anterior. Estos períodos se definen como aliot independientes. \nEn la Cuarta Aliyá unos 80.000 inmigrantes llegaron a Eretz Israel, principalmente de los países de Europa Oriental. La mitad de los inmigrantes procedían de Polonia y el resto de la URSS, Rumania y Lituania. También el 12% de los inmigrantes llegaron de Asia, principalmente de Yemen e Irak. Desde el resto de Europa y América llegaron unos pocos inmigrantes. La contribución de los inmigrantes a los asentamientos judíos en esos años fue muy importante y decisiva.\nEsta gran ola de inmigración, iniciada en 1924, trajo consigo un rápido desarrollo urbano, principalmente en Tel Aviv, que logró absorber una cantidad considerable de inmigrantes. Pero durante los años 1926-1927 se produjo una crisis económica en el país, la más difícil que hubo durante el período del mandato británico, aunque hubo una leve mejora de la situación económica entre los años 1928 y 1929. Al estallar la Crisis Mundial de 1929, resurgió la crisis en Palestina con mayor intensidad. En el período de la crisis, alrededor de 23.000 inmigrantes decidieron abandonar el país.\n\n\nCausas para la inmigración\nMuchas de las Aliot en ese período se produjeron como consecuencia del aumento del antisemitismo en to",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Fifth_Aliyah_(1929%E2%80%931939)",
+      "name": "Fifth Aliyah (1929–1939)",
+      "inLanguage": "es",
+      "startDate": "1929",
+      "endDate": "1939",
+      "description": "La Quinta Aliyá se refiere a la quinta ola de inmigración judía a Israel proveniente de Europa y Asia entre los años 1929 y 1939. Esta ola de inmigración se inició después de los matanza de Hebrón de 1929 y el regreso de la crisis económica en el Mandato Británico de Palestina. En 1939, al comenzar la Segunda Guerra Mundial y promulgarse el Libro Blanco, esta ola inmigratoria finalizó. \nEsta quinta ola, que comenzó como una acción de un grupo de pioneros idealistas, se convirtió pronto en una inmigración en masa de los judíos alemanes entre los años 1933 y 1935 debido a la persecución racial que sufrían en la Alemania nazi. Al estallar la Gran Revuelta Árabe en 1936, provocada precisamente por lo que los árabes consideraban excesiva inmigración judía a Palestina, se detuvo temporalmente la ola inmigratoria, pero durante los años 1938 y 1939 miles de nuevos inmigrantes llegaron, parte de ellos ilegalmente.\nSegún Chaim I. Waxman, en 1931-1939 llegaron 225 000 personas.\n\n\nCausas para la inmigración\nLas causas que alentaron la Quinta Aliyá fueron:\n\nEl auge de Hitler y el Partido Nazi en Alemania, provocó un gran pánico entre los judíos alemanes y de Europa Oriental, que no fueron autorizados a regresar a sus países de origen. Los judíos en la Alemania nazi sufrieron una gran ola de agresión antisemita y muchos decidieron emigrar a la Tierra de Israel en busca de una nueva vida. En agosto de 1933 se llegó a un acuerdo entre la Agencia Judía y las autoridades nazis. El acuerdo estipulaba que los judíos que vivían en Alemania y deseaban abandonar su país, podían hacerlo siempre qu",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Aliyah_Bet%3A_Illegal_immigration_(1933%E2%80%931948)",
+      "name": "Aliyah Bet: Illegal immigration (1933–1948)",
+      "inLanguage": "es",
+      "startDate": "1933",
+      "endDate": "1948",
+      "description": "Aliyá Bet (en hebreo: 'עלייה ב), es decir, Aliyá B (Bet es la segunda letra del alfabeto hebreo) es el nombre en clave dado a la inmigración ilegal de judíos al Mandato británico de Palestina, en violación a las restricciones de inmigración de judíos impuestas por los británicos, entre los años 1934 y 1948. En el moderno Israel también ha sido llamado por el término hebreo Ha'apala (hebreo: ההעפלה). Se distingue de la Aliá Alef («Aliyá A») (Álef es la primera letra del alfabeto hebreo): la inmigración judía muy limitada permitida por las autoridades británicas en el mismo período.\n\n\nOrganización\nDurante el Ha'apala, varias organizaciones judías trabajaron en conjunto para facilitar la inmigración más allá de las cuotas establecidas por los británicos. Como la persecución de los Judíos se intensificó en Europa durante el nazismo, la urgencia de conducción de la inmigración también llegó a ser más aguda. Los que participaron en los esfuerzos de inmigración se negaron sistemáticamente a que esta fuera llamada «ilegal», prefiriendo llamarla «clandestina».\nEl Ha'apala se produjo en dos fases. En primer lugar, desde 1934 hasta 1942, fue un esfuerzo por ayudar a los Judíos europeos a escapar de la persecución nazi y el asesinato. Luego, desde 1945 hasta 1948, fue un esfuerzo para encontrar hogares para los sobrevivientes judíos de los crímenes nazis que se encontraban entre los millones de personas desplazadas que languidecian en campos de refugiados en la zona ocupada de Alemania. Durante la primera fase, varias organizaciones (incluidos los revisionistas) lideraron el esfuerzo,",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Nakba_Phase_1%3A_Civil_War_Era",
+      "name": "Nakba Phase 1: Civil War Era",
+      "inLanguage": "es",
+      "startDate": "1947-11-30",
+      "endDate": "1948-05-14",
+      "description": "La guerra civil durante el Mandato de Palestina,​ también denominada guerra palestino-sionista,​ abarcó el periodo del 30 de noviembre de 1947 —el día siguiente a la firma del Plan de partición de Palestina— al 14 de mayo de 1948, que marcó el fin del Mandato británico en Palestina, y tras el que dio comienzo la guerra árabe-israelí de 1948.\nDurante este conflicto, las comunidades judías y árabes de Palestina se enfrentaron entre sí, mientras que los británicos, que tenían la responsabilidad de garantizar la seguridad del país, iniciaron los preparativos para su retirada del Mandato y no intervinieron más que puntualmente. \nAl final de la fase de guerra civil de la guerra, desde abril de 1948 hasta mediados de mayo, las fuerzas sionistas se embarcaron en una ofensiva identificada posteriormente como Plan Dalet, conquistando ciudades y territorios de Palestina asignados a un futuro Estado judío, así como los asignados al corpus separatum de Jerusalén y a un futuro Estado árabe según el Plan de las Naciones Unidas para la partición de Palestina.​\nLa fase siguiente, la guerra árabe-israelí de 1948, se inició el 15 de mayo de 1948, con la creación del Estado de Israel y la intervención en la guerra de los ejércitos de varios Estados árabes vecinos, que atacaron al nuevo Estado judío.​\nDurante la guerra civil del Mandato de Palestina comenzó también la Nakba: la expulsión o huida de más de 700.000 palestinos (unos dos tercios de la población) de sus hogares ante los ataques y los avances de las fuerzas judías. A la conclusión de la guerra árabe-israelí, las autoridades israelíes",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Nakba_II%3A_Modern_Displacement_Campaign",
+      "name": "Nakba II: Modern Displacement Campaign",
+      "inLanguage": "es",
+      "startDate": "2023-10-07",
+      "endDate": "2026-08-21",
+      "description": "La Franja de Gaza está experimentando una continua crisis humanitaria como resultado de la guerra en Gaza que se desató a inicios de octubre de 2023.​​Al comienzo de la guerra, Israel implementó un bloqueo completo en la Franja de Gaza, lo que ha provocado una importante escasez de combustible, alimentos, medicinas, agua y suministros médicos esenciales.​​ Este asedio provocó una caída del 90% en la disponibilidad eléctrica, afectando el suministro eléctrico a hospitales, plantas de tratamiento de aguas residuales y el cierre de plantas desaladoras que suministran agua potable.​ Brotes de enfermedades generalizadas se han extendido por toda Gaza.​ De acuerdo con el Comité Especial para Investigar las Prácticas Israelíes que Afectan los Derechos Humanos del Pueblo Palestino,​ Amnistía Internacional,​ Human Rights Watch, Médicos Sin Frontera​ y otros expertos y organizaciones de derechos humanos, Israel ha cometido genocidio contra el pueblo palestino durante su continua invasión y bombardeo de la Franja de Gaza.​\nLos intensos bombardeos aéreos israelíes causaron daños catastróficos a la infraestructura de Gaza, profundizando aún más la crisis.​ El Ministerio de Salud de Gaza informó que más de 4000 niños murieron en el primer mes de la guerra.​ El secretario general de la ONU António Guterres, afirmó que Gaza se había convertido en un cementerio de niños.​​\nOrganizaciones como Médicos Sin Fronteras, la Cruz Roja y una declaración conjunta de UNICEF, la Organización Mundial de la Salud, el Programa de las Naciones Unidas para el Desarrollo, el Fondo de Población de las Nacion",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Primer_Congreso_Sionista",
+      "name": "Primer Congreso Sionista",
+      "inLanguage": "es",
+      "startDate": "1897-08-29",
+      "endDate": "1897-08-31",
+      "description": "El Primer Congreso Sionista (en hebreo: הַקּוֹנְגְּרֵס הַצִּיּוֹנִי הָרִאשׁוֹן) es el nombre dado al congreso celebrado en Basilea, Suiza, del 29 de agosto al 31 de agosto de 1897. Fue el primer congreso sionista de la Organización (OS) (que pasaría a ser la Organización Sionista Mundial (OSM) en 1960). Fue organizada​ y presidida por Theodor Herzl,​ el fundador del sionismo moderno. Los logros más importantes del congreso fueron las formulaciones de la plataforma sionista, conocidas como el Programa de Basilea, la fundación de la Organización Sionista Mundial, y la adopción del Hatikvah como su himno (primero como himno de Hovevei Zion y, posteriormente convertido en el himno nacional del Estado de Israel).\n\n\nOrígenes\n\nEl primer Congreso Sionista fue creado por Theodor Herzl como un parlamento simbólico para aquellos que concuerden con la aplicación del sionismo. El congreso debió tener lugar en Múnich, Alemania. Sin embargo, debido a la oposición local de los líderes de las comunidades ortodoxa y reformista, Herzl decidió transferir la reunión a Basilea.​​ El Congreso fue realizado en la sala de conciertos del Casino Municipal de Basilea el 29 de agosto de 1897.\n\n\nCongreso\nHerzl actuó como presidente del Congreso al que asistieron unos 200 participantes procedentes de diecisiete países, 69 de los cuales eran delegados de diversas sociedades sionistas y el resto fueron invitados individuales.​ Diez no judíos también estuvieron presentes y se espera que se abstengan de votar.​ Diecisiete mujeres asistieron al congreso, algunas de ellas por propia iniciativa y otras que acom",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Sykes%E2%80%93Picot_Agreement",
+      "name": "Sykes–Picot Agreement",
+      "inLanguage": "es",
+      "startDate": "1916-05-16",
+      "endDate": "1916-05-16",
+      "description": "El Acuerdo Sykes-Picot, conocido oficialmente como el Acuerdo de Asia Menor, fue un acuerdo secreto entre Reino Unido de Gran Bretaña e Irlanda y la Tercera República Francesa​ para definir las propuestas esferas de influencia y control de los dos países en el Próximo Oriente en el caso de que la triple entente obtuviera la victoria en contra del Imperio otomano en la Primera Guerra Mundial. Las negociaciones se desarrollaron entre noviembre de 1915 y marzo de 1916,​ se firmó el acuerdo el 16 de mayo de 1916,​ y fue expuesto al público por Izvestia y Pravda el 23 de noviembre de 1917 y por el diario británico The Manchester Guardian el 26 de noviembre de 1917.​​\nSe considera que el acuerdo dio forma a la región. Se definieron las fronteras de Irak y Siria, y ha llevado hasta el conflicto actual entre Israel y el pueblo palestino.​ Muchas personas ven el acuerdo como un punto de inflexión en las relaciones entre el mundo del Occidente y el mundo árabe. Se negaron las promesas hechas a los árabes​ por el coronel T. E. Lawrence de una patria nacional y árabe en el área de Gran Siria, a cambio de haberse aliado con los británicos en contra del Imperio otomano. La arquitectura geopolítica fundada por Sykes-Picot favorecería circunstancias que dan lugar a cosas como la protección que disfrutaron las minorías religiosas y étnicas en el Medio Oriente, las cuales son motivos de conflictos.​ \nSe repartió a los británicos el control de las áreas desde la línea de la costa del mar Mediterráneo hasta el Río Jordan, Jordania, el sur de Irak y una pequeña área que incluyó los puertos de H",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Disturbios_de_Jaffa_de_1921",
+      "name": "Disturbios de Jaffa de 1921",
+      "inLanguage": "es",
+      "startDate": "1921-05-01",
+      "endDate": "1921-05-07",
+      "description": "Los Disturbios de Jaffa se refieren a varios días de disturbios y asesinatos que tuvieron lugar durante el Mandato Británico de Palestina entre el 1 y el 7 de mayo de 1921. Los disturbios, que comenzaron como un enfrentamiento entre dos grupos judíos, se convirtieron en ataques de árabes contra judíos y, a continuación, en ataques de represalia de judíos contra árabes.​ Los disturbios comenzaron en Jaffa y se extendieron a otras partes del país. En los disturbios murieron 47 judíos y 48 árabes. Además 146 judíos y 73 árabes resultaron heridos y cientos más se quedaron sin hogar.​\n\n\nDesarrollo\nEl 1 de mayo de 1921 el «Partido Comunista Judío» celebró un desfile en Jaffa para conmemorar el Día de los Trabajadores. El partido había distribuido folletos en árabe y yidis durante la noche anterior, donde se pedía derrocar el dominio británico. La mañana del desfile, uno de los altos oficiales de policía de Jaffa, Toufiq Bey Al Said, visitó la sede del partido para advertir a los 60 miembros presentes para que no desfilasen.​\nOtro gran desfile también había sido organizado en Tel Aviv por el rival socialista, «Unidad Trabajadora», con autorización oficial. Cuando se reunieron las dos manifestaciones estalló una pelea, y la fuerza policial del Mandato británico (llamada Fuerza de Policía Palestina) persiguió a los comunistas de Jaffa; al escuchar los combates, los habitantes árabes de Jaffa pasaron a la ofensiva.​\nDocenas de británicos, árabes y judíos testigos informaron de que muchos de los hombres árabes con cuchillos, espadas y pistolas irrumpieron en edificios de los judíos y",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=1929_Palestine_Riots_%26_Massacres",
+      "name": "1929 Palestine Riots & Massacres",
+      "inLanguage": "es",
+      "startDate": "1929-08-23",
+      "endDate": "1929-08-29",
+      "description": "Los Disturbios Palestinos de 1929 (también conocidos como la Sublevación del Muro de las Lamentaciones o Sublevación de Buraq) hacen referencia a la serie de manifestaciones y disturbios acaecidos a finales de agosto de 1929 cuando una prolongada disputa entre musulmanes y judíos por el acceso al Muro de las Lamentaciones en Jerusalén desembocó en actos violentos. Durante la semana de disturbios, por lo menos 116 árabes y 133 judíos fueron asesinados y 339 heridos.\nEl muftí ordenó abrir el extremo sur del callejón que cruzaba el Muro. El antiguo callejón sin salida se convirtió en un paso que iba desde el Monte del Templo hasta dentro del área de oración del Muro. Las mulas pasaban por esa calle estrecha, a menudo tirando excrementos. Esto, junto con otros proyectos de construcción en la zona, y el acceso restringido al Muro, provocó la protesta de los judíos ante los británicos que permanecieron indiferentes.\nEl 14 de agosto de 1929, después de los ataques a judíos que rezaban en el Muro, 6000 judíos se manifestaron en Tel Aviv gritando \"El Muro es nuestro\". Al día siguiente, día de ayuno para los judíos, 300 jóvenes izaron la bandera y cantaron el himno sionista frente al Muro. Un día después, el 16 de agosto, una multitud organizada de 2000 musulmanes bajó al Muro de las Lamentaciones destrozando objetos litúrgicos, quemando libros de oración y notas de súplica. La revuelta se extendió a la zona comercial judía y provocó pocos días más tarde las infames Matanza de Hebrón​ y Safed.​\n\n\nReferencias",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=1936%E2%80%931939_Arab_Revolt",
+      "name": "1936–1939 Arab Revolt",
+      "inLanguage": "es",
+      "startDate": "1936-04-19",
+      "endDate": "1939-08-26",
+      "description": "Un levantamiento popular de árabes palestinos en el Mandato británico de Palestina contra la administración británica, más tarde conocida como la Gran Revuelta,​​ el Gran Revuelta Palestina,​​ o Revolución palestina​, duró de 1936 a 1939. El movimiento buscaba la independencia del colonialismo británico y el fin del apoyo británico al sionismo, incluyendo la inmigración judía y la venta de tierras a judíos.\nEl levantamiento se produjo durante un pico de afluencia de inmigrantes judíos europeos, y con la creciente situación de los campesinos sin tierras, quienes, al mudarse a los centros metropolitanos para escapar de su pobreza extrema, se vieron socialmente marginados.​​ Desde la batalla de Tel Hai en 1920, judíos y árabes habían estado involucrados en un ciclo de ataques y contraataques, y la chispa inmediata del levantamiento fue el asesinato de dos judíos por una banda qassamita de Izzedin al-Qassam, y el asesinato en represalia por hombres judíos armados atacaron a dos trabajadores árabes, incidentes que desencadenaron un estallido de violencia en toda Palestina.​ Un mes después de los disturbios, Amin al-Husayni, presidente del Alto Comité Árabe y gran muftí de Jerusalén, declaró el 16 de mayo de 1936 como \"Día de Palestina\" y convocó a una huelga general. David Ben-Gurión, líder del Yishuv, describió las causas árabes como el miedo al creciente poder económico judío, la oposición a la inmigración judía masiva y el temor a la identificación británica con el sionismo.​\nLa huelga general duró de abril a octubre de 1936. La revuelta se suele analizar en dos fases distint",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Atentado_al_Hotel_Rey_David",
+      "name": "Atentado al Hotel Rey David",
+      "inLanguage": "es",
+      "startDate": "1946-07-22",
+      "endDate": "1946-07-22",
+      "description": "El atentado al Hotel Rey David fue un atentado de resistencia judía  ocurrido el 22 de julio de 1946 en la sede de la Comandancia Militar del Mandato Británico de Palestina y de la División de Investigación Criminal de los británicos en Jerusalén. Fue perpetrado por el Irgún Tzvaí Leumí, ​ una organización de resistencia sionista, causando 91 muertos (incluido un terrorista), 17 de los cuales eran judíos, después de que tropas británicas invadieran la Agencia Judía y más de 2500 judíos de todas partes del mandato fueran puestos bajo arresto durante la Operación Agatha.​\nEl ala sur del Hotel Rey David de Jerusalén fue ocupada para albergar las instituciones centrales del régimen británico, incluyendo el cuartel general del ejército y el gobierno civil. Se construyeron nidos de ametralladoras en numerosos puntos. Soldados, policías y detectives mostraban una estrecha y constante vigilancia en el edificio que albergaba a los supremos gobernantes británicos \ndel Mandato.\nEl Irgún sometió un plan para eliminar el edificio al mando unificado del Tnuat Hameri (movimiento común de la Haganá, el Irgún y el Lehi que, luego de la Segunda Guerra Mundial, tuvo como objetivo común la expulsión del régimen británico de Palestina y la independencia judía en dicho territorio mediante la lucha armada), el cual no lo aceptó, pero tampoco lo descartó, esgrimiendo que no era el momento adecuado.\n\n\nLos motivos\nEl 29 de junio de 1946, los británicos ocuparon las oficinas de la Agencia Judía, secuestrando importantes documentos secretos, información sobre operaciones de la agencia, que incluían ac",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=UN_Resolution_181_(Partition_Plan)",
+      "name": "UN Resolution 181 (Partition Plan)",
+      "inLanguage": "es",
+      "startDate": "1947-11-29",
+      "endDate": "1947-11-29",
+      "description": "El 29 de noviembre de 1947 la Asamblea General de las Naciones Unidas, reunida en Nueva York, aprobó la Resolución 181, la cual recomendaba un Plan de Partición con Unión Económica para resolver el conflicto entre judíos y árabes en la región de Palestina, que se encontraba en esos momentos bajo administración británica. El plan de la ONU proponía dividir la parte occidental del Mandato en dos Estados, uno judío y otro árabe, con un área, que incluía Jerusalén y Belén, bajo control internacional.​​\nLa Parte I del Plan estipulaba que el Mandato terminaría lo antes posible y que el Reino Unido se retiraría a más tardar el 1 de agosto de 1948. Los nuevos Estados comenzarían a existir dos meses después de la retirada, y como mucho el 1 de octubre de 1948. El Plan pretendía abordar los objetivos y reivindicaciones contrapuestos de dos movimientos enfrentados, el nacionalismo palestino y el nacionalismo judío (o sionismo).​​ El Plan también pedía la unión económica entre los Estados propuestos y la protección de los derechos religiosos y de las minorías.​ Las organizaciones judías colaboraron con el UNSCOP durante las deliberaciones, y los dirigentes árabes palestinos boicotearon dichas negociaciones.​\nLos detractores del plan consideraron que el plan propuesto era prosionista, al asignar el 56 %​ de la tierra al Estado judío, a pesar de que la población árabe palestina duplicaba a la población judía.​ El plan fue celebrado por la mayoría de los judíos presentes en Palestina​ y aceptado con reticencias por la Agencia Judía para Palestina.​​Los líderes sionistas, en particular Dav",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Masacre_de_Deir_Yassin",
+      "name": "Masacre de Deir Yassin",
+      "inLanguage": "es",
+      "startDate": "1948-04-09",
+      "endDate": "1948-04-09",
+      "description": "La masacre de Deir Yassin se refiere al asesinato deliberado de entre 107 y 120 civiles árabes palestinos,​​ entre el 9 de abril y 11 de abril de 1948 por milicianos sionistas del Irgún y del Leji durante y después de la batalla ​por la aldea de Deir Yassin, cerca de Jerusalén en el Mandato Británico de Palestina. Ocurrió en el marco de la guerra civil que precedió al final del mandato.\n\n\nEl ataque\nLa masacre de Deir Yassin (también escrito como Deir Yasin o de Dir Yassin) comenzó el 9 de abril de 1948, cuando alrededor de 130​ milicianos de la extrema derecha sionista, los cuales pertenecían a los grupos paramilitares conocidos como Irgún y Leji, mataron a entorno 107-117 árabes palestinos, incluyendo a mujeres y niños, en la aldea de Deir Yassin, de unos 600-700 habitantes, cercana a Jerusalén. El asalto ocurrió como respuesta de las fuerzas sionistas al bloqueo que estaba sufriendo la ciudad de Jerusalén durante la guerra civil que precedió al final del Mandato Británico de Palestina.\nLos combates se produjeron casa por casa en el poblado y, a pesar de la resistencia que opusieron en principio los aldeanos, las bajas fueron muy considerables. La mayoría de bajas tuvieron lugar durante la batalla, pero otras sucedieron mientras los aldeanos trataban de huir de los ejércitos paramilitares o rendirse ante ellos, también se produjeron fusilamientos y ejecuciones públicas contra los palestinos.\nHay diferentes recuentos sobre la cantidad de víctimas del ataque, pero los números rondarían entre las 107-117 víctimas que se calculan desde el lado árabe, mientras que desde el band",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Declaration_of_the_State_of_Israel_%26_End_of_British_Mandate",
+      "name": "Declaration of the State of Israel & End of British Mandate",
+      "inLanguage": "es",
+      "startDate": "1948-05-14",
+      "endDate": "1948-05-14",
+      "description": "La Declaración de independencia de Israel, oficialmente la Declaración del Establecimiento del Estado de Israel (en hebreo: הכרזה על הקמת מדינת ישראל), tuvo lugar el 14 de mayo de 1948 (5 Iyar 5708) en el Museo de Arte de Tel Aviv, coincidiendo con la finalización legal del Mandato británico de Palestina sobre la llamada «Tierra de Israel» (Eretz Israel) por los judíos. La declaración se llevó a cabo tras haberse aprobado, en noviembre del año anterior en la Asamblea General de las Naciones Unidas, el Plan de partición de Palestina en dos Estados, uno árabe y otro judío, aceptado por la comunidad judía y rechazado por la comunidad árabe.\nLa fecha programada por los británicos para la expiración de su mandato, el día 15 a las cero horas, coincidía con el sabbat, de modo que las autoridades judías decidieron adelantar la ceremonia oficial a las cuatro de la tarde del viernes 14, ocho horas antes de que el alto comisario Alan Cunningham abandonara el puerto de Haifa junto con las últimas autoridades británicas. \nSe afirmaba que el Estado se basaría en los principios de libertad, justicia y paz, abierto a la inmigración de todos los judíos del mundo (reclama la solidaridad de la Diáspora), y garantizando la igualdad de derechos y libertades para todos sus ciudadanos, sin distinción. Solicitaba también ser admitido en la ONU e invitaba a los vecinos árabes a convivir en paz y buena vecindad, con ayuda y cooperación mutua. \nCon la excepción del mundo araboislámico, la declaración encontró una respuesta inmediata y universalmente favorable: así, esa misma noche, once minutos despu",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Guerra_del_Sina%C3%AD",
+      "name": "Guerra del Sinaí",
+      "inLanguage": "es",
+      "startDate": "1956-10-29",
+      "endDate": "1956-11-07",
+      "description": "La guerra del Sinaí, llamada también crisis de Suez, guerra de Suez, segunda guerra árabe-israelí​​​ o Agresión Tripartita en el mundo árabe,​ fue una invasión británica-francesa-israelí de Egipto en 1956. Israel invadió el 29 de octubre, habiéndolo hecho con el objetivo principal de reabrir el Estrecho de Tirán y el Golfo de Aqaba, ya que el reciente endurecimiento del bloqueo egipcio de ocho años de duración impedía aún más el paso israelí.​ Después de emitir un ultimátum conjunto para un alto el fuego, el Reino Unido y Francia se unieron a los israelíes el 5 de noviembre, buscando deponer al presidente egipcio Gamal Abdel Nasser y recuperar el control del Canal de Suez, que Nasser había nacionalizado anteriormente al transferir el control administrativo de la Compañía del Canal de Suez, de propiedad extranjera, a la nueva Autoridad del Canal de Suez, de propiedad pública egipcia.\nLa guerra fue una victoria militar para los tres aliados; pero también una derrota política, ya que la gran presión diplomática por parte de los Estados Unidos y de la Unión Soviética forzó a Francia, Reino Unido e Israel a retirar sus ejércitos. A pesar de la derrota, Nasser salió reforzado ante el mundo árabe ya que Egipto mantuvo el control del canal. A cambio de retirar sus ejércitos del Sinaí, Israel obtuvo indirectamente de Egipto el compromiso de detener sus envíos de armamento a las guerrillas que luchaban contra Israel. Como resultado, las relaciones entre Egipto e Israel se tranquilizaron (en la medida en que esto era posible) por un tiempo. Además, un cuerpo especial de la ONU, conoci",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Six-Day_War_(1967)",
+      "name": "Six-Day War (1967)",
+      "inLanguage": "es",
+      "startDate": "1967-06-05",
+      "endDate": "1967-06-10",
+      "description": "La guerra de los Seis Días​ (en hebreo: מלחמת ששת הימים‎, romanizado: Miljemet sheshet ha-yamim; en árabe: النكسة‎, romanizado: an-Naksah, lit. 'el Revés') —o guerra de 1967 (en árabe: حرب 1967‎) o la guerra de junio de 1967—​ fue un conflicto bélico que enfrentó a Israel con una coalición árabe formada por la República Árabe Unida —denominación oficial de Egipto por entonces—,​ Siria, Jordania e Irak entre el 5 y el 10 de junio de 1967.\nHostilidades militares estallaron en medio de malas relaciones entre Israel y sus vecinos árabes, que habían estado observando los Acuerdos de Armisticio de 1949 firmados al final de la primera guerra árabe-israelí. Antes, en 1956, tensiones regionales sobre los Estrechos de Tirán escalaron en lo que se conoció como la Crisis de Suez (o guerra del Sinaí), cuando Israel invadió Egipto por el cierre egipcio de los corredores marítimos a los navíos israelíes, lo que resultó en la reapertura de los Estrechos de Tirán a Israel, así como el despliegue de la Fuerza de Emergencia de las Naciones Unidas (FENU) a lo largo de la frontera entre Egipto e Israel.​ En los meses previos al estallido de la guerra de los Seis Días en junio de 1967, las tensiones volvieron a aumentar: Israel reiteró su posición post-1956 de que otro cierre egipcio de los Estrechos de Tirán a la navegación israelí sería un casus belli definitivo. En mayo de 1967, el presidente egipcio Gamal Abdel Nasser anunció que los Estrechos de Tirán volverían a estar cerrados a los buques israelíes. Movilizó luego al ejército egipcio en líneas defensivas a lo largo de la frontera con Isra",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Guerra_de_Yom_Kipur",
+      "name": "Guerra de Yom Kipur",
+      "inLanguage": "es",
+      "startDate": "1973-10-06",
+      "endDate": "1973-10-25",
+      "description": "La guerra de Yom Kipur, guerra del Ramadán o guerra de Octubre (en árabe: حرب أكتوبر‎, Ḥarb ʾUktōbar o حرب تشرين, Ḥarb Tišrīn; Hebreo: מלחמת יום הכיפורים, Milẖemet Yom HaKipurim o מלחמת יום כיפור, Milẖemet Yom Kipur) también conocida como la guerra árabe-israelí de 1973, fue un conflicto bélico librado por la coalición de países árabes abanderada por Egipto y Siria contra Israel desde el 6 al 25 de octubre de 1973. Con la excepción de ataques aislados en territorio israelí el 6 y 9 de octubre, las acciones militares de combate durante la guerra tuvieron lugar en territorio árabe, sobre todo en el Sinaí y los Altos del Golán. Egipto y Siria querían recuperar el Sinaí y los Altos del Golán, respectivamente. El presidente egipcio Anwar el-Sadat deseaba también reabrir el canal de Suez. \nLa guerra comenzó cuando la coalición árabe lanzó un ataque sorpresa conjunto sobre las posiciones israelíes en los territorios conquistados por Israel en Yom Kipur, el día más sagrado del judaísmo, que también se produjo ese año durante el mes sagrado musulmán del Ramadán.​ Las fuerzas egipcias y sirias cruzaron las líneas de alto el fuego para entrar en la península del Sinaí y los Altos del Golán, respectivamente, que habían sido capturados por Israel en la guerra de los Seis Días de 1967. Tanto Estados Unidos como la Unión Soviética iniciaron esfuerzos masivos de reabastecimiento a sus respectivos aliados durante la guerra, y esto llevó a un corto enfrentamiento entre las dos superpotencias nucleares.​\nLa guerra comenzó con un cruce egipcio masivo y exitoso del canal de Suez. Después de cru",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Masacre_de_Sabra_y_Shatila",
+      "name": "Masacre de Sabra y Shatila",
+      "inLanguage": "es",
+      "startDate": "1982-09-16",
+      "endDate": "1982-09-18",
+      "description": "La masacre de Sabra y Shatila (en árabe: صبرا وشاتيلا) tuvo lugar entre los días 15 y 18 de septiembre de 1982​ y consistió en una matanza de cientos o miles de refugiados palestinos residentes en los campos de refugiados situados en los barrios de Sabra y Shatila, en Beirut Oeste, durante la guerra del Líbano de 1982. \nFue cometida por la Falange Libanesa, de origen cristiano y en su mayoría pertenecientes a la Iglesia maronita, y el móvil principal de la masacre fue vengar tanto el asesinato, dos días antes, del presidente electo del Líbano Bashir Gemayel, de origen maronita, como la masacre de Damour,​ en la cual atacantes palestinos pertenecientes a la OLP habían asesinado a 582 personas y profanado el cementerio cristiano, a su vez en respuesta a la masacre de Karantina. Miembros del Ejército del Sur del Líbano también participaron en la masacre.​ \nLa masacre de Sabra y Shatila recibió la calificación de acto de genocidio por parte de la Asamblea General de Naciones Unidas a través de su resolución 37/123.​ Según una comisión interna israelí, la Comisión Kahan, las Fuerzas de Defensa de Israel apostadas en el Líbano fueron indirectamente responsables de los hechos por no evitar las matanzas incluso teniendo conocimiento de las mismas.​ \nEn 1983, una comisión encabezada por Seán MacBride, asistente del secretario general de la ONU y a la sazón presidente de la Asamblea General de las Naciones Unidas, dictaminó que Israel, como la potencia ocupante de los campamentos, era responsable de la violencia acaecida en ellos.​  La comisión también declaró que la masacre constitu",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Primera_Intifada",
+      "name": "Primera Intifada",
+      "inLanguage": "es",
+      "startDate": "1987-12-08",
+      "endDate": "1993-09-13",
+      "description": "La Primera Intifada (en árabe: الانتفاضة الأولى‎, romanizado: al-Intifāḍa al-’Ūlā, lit. 'La primera revuelta'), Primera intifada palestina​ o «revuelta de las piedras», fue una serie sostenida de protestas, actos de desobediencia civil y disturbios llevados a cabo por palestinos en Israel y en los Territorios Palestinos ocupados por Israel.​ Fue motivado por la frustración colectiva palestina alrededor de la ocupación militar israelí de Cisjordania y la Franja de Gaza, que al momento estaba por llegar a su vigésimo aniversario, habiendo empezado justo después de la guerra árabe-israelita de 1967.​La revuelta se extendió entre diciembre de 1987 y la Conferencia de Paz de Madrid de 1991, aunque algunos marcan su conclusión en 1993, con la firma de los Acuerdos de Oslo.​\nSe trató de un movimiento popular en contra de las fuerzas israelíes con el objetivo de poner fin a las asfixiantes condiciones sociales en que vivían los palestinos; una gran tasa de desempleo, restricciones de movimiento, la represión sistemática a toda la población por parte de las fuerzas de ocupación, la negativa a reconocer el derecho de autodeterminación del pueblo palestino así como la oposición a la construcción de estructuras estatales en Palestina, en suma, la ausencia total de posibilidades reales de un futuro digno para los palestinos fueron los catalizadores de esta sublevación caracterizada por acciones de desobediencia civil generalizada en contra del poder ocupante.\nLa Intifada surgió como reclamo popular al asesinato de cuatro trabajadores palestinos del campo de refugiados de Jabalia, que fu",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Oslo_I_Accord",
+      "name": "Oslo I Accord",
+      "inLanguage": "es",
+      "startDate": "1993-09-13",
+      "endDate": "1993-09-13",
+      "description": "❌ Missing local asset payload cache file target: /es/Oslo_I_Accord.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Segunda_Intifada",
+      "name": "Segunda Intifada",
+      "inLanguage": "es",
+      "startDate": "2000-09-28",
+      "endDate": "2005-02-08",
+      "description": "La Segunda Intifada o también conocida como la Intifada de Al-Aqsa, fue un gran levantamiento de los palestinos contra Israel y su ocupación a partir del año 2000. Comenzando como un levantamiento civil en Jerusalén e Israel propiamente dicho, la seguridad israelí respondió con extrema violencia, matando a más de 100 manifestantes palestinos en las primeras semanas. Esto llevó a que el levantamiento se convirtiera en un período de mayor violencia en Palestina e Israel. Esta violencia, incluidos los ataques con disparos, los atentados suicidas con bombas y las operaciones militares, continuó hasta la Cumbre de Sharm el-Sheikh de 2005, que puso fin a las hostilidades.​​\nEn septiembre de 2000, en pleno debate sobre el futuro de Jerusalén tras la cumbre de Camp David, el entonces líder de la oposición israelí, Ariel Sharón, visitó la zona exterior del recinto de la Cúpula de la Roca y la mezquita de Al-Aqsa, con el permiso del jefe de la seguridad israelí en Cisjordania. Esta visita, interpretada como una gravísima provocación por parte de la población palestina, provocó algunos incidentes y choques entre estos y las fuerzas de seguridad, aunque ninguno de ellos de gravedad.​​ No obstante, al día siguiente, durante la plegaria del viernes y con la tensión entre ambas poblaciones en aumento, cientos de jóvenes musulmanes apedrearon desde la Explanada de las Mezquitas a los fieles judíos congregados ante el Muro de las Lamentaciones. La policía israelí disparó usando fuego real, matando a siete palestinos, extendiéndose los incidentes por toda la parte árabe de Jerusalén.​\nComo r",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Mahmoud_Abbas_succeeds_Yasser_Arafat_as_Chairman_of_the_PLO_Executive_Committee",
+      "name": "Mahmoud Abbas succeeds Yasser Arafat as Chairman of the PLO Executive Committee",
+      "inLanguage": "es",
+      "startDate": "2004-11-11",
+      "endDate": "2004-11-11",
+      "description": "Mahmud Ridha Abás (en árabe: محمود رضا عباس‎; Safed, 15 de noviembre de 1935),​ también conocido por la kunya Abu Mazen (árabe: أَبُو مَازِن),​ es un político palestino que ejerce como actual y primer presidente del Estado de Palestina desde el 2 de junio de 2014, y tercer presidente de la Autoridad Nacional Palestina desde 2005. Ha sido presidente de la Organización para la Liberación de Palestina desde el 11 de noviembre de 2004. Abás es miembro del partido palestino Fatah, del cual fue elegido presidente en 2009. \nEl cargo de Abás como presidente de la Autoridad Nacional Palestina debía durar hasta el 15 de enero de 2009.​ Sin embargo, lo extendió hasta 2010 ateniéndose a la Constitución de la OLP, y el 16 de diciembre de 2009 fue elegido presidente vitalicio por el Consejo Central de la OLP. Por este motivo, el principal rival político de Fatah, el partido islamista Hamás, anunció inicialmente que no reconocería la extensión de su mandato y que no consideraría a Abás como su legítimo presidente.​ Sin embargo, Abás ha obtenido el reconocimiento internacional y Hamás, tras numerosas negociaciones en los años siguientes,​ alcanzó un acuerdo en abril de 2014 para un gobierno de unidad que duró hasta octubre de 2016, lo que supuso el reconocimiento de Abás como presidente por parte de Hamás.​ Abás también fue elegido presidente del Estado de Palestina por el Consejo Central de la Organización para la Liberación de Palestina el 23 de noviembre de 2008,​ si bien había ostentado este cargo de manera extraoficial desde el 8 de mayo de 2005.​ \nAbás fue la primera persona en ocupa",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Palestinian_Legislative_Election%3A_Hamas_wins_majority_over_Fatah",
+      "name": "Palestinian Legislative Election: Hamas wins majority over Fatah",
+      "inLanguage": "es",
+      "startDate": "2006-01-25",
+      "endDate": "2006-01-25",
+      "description": "Las elecciones generales palestinas se realizaron el 25 de enero de 2006 para escoger a los integrantes del Consejo Legislativo Palestino, el poder legislativo de la Autoridad Nacional Palestina y que elige al primer ministro palestino. El vencedor fue el Movimiento Islámico Hamás que obtuvo 44 %​ de los votos emitidos y 74 de los 132 asientos parlamentarios, seguido del Fatah que obtuvo 41% y sólo 45 asientos. El resultado causó una importante polémica al ser Hamás una organización considerada como extremista por Israel, Estados Unidos y otros países.​ \nEstas fueron las primeras elecciones parlamentarias palestinas en diez años, habiendo sido las anteriores en 1996 y habiendo sido continuamente retrasadas por desavenencias entre Fatah y Hamás respecto al sistema electoral.​ Pudieron votar todos los palestinos residentes en los territorios de la Franja de Gaza y Cisjordania incluyendo Jerusalén Este. Como en otras elecciones, Israel fue acusado de obstaculizar el proceso por parte de autoridades electorales palestinas. Hamás aseguró además que varios de sus candidatos ganadores fueron arrestados por las autoridades israelíes y encarcelados.​ Durante el periodo electoral, 15 miembros del  Consejo Legislativo Palestino fueron capturados y detenidos como prisioneros políticos.​ El expresidente estadounidense Jimmy Carter quien fue uno de los observadores internacionales del proceso criticó estas acciones.​ \nEl triunfo de Hamás trajo consigo una crisis política que desencadenó, entre otras cosas, la ruptura entre las dos facciones palestinas; Fatah que tomó control de Cisjordan",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Battle_of_Gaza%3A_Fatah%E2%80%93Hamas_conflict_splits_Gaza_Strip_from_West_Bank_governance",
+      "name": "Battle of Gaza: Fatah–Hamas conflict splits Gaza Strip from West Bank governance",
+      "inLanguage": "es",
+      "startDate": "2007-06-10",
+      "endDate": "2007-06-15",
+      "description": "❌ Missing local asset payload cache file target: /es/Battle_of_Gaza_(2007).json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Conferencia_de_Annapolis",
+      "name": "Conferencia de Annapolis",
+      "inLanguage": "es",
+      "startDate": "2007-11-27",
+      "endDate": "2007-11-27",
+      "description": "La Conferencia de Annapolis, realizada el 27 de noviembre de 2007, contó con la presencia del primer ministro de Israel Ehud Ólmert y el presidente de la Autoridad Nacional Palestina Mahmud Abbas. Se realizó en la ciudad homónima en el estado de Maryland, Estados Unidos, bajo los auspicios del Presidente de dicho país, George W. Bush, en el marco del proceso para alcanzar la paz en el conflicto palestino-israelí. Contó a su vez con representantes de China, Rusia, las Naciones Unidas, la Unión Europea y la Liga Árabe, además de los cancilleres palestino e israelí, Salam Fayyad y Tzipi Livni, respectivamente.​​ La conferencia terminó con un comunicado de prensa conjunto de todas las partes. Tras la Conferencia de Annapolis, las negociaciones del proceso de paz palestino-israelí continuaron varios años. \n\n\nAsistentes\nEstados Unidos fue el país encargado de organizar y albergar la conferencia. El Presidente de la Autoridad Nacional Palestina Mahmoud Abbas, el primer ministro israelí Ehud Olmert y el Presidente de los Estados Unidos George W. Bush asistieron a la conferencia. El 20 de noviembre de 2007 se hizo pública una lista parcial con más de 40 invitados que incluía a China, la Liga Árabe, Rusia, la Unión Europea y las Naciones Unidas; la mayoría de ellos aceptaron la invitación. \n\n\nContexto y objetivos\n\nEl objetivo de la Conferencia de Annapolis fue recuperar el proceso de paz y ganar un mayor apoyo internacional. Para ello, se trataba de reiniciar las negociaciones de un acuerdo sobre el estatus final que abordasen todos los temas clave del conflicto palestino-israelí, as",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=UN_Resolution_67%2F19%3A_Palestine_granted_Non-Member_Observer_State_status",
+      "name": "UN Resolution 67/19: Palestine granted Non-Member Observer State status",
+      "inLanguage": "es",
+      "startDate": "2012-11-29",
+      "endDate": "2012-11-29",
+      "description": "La resolución 67/19 de la Asamblea General de las Naciones Unidas acordó la admisión de Palestina como Estado observador no miembro de la Organización.​ Sin perjuicio de los derechos ya adquiridos por la Organización para la Liberación de Palestina (OLP), el estatus de Palestina en las Naciones Unidas pasó de ser entidad no miembro de la Organización a Estado no miembro, semejante a la situación de la Santa Sede.​ La resolución fue aprobada el 29 de noviembre de 2012 en la 67.ª sesión de la Asamblea General, coincidiendo con el Día Internacional de Solidaridad con el Pueblo Palestino y con el 65º aniversario de la Partición de Palestina.​ La resolución fue aprobada por una amplia mayoría de la Asamblea, aunque contó con el rechazo frontal del Estado de Israel, parte implicada en el conflicto árabe-israelí. \nEsta resolución resultó clave en la historia del conflicto palestino-israelí, dado que, por un lado, la ONU le reconoció a Palestina el carácter de Estado y, por otro, reconoció implícitamente su soberanía sobre los territorios palestinos ocupados por Israel desde 1967.​ Sin embargo, la delegación palestina no consiguió lograr acceder a la ONU como miembro de pleno derecho, dado que dicho paso debe ser aprobado por el Consejo de Seguridad de las Naciones Unidas, no por su Asamblea General.​Otra importante repercusión de esta resolución fue que, al ser reconocida por la ONU como un Estado, Palestina pudo solicitar al Tribunal Penal Internacional que investigase a Israel por crímenes de guerra, algo que sucedió a comienzos de 2015.​​ \n\n\nPrecedentes\nEl 22 de noviembre de 19",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=PLO_Central_Council_votes_to_suspend_recognition_of_the_State_of_Israel",
+      "name": "PLO Central Council votes to suspend recognition of the State of Israel",
+      "inLanguage": "es",
+      "startDate": "2018-10-29",
+      "endDate": "2018-10-29",
+      "description": "La Organización para la Liberación de Palestina (OLP) es una organización de movimientos políticos y paramilitares creada por Yasir Arafat, líder del Consejo Nacional Palestino en Jerusalén Este en mayo de 1964 bajo los auspicios de la Liga Árabe.​​ En 1973, la OLP optó por dejar de ser una organización estrictamente militar y adoptar adicionalmente la diplomacia.​  La Liga Árabe considera a la OLP desde octubre de 1974 como la «única representante legítima del pueblo palestino».​ Aquel mismo año, la Asamblea General de la ONU reconoció a la OLP como representante del pueblo palestino, otorgándole la condición de observadora.​El 13 de diciembre de 1988, en un discurso ante la Asamblea General, Yasir Arafat renunció al terrorismo y condenó todas sus formas. También pidió la aplicación de la resolución de partición de 1947 y la retirada de Israel de los territorios ocupados.​\nSu primer objetivo declarado en la carta orgánica original de la OLP de 1964 era la destrucción del Estado de Israel mediante la «lucha armada» e inicialmente era controlada por el gobierno egipcio. La carta llamaba abiertamente a la aniquilación de Israel, así como el retorno de los refugiados palestinos que huyeron o fueron expulsados de Israel durante la guerra árabe-israelí de 1948, y la autodeterminación de los árabes palestinos, que en ese momento se encontraban bajo la ocupación jordana y egipcia de los territorios de Cisjordania y la Franja de Gaza respectivamente. En dicha carta se mencionaba la creación de un Estado palestino, y posteriormente la OLP adoptó la idea de fundar un Estado independi",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    },
+    {
+      "@type": "HistoricalEvent",
+      "@id": "https://github.io{pageFileNameTarget}?E=Beijing_Declaration%3A_14_Palestinian_factions_sign_reconciliation_accord",
+      "name": "Beijing Declaration: 14 Palestinian factions sign reconciliation accord",
+      "inLanguage": "es",
+      "startDate": "2024-07-23",
+      "endDate": "2024-07-23",
+      "description": "❌ Missing local asset payload cache file target: /es/2024_Beijing_Declaration.json",
+      "location": {
+        "@type": "Place",
+        "name": "Israel / Palestine / Middle East Coordinate Domain",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "31.7683",
+          "longitude": "35.2137"
+        }
+      }
+    }
+  ]
+}
